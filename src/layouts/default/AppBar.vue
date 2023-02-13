@@ -5,7 +5,7 @@
       color="primary"
       prominent>
       <!-- hide on screens larger than md-->
-      <img class="d-md-none ml-5 mr-10" src="src/assets/logo.png" height="40"/>
+      <img class="d-md-none ml-5 mr-5" src="src/assets/logo.png" height="40"/>
 
       <!-- hide on screens smaller than md-->
       <img class="d-none d-md-block ml-16" src="src/assets/Quran-Icon.png" height="40"/>
@@ -26,8 +26,9 @@
           rounded="pill"
           color="secondary"
           variant="outlined"
+          v-if="!currentUser"
         >
-          Login / Singup
+          {{ xsvalue? 'Login' : 'Login/Signup' }}
         </v-btn>
 
         <v-select
@@ -41,7 +42,7 @@
           >
         </v-select>
       </div>
-      <v-app-bar-nav-icon v-if="currentUser" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
 
     <v-navigation-drawer 
@@ -51,6 +52,7 @@
       >
       <v-list nav>
         <v-list-item
+          v-if="currentUser"
           v-for="(item, index) in items"
           :key="index"
           :prepend-icon="item.icon"
@@ -60,7 +62,7 @@
           {{ item.title }}
         </v-list-item>
       </v-list>
-      <v-divider class="d-md-none"></v-divider>
+      <v-divider class="d-md-none" v-if="currentUser"></v-divider>
       <v-list class="d-md-none" nav>
         <v-list-item
           v-for="(item, index) in nav_items"
@@ -76,7 +78,15 @@
 
 
 <script>
+  import { useDisplay } from 'vuetify'
   export default {
+    setup () {
+        // Destructure only the keys we want to use
+        const { xs, smAndUp } = useDisplay()
+        var smAndUpvalue = smAndUp.value
+        var xsvalue = xs.value
+        return { smAndUpvalue,xsvalue }
+        },
     data: () => ({
       drawer: false,
       group: null,
@@ -90,6 +100,11 @@
           title: 'My Account',
           value: 'account',
           icon: 'mdi-account',
+        },
+        {
+          title: 'Logout',
+          value: 'logout',
+          icon: 'mdi-logout',
         }
       ],
       nav_items: [
