@@ -5,7 +5,7 @@
       color="primary"
       prominent>
       <!-- hide on screens larger than md-->
-      <img class="d-md-none ml-16 mr-10" src="src/assets/logo.png" height="40"/>
+      <img class="d-md-none ml-5 mr-10" src="src/assets/logo.png" height="40"/>
 
       <!-- hide on screens smaller than md-->
       <img class="d-none d-md-block ml-16" src="src/assets/Quran-Icon.png" height="40"/>
@@ -21,7 +21,7 @@
         <v-btn variant="text" class="d-none d-md-block mr-4">Contact us</v-btn>
 
         <v-btn
-          class="mr-4"
+          class="mr-2"
           style="background-color: white;"
           rounded="pill"
           color="secondary"

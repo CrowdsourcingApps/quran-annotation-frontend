@@ -2,7 +2,7 @@
     <HelloWorld /> 
 </template> -->
 <template>
-    <!-- <v-container>
+    <v-container>
         <v-row no-gutters>
             <v-col
             key=1
@@ -21,13 +21,13 @@
                 cols="12"
                 sm="6"
                 >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KM1U6DqZf8M" 
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/isUJXYdhkpg"
                  title="YouTube video player" frameborder="0" 
-                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                  allowfullscreen></iframe>
             </v-col>
         </v-row>
-    </v-container> -->
+    </v-container>
 </template>
   
 <script lang="ts" setup>
