@@ -66,7 +66,7 @@
                 cols="12"
                 sm="6"
                 >
-                <HomeCard  Title="Transcribe recitation"
+                <HomeCardComming  Title="Transcribe recitation"
                            Icon="mdi-feather"
                            Description="Type exactly what you hear including the mistakes."
                            :mdAndUpvalue="mdAndUpvalue"
@@ -79,7 +79,7 @@
                 cols="12"
                 sm="6"
                 >
-                <HomeCard  Title="Validate transcription"
+                <HomeCardComming  Title="Validate transcription"
                             Icon="mdi-text-box-search-outline"
                             Description="Check if a transcription by another participant is correct."
                             :mdAndUpvalue="mdAndUpvalue"
@@ -97,6 +97,7 @@
                            :xsvalue="xsvalue"/>
             </v-col>
         </v-row>
+        <v-row style="height:200px"></v-row>
     </v-container>
 </template>
   
