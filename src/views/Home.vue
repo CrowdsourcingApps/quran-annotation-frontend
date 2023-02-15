@@ -25,31 +25,10 @@
             </v-col>
         </v-row>
         
-        <v-row
-        no-gutters
-        class="ma-4 pa-2"
-        >
-        <v-col
-        key=1
-        cols="12"
-        sm="4"
-        ></v-col>
-        <v-col
-        key=2
-        cols="12"
-        sm="4"
-        style="text-align: center"
-        >
-        <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">{{ $t('homepage.contribute') }}</p>
-        </v-col>
-        <v-col
-        key=1
-        cols="12"
-        sm="4"
-        ></v-col>
-
-        </v-row>
-        <v-row>
+        <v-row id="contribute_section">
+            <v-col cols="12" style="text-align: center;margin-top:40px !important">
+                <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">{{ $t('homepage.contribute') }}</p>
+            </v-col>
             <v-col
                 key=1
                 cols="12"

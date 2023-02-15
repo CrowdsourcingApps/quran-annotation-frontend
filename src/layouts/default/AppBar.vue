@@ -14,7 +14,7 @@
       <v-spacer></v-spacer>
 
       <div class="d-flex align-center">
-        <v-btn variant="text" class="d-none d-md-block">{{ $t('nav.contribute') }}</v-btn>
+        <v-btn @click="scroll('contribute_section')" variant="text" class="d-none d-md-block mr-2">{{ $t('nav.contribute') }}</v-btn>
 
         <v-btn variant="text" class="d-none d-md-block">{{ $t('nav.about') }}</v-btn>
 
@@ -64,14 +64,9 @@
       </v-list>
       <v-divider class="d-md-none" v-if="currentUser"></v-divider>
       <v-list class="d-md-none" nav>
-        <v-list-item
-          v-for="(item, index) in nav_items"
-          :key="index"
-          :value="item.value"
-          class="justify-center"
-        >
-          {{ $t(item.title) }}
-        </v-list-item>
+        <v-list-item @click="scroll('contribute_section')" class="justify-center">{{ $t('nav.contribute') }}</v-list-item>
+        <v-list-item value="about" class="justify-center">{{ $t('nav.about') }}</v-list-item>
+        <v-list-item value="contact" class="justify-center">{{ $t('nav.contact') }}</v-list-item>
       </v-list>
     </v-navigation-drawer>
 </template>
@@ -108,25 +103,21 @@
           icon: 'mdi-logout',
         }
       ],
-      nav_items: [
-        {
-          title: 'nav.contribute',
-          value: 'contribute',
-        },
-        {
-          title: 'nav.about',
-          value: 'about',
-        },
-        {
-          title: 'nav.contact',
-          value: 'contact',
-        }
-      ],
     }),
 
     computed: {
       currentUser() {
       return false;
+      }
+    },
+    methods: {
+      scroll(id) {  
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+      });
+      if(this.drawer){
+        this.drawer = false
+      }
       }
     },
     watch: {
