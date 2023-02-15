@@ -14,11 +14,11 @@
       <v-spacer></v-spacer>
 
       <div class="d-flex align-center">
-        <v-btn variant="text" class="d-none d-md-block">Contribute</v-btn>
+        <v-btn variant="text" class="d-none d-md-block">{{ $t('nav.contribute') }}</v-btn>
 
-        <v-btn variant="text" class="d-none d-md-block">About us</v-btn>
+        <v-btn variant="text" class="d-none d-md-block">{{ $t('nav.about') }}</v-btn>
 
-        <v-btn variant="text" class="d-none d-md-block mr-4">Contact us</v-btn>
+        <v-btn variant="text" class="d-none d-md-block mr-4">{{ $t('nav.contact') }}</v-btn>
 
         <v-btn
           class="mr-2"
@@ -28,7 +28,7 @@
           variant="outlined"
           v-if="!currentUser"
         >
-          {{ xsvalue? 'Login' : 'Login/Signup' }}
+          {{ xsvalue? $t('nav.login') : $t('nav.register') }}
         </v-btn>
 
         <v-select
@@ -36,13 +36,13 @@
             class="mr-2"
             variant="solo"
             density="compact"
-            v-model="language"
-            :items="languages"
+            v-model="$i18n.locale"
+            :items="$i18n.availableLocales"
             prepend-inner-icon="mdi-earth"
           >
         </v-select>
       </div>
-      <v-app-bar-nav-icon v-if="currentUser||xsvalue" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-if="currentUser||!mdAndUpvalue" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
 
     <v-navigation-drawer 
@@ -59,7 +59,7 @@
           :value="item.value"
           class="justify-center"
         >
-          {{ item.title }}
+          {{ $t(item.title) }}
         </v-list-item>
       </v-list>
       <v-divider class="d-md-none" v-if="currentUser"></v-divider>
@@ -70,7 +70,7 @@
           :value="item.value"
           class="justify-center"
         >
-          {{ item.title }}
+          {{ $t(item.title) }}
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -79,50 +79,49 @@
 
 <script>
   import { useDisplay } from 'vuetify'
+
   export default {
     setup () {
         // Destructure only the keys we want to use
-        const { xs, smAndUp } = useDisplay()
-        var smAndUpvalue = smAndUp.value
+        const { xs, mdAndUp } = useDisplay()
+        var mdAndUpvalue = mdAndUp.value
         var xsvalue = xs.value
-        return { smAndUpvalue,xsvalue }
+        return {mdAndUpvalue,xsvalue}
         },
     data: () => ({
       drawer: false,
       group: null,
       items: [
         {
-          title: 'Home',
+          title: 'nav.home',
           value: 'home',
           icon: 'mdi-home-city',
         },
         {
-          title: 'My Account',
+          title: 'nav.account',
           value: 'account',
           icon: 'mdi-account',
         },
         {
-          title: 'Logout',
+          title: 'nav.logout',
           value: 'logout',
           icon: 'mdi-logout',
         }
       ],
       nav_items: [
         {
-          title: 'Contribute',
+          title: 'nav.contribute',
           value: 'contribute',
         },
         {
-          title: 'About us',
+          title: 'nav.about',
           value: 'about',
         },
         {
-          title: 'Contact us',
+          title: 'nav.contact',
           value: 'contact',
         }
       ],
-      languages: ['EN','AR','RU'],
-      language: 'EN',
     }),
 
     computed: {
@@ -130,7 +129,6 @@
       return false;
       }
     },
-
     watch: {
       group () {
         this.drawer = false

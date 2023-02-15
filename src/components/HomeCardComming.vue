@@ -14,7 +14,7 @@
         </v-card-item>
 
         <v-card-subtitle class="ma-2 pa-2">
-        <span>Comming Soon..</span>
+        <span class="ml-2">{{ $t('homepage.coming_soon') }}</span>
         <v-icon
           icon="mdi-sprout-outline"
         ></v-icon>

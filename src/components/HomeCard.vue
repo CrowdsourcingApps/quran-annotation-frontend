@@ -14,10 +14,10 @@
         </v-card-item>
 
         <v-card-actions>
-            <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">Instructions</v-btn>
+            <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">{{ $t('homepage.instructions') }}</v-btn>
             <v-spacer></v-spacer>
             <v-btn style="background-color:#5FD083; color: #fff;" :prepend-icon="Icon">
-                Try it
+                {{ $t('homepage.try_it')  }}
             </v-btn>
         </v-card-actions>
     </v-card>

@@ -6,11 +6,11 @@
             cols="12"
             sm="6"
             >
-            <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">Contribute to a large open-source Quran dataset</p>
-            <p class="text-h6 text-sm-subtitle-1 ma-2 pa-2">This dataset allows to build intelligent AI-based learning apps for Quran</p>
+            <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">{{ $t('homepage.goal') }}</p>
+            <p class="text-h6 text-sm-subtitle-1 ma-2 pa-2">{{ $t('homepage.AI') }}</p>
             <div class="d-flex align-center ma-2 pa-2">
-                <v-btn color="secondary" style="background-color: black;">Login</v-btn>
-                <p class="text-subtitle-1 text-sm-caption ma-2 pa-2">Over 1000 audios are waiting your contribution</p>
+                <v-btn color="secondary" style="background-color: black;">{{ $t('nav.login') }}</v-btn>
+                <p class="text-subtitle-1 text-sm-caption ma-2 pa-2">{{ $t('homepage.statistics') }}</p>
             </div>
             </v-col>
             <v-col
@@ -40,7 +40,7 @@
         sm="4"
         style="text-align: center"
         >
-        <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">Contribute</p>
+        <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">{{ $t('homepage.contribute') }}</p>
         </v-col>
         <v-col
         key=1
@@ -55,22 +55,22 @@
                 cols="12"
                 sm="6"
                 >
-                <HomeCard  Title="Validate recitation"
-                            Icon="mdi-checkbox-marked-circle-outline"
-                            Description="Listen to an audio of an ayah, check if it’s recited correctly."
-                            :mdAndUpvalue="mdAndUpvalue"
-                            :xsvalue="xsvalue"/>
+                <HomeCard  :Title="$t('homepage.validate_recitation')"
+                           Icon="mdi-checkbox-marked-circle-outline"
+                           :Description="$t('homepage.validate_recitation_description')"
+                           :mdAndUpvalue="mdAndUpvalue"
+                           :xsvalue="xsvalue"/>
             </v-col>
             <v-col
                 key=2
                 cols="12"
                 sm="6"
                 >
-                <HomeCardComming  Title="Transcribe recitation"
-                           Icon="mdi-feather"
-                           Description="Type exactly what you hear including the mistakes."
-                           :mdAndUpvalue="mdAndUpvalue"
-                           :xsvalue="xsvalue"/>
+                <HomeCardComming  :Title="$t('homepage.transcribe_recitation')"
+                                  Icon="mdi-feather"
+                                  :Description="$t('homepage.transcribe_recitation_description')"
+                                  :mdAndUpvalue="mdAndUpvalue"
+                                  :xsvalue="xsvalue"/>
             </v-col>
         </v-row>
         <v-row>
@@ -79,9 +79,9 @@
                 cols="12"
                 sm="6"
                 >
-                <HomeCardComming  Title="Validate transcription"
+                <HomeCardComming  :Title="$t('homepage.validate_transcription')"
                             Icon="mdi-text-box-search-outline"
-                            Description="Check if a transcription by another participant is correct."
+                            :Description="$t('homepage.validate_transcription_description')"
                             :mdAndUpvalue="mdAndUpvalue"
                             :xsvalue="xsvalue"/>
             </v-col>
@@ -90,9 +90,9 @@
                 cols="12"
                 sm="6"
                 >
-                <HomeCardComming  Title="Validate Tajweed"
+                <HomeCardComming  :Title="$t('homepage.validate_Tajweed')"
                            Icon="mdi-magnify"
-                           Description="Check if Tajweed rules are applied correctly or not."
+                           :Description="$t('homepage.validate_Tajweed_description')"
                            :mdAndUpvalue="mdAndUpvalue"
                            :xsvalue="xsvalue"/>
             </v-col>

@@ -8,7 +8,7 @@
         <v-col key="2" cols="12" sm="4"
           class="align-center"
           >
-          <p>Help us find other contributes</p>
+          <p>{{ $t('footer.help') }}</p>
           <v-btn
             v-for="icon in icons"
             :icon="icon"
@@ -16,7 +16,7 @@
             class="ma-2"
           >
           </v-btn>
-          <p class="text-caption">Content are available under MIT license</p>
+          <p class="text-caption">{{ $t('footer.license') }}</p>
         </v-col>
         <v-col key="3" cols="12" sm="4"></v-col
         >

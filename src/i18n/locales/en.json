@@ -1,0 +1,32 @@
+{
+    "nav":{
+        "contribute": "Contribute",
+        "about":"About us",
+        "contact":"Contact us",
+        "home":"Home",
+        "login":"Login",
+        "logout":"Logout",
+        "register":"Login/Signup"
+    },
+    "footer":{
+        "help":"Help us find other contributes",
+        "license":"Content are available under MIT license"
+    },
+    "homepage":{
+        "goal":"Contribute to a large open-source Quran dataset",
+        "AI":"This dataset allows to build intelligent AI-based learning apps for Quran",
+        "statistics":"Over 1000 audios are waiting your contribution",
+        "contribute":"Contribute Now",
+        "validate_recitation":"Validate recitation",
+        "validate_recitation_description":"Listen to an audio of an ayah, check if it’s recited correctly.",
+        "transcribe_recitation":"Transcribe recitation",
+        "transcribe_recitation_description":"Type exactly what you hear including the mistakes.",
+        "validate_transcription":"Validate transcription",
+        "validate_transcription_description":"Check if a transcription by another participant is correct.",
+        "validate_Tajweed":"Validate Tajweed",
+        "validate_Tajweed_description":"Check if Tajweed rules are applied correctly or not.",
+        "coming_soon":"Coming Soon..",
+        "try_it":"Try it",
+        "instructions":"Instructions"
+    }
+}
