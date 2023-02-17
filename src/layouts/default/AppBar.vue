@@ -26,6 +26,7 @@
           rounded="pill"
           color="secondary"
           variant="outlined"
+          to="/login"
           v-if="!currentUser"
         >
           {{ xsvalue? $t('nav.login') : $t('nav.register') }}
