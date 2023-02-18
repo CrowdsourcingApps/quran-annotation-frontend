@@ -9,12 +9,22 @@
         <img class="ml-5 mr-5" src="src/assets/logo.svg" />
         <p class="font-weight-bold text-h6 ma-2 pa-2">{{ $t('homepage.goal') }}</p>
         <v-spacer></v-spacer>
+        <v-alert
+          variant="outlined"
+          type="warning"
+          prominent
+          border="top"
+          style="color: #F79191 !important;margin-bottom: 20px;"
+          v-if="message"
+        >
+          {{ message }}
+        </v-alert>
         <v-form
           v-model="form"
           @submit.prevent="onSubmit"
         >
           <v-text-field
-            v-model="email"
+            v-model="user.email"
             :readonly="loading"
             :rules="[required, valid_mail]"
             class="mb-2"
@@ -26,7 +36,7 @@
           ></v-text-field>
   
           <v-text-field
-            v-model="password"
+            v-model="user.password"
             :readonly="loading"
             variant="underlined"
             :type="show1 ? 'text' : 'password'"
@@ -76,26 +86,50 @@
     </v-sheet>
   </template>
   <script>
+  import User from '@/models/user'
   export default {
     data: () => ({
       form: false,
-      email: null,
-      password: null,
+      user: new User(null,null),
       repeat_password: null,
       loading: false,
       show1: false,
       show2: false,
-      isLoginMode: true
+      isLoginMode: true,
+      message:null
     }),
-
+    computed: {
+      loggedIn() {
+        return this.$store.state.auth.status.loggedIn;
+      },
+    },
+    created() {
+      if (this.loggedIn) {
+        this.$router.push("/");
+      }
+    },
     methods: {
       onSubmit () {
-        console.log("hi")
         if (!this.form) return
-
         this.loading = true
+        if(this.isLoginMode) {
+          this.$store.dispatch("auth/login", this.user).then(
+            () => {
+              console.log("after login")
+              this.$router.push('/')
+            },
+            (error) => {
+              this.loading = false;
+              if(error.response.status === 401)
+                  this.message = this.$t('login.401_message')
+              else
+                  this.message = this.$t('error')
+            }
+          );
+        }
+        else{
 
-        setTimeout(() => (this.loading = false), 2000)
+        }
       },
       required (v) {
         return !!v || this.$t('login.required')

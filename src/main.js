@@ -6,6 +6,7 @@
 
 // Components
 import App from './App.vue'
+import store from "./store";
 
 // Composables
 import { createApp } from 'vue'
@@ -17,4 +18,4 @@ import { registerPlugins } from '@/plugins'
 const app = createApp(App)
 
 registerPlugins(app)
-app.use(i18n).mount('#app')
+app.use(i18n).use(store).mount('#app')

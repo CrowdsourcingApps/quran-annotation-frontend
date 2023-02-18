@@ -27,7 +27,7 @@
           color="secondary"
           variant="outlined"
           to="/login"
-          v-if="!currentUser"
+          v-if="!loggedIn"
         >
           {{ xsvalue? $t('nav.login') : $t('nav.register') }}
         </v-btn>
@@ -43,7 +43,7 @@
           >
         </v-select>
       </div>
-      <v-app-bar-nav-icon v-if="currentUser||!mdAndUpvalue" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-if="loggedIn||!mdAndUpvalue" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
 
     <v-navigation-drawer 
@@ -53,7 +53,7 @@
       >
       <v-list nav>
         <v-list-item
-          v-if="currentUser"
+          v-if="loggedIn"
           v-for="(item, index) in items"
           :key="index"
           :prepend-icon="item.icon"
@@ -63,7 +63,7 @@
           {{ $t(item.title) }}
         </v-list-item>
       </v-list>
-      <v-divider class="d-md-none" v-if="currentUser"></v-divider>
+      <v-divider class="d-md-none" v-if="loggedIn"></v-divider>
       <v-list class="d-md-none" nav>
         <v-list-item @click="scroll('contribute_section')" class="justify-center">{{ $t('nav.contribute') }}</v-list-item>
         <v-list-item value="about" class="justify-center">{{ $t('nav.about') }}</v-list-item>
@@ -107,9 +107,9 @@
     }),
 
     computed: {
-      currentUser() {
-      return false;
-      }
+      loggedIn() {
+        return this.$store.state.auth.status.loggedIn;
+      },
     },
     methods: {
       scroll(id) {  
