@@ -51,17 +51,10 @@
       location="right"
       temporary
       >
-      <v-list nav>
-        <v-list-item
-          v-if="loggedIn"
-          v-for="(item, index) in items"
-          :key="index"
-          :prepend-icon="item.icon"
-          :value="item.value"
-          class="justify-center"
-        >
-          {{ $t(item.title) }}
-        </v-list-item>
+      <v-list v-if="loggedIn" nav>
+        <v-list-item value="home" class="justify-center" prepend-icon="mdi-home-city">{{ $t('nav.home') }}</v-list-item>
+        <v-list-item value="account" class="justify-center" prepend-icon="mdi-account">{{ $t('nav.account') }}</v-list-item>
+        <v-list-item @click.prevent="logOut" value="logout" class="justify-center" prepend-icon="mdi-logout">{{ $t('nav.logout') }}</v-list-item>
       </v-list>
       <v-divider class="d-md-none" v-if="loggedIn"></v-divider>
       <v-list class="d-md-none" nav>
@@ -87,23 +80,6 @@
     data: () => ({
       drawer: false,
       group: null,
-      items: [
-        {
-          title: 'nav.home',
-          value: 'home',
-          icon: 'mdi-home-city',
-        },
-        {
-          title: 'nav.account',
-          value: 'account',
-          icon: 'mdi-account',
-        },
-        {
-          title: 'nav.logout',
-          value: 'logout',
-          icon: 'mdi-logout',
-        }
-      ],
     }),
 
     computed: {
@@ -113,12 +89,17 @@
     },
     methods: {
       scroll(id) {  
-      document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-      });
-      if(this.drawer){
+        document.getElementById(id).scrollIntoView({
+          behavior: "smooth"
+        });
+        if(this.drawer){
+          this.drawer = false
+        }
+      },
+      logOut() {
+        this.$store.dispatch('auth/logout');
         this.drawer = false
-      }
+        this.$router.push('/');
       }
     },
     watch: {
