@@ -52,7 +52,7 @@
       temporary
       >
       <v-list v-if="loggedIn" nav>
-        <v-list-item value="home" class="justify-center" prepend-icon="mdi-home-city">{{ $t('nav.home') }}</v-list-item>
+        <v-list-item @click.prevent="Home" value="home" class="justify-center" prepend-icon="mdi-home-city">{{ $t('nav.home') }}</v-list-item>
         <v-list-item value="account" class="justify-center" prepend-icon="mdi-account">{{ $t('nav.account') }}</v-list-item>
         <v-list-item @click.prevent="logOut" value="logout" class="justify-center" prepend-icon="mdi-logout">{{ $t('nav.logout') }}</v-list-item>
       </v-list>
@@ -98,6 +98,10 @@
       },
       logOut() {
         this.$store.dispatch('auth/logout');
+        this.drawer = false
+        this.$router.push('/');
+      },
+      Home(){
         this.drawer = false
         this.$router.push('/');
       }

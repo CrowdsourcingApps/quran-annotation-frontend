@@ -43,7 +43,8 @@
         "notvalid_mail":"",
         "have_account":"",
         "no_account":"",
-        "401_message":""
+        "401_message":"",
+        "400_message":""
     },
     "error":""
 }

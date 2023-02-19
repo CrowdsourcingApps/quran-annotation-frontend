@@ -111,11 +111,11 @@
     methods: {
       onSubmit () {
         if (!this.form) return
+        this.message = null;
         this.loading = true
         if(this.isLoginMode) {
           this.$store.dispatch("auth/login", this.user).then(
             () => {
-              console.log("after login")
               this.$router.push('/')
             },
             (error) => {
@@ -128,6 +128,18 @@
           );
         }
         else{
+          this.$store.dispatch("auth/register", this.user).then(
+            () => {
+              this.$router.push('/')
+            },
+            (error) => {
+              this.loading = false;
+              if(error.response.status === 400)
+                  this.message = this.$t('login.400_message')
+              else
+                  this.message = this.$t('error')
+            }
+          );
 
         }
       },
@@ -141,7 +153,7 @@
         return v.length >= 8 || this.$t('login.min_8')
       },
       PasswordMatch(v) {
-        return v == this.password || this.$t('login.mismatch_password')
+        return v === this.user.password || this.$t('login.mismatch_password')
       },
       onSwitchMode() {
         this.isLoginMode = !this.isLoginMode;

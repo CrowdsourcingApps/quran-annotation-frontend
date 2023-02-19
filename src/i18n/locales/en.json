@@ -44,7 +44,8 @@
         "notvalid_mail":"Email must be valid",
         "have_account":"You already have an account?",
         "no_account":"You don't have an account?",
-        "401_message":"Incorrect email or password"
+        "401_message":"Incorrect email or password",
+        "400_message":"Email already registered"
     },
     "error":"Something went wrong!"
 }
