@@ -28,5 +28,24 @@
         "coming_soon":"Coming Soon..",
         "try_it":"Try it",
         "instructions":"Instructions"
-    }
+    },
+    "login":{
+        "email":"Email",
+        "password":"Password",
+        "create":"Register",
+        "repeat_password":"Repeat Password",
+        "email_placeholder":"Enter your email address",
+        "password_placeholder":"Enter your password",
+        "repeat_password_placeholder":"ٌRepeat your password",
+        "hint":"At least 8 characters",
+        "required": "Required",
+        "min_8":"Min 8 characters",
+        "mismatch_password": "The password and repeat password you entered don't match",
+        "notvalid_mail":"Email must be valid",
+        "have_account":"You already have an account?",
+        "no_account":"You don't have an account?",
+        "401_message":"Incorrect email or password",
+        "400_message":"Email already registered"
+    },
+    "error":"Something went wrong!"
 }
