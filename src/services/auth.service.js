@@ -1,10 +1,10 @@
 import axios from 'axios';
+import TokenService from "./token.service";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
 class AuthService {
   login(user) {
-    console.log('API_URL'+ API_URL)
     return axios
       .post(API_URL + 'token', new URLSearchParams({
         username: user.email,
@@ -17,7 +17,7 @@ class AuthService {
       }))
       .then(response => {
         if (response.data.access_token) {
-          localStorage.setItem('user', JSON.stringify(response.data));
+          TokenService.setUser(response.data);
         }
 
         return response.data;
@@ -25,7 +25,7 @@ class AuthService {
   }
 
   logout() {
-    localStorage.removeItem('user');
+    TokenService.removeUser();
   }
 
   register(user) {
@@ -36,11 +36,26 @@ class AuthService {
       })
       .then(response => {
         if (response.data.access_token) {
-          localStorage.setItem('user', JSON.stringify(response.data));
+          TokenService.setUser(response.data);
         }
 
         return response.data;
       });
+  }
+
+  refresh() {
+    return axios.post(API_URL + 'token/refresh',null, {
+        headers: { Authorization: 'Bearer ' + TokenService.getLocalRefreshToken() }
+      }).then(response =>{
+        const user = response.data
+        if (user.access_token) {
+          TokenService.updateLocalAccessToken(
+            user.access_token,
+            user.refresh_token
+            );
+        }
+        return user;
+      })
   }
 }
 

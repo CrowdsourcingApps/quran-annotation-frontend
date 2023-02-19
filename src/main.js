@@ -7,6 +7,7 @@
 // Components
 import App from './App.vue'
 import store from "./store";
+import setupInterceptors from './services/setupInterceptors';
 
 // Composables
 import { createApp } from 'vue'
@@ -14,6 +15,8 @@ import i18n from '@/i18n/index.js'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+
+setupInterceptors(store);
 
 const app = createApp(App)
 

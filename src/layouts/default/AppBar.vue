@@ -5,7 +5,7 @@
       color="primary"
       prominent>
       <!-- hide on screens larger than md-->
-      <img class="d-md-none ml-5 mr-5" src="src/assets/logo.png" height="40"/>
+      <img class="d-md-none ml-5 mr-5" src="src/assets/logo.svg" height="40"/>
 
       <!-- hide on screens smaller than md-->
       <img class="d-none d-md-block ml-16" src="src/assets/Quran-Icon.png" height="40"/>
@@ -68,6 +68,7 @@
 
 <script>
   import { useDisplay } from 'vuetify'
+  import UserService from "@/services/user.service";
 
   export default {
     setup () {
@@ -104,7 +105,17 @@
       Home(){
         this.drawer = false
         this.$router.push('/');
-      }
+      },
+      // me(){
+      //   UserService.getme().then(
+      //     (response) => {
+      //       console.log(response);
+      //     },
+      //     (error) => {
+      //       console.log(error);
+      //     }
+      //   );
+      // }
     },
     watch: {
       group () {

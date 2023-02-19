@@ -1,11 +1,8 @@
-import axios from 'axios';
-import authHeader from './auth-header';
-
-const API_URL = import.meta.env.VITE_API_URL;
+import api from './api';
 
 class UserService {
-    getPublicContent() {
-        return axios.get(API_URL + 'me', { headers: authHeader() });
+    getme() {
+        return api.get('me');
     }
 }
 
