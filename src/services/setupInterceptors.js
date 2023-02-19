@@ -1,6 +1,7 @@
 import axiosInstance from "./api";
 import TokenService from "./token.service";
 import AuthService from "./auth.service";
+import EventBus from "@/common/EventBus"
 
 const setup = (store) => {
   axiosInstance.interceptors.request.use(
@@ -27,10 +28,18 @@ const setup = (store) => {
         // Access Token was expired
         if (err.response.status === 401 && !originalConfig._retry) {
           originalConfig._retry = true;
-
           try {
-            const user = await AuthService.refresh()
-            store.dispatch('auth/refreshToken', user);
+            const response = await AuthService.refresh()
+            if (response.status === 200) {
+                // refresh okay
+                const user = response.data;
+                store.dispatch('auth/refreshToken', user);
+            }
+            else {
+                // refresh token expired
+                EventBus.dispatch("logout");
+            }
+
             return axiosInstance(originalConfig);
           } catch (_error) {
             return Promise.reject(_error);

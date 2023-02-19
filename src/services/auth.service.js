@@ -54,7 +54,7 @@ class AuthService {
             user.refresh_token
             );
         }
-        return user;
+        return response;
       })
   }
 }

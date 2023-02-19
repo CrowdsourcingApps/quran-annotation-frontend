@@ -53,7 +53,7 @@
       >
       <v-list v-if="loggedIn" nav>
         <v-list-item @click.prevent="Home" value="home" class="justify-center" prepend-icon="mdi-home-city">{{ $t('nav.home') }}</v-list-item>
-        <v-list-item value="account" class="justify-center" prepend-icon="mdi-account">{{ $t('nav.account') }}</v-list-item>
+        <v-list-item @click.prevent="me" value="account" class="justify-center" prepend-icon="mdi-account">{{ $t('nav.account') }}</v-list-item>
         <v-list-item @click.prevent="logOut" value="logout" class="justify-center" prepend-icon="mdi-logout">{{ $t('nav.logout') }}</v-list-item>
       </v-list>
       <v-divider class="d-md-none" v-if="loggedIn"></v-divider>
@@ -68,6 +68,7 @@
 
 <script>
   import { useDisplay } from 'vuetify'
+  import EventBus from "@/common/EventBus";
   import UserService from "@/services/user.service";
 
   export default {
@@ -88,6 +89,14 @@
         return this.$store.state.auth.status.loggedIn;
       },
     },
+    mounted() {
+      EventBus.on("logout", () => {
+        this.logOut();
+      });
+    },
+    beforeDestroy() {
+      EventBus.remove("logout");
+    },
     methods: {
       scroll(id) {  
         document.getElementById(id).scrollIntoView({
@@ -106,16 +115,16 @@
         this.drawer = false
         this.$router.push('/');
       },
-      // me(){
-      //   UserService.getme().then(
-      //     (response) => {
-      //       console.log(response);
-      //     },
-      //     (error) => {
-      //       console.log(error);
-      //     }
-      //   );
-      // }
+      me(){
+        UserService.getme().then(
+          (response) => {
+            console.log(response);
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
+      }
     },
     watch: {
       group () {
