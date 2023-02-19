@@ -6,7 +6,7 @@
         <p class="font-weight-bold text-h4 ma-2 pa-2">
           {{ isLoginMode? $t('nav.login') : $t('login.create') }}
         </p>
-        <img class="ml-5 mr-5" src="src/assets/logo.svg" />
+        <img class="ml-5 mr-5" src="@/assets/logo.svg" />
         <p class="font-weight-bold text-h6 ma-2 pa-2">{{ $t('homepage.goal') }}</p>
         <v-spacer></v-spacer>
         <v-alert
