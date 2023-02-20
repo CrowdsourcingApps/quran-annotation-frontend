@@ -10,6 +10,8 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // For deployment
+  // base: '/quran-annotation-frontend/',
   plugins: [
     vue({ 
       template: { transformAssetUrls }
