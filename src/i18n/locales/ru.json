@@ -46,5 +46,9 @@
         "401_message":"",
         "400_message":""
     },
+    "instruction": {
+        "intro":"",
+        "start":""
+    },
     "error":""
 }

@@ -47,5 +47,9 @@
         "401_message":"Incorrect email or password",
         "400_message":"Email already registered"
     },
+    "instruction": {
+        "intro":"Before beginning contribution, we would like to provide you with some training and ensure that you are familiar with the instructions. This will help to ensure the quality of the dataset.",
+        "start":"Let's start!"
+    },
     "error":"Something went wrong!"
 }

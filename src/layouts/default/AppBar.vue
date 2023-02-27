@@ -69,7 +69,7 @@
 <script>
   import { useDisplay } from 'vuetify'
   import EventBus from "@/common/EventBus";
-  import UserService from "@/services/user.service";
+  import AuthService from "@/services/auth.service";
 
   export default {
     setup () {
@@ -116,7 +116,7 @@
         this.$router.push('/');
       },
       me(){
-        UserService.getme().then(
+        AuthService.getme().then(
           (response) => {
             console.log(response);
           },

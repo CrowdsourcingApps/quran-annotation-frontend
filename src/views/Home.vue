@@ -38,6 +38,8 @@
                            Icon="mdi-checkbox-marked-circle-outline"
                            :Description="$t('homepage.validate_recitation_description')"
                            :mdAndUpvalue="mdAndUpvalue"
+                           InsLink="/instructions/vc"
+                           :Link="vclink"
                            :xsvalue="xsvalue"/>
             </v-col>
             <v-col
@@ -83,16 +85,71 @@
 <script lang="ts">
     import HomeCard from '@/components/HomeCard.vue'
     import HomeCardComming from '@/components/HomeCardComming.vue'
+    import UserInfoService from "@/services/userinfo.service";
+    import AuthService from "@/services/auth.service";
     import { useDisplay } from 'vuetify'
 
     export default {
         components: {HomeCard, HomeCardComming},
-        setup () {
-        // Destructure only the keys we want to use
-        const { xs, mdAndUp } = useDisplay()
-        var mdAndUpvalue = mdAndUp.value
-        var xsvalue = xs.value
-        return { mdAndUpvalue,xsvalue }
-        }
+        data: () =>({
+            vclink: "/instructions/vc"
+        }),
+        setup () 
+        {
+            // get screen size values
+            // Destructure only the keys we want to use
+            const { xs, mdAndUp } = useDisplay()
+            var mdAndUpvalue = mdAndUp.value
+            var xsvalue = xs.value
+            return { mdAndUpvalue,xsvalue}
+        },
+        computed: {
+            loggedIn() {
+                return this.$store.state.auth.status.loggedIn;
+            },
+        },
+        created() {
+            if (this.loggedIn) {
+                // get user info
+                var vcvisited = UserInfoService.getVisitVCInstructions()
+                if(vcvisited === undefined) {
+                    // call user service
+                    AuthService.getme().then(
+                    (response) => {
+                        var data = response.data
+                        if(data.validate_correctness_exam_pass === false){
+                            data.vc_Instructions = false
+                            vcvisited = false
+                            this.vclink = "/instructions/vc"
+                        } else {
+                            data.vc_Instructions = true
+                            vcvisited = true
+                            this.vclink = "/task/vc"
+                        }
+                        UserInfoService.setUserInfo(data)
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                    );
+                }
+                else{
+                    if(vcvisited === false) {
+                    this.vclink = "/instructions/vc"
+                    }
+                    else {
+                        // visited true
+                        var vcpass = UserInfoService.getValidateCorrectnessResult()
+                        if(vcpass){
+                            this.vclink = "/task/vc"
+                        }
+                        else{
+                            this.vclink = "/train/vc"
+                        }
+                    }
+                }  
+                
+            }
+        },
     }
 </script>

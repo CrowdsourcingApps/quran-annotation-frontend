@@ -116,7 +116,7 @@
         if(this.isLoginMode) {
           this.$store.dispatch("auth/login", this.user).then(
             () => {
-              this.$router.push('/')
+              this.$router.replace(this.$route.query.redirect || '/');
             },
             (error) => {
               this.loading = false;
@@ -130,7 +130,7 @@
         else{
           this.$store.dispatch("auth/register", this.user).then(
             () => {
-              this.$router.push('/')
+              this.$router.replace(this.$route.query.redirect || '/');
             },
             (error) => {
               this.loading = false;
