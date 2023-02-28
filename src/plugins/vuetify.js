@@ -22,6 +22,10 @@ export default createVuetify({
           secondary: '#0000', 
           info: '#4C7DCA',
           success: '#5FD083',
+          fail: '#F79191',
+          blue: '#6daed4',
+          invalid:'#AA9393',
+          invalidoption: '#796767'
         },
       },
     },

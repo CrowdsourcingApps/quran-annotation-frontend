@@ -50,5 +50,19 @@
         "intro":"",
         "start":""
     },
+    "trainning":{
+        "listen":"",
+        "recited_correctly":"",
+        "what_problem":"",
+        "correct":"",
+        "incorrect":"",
+        "problem":"",
+        "empty":"",
+        "different":"",
+        "multiple":"",
+        "back":"",
+        "correct_answer":"",
+        "Incorrect_answer":""
+    },
     "error":""
 }

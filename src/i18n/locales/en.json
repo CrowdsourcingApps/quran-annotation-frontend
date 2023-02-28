@@ -51,5 +51,19 @@
         "intro":"Before beginning contribution, we would like to provide you with some training and ensure that you are familiar with the instructions. This will help to ensure the quality of the dataset.",
         "start":"Let's start!"
     },
+    "trainning":{
+        "listen":"Please listen to the following audio:",
+        "recited_correctly":"Did the reciter read the following verse / duaa correctly?",
+        "what_problem":"What is the problem?",
+        "correct":"Correct",
+        "incorrect":"Has mistakes",
+        "problem":"Invalid Audio",
+        "empty":"Empty / Not related",
+        "different":"Different Verse",
+        "multiple":"Multiple Verses",
+        "back":"Back to previous",
+        "correct_answer":"Correct",
+        "Incorrect_answer":"Incorrect"
+    },
     "error":"Something went wrong!"
 }

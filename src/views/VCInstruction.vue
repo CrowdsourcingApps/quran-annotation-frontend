@@ -26,7 +26,6 @@
     created () {
         if(this.loggedIn){
             var visited = UserInfoService.getVisitVCInstructions()
-            console.log("visited "+visited)
             if(!visited)
                 UserInfoService.updateVisitVCInstructions()
         }

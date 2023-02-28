@@ -25,20 +25,21 @@ const routes = [
     path: '/login',
     component: () => import(/* webpackChunkName: "login" */ '@/views/Login.vue'),
   },
-  {
-    path: '/train/vc',
-    component: () => import(/* webpackChunkName: "vctrain" */ '@/views/VCTrain.vue'),
-  }
   // {
-  //   path: '/train',
-  //   children: [
-  //     {
-  //       path: '/vc',
-  //       name: 'vctrain',
-  //       component: () => import(/* webpackChunkName: "vctrain" */ '@/views/VCTrain.vue')
-  //     }
-  //   ]
+  //   path: '/train/vc',
+  //   component: () => import(/* webpackChunkName: "vctrain" */ '@/views/VCTrain.vue'),
   // }
+  {
+    path: '/train',
+    component: () => import('@/layouts/training/Default.vue'),
+    children: [
+      {
+        path: 'vc',
+        name: 'vctrain',
+        component: () => import(/* webpackChunkName: "vctrain" */ '@/views/VCTrain.vue')
+      }
+    ]
+  }
 ]
 
 const router = createRouter({
