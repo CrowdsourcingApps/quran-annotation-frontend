@@ -62,8 +62,28 @@
         "different":"Different Verse",
         "multiple":"Multiple Verses",
         "back":"Back to previous",
+        "next": "Next",
         "correct_answer":"Correct",
-        "Incorrect_answer":"Incorrect"
+        "Incorrect_answer":"Incorrect",
+        "multiple_feedback":"When the reader reads several verses, we choose this answer regardless of whether the reading is correct or not.",
+        "correct_feedback":"The answer is correct when the pronunciation is correct with the phonetix, regardless of the rules of Tajweed.",
+        "incorrect_feedback": "The answer is incorrect when the pronunciation is wrong with the phonetix, regardless of the rules of Tajweed.",
+        "empty_feedback": "When the content of the audio clip is incomprehensible or contains words that have nothing to do with the Quran or empty, we choose this answer.",
+        "different_feedback": "We choose this answer when the audio clip contains words related to the Quran, but not the given verse",
+        "answer_correct_is":"The correct answer is",
+        "404_message":"No tasks available for trainning. please try later",
+        "400_message":"You already pass the trainning"
+    },
+    "trainning_session":{
+        "completed":"You have completed the training session!",
+        "Points": "You answered correctly",
+        "ready": "You are now ready to strat your real contribution.",
+        "train_again": "You need a little training yet to start your real contribution",
+        "try": "Train now",
+        "contribute": "Contribute now"
+    },
+    "support":{
+        "mash": "Ma Sha'Allah!"
     },
     "error":"Something went wrong!"
 }

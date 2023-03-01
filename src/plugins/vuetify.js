@@ -25,7 +25,8 @@ export default createVuetify({
           fail: '#F79191',
           blue: '#6daed4',
           invalid:'#AA9393',
-          invalidoption: '#796767'
+          invalidoption: '#796767',
+          gold:"#FFD700"
         },
       },
     },

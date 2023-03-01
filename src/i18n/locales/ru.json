@@ -61,8 +61,28 @@
         "different":"",
         "multiple":"",
         "back":"",
+        "next": "",
         "correct_answer":"",
-        "Incorrect_answer":""
+        "Incorrect_answer":"",
+        "multiple_feedback":"",
+        "correct_feedback":"",
+        "incorrect_feedback": "",
+        "empty_feedback": "",
+        "different_feedback": "",
+        "answer_correct_is":"",
+        "404_message":"",
+        "400_message":""
+    },
+    "trainning_session":{
+        "completed":"",
+        "Points": "",
+        "ready": "",
+        "train_again": "",
+        "try": "",
+        "contribute": ""
+    },
+    "support":{
+        "mash": ""
     },
     "error":""
 }
