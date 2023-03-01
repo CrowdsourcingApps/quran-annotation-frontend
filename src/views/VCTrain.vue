@@ -137,7 +137,7 @@
             <v-row style="margin: 15px;">
                 <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">{{ $t('homepage.instructions') }}</v-btn>
                 <v-spacer></v-spacer>
-                <v-btn @click="next()" v-if="index!=6" variant="text" color="info" prepend-icon="mdi-chevron-left">{{ $t('trainning.next') }}</v-btn>
+                <v-btn @click="next()" v-if="index!=6" variant="text" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('trainning.next') }}</v-btn>
             </v-row>
         </v-col>
         <v-col col="1" sm="3">
