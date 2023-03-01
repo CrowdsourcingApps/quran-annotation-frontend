@@ -1,5 +1,18 @@
 <template>
    <!-- Put error component-->
+   <v-row v-if="error" style="margin-top: 50px;">
+        <v-col cols="1" sm="3"></v-col>
+        <v-col col ="10" sm="6">
+            <v-alert
+                style="background-color: #F79191 !important; color: #fff !important;"
+                density="compact"
+                type="warning"
+                :title="$t('execuse')"
+                :text="$t(error)"
+            ></v-alert>
+        </v-col>
+        <v-col cols="1" sm="3"></v-col>
+   </v-row>
    <!-- Put card you made it or try again-->
    <v-row v-if="end" style="margin-top: 50px;">
         <v-col cols="1" sm="3"></v-col>
@@ -16,8 +29,13 @@
                 <v-card-text> {{$t('trainning_session.Points')+ " "+this.correct_answers+" / 7"  }}</v-card-text>
                 <v-card-text class="text-h5" v-if="end_result"> {{$t('trainning_session.ready')}} </v-card-text>
                 <v-card-text v-if="!end_result"> {{$t('trainning_session.train_again')}} </v-card-text>
-                <v-btn color="success" style="margin: 10px; color: #fff !important;">
-                        {{ end_result? $t('trainning_session.contribute') : $('trainning_session.try') }}
+                <v-btn v-if="end_result"  style="margin: 10px; color: #fff !important;" color="success" 
+                        to="/task/vc">
+                        {{ $t('trainning_session.contribute')}}
+                </v-btn>
+                <v-btn v-if="!end_result"  style="margin: 10px; color: #fff !important;" color="success" 
+                       @click="reloadPage()">
+                        {{ $t('trainning_session.try') }}
                 </v-btn>
             </v-card>
         </v-col>
@@ -29,7 +47,7 @@
             <v-progress-circular indeterminate :size="51" :width="7"></v-progress-circular>
         </v-col>
    </v-row>
-    <v-row v-if="!loading && !end" style="justify-content: center">
+    <v-row v-if="!loading && !end && !error" style="justify-content: center">
         <v-col cols="12" sm="6">
             <v-timeline line-inset="50" direction="horizontal" >
                     <v-timeline-item size="small" :dot-color="q1">
@@ -49,7 +67,7 @@
             </v-timeline> 
         </v-col>
     </v-row>
-    <v-row v-if="!loading && !end" style="margin-top: 0px;">
+    <v-row v-if="!loading && !end && !error" style="margin-top: 0px;">
         <v-col cols="1" sm="3">
         </v-col>
         <v-col cols="10" sm="6">
@@ -57,10 +75,6 @@
                 <v-card-text class="ma-2 pa-2">
                 {{ $t('trainning.listen')  }} 
             </v-card-text>
-                <!-- <audio controls id="myVideo" autoplay loop  hidden>
-                    <source :src="currnet.audio_file_name" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio> -->
                 <v-btn @click="playAudio()"
                         class="mr-3"
                         variant="outlined"
@@ -156,7 +170,7 @@
       answers: [],
       disabled: false,
       end: false,
-      end_result: true,
+      end_result: null,
       correct_answers: 0,
       audio: null,
     }),
@@ -167,22 +181,31 @@
         toggleProblem(){
             this.problem = !this.problem;
         },
+        reloadPage(){
+            window.location.reload()
+        },
         getTrainningTasks() {
             ControlTasksService.get_validate_correctness().then(
                 (response) => {
+                    console.log(response);
                     this.questions = response.data;
-                    this.currnet = this.questions[0]
+                    this.currnet = this.questions[0];
                     this.loading = false;
                 },
                 (error) => {
                     if(error.response.status === 404)
-                        this.message = this.$t('trainning.404_message')
+                        this.error = 'trainning.404_message'
                     else if(error.response.status === 400){
-                        //if error.response.
-                        // TODO
+                        const message = error.response.data.detail
+                        if(message === 'Participant already pass the entrance exam')
+                            this.error = 'trainning.400_message'
+                        else
+                            // "Participant not allowed to attempt more than 5 times"
+                            this.error = 'trainning.404_message'
                     }
                     else
-                        this.error = this.$t('error')
+                        this.error = 'error'
+                    this.loading = false;
                 }
             );
         },
@@ -220,14 +243,40 @@
             // see if it's the last questions
             if(this.index === 6){
                 // submit answers
-                // show the result 
-                this.end = true;
-                console.log("submit to save answers")
+                this.loading = true;
+                ControlTasksService.save_validate_correctness_answers(this.answers)
+                .then(
+                    (response) => {
+                    const result = response.data.pass_exam;
+                    if(result===true)
+                        this.end_result = true;
+                    else
+                        this.end_result = false;
+                    // show the result 
+                    this.end = true;
+                    this.loading = false;
+                },
+                (error) => {
+                    if(error.response.status === 400){
+                        const message = error.response.data.detail
+                        if(message === 'Participant already pass the entrance exam')
+                            this.error = 'trainning.400_message'
+                        else
+                            // "Participant's answers should be equal to 7"
+                            this.error = 'error'
+                    }
+                    else
+                        this.error = 'error'
+                    this.loading = false;
+                }
+                );
+
             }      
         },
         next(){
             this.message = null;
-            this.audio.pause();
+            if(this.audio)
+                this.audio.pause();
             this.loading = true;
             this.problem = false;
             this.index = this.index +1;

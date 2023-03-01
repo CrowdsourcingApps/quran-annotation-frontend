@@ -6,7 +6,8 @@
         "home":"Home",
         "login":"Login",
         "logout":"Logout",
-        "register":"Login/Signup"
+        "register":"Login/Signup",
+        "account":"My account"
     },
     "footer":{
         "help":"Help us find other contributes",
@@ -85,5 +86,6 @@
     "support":{
         "mash": "Ma Sha'Allah!"
     },
-    "error":"Something went wrong!"
+    "error":"Something went wrong!",
+    "execuse": "Ops!"
 }
