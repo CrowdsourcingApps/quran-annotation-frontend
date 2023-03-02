@@ -9,7 +9,9 @@
             <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">{{ $t('homepage.goal') }}</p>
             <p class="text-h6 text-sm-subtitle-1 ma-2 pa-2">{{ $t('homepage.AI') }}</p>
             <div class="d-flex align-center ma-2 pa-2">
-                <v-btn v-if="!loggedIn" color="secondary" style="background-color: black;" to="/login">{{ $t('nav.login') }}</v-btn>
+                <v-btn v-if="!loggedIn" style="background-color:#5FD083; color: #fff;" to="/login">{{ $t('nav.login') }}</v-btn>
+                <v-btn v-if="loggedIn" style="background-color:#5FD083; color: #fff;"
+                @click="scroll('contribute_section')">{{ $t('nav.contribute') }}</v-btn>
                 <p class="text-subtitle-1 text-sm-caption ma-2 pa-2">{{ $t('homepage.statistics') }}</p>
             </div>
             </v-col>
@@ -102,6 +104,13 @@
             var mdAndUpvalue = mdAndUp.value
             var xsvalue = xs.value
             return { mdAndUpvalue,xsvalue}
+        },
+        methods:{
+            scroll(id) {  
+                document.getElementById(id).scrollIntoView({
+                behavior: "smooth"
+                });
+            }
         },
         computed: {
             loggedIn() {
