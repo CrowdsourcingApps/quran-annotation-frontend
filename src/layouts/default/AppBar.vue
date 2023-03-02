@@ -99,6 +99,10 @@
     },
     methods: {
       scroll(id) {  
+        if(this.$route.path!=='/')
+        {
+          this.$router.push('/');
+        }
         document.getElementById(id).scrollIntoView({
           behavior: "smooth"
         });
