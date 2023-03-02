@@ -14,9 +14,9 @@
         </v-card-item>
 
         <v-card-actions>
-            <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">{{ $t('homepage.instructions') }}</v-btn>
+            <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline"  :to="InsLink">{{ $t('homepage.instructions') }}</v-btn>
             <v-spacer></v-spacer>
-            <v-btn style="background-color:#5FD083; color: #fff;" :prepend-icon="Icon">
+            <v-btn style="background-color:#5FD083; color: #fff;" :prepend-icon="Icon" :to="Link">
                 {{ $t('homepage.try_it')  }}
             </v-btn>
         </v-card-actions>
@@ -24,6 +24,6 @@
 </template>
 <script lang="ts">
     export default {
-        props: ['Title','Icon','Description', 'mdAndUpvalue', 'xsvalue'],
+        props: ['Title','Icon','Description', 'mdAndUpvalue', 'xsvalue','InsLink', 'Link'],
     }
 </script>

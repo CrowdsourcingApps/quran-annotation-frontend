@@ -6,7 +6,8 @@
         "home":"Главная",
         "login":"Авторизоваться",
         "logout":"Выйти",
-        "register":"Войти/Зарегестрироваться"
+        "register":"Войти/Зарегестрироваться",
+        "account":""
     },
     "footer":{
         "help":"Помогите нам найти других участников",
@@ -46,5 +47,45 @@
         "401_message":"",
         "400_message":""
     },
-    "error":""
+    "instruction": {
+        "intro":"",
+        "start":""
+    },
+    "trainning":{
+        "listen":"",
+        "recited_correctly":"",
+        "what_problem":"",
+        "correct":"",
+        "incorrect":"",
+        "problem":"",
+        "empty":"",
+        "different":"",
+        "multiple":"",
+        "back":"",
+        "next": "",
+        "correct_answer":"",
+        "Incorrect_answer":"",
+        "multiple_feedback":"",
+        "correct_feedback":"",
+        "incorrect_feedback": "",
+        "empty_feedback": "",
+        "different_feedback": "",
+        "answer_correct_is":"",
+        "404_message":"",
+        "400_message":"",
+        "close": ""
+    },
+    "trainning_session":{
+        "completed":"",
+        "Points": "",
+        "ready": "",
+        "train_again": "",
+        "try": "",
+        "contribute": ""
+    },
+    "support":{
+        "mash": ""
+    },
+    "error":"",
+    "execuse": ""
 }

@@ -1,5 +1,7 @@
 import axios from 'axios';
 import TokenService from "./token.service";
+import UserInfoService from "./userinfo.service";
+import api from './api';
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -26,6 +28,7 @@ class AuthService {
 
   logout() {
     TokenService.removeUser();
+    UserInfoService.removeUserInfo();
   }
 
   register(user) {
@@ -56,6 +59,10 @@ class AuthService {
         }
         return response;
       })
+  }
+
+  getme() {
+    return api.get('me');
   }
 }
 
