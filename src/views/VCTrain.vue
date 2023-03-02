@@ -135,7 +135,21 @@
                 </v-col>
             </v-row>
             <v-row style="margin: 15px;">
-                <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">{{ $t('homepage.instructions') }}</v-btn>
+                <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">
+                    {{ $t('homepage.instructions') }}
+                    <v-dialog
+                        v-model="Instructions_dialog"
+                        activator="parent"
+                        width="auto"
+                    >
+                        <v-card>
+                            <VcInstructions :Showstart=false />
+                            <v-card-actions>
+                                <v-btn color="invalid" block @click="Instructions_dialog = false">{{ $t('trainning.close') }}</v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+                </v-btn>
                 <v-spacer></v-spacer>
                 <v-btn @click="next()" v-if="index!=6" variant="text" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('trainning.next') }}</v-btn>
             </v-row>
@@ -148,7 +162,9 @@
  import Question from "@/models/question"
  import quran from "@/Quran.json"
  import ControlTasksService from "@/services/controltasks.service"
+ import VcInstructions from '@/components/VcInstructions.vue';
  export default {
+    components: {VcInstructions},
     data: () => ({
       error : null,
       loading: true,
@@ -173,6 +189,7 @@
       end_result: null,
       correct_answers: 0,
       audio: null,
+      Instructions_dialog: false,
     }),
     created(){
         this.getTrainningTasks();
@@ -187,7 +204,6 @@
         getTrainningTasks() {
             ControlTasksService.get_validate_correctness().then(
                 (response) => {
-                    console.log(response);
                     this.questions = response.data;
                     this.currnet = this.questions[0];
                     this.loading = false;

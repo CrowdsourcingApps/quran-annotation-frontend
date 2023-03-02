@@ -73,7 +73,8 @@
         "different_feedback": "We choose this answer when the audio clip contains words related to the Quran, but not the given verse",
         "answer_correct_is":"The correct answer is",
         "404_message":"No tasks available for trainning. please try later",
-        "400_message":"You already pass the trainning"
+        "400_message":"You already pass the trainning",
+        "close": "Close"
     },
     "trainning_session":{
         "completed":"You have completed the training session!",

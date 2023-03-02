@@ -72,7 +72,8 @@
         "different_feedback": "",
         "answer_correct_is":"",
         "404_message":"",
-        "400_message":""
+        "400_message":"",
+        "close": ""
     },
     "trainning_session":{
         "completed":"",
