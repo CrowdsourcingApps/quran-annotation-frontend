@@ -19,7 +19,7 @@
         "statistics":"Over 1000 audios are waiting your contribution",
         "contribute":"Contribute Now",
         "validate_recitation":"Validate recitation",
-        "validate_recitation_description":"Listen to an audio of an ayah, check if it’s recited correctly.",
+        "validate_recitation_description":"Listen to an audio of a verse, check if it’s recited correctly.",
         "transcribe_recitation":"Transcribe recitation",
         "transcribe_recitation_description":"Type exactly what you hear including the mistakes.",
         "validate_transcription":"Validate transcription",
@@ -84,8 +84,17 @@
         "try": "Train now",
         "contribute": "Contribute now"
     },
+    "tasks":{
+        "404_message":"No more tasks to solve. Come later!",
+        "400_message": "You should pass the trainning first",
+        "completed":"You helped us get closer to our goal!",
+        "contribution_today":"You contributed today with",
+        "tasks": "verses",
+        "contribute_again":"Contribute again"
+    },
     "support":{
-        "mash": "Ma Sha'Allah!"
+        "mash": "Ma Sha'Allah!",
+        "jazak": "Jazakallah khair!"
     },
     "error":"Something went wrong!",
     "execuse": "Ops!"

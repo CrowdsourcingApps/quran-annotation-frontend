@@ -10,8 +10,7 @@ class ControlTasksService {
     save_validate_correctness_answers(answers){
         return api
             .post(URL+'validate_correctness/answers',answers)
-            .then(response => {
-                console.log(response);                
+            .then(response => {          
                 if (response.data.pass_exam === true) {
                     UserInfoService.updateValidateCorrectnessExamPass();
                 }

@@ -83,8 +83,17 @@
         "try": "",
         "contribute": ""
     },
+    "tasks":{
+        "404_message":"",
+        "400_message": "",
+        "completed":"",
+        "contribution_today":"",
+        "tasks": "",
+        "contribute_again":""
+    },
     "support":{
-        "mash": ""
+        "mash": "",
+        "jazak": ""
     },
     "error":"",
     "execuse": ""
