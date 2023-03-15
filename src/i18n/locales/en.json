@@ -52,6 +52,10 @@
         "intro":"Before beginning contribution, we would like to provide you with some training and ensure that you are familiar with the instructions. This will help to ensure the quality of the dataset.",
         "start":"Let's start!"
     },
+    "validate_instruction":{
+        "task":"",
+        "options":""
+    },
     "trainning":{
         "listen":"Please listen to the following audio:",
         "recited_correctly":"Did the reciter read the following verse / duaa correctly?",

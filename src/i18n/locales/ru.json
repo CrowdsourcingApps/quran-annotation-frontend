@@ -51,6 +51,9 @@
         "intro":"",
         "start":""
     },
+    "validate_instruction":{
+        "task":""
+    },
     "trainning":{
         "listen":"",
         "recited_correctly":"",
