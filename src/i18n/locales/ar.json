@@ -111,7 +111,8 @@
         "completed":"لقد ساعدتنا في الإقتراب من الوصول إلى هدفنا!",
         "contribution_today":"لقد ساهمت اليوم ب",
         "tasks": "آيات",
-        "contribute_again":"ساهم مجدداً"
+        "contribute_again":"ساهم مجدداً",
+        "skip":"تخطي"
     },
     "support":{
         "mash": "ما شاء الله!",

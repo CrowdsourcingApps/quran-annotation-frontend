@@ -173,9 +173,9 @@
                                         :correct="true"
                                         :incorrect="true"
                                         :has_prob="true"
-                                        :different="true"
+                                        :different="false"
                                         :multiple="true"
-                                        :empty="false"
+                                        :empty="true"
                                     />
                                 </v-col>
                             </v-row>
@@ -219,8 +219,8 @@
                                         :incorrect="true"
                                         :has_prob="true"
                                         :different="true"
-                                        :multiple="true"
-                                        :empty="false"
+                                        :multiple="false"
+                                        :empty="true"
                                     />
                                 </v-col>
                             </v-row>

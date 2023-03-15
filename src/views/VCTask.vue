@@ -14,7 +14,7 @@
                 <v-card-text class=" text-h5 ma-2 pa-2" style="text-align: center;line-height: 2.25rem;">
                     {{ $t('tasks.completed')  }} 
                 </v-card-text>
-                <v-card-text> {{$t('tasks.contribution_today')+ " "+this.questions.length+" "+ $t('tasks.tasks')  }}</v-card-text>
+                <v-card-text> {{$t('tasks.contribution_today')+ " "+this.answers.length+" "+ $t('tasks.tasks')  }}</v-card-text>
                 <v-card-text class="text-h5" v-if="end_result"> {{$t('trainning_session.ready')}} </v-card-text>
                 <v-btn style="margin: 10px; color: #fff !important;" color="success" 
                        @click="reloadPage()">
@@ -103,7 +103,7 @@
                 </v-btn>
                 <v-spacer></v-spacer>
                 <!-- Here we should put report button-->
-                <!-- <v-btn @click="next()" v-if="index!=this.questions.length-1" variant="text" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('trainning.next') }}</v-btn> -->
+                <v-btn @click="skip()" v-if="index!=this.questions.length" variant="text" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('tasks.skip') }}</v-btn>
             </v-row>
         </v-col>
         <v-col col="1" sm="3">
@@ -197,6 +197,26 @@ import Question from "@/models/question"
             this.time_line_colors[this.index] = 'blue';
             this.disabled = false;
             this.loading = false;
+        },
+        skip(){
+            if(this.audio)
+                this.audio.pause();
+            this.loading = true;
+            this.problem = false;
+            this.time_line_colors[this.index] = 'fail';
+            // see if it's the last questions
+            if(this.index === this.questions.length - 1){
+                // submit answers
+                this.loading = true;
+                this.saveAnswers()
+            }
+            else{
+                this.index = this.index +1;
+                this.currnet = this.questions[this.index];
+                this.time_line_colors[this.index] = 'blue';
+                this.disabled = false;
+                this.loading = false;
+            }
         },
         playAudio(){
             this.audio = new Audio('http://'+this.currnet.audio_file_name);

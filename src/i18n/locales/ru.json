@@ -96,7 +96,8 @@
         "completed":"",
         "contribution_today":"",
         "tasks": "",
-        "contribute_again":""
+        "contribute_again":"",
+        "skip":""
     },
     "support":{
         "mash": "",
