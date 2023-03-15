@@ -49,10 +49,14 @@
     },
     "instruction": {
         "intro":"",
-        "start":""
+        "start":"",
+        "examples": "",
+        "calm": "",
+        "summary": ""
     },
     "validate_instruction":{
-        "task":""
+        "task":"",
+        "options":""
     },
     "trainning":{
         "listen":"",
@@ -99,5 +103,5 @@
         "jazak": ""
     },
     "error":"",
-    "execuse": ""
+    "excuse": ""
 }

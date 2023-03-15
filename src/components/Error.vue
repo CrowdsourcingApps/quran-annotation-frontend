@@ -6,7 +6,7 @@
                 style="background-color: #F79191 !important; color: #fff !important;"
                 density="compact"
                 type="warning"
-                :title="$t('execuse')"
+                :title="$t('excuse')"
                 :text="$t(error)"
             ></v-alert>
         </v-col>
