@@ -18,8 +18,8 @@
                 <v-col key=2 cols="10" sm="6">
                     <p class="text-h6 text-sm-subtitle-1">
                         <span style="color:#AA9393;font-weight:bold;">
-                            {{ $t('validate_instruction.problem') }}
-                        </span>{{ $t('validate_instruction.problem_options') }}
+                            {{ $t('validate_instruction.problem') }}:
+                        </span>{{ $t('validate_instruction.problem_options') }} 
                     </p>
                     <v-row>
                         <v-col cols="1"></v-col>
@@ -29,7 +29,11 @@
                                     {{ $t('validate_instruction.empty') }}
                                 </span>: {{ $t('trainning.empty_feedback') }}
                             </p>
-                            <p class="text-h6 text-sm-subtitle-1"> <span style="color:#4C7DCA;font-weight:bold;">{{ $t('instruction.examples') }}:</span></p>
+                            <p class="text-h6 text-sm-subtitle-1"> 
+                                <span style="color:#4C7DCA;font-weight:bold;">
+                                    {{ $t('instruction.examples') }}
+                                </span>
+                            </p>
                             <p class="text-h6 text-sm-subtitle-1 ma-2" style="text-align: center;">
                                 {{ $t('validate_instruction.not_arabic') }}
                             </p>
@@ -142,7 +146,7 @@
                             </p>
                             <p class="text-h6 text-sm-subtitle-1">
                                 <span style="color:#4C7DCA;font-weight:bold;">
-                                    {{ $t('instruction.examples') }}:
+                                    {{ $t('instruction.examples') }}
                                 </span>
                             </p>
                             <v-row>
@@ -187,7 +191,7 @@
                             </p>
                             <p class="text-h6 text-sm-subtitle-1">
                                 <span style="color:#4C7DCA;font-weight:bold;">
-                                    {{ $t('instruction.examples') }}:
+                                    {{ $t('instruction.examples') }}
                                 </span>
                             </p>
                             <v-row>
@@ -229,7 +233,7 @@
                     </p>
                     <p class="text-h6 text-sm-subtitle-1">
                         <span style="color:#4C7DCA;font-weight:bold;">
-                            {{ $t('instruction.examples') }}:
+                            {{ $t('instruction.examples') }}
                         </span>
                     </p>
                     <v-row>
@@ -269,7 +273,7 @@
                     </p>
                     <p class="text-h6 text-sm-subtitle-1">
                         <span style="color:#4C7DCA;font-weight:bold;">
-                            {{ $t('instruction.examples') }}:
+                            {{ $t('instruction.examples') }}
                         </span>
                     </p>
                     <v-row>
@@ -303,7 +307,7 @@
                         </v-col>
                     </v-row>
                     <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2" style="color:#FFD700">
-                        {{ $t('instruction.summary') }}:
+                        {{ $t('instruction.summary') }}
                     </p>
                     <p class="text-h6 text-sm-subtitle-1"> 
                         {{ $t('validate_instruction.one') }}
