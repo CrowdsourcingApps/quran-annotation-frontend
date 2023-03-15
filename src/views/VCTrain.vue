@@ -145,7 +145,10 @@
                     </v-dialog>
                 </v-btn>
                 <v-spacer></v-spacer>
-                <v-btn @click="next()" v-if="index!=6" variant="text" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('trainning.next') }}</v-btn>
+                <v-btn @click="next()" v-if="index!=6" variant="text" color="info" 
+                    :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right'"
+                    :disabled="next_disable">
+                    {{ $t('trainning.next') }}</v-btn>
             </v-row>
         </v-col>
         <v-col col="1" sm="3">
@@ -185,6 +188,7 @@
       correct_answers: 0,
       audio: null,
       Instructions_dialog: false,
+      next_disable: true
     }),
     created(){
         this.getTrainningTasks();
@@ -221,6 +225,7 @@
             );
         },
         setAnswer(label){
+            this.next_disable = false;
             this.disabled = true;
             let newAnswer = {
                             id: this.currnet.id,
@@ -286,6 +291,7 @@
         },
         next(){
             this.message = null;
+            this.next_disable = true;
             if(this.audio)
                 this.audio.pause();
             this.loading = true;
