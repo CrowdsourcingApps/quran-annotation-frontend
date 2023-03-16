@@ -25,10 +25,6 @@ const routes = [
     path: '/login',
     component: () => import(/* webpackChunkName: "login" */ '@/views/Login.vue'),
   },
-  // {
-  //   path: '/train/vc',
-  //   component: () => import(/* webpackChunkName: "vctrain" */ '@/views/VCTrain.vue'),
-  // }
   {
     path: '/train',
     component: () => import('@/layouts/training/Default.vue'),
@@ -37,6 +33,18 @@ const routes = [
         path: 'vc',
         name: 'vctrain',
         component: () => import(/* webpackChunkName: "vctrain" */ '@/views/VCTrain.vue')
+      }
+    ]
+  },
+  ,
+  {
+    path: '/task',
+    component: () => import('@/layouts/training/Default.vue'),
+    children: [
+      {
+        path: 'vc',
+        name: 'vctask',
+        component: () => import(/* webpackChunkName: "vctask" */'@/views/VCTask.vue')
       }
     ]
   }

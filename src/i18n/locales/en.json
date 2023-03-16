@@ -11,15 +11,15 @@
     },
     "footer":{
         "help":"Help us find other contributes",
-        "license":"Content are available under MIT license"
+        "license":"Content is available under MIT license"
     },
     "homepage":{
         "goal":"Contribute to a large open-source Quran dataset",
         "AI":"This dataset allows to build intelligent AI-based learning apps for Quran",
-        "statistics":"Over 1000 audios are waiting your contribution",
+        "statistics":"Over 1000 audios are waiting for your contribution",
         "contribute":"Contribute Now",
         "validate_recitation":"Validate recitation",
-        "validate_recitation_description":"Listen to an audio of an ayah, check if it’s recited correctly.",
+        "validate_recitation_description":"Listen to an audio of a verse, check if it’s recited correctly.",
         "transcribe_recitation":"Transcribe recitation",
         "transcribe_recitation_description":"Type exactly what you hear including the mistakes.",
         "validate_transcription":"Validate transcription",
@@ -49,12 +49,33 @@
         "400_message":"Email already registered"
     },
     "instruction": {
-        "intro":"Before beginning contribution, we would like to provide you with some training and ensure that you are familiar with the instructions. This will help to ensure the quality of the dataset.",
-        "start":"Let's start!"
+        "intro":"Before beginning your contribution, we would like to provide you with some training and ensure that you are familiar with the instructions. This will help to ensure the quality of the dataset.",
+        "start":"Let's start!",
+        "examples": "Examples",
+        "calm": "It is preferable to do the task in a quiet environment and with headphones. If necessary, listen to the recording several times.",
+        "summary": "Summary"
+    },
+    "validate_instruction":{
+        "task": "What is required at this stage is to listen to an audio clip of a Verse or Duaa, then click on the option that describes the audio.",
+        "options":"The available options are: Correct, Has mistakes, Invalid Audio",
+        "problem":"1.Invalid Audio.",
+        "problem_options": "<Invalid Audio> is selected if the audio contains one of the following cases:",
+        "empty":"A.Empty / Not related",
+        "empty_example":"empty",
+        "not_arabic": "Words related to the Quran/Duaa, but not in Arabic.",
+        "not_related": "Not related to the Quran/Duaa.",
+        "different":"B.Different Verse",
+        "multiple":"C.Multiple Verses",
+        "incorrect":"2.Has mistakes",
+        "correct":"3.Correct",
+        "one": "1. Listen to the audio recording and read the given verse.",
+        "tow":"2.Check if there the audio is invalid as we explained earlier. If so, click <Invalid Audio> and then specify what exactly the problem.",
+        "three":"3. If there is no problem with the audio. Check if the audio contains errors. Click <Has mistakes> if it does.",
+        "four": "4. If there are no errors, the recitation is correct. Click <Correct>."
     },
     "trainning":{
         "listen":"Please listen to the following audio:",
-        "recited_correctly":"Did the reciter read the following verse / duaa correctly?",
+        "recited_correctly":"Did the reciter read the following Verse / Duaa correctly?",
         "what_problem":"What is the problem?",
         "correct":"Correct",
         "incorrect":"Has mistakes",
@@ -67,26 +88,36 @@
         "correct_answer":"Correct",
         "Incorrect_answer":"Incorrect",
         "multiple_feedback":"When the reader reads several verses, we choose this answer regardless of whether the reading is correct or not.",
-        "correct_feedback":"The answer is correct when the pronunciation is correct with the phonetix, regardless of the rules of Tajweed.",
-        "incorrect_feedback": "The answer is incorrect when the pronunciation is wrong with the phonetix, regardless of the rules of Tajweed.",
-        "empty_feedback": "When the content of the audio clip is incomprehensible or contains words that have nothing to do with the Quran or empty, we choose this answer.",
+        "correct_feedback":"The answer is correct when the pronunciation is correct with the diacritics, regardless of the rules of Tajweed.",
+        "incorrect_feedback": "The answer is incorrect when the pronunciation is wrong with the diacritics, missing the rules of Tajweed don't consider a mistake.",
+        "empty_feedback": "When the content of the audio clip is incomprehensible or contains words that have nothing to do with the Quran or empty, or related to Quran but not in Arabic, we choose this answer.",
         "different_feedback": "We choose this answer when the audio clip contains words related to the Quran, but not the given verse",
         "answer_correct_is":"The correct answer is",
-        "404_message":"No tasks available for trainning. please try later",
-        "400_message":"You already pass the trainning",
+        "404_message":"No tasks available for training. please try later",
+        "400_message":"You already pass the training",
         "close": "Close"
     },
     "trainning_session":{
         "completed":"You have completed the training session!",
         "Points": "You answered correctly",
-        "ready": "You are now ready to strat your real contribution.",
+        "ready": "You are now ready to start your real contribution.",
         "train_again": "You need a little training yet to start your real contribution",
         "try": "Train now",
         "contribute": "Contribute now"
     },
+    "tasks":{
+        "404_message":"No more tasks to solve. Come later!",
+        "400_message": "You should pass the training first",
+        "completed":"You helped us get closer to our goal!",
+        "contribution_today":"You contributed today with",
+        "tasks": "verses",
+        "contribute_again":"Contribute again",
+        "skip":"Skip"
+    },
     "support":{
-        "mash": "Ma Sha'Allah!"
+        "mash": "Ma Sha'Allah!",
+        "jazak": "Jazakallah khair!"
     },
     "error":"Something went wrong!",
-    "execuse": "Ops!"
+    "excuse": "Ops!"
 }

@@ -49,14 +49,25 @@
                 cols="12"
                 sm="6"
                 >
+                <HomeCardComming  :Title="$t('homepage.validate_Tajweed')"
+                           Icon="mdi-magnify"
+                           :Description="$t('homepage.validate_Tajweed_description')"
+                           :mdAndUpvalue="mdAndUpvalue"
+                           :xsvalue="xsvalue"/>
+            </v-col>
+            <!-- <v-col
+                key=2
+                cols="12"
+                sm="6"
+                >
                 <HomeCardComming  :Title="$t('homepage.transcribe_recitation')"
                                   Icon="mdi-feather"
                                   :Description="$t('homepage.transcribe_recitation_description')"
                                   :mdAndUpvalue="mdAndUpvalue"
                                   :xsvalue="xsvalue"/>
-            </v-col>
+            </v-col> -->
         </v-row>
-        <v-row>
+        <!-- <v-row>
             <v-col
                 key=1
                 cols="12"
@@ -79,7 +90,7 @@
                            :mdAndUpvalue="mdAndUpvalue"
                            :xsvalue="xsvalue"/>
             </v-col>
-        </v-row>
+        </v-row> -->
         <v-row style="height:200px"></v-row>
     </v-container>
 </template>

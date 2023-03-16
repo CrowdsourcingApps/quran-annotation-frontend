@@ -49,7 +49,14 @@
     },
     "instruction": {
         "intro":"",
-        "start":""
+        "start":"",
+        "examples": "",
+        "calm": "",
+        "summary": ""
+    },
+    "validate_instruction":{
+        "task":"",
+        "options":""
     },
     "trainning":{
         "listen":"",
@@ -83,9 +90,19 @@
         "try": "",
         "contribute": ""
     },
+    "tasks":{
+        "404_message":"",
+        "400_message": "",
+        "completed":"",
+        "contribution_today":"",
+        "tasks": "",
+        "contribute_again":"",
+        "skip":""
+    },
     "support":{
-        "mash": ""
+        "mash": "",
+        "jazak": ""
     },
     "error":"",
-    "execuse": ""
+    "excuse": ""
 }
