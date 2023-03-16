@@ -186,7 +186,7 @@
       end: false,
       end_result: null,
       correct_answers: 0,
-      audio: null,
+      audio: new Audio(),
       Instructions_dialog: false,
       next_disable: true
     }),
@@ -303,7 +303,7 @@
             this.loading = false;
         },
         playAudio(){
-            this.audio = new Audio('http://'+this.currnet.audio_file_name);
+            this.audio.src = 'https://'+this.currnet.audio_file_name;
             this.audio.play();
         }
     }

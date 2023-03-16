@@ -54,7 +54,7 @@
         }),
         methods:{
             playAudio(audioFileName) {
-                this.audio.src = 'http://20.115.38.12:9000/ayat-audio-bucket-dev/' + audioFileName;
+                this.audio.src = 'https://miniodev.quranvoice.live/ayat-audio-bucket-dev/' + audioFileName;
                 this.audio.play();
             }
         }

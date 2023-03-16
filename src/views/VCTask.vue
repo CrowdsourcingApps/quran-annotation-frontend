@@ -133,7 +133,7 @@ import Question from "@/models/question"
       answers: [],
       disabled: false,
       end: false,
-      audio: null,
+      audio: new Audio(),
       Instructions_dialog: false,
     }),
     created(){
@@ -219,7 +219,7 @@ import Question from "@/models/question"
             }
         },
         playAudio(){
-            this.audio = new Audio('http://'+this.currnet.audio_file_name);
+            this.audio.src = 'https://'+this.currnet.audio_file_name;
             this.audio.play();
         },
         saveAnswers(){
