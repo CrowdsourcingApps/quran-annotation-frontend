@@ -1,5 +1,5 @@
 <template>
-    <v-row>
+    <v-row id="Instructions">
         <v-col cols="12" style="text-align: center;margin-top:40px !important">
             <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">
                 {{ $t('homepage.instructions') }}
@@ -352,6 +352,13 @@
     data: () => ({
         audio : new Audio(),
     }),
+    mounted() {
+        this.$nextTick(() => {
+            document.getElementById('Instructions').scrollIntoView({
+            behavior: "smooth"
+            });
+        });
+    },
     created () {
         if(this.loggedIn){
             var visited = UserInfoService.getVisitVCInstructions()
