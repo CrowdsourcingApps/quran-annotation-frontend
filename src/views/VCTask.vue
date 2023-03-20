@@ -71,14 +71,17 @@
                     </v-btn>
                 </div>
                 <div v-if="problem" style="display: inline-grid;">
-                    <v-btn :disabled="disabled" @click="setAnswer('not_related_quran')" variant="outlined" color="invalidoption" style="margin: 10px">
-                        {{ $t('trainning.empty') }}
+                    <v-btn :disabled="disabled" @click="setAnswer('in_complete')" variant="outlined" color="invalidoption" style="margin: 10px">
+                        {{ $t('trainning.incomplete') }}
                     </v-btn>
                     <v-btn :disabled="disabled" @click="setAnswer('not_match_aya')" variant="outlined" color="invalidoption" style="margin: 10px">
                         {{ $t('trainning.different') }}
                     </v-btn>
                     <v-btn :disabled="disabled" @click="setAnswer('multiple_aya')" variant="outlined" color="invalidoption" style="margin: 10px">
                         {{ $t('trainning.multiple') }}
+                    </v-btn>
+                    <v-btn :disabled="disabled" @click="setAnswer('not_related_quran')" variant="outlined" color="invalidoption" style="margin: 10px">
+                        {{ $t('trainning.empty') }}
                     </v-btn>
                     <v-btn :disabled="disabled" @click="toggleProblem()" color="invalid" style="margin: 10px;" v-model="problem">
                         {{ $t('trainning.back') }}
