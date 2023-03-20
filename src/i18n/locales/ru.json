@@ -6,8 +6,9 @@
         "home":"Главная",
         "login":"Авторизоваться",
         "logout":"Выйти",
-        "register":"Войти/Зарегестрироваться",
-        "account":""
+        "register":"Войти",
+        "account":"",
+        "mycontribution":""
     },
     "footer":{
         "help":"Помогите нам найти других участников",
@@ -26,7 +27,7 @@
         "validate_transcription_description":"Перепроверьте правильность транскрипции, сделанной другим участником.",
         "validate_Tajweed":"Правила Таджвида",
         "validate_Tajweed_description":"Проверьте, правильно ли применяются правила Таджвида.",
-        "coming_soon":"скоро будет...",
+        "coming_soon":"скоро будет",
         "try_it":"Попробовать",
         "instructions":"Инструкции"
     },
@@ -55,8 +56,23 @@
         "summary": ""
     },
     "validate_instruction":{
-        "task":"",
-        "options":""
+        "task": "",
+        "options":"",
+        "problem":"",
+        "problem_options": "",
+        "empty":"",
+        "empty_example":"",
+        "not_arabic": "",
+        "not_related": "",
+        "different":"",
+        "multiple":"",
+        "incomplete":"",
+        "incorrect":"",
+        "correct":"",
+        "one": "",
+        "tow":"",
+        "three":"",
+        "four": ""
     },
     "trainning":{
         "listen":"",
@@ -68,10 +84,12 @@
         "empty":"",
         "different":"",
         "multiple":"",
+        "incomplete":"",
         "back":"",
         "next": "",
         "correct_answer":"",
         "Incorrect_answer":"",
+        "incomplete_feedback":"",
         "multiple_feedback":"",
         "correct_feedback":"",
         "incorrect_feedback": "",

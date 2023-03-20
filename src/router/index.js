@@ -4,7 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
+    // component: () => import('@/layouts/default/Default.vue'),
+    component: () => import('@/layouts/training/Default.vue'),
     children: [
       {
         path: '',
@@ -14,11 +15,11 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
       },
-      {
-        path: 'instructions/vc',
-        name: 'vcInstructions',
-        component: () => import(/* webpackChunkName: "vcinstruction" */ '@/views/VCInstruction.vue'),
-      }
+      // {
+      //   path: 'instructions/vc',
+      //   name: 'vcInstructions',
+      //   component: () => import(/* webpackChunkName: "vcinstruction" */ '@/views/VCInstruction.vue'),
+      // }
     ]
   },
   {
@@ -36,7 +37,6 @@ const routes = [
       }
     ]
   },
-  ,
   {
     path: '/task',
     component: () => import('@/layouts/training/Default.vue'),
@@ -45,6 +45,17 @@ const routes = [
         path: 'vc',
         name: 'vctask',
         component: () => import(/* webpackChunkName: "vctask" */'@/views/VCTask.vue')
+      }
+    ]
+  },
+  {
+    path: '/instructions',
+    component: () => import('@/layouts/training/Default.vue'),
+    children: [
+      {
+        path: 'vc',
+        name: 'vcInstructions',
+        component: () => import(/* webpackChunkName: "vcinstruction" */ '@/views/VCInstruction.vue')
       }
     ]
   }

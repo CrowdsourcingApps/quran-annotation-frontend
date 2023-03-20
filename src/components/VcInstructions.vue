@@ -1,5 +1,5 @@
 <template>
-    <v-row>
+    <v-row id="Instructions">
         <v-col cols="12" style="text-align: center;margin-top:40px !important">
             <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">
                 {{ $t('homepage.instructions') }}
@@ -24,26 +24,23 @@
                     <v-row>
                         <v-col cols="1"></v-col>
                         <v-col>
-                            <p class="text-h6 text-sm-subtitle-1">
-                                <span style="color:#796767;font-weight:bold;">
-                                    {{ $t('validate_instruction.empty') }}
-                                </span>: {{ $t('trainning.empty_feedback') }}
-                            </p>
                             <p class="text-h6 text-sm-subtitle-1"> 
+                                <span style="color:#796767;font-weight:bold;">
+                                    {{ $t('validate_instruction.incomplete') }}
+                                </span>: {{ $t('trainning.incomplete_feedback') }}
+                            </p>
+                            <p class="text-h6 text-sm-subtitle-1">
                                 <span style="color:#4C7DCA;font-weight:bold;">
                                     {{ $t('instruction.examples') }}
                                 </span>
                             </p>
-                            <p class="text-h6 text-sm-subtitle-1 ma-2" style="text-align: center;">
-                                {{ $t('validate_instruction.not_arabic') }}
-                            </p>
                             <v-row>
                                 <v-col cols="12" sm="6">
                                     <ValidateQuestion  :problem="false"
                                         :audio = "audio" 
-                                        audio-file-name="c22efe37-4589-492e-9f7f-01c3a31718c9.wav" 
-                                        surra_number="110" 
-                                        aya_number="2"
+                                        audio-file-name="b3d414da-c7b2-4254-9e4a-1afddfe66d20.wav" 
+                                        surra_number="999001" 
+                                        aya_number="1"
                                         :correct="true"
                                         :incorrect="true"
                                         :has_prob="false"
@@ -55,82 +52,16 @@
                                 <v-col cols="12" sm="6">
                                     <ValidateQuestion  :problem="true" 
                                         :audio = "audio" 
-                                        audio-file-name="c22efe37-4589-492e-9f7f-01c3a31718c9.wav" 
-                                        surra_number="110" 
-                                        aya_number="2"
+                                        audio-file-name="b3d414da-c7b2-4254-9e4a-1afddfe66d20.wav" 
+                                        surra_number="999001" 
+                                        aya_number="1"
                                         :correct="true"
                                         :incorrect="true"
                                         :has_prob="true"
-                                        :different="true"
-                                        :multiple="true"
-                                        :empty="false"
-                                    />
-                                </v-col>
-                            </v-row>
-                            <p class="text-h6 text-sm-subtitle-1 ma-2" style="text-align: center;margin-top: 40px !important;">
-                                {{ $t('validate_instruction.not_related') }}
-                            </p>
-                            <v-row>
-                                <v-col cols="12" sm="6">
-                                    <ValidateQuestion  :problem="false"
-                                        :audio = "audio" 
-                                        audio-file-name="a2a1ab69-f211-47a4-8986-e85babd8c53d.wav" 
-                                        surra_number="1" 
-                                        aya_number="5"
-                                        :correct="true"
-                                        :incorrect="true"
-                                        :has_prob="false"
+                                        :incomplete="false"
                                         :different="true"
                                         :multiple="true"
                                         :empty="true"
-                                        :disable_audio="false"
-                                    />
-                                </v-col>
-                                <v-col cols="12" sm="6">
-                                    <ValidateQuestion  :problem="true"
-                                        :audio = "audio" 
-                                        audio-file-name="a2a1ab69-f211-47a4-8986-e85babd8c53d.wav"  
-                                        surra_number="1" 
-                                        aya_number="5"
-                                        :correct="true"
-                                        :incorrect="true"
-                                        :has_prob="true"
-                                        :different="true"
-                                        :multiple="true"
-                                        :empty="false"
-                                    />
-                                </v-col>
-                            </v-row>
-                            <p class="text-h6 text-sm-subtitle-1 ma-2" style="text-align: center;margin-top: 40px !important;">
-                                {{ $t('validate_instruction.empty_example') }}
-                            </p>
-                            <v-row>
-                                <v-col cols="12" sm="6">
-                                    <ValidateQuestion  :problem="false"
-                                        :audio = "audio" 
-                                        audio-file-name="8932b153-7a69-4e9a-a0ce-5dfcb5533737.wav" 
-                                        surra_number="1" 
-                                        aya_number="5"
-                                        :correct="true"
-                                        :incorrect="true"
-                                        :has_prob="false"
-                                        :different="true"
-                                        :multiple="true"
-                                        :empty="true"
-                                    />
-                                </v-col>
-                                <v-col cols="12" sm="6">
-                                    <ValidateQuestion  :problem="true" 
-                                        :audio = "audio"
-                                        audio-file-name="8932b153-7a69-4e9a-a0ce-5dfcb5533737.wav" 
-                                        surra_number="1" 
-                                        aya_number="5"
-                                        :correct="true"
-                                        :incorrect="true"
-                                        :has_prob="true"
-                                        :different="true"
-                                        :multiple="true"
-                                        :empty="false"
                                     />
                                 </v-col>
                             </v-row>
@@ -162,6 +93,7 @@
                                         :different="true"
                                         :multiple="true"
                                         :empty="true"
+                                        :incomplete="true"
                                     />
                                 </v-col>
                                 <v-col cols="12" sm="6">
@@ -176,6 +108,7 @@
                                         :different="false"
                                         :multiple="true"
                                         :empty="true"
+                                        :incomplete="true"
                                     />
                                 </v-col>
                             </v-row>
@@ -207,6 +140,7 @@
                                         :different="true"
                                         :multiple="true"
                                         :empty="true"
+                                        :incomplete="true"
                                     />
                                 </v-col>
                                 <v-col cols="12" sm="6">
@@ -221,6 +155,128 @@
                                         :different="true"
                                         :multiple="false"
                                         :empty="true"
+                                        :incomplete="true"
+                                    />
+                                </v-col>
+                            </v-row>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="1"></v-col>
+                        <v-col>
+                            <p class="text-h6 text-sm-subtitle-1">
+                                <span style="color:#796767;font-weight:bold;">
+                                    {{ $t('validate_instruction.empty') }}
+                                </span>: {{ $t('trainning.empty_feedback') }}
+                            </p>
+                            <p class="text-h6 text-sm-subtitle-1"> 
+                                <span style="color:#4C7DCA;font-weight:bold;">
+                                    {{ $t('instruction.examples') }}
+                                </span>
+                            </p>
+                            <p class="text-h6 text-sm-subtitle-1 ma-2" style="text-align: center;">
+                                {{ $t('validate_instruction.not_arabic') }}
+                            </p>
+                            <v-row>
+                                <v-col cols="12" sm="6">
+                                    <ValidateQuestion  :problem="false"
+                                        :audio = "audio" 
+                                        audio-file-name="6b1aa01a-29e7-47e0-97f5-b4199e61447a.wav" 
+                                        surra_number="110" 
+                                        aya_number="2"
+                                        :correct="true"
+                                        :incorrect="true"
+                                        :has_prob="false"
+                                        :different="true"
+                                        :multiple="true"
+                                        :empty="true"
+                                        :incomplete="true"
+                                    />
+                                </v-col>
+                                <v-col cols="12" sm="6">
+                                    <ValidateQuestion  :problem="true" 
+                                        :audio = "audio" 
+                                        audio-file-name="6b1aa01a-29e7-47e0-97f5-b4199e61447a.wav" 
+                                        surra_number="110" 
+                                        aya_number="2"
+                                        :correct="true"
+                                        :incorrect="true"
+                                        :has_prob="true"
+                                        :different="true"
+                                        :multiple="true"
+                                        :empty="false"
+                                        :incomplete="true"
+                                    />
+                                </v-col>
+                            </v-row>
+                            <p class="text-h6 text-sm-subtitle-1 ma-2" style="text-align: center;margin-top: 40px !important;">
+                                {{ $t('validate_instruction.not_related') }}
+                            </p>
+                            <v-row>
+                                <v-col cols="12" sm="6">
+                                    <ValidateQuestion  :problem="false"
+                                        :audio = "audio" 
+                                        audio-file-name="a2a1ab69-f211-47a4-8986-e85babd8c53d.wav" 
+                                        surra_number="1" 
+                                        aya_number="5"
+                                        :correct="true"
+                                        :incorrect="true"
+                                        :has_prob="false"
+                                        :different="true"
+                                        :multiple="true"
+                                        :empty="true"
+                                        :disable_audio="false"
+                                        :incomplete="true"
+                                    />
+                                </v-col>
+                                <v-col cols="12" sm="6">
+                                    <ValidateQuestion  :problem="true"
+                                        :audio = "audio" 
+                                        audio-file-name="a2a1ab69-f211-47a4-8986-e85babd8c53d.wav"  
+                                        surra_number="1" 
+                                        aya_number="5"
+                                        :correct="true"
+                                        :incorrect="true"
+                                        :has_prob="true"
+                                        :different="true"
+                                        :multiple="true"
+                                        :empty="false"
+                                        :incomplete="true"
+                                    />
+                                </v-col>
+                            </v-row>
+                            <p class="text-h6 text-sm-subtitle-1 ma-2" style="text-align: center;margin-top: 40px !important;">
+                                {{ $t('validate_instruction.empty_example') }}
+                            </p>
+                            <v-row>
+                                <v-col cols="12" sm="6">
+                                    <ValidateQuestion  :problem="false"
+                                        :audio = "audio" 
+                                        audio-file-name="8932b153-7a69-4e9a-a0ce-5dfcb5533737.wav" 
+                                        surra_number="1" 
+                                        aya_number="5"
+                                        :correct="true"
+                                        :incorrect="true"
+                                        :has_prob="false"
+                                        :different="true"
+                                        :multiple="true"
+                                        :empty="true"
+                                        :incomplete="true"
+                                    />
+                                </v-col>
+                                <v-col cols="12" sm="6">
+                                    <ValidateQuestion  :problem="true" 
+                                        :audio = "audio"
+                                        audio-file-name="8932b153-7a69-4e9a-a0ce-5dfcb5533737.wav" 
+                                        surra_number="1" 
+                                        aya_number="5"
+                                        :correct="true"
+                                        :incorrect="true"
+                                        :has_prob="true"
+                                        :different="true"
+                                        :multiple="true"
+                                        :empty="false"
+                                        :incomplete="true"
                                     />
                                 </v-col>
                             </v-row>
@@ -249,6 +305,7 @@
                                 :different="true"
                                 :multiple="true"
                                 :empty="true"
+                                :incomplete="true"
                             />
                         </v-col>
                         <v-col cols="12" sm="6">
@@ -263,6 +320,7 @@
                                 :different="true"
                                 :multiple="true"
                                 :empty="true"
+                                :incomplete="true"
                             />
                         </v-col>
                     </v-row>
@@ -289,6 +347,7 @@
                                 :different="true"
                                 :multiple="true"
                                 :empty="true"
+                                :incomplete="true"
                             />
                         </v-col>
                         <v-col cols="12" sm="6">
@@ -303,6 +362,7 @@
                                 :different="true"
                                 :multiple="true"
                                 :empty="true"
+                                :incomplete="true"
                             />
                         </v-col>
                     </v-row>
@@ -352,6 +412,13 @@
     data: () => ({
         audio : new Audio(),
     }),
+    mounted() {
+        this.$nextTick(() => {
+            document.getElementById('Instructions').scrollIntoView({
+            behavior: "smooth"
+            });
+        });
+    },
     created () {
         if(this.loggedIn){
             var visited = UserInfoService.getVisitVCInstructions()
