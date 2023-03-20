@@ -4,11 +4,13 @@
   <v-app-bar
       color="primary"
       prominent>
-      <!-- hide on screens larger than md-->
-      <img class="d-md-none ml-5 mr-5" src="@/assets/logo.svg" height="40"/>
-
-      <!-- hide on screens smaller than md-->
-      <img class="d-none d-md-block ml-16" src="@/assets/Quran-Icon.png" height="40"/>
+     
+      <router-link to="/">
+         <!-- hide on screens larger than md-->
+        <img class="d-md-none ml-5 mr-5 mt-2" src="@/assets/logo.svg" height="40"/>
+        <!-- hide on screens smaller than md-->
+        <img class="d-none d-md-block ml-16" src="@/assets/Quran-Icon.png" height="40"/>
+      </router-link>
       <v-toolbar-title class="d-none d-md-block mr-1">Quran Voice</v-toolbar-title>
 
       <v-spacer></v-spacer>
