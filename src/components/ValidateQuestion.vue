@@ -28,14 +28,17 @@
             </v-btn>
         </div>
         <div v-if="problem" style="display: inline-grid;">
-            <v-btn :disabled="empty" variant="outlined" color="invalidoption" style="margin: 10px">
-                {{ $t('trainning.empty') }}
+            <v-btn :disabled="incomplete" variant="outlined" color="invalidoption" style="margin: 10px">
+                {{ $t('trainning.incomplete') }}
             </v-btn>
             <v-btn :disabled="different" variant="outlined" color="invalidoption" style="margin: 10px">
                 {{ $t('trainning.different') }}
             </v-btn>
             <v-btn :disabled="multiple" variant="outlined" color="invalidoption" style="margin: 10px">
                 {{ $t('trainning.multiple') }}
+            </v-btn>
+            <v-btn :disabled="empty" variant="outlined" color="invalidoption" style="margin: 10px">
+                {{ $t('trainning.empty') }}
             </v-btn>
             <v-btn disabled color="invalid" style="margin: 10px;">
                 {{ $t('trainning.back') }}
@@ -48,7 +51,7 @@
  export default {
         props: ['problem','audioFileName','surra_number','aya_number',
                 'correct','incorrect','has_prob','empty','different',
-                'multiple','audio'],
+                'multiple','audio','incomplete'],
         data: () => ({
             quran: quran,
         }),

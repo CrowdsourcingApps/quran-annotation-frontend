@@ -6,7 +6,7 @@
         "home":"Главная",
         "login":"Авторизоваться",
         "logout":"Выйти",
-        "register":"Войти/Зарегестрироваться",
+        "register":"Войти",
         "account":""
     },
     "footer":{
@@ -55,8 +55,23 @@
         "summary": ""
     },
     "validate_instruction":{
-        "task":"",
-        "options":""
+        "task": "",
+        "options":"",
+        "problem":"",
+        "problem_options": "",
+        "empty":"",
+        "empty_example":"",
+        "not_arabic": "",
+        "not_related": "",
+        "different":"",
+        "multiple":"",
+        "incomplete":"",
+        "incorrect":"",
+        "correct":"",
+        "one": "",
+        "tow":"",
+        "three":"",
+        "four": ""
     },
     "trainning":{
         "listen":"",
@@ -68,10 +83,12 @@
         "empty":"",
         "different":"",
         "multiple":"",
+        "incomplete":"",
         "back":"",
         "next": "",
         "correct_answer":"",
         "Incorrect_answer":"",
+        "incomplete_feedback":"",
         "multiple_feedback":"",
         "correct_feedback":"",
         "incorrect_feedback": "",
