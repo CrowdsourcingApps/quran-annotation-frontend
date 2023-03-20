@@ -7,7 +7,8 @@
         "login":"Login",
         "logout":"Logout",
         "register":"Login",
-        "account":"My account"
+        "account":"My account",
+        "mycontribution":"My contribution"
     },
     "footer":{
         "help":"Help us find other contributes",
