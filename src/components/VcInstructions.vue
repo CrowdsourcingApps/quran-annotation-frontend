@@ -181,7 +181,7 @@
                                 <v-col cols="12" sm="6">
                                     <ValidateQuestion  :problem="false"
                                         :audio = "audio" 
-                                        audio-file-name="c22efe37-4589-492e-9f7f-01c3a31718c9.wav" 
+                                        audio-file-name="6b1aa01a-29e7-47e0-97f5-b4199e61447a.wav" 
                                         surra_number="110" 
                                         aya_number="2"
                                         :correct="true"
@@ -196,7 +196,7 @@
                                 <v-col cols="12" sm="6">
                                     <ValidateQuestion  :problem="true" 
                                         :audio = "audio" 
-                                        audio-file-name="c22efe37-4589-492e-9f7f-01c3a31718c9.wav" 
+                                        audio-file-name="6b1aa01a-29e7-47e0-97f5-b4199e61447a.wav" 
                                         surra_number="110" 
                                         aya_number="2"
                                         :correct="true"

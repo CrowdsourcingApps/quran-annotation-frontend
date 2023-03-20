@@ -14,7 +14,7 @@
                 <v-card-text class=" text-h5 ma-2 pa-2" style="text-align: center;line-height: 2.25rem;">
                     {{ $t('trainning_session.completed')  }} 
                 </v-card-text>
-                <v-card-text> {{$t('trainning_session.Points')+ " "+this.correct_answers+" / 7"  }}</v-card-text>
+                <v-card-text> {{$t('trainning_session.Points')+ " "+this.correct_answers+" / 8"  }}</v-card-text>
                 <v-card-text class="text-h5" v-if="end_result"> {{$t('trainning_session.ready')}} </v-card-text>
                 <v-card-text v-if="!end_result"> {{$t('trainning_session.train_again')}} </v-card-text>
                 <v-btn v-if="end_result"  style="margin: 10px; color: #fff !important;" color="success" 
@@ -52,6 +52,8 @@
                     <v-timeline-item size="small" :dot-color="q6">
                     </v-timeline-item>
                     <v-timeline-item size="small" :dot-color="q7">
+                    </v-timeline-item>
+                    <v-timeline-item size="small" :dot-color="q8">
                     </v-timeline-item>
             </v-timeline> 
         </v-col>
@@ -91,14 +93,17 @@
                     </v-btn>
                 </div>
                 <div v-if="problem" style="display: inline-grid;">
-                    <v-btn :disabled="disabled" @click="setAnswer('not_related_quran')" variant="outlined" color="invalidoption" style="margin: 10px">
-                        {{ $t('trainning.empty') }}
+                    <v-btn :disabled="disabled" @click="setAnswer('in_complete')" variant="outlined" color="invalidoption" style="margin: 10px">
+                        {{ $t('trainning.incomplete') }}
                     </v-btn>
                     <v-btn :disabled="disabled" @click="setAnswer('not_match_aya')" variant="outlined" color="invalidoption" style="margin: 10px">
                         {{ $t('trainning.different') }}
                     </v-btn>
                     <v-btn :disabled="disabled" @click="setAnswer('multiple_aya')" variant="outlined" color="invalidoption" style="margin: 10px">
                         {{ $t('trainning.multiple') }}
+                    </v-btn>
+                    <v-btn :disabled="disabled" @click="setAnswer('not_related_quran')" variant="outlined" color="invalidoption" style="margin: 10px">
+                        {{ $t('trainning.empty') }}
                     </v-btn>
                     <v-btn :disabled="disabled" @click="toggleProblem()" color="invalid" style="margin: 10px;" v-model="problem">
                         {{ $t('trainning.back') }}
@@ -145,7 +150,7 @@
                     </v-dialog>
                 </v-btn>
                 <v-spacer></v-spacer>
-                <v-btn @click="next()" v-if="index!=6" variant="text" color="info" 
+                <v-btn @click="next()" v-if="index!=7" variant="text" color="info" 
                     :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right'"
                     :disabled="next_disable">
                     {{ $t('trainning.next') }}</v-btn>
@@ -181,6 +186,7 @@
       q5: 'white',
       q6: 'white',
       q7: 'white',
+      q8: 'white',
       answers: [],
       disabled: false,
       end: false,
@@ -256,8 +262,10 @@
                 this.text = this.text + this.$t('trainning.problem') +" < "+ this.$t('trainning.empty')+" >. "+ this.$t('trainning.empty_feedback')
             else if(correct_label === 'not_match_aya') 
                 this.text = this.text + this.$t('trainning.problem') +" < "+ this.$t('trainning.different')+" >. "+ this.$t('trainning.different_feedback')
+            else if(correct_label === 'in_complete') 
+            this.text = this.text + this.$t('trainning.problem') +" < "+ this.$t('trainning.incomplete')+" >. "+ this.$t('trainning.incomplete_feedback')
             // see if it's the last questions
-            if(this.index === 6){
+            if(this.index === 7){
                 // submit answers
                 this.loading = true;
                 ControlTasksService.save_validate_correctness_answers(this.answers)
