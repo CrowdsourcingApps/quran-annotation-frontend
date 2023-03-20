@@ -27,7 +27,7 @@
         "validate_transcription_description":"Check if a transcription by another participant is correct.",
         "validate_Tajweed":"Validate Tajweed",
         "validate_Tajweed_description":"Check if Tajweed rules are applied correctly or not.",
-        "coming_soon":"Coming Soon..",
+        "coming_soon":"Coming Soon",
         "try_it":"Try it",
         "instructions":"Instructions"
     },

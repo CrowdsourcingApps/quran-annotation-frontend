@@ -27,7 +27,7 @@
         "validate_transcription_description":"قم بالتحقق فيما إذا كانت كتابة أحد المشاركين مطابقة تماماً للتسجيل الصوتي",
         "validate_Tajweed":"تحقق من التجويد",
         "validate_Tajweed_description":"تحقق فيما إذا تمّ تطبيق قواعد التجويد بشكل صحيح أم لا.",
-        "coming_soon":" ... قريباً",
+        "coming_soon":"قريباً",
         "try_it":"حاول الآن",
         "instructions":"التعليمات"
     },
