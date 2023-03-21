@@ -296,9 +296,9 @@
                         <v-col cols="12" sm="6">
                             <ValidateQuestion  :problem="false"
                                 :audio = "audio" 
-                                audio-file-name="2d59aef9-e38f-4e95-b4c2-682479254139.wav" 
-                                surra_number="103" 
-                                aya_number="3"
+                                audio-file-name="ffb6370b-413d-4e29-9522-b713f89afac6.wav" 
+                                surra_number="1" 
+                                aya_number="5"
                                 :correct="true"
                                 :incorrect="false"
                                 :has_prob="true"
