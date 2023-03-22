@@ -7,6 +7,23 @@
             <p class="text-h6 text-sm-subtitle-1 ma-2">
                 {{ $t('validate_instruction.task') }}
             </p>
+            <iframe v-if="$i18n.locale === 'AR'"
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/nuvmvz0j0oo" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                    <iframe 
+                    v-if="$i18n.locale === 'EN' || $i18n.locale === 'RU'"
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/VMUceoU9zv4" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
             <p class="text-h6 text-sm-subtitle-1 ma-2">
                 {{ $t('instruction.calm') }}
             </p>
