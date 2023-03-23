@@ -8,7 +8,7 @@
                 {{ $t('validate_instruction.task') }}
             </p>
             <iframe v-if="$i18n.locale === 'AR'"
-                    width="560" 
+                    :width="xsvalue? '100%' : '560'"
                     height="315" 
                     src="https://www.youtube.com/embed/nuvmvz0j0oo" 
                     title="YouTube video player" 
@@ -17,7 +17,7 @@
                     allowfullscreen></iframe>
                     <iframe 
                     v-if="$i18n.locale === 'EN' || $i18n.locale === 'RU'"
-                    width="560" 
+                    :width="xsvalue? '100%' : '560'"
                     height="315" 
                     src="https://www.youtube.com/embed/VMUceoU9zv4" 
                     title="YouTube video player" 
@@ -423,9 +423,17 @@
 <script lang="ts">
  import UserInfoService from "@/services/userinfo.service";
  import ValidateQuestion from "./ValidateQuestion.vue";
+ import { useDisplay } from 'vuetify'
  export default {
     props:['Showstart'],
     components: {ValidateQuestion},
+    setup () {
+        // Destructure only the keys we want to use
+        const { xs, mdAndUp } = useDisplay()
+        var mdAndUpvalue = mdAndUp.value
+        var xsvalue = xs.value
+        return {mdAndUpvalue,xsvalue}
+    },
     data: () => ({
         audio : new Audio(),
     }),

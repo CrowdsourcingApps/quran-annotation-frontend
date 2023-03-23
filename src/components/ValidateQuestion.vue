@@ -8,7 +8,9 @@
                 variant="outlined"
                 color="black"
                 icon="mdi-play"
+                v-if="!loading"
             ></v-btn>
+        <v-progress-circular v-if="loading" model-value="20"></v-progress-circular>
         <v-card-text class="ma-2 pa-2">
             {{ $t('trainning.recited_correctly')  }} 
         </v-card-text> 
@@ -54,11 +56,14 @@
                 'multiple','audio','incomplete'],
         data: () => ({
             quran: quran,
+            loading: false,
         }),
         methods:{
             playAudio(audioFileName) {
+                this.loading = true;
                 this.audio.src = 'https://miniodev.quranvoice.live/ayat-audio-bucket-dev/' + audioFileName;
                 this.audio.play();
+                this.loading = false;
             }
         }
     }
