@@ -50,6 +50,7 @@
 </template>
 <script>
  import quran from "@/Quran.json"
+ const MINIO_URL = import.meta.env.VITE_MINIO_URL;
  export default {
         props: ['problem','audioFileName','surra_number','aya_number',
                 'correct','incorrect','has_prob','empty','different',
@@ -61,7 +62,7 @@
         methods:{
             playAudio(audioFileName) {
                 this.loading = true;
-                this.audio.src = 'https://miniodev.quranvoice.live/ayat-audio-bucket-dev/' + audioFileName;
+                this.audio.src = MINIO_URL+'/ayat-audio-bucket-dev/' + audioFileName;
                 this.audio.play();
                 this.loading = false;
             }
