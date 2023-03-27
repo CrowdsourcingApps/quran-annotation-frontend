@@ -136,7 +136,7 @@
             </v-row>
             <!-- Question Footer Component-->
             <v-row style="margin: 15px;">
-                <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">
+                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline">
                     {{ $t('homepage.instructions') }}
                     <v-dialog
                         v-model="Instructions_dialog"
@@ -152,7 +152,7 @@
                     </v-dialog>
                 </v-btn>
                 <v-spacer></v-spacer>
-                <v-btn @click="next()" v-if="index!=7" variant="text" color="info" 
+                <v-btn @click="next()" v-if="index!=7" variant="outlined" color="info" 
                     :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right'"
                     :disabled="next_disable">
                     {{ $t('trainning.next') }}</v-btn>

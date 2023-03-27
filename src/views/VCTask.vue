@@ -91,7 +91,7 @@
                 </div>
             </v-card>
             <v-row style="margin: 15px;">
-                <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline">
+                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline">
                     {{ $t('homepage.instructions') }}
                     <v-dialog
                         v-model="Instructions_dialog"
@@ -108,7 +108,7 @@
                 </v-btn>
                 <v-spacer></v-spacer>
                 <!-- Here we should put report button-->
-                <v-btn @click="skip()" v-if="index!=this.questions.length" variant="text" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('tasks.skip') }}</v-btn>
+                <v-btn @click="skip()" v-if="index!=this.questions.length" variant="outlined" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('tasks.skip') }}</v-btn>
             </v-row>
         </v-col>
         <v-col col="1" sm="3">
