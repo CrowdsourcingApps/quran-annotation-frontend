@@ -10,7 +10,7 @@
                 icon="mdi-play"
                 v-if="!loading"
             ></v-btn>
-        <v-progress-circular v-if="loading" model-value="20"></v-progress-circular>
+        <v-progress-circular v-if="loading" model-value="20" :size="47" indeterminate></v-progress-circular>
         <v-card-text class="ma-2 pa-2">
             {{ $t('trainning.recited_correctly')  }} 
         </v-card-text> 
@@ -61,11 +61,16 @@
         }),
         methods:{
             playAudio(audioFileName) {
-                this.loading = true;
-                this.audio.src = MINIO_URL+'/ayat-audio-bucket-dev/' + audioFileName;
-                this.audio.play();
-                this.loading = false;
-            }
+            this.loading = true;
+            this.audio.src = MINIO_URL+'/ayat-audio-bucket-dev/' + audioFileName;
+            this.audio.load();
+            this.audio.addEventListener('canplaythrough', () => {
+                if (this.audio.readyState === 4) {
+                    this.audio.play();
+                    this.loading = false;
+                }
+            });
+            },
         }
     }
 </script>

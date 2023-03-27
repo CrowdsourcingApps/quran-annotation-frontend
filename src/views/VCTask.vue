@@ -46,12 +46,14 @@
                 <v-card-text class="ma-2 pa-2">
                 {{ $t('trainning.listen')  }} 
             </v-card-text>
-                <v-btn @click="playAudio()"
+            <v-btn @click="playAudio(audioFileName)"
                         class="mr-3"
                         variant="outlined"
                         color="black"
                         icon="mdi-play"
+                        v-if="!loading_audio"
                     ></v-btn>
+                <v-progress-circular v-if="loading_audio" model-value="20" :size="47" indeterminate></v-progress-circular>
                 <v-card-text class="ma-2 pa-2">
                     {{ $t('trainning.recited_correctly')  }} 
                 </v-card-text> 
@@ -124,6 +126,7 @@ import Question from "@/models/question"
     data: () => ({
       error : null,
       loading: true,
+      loading_audio: false,
       quran: quran,
       questions: [],
       currnet: new Question(),
@@ -222,8 +225,15 @@ import Question from "@/models/question"
             }
         },
         playAudio(){
+            this.loading_audio = true;
             this.audio.src = 'https://'+this.currnet.audio_file_name;
-            this.audio.play();
+            this.audio.load();
+            this.audio.addEventListener('canplaythrough', () => {
+                if (this.audio.readyState === 4) {
+                    this.audio.play();
+                    this.loading_audio = false;
+                }
+            });
         },
         saveAnswers(){
             TasksService.save_validate_correctness_answers(this.answers)
