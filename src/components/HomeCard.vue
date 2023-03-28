@@ -14,7 +14,13 @@
         </v-card-item>
 
         <v-card-actions>
-            <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline"  :to="InsLink">{{ $t('homepage.instructions') }}</v-btn>
+            <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline" :to="InsLink">
+                {{ $t('homepage.instructions') }}
+            </v-btn>
+            <!-- <v-btn style="background-color:#5eaae7; color: #fff;" prepend-icon="mdi-notebook-outline" :to="InsLink">
+                {{ $t('homepage.instructions') }}
+            </v-btn> -->
+            <!-- <v-btn variant="text" color="info" prepend-icon="mdi-notebook-outline"  :to="InsLink">{{ $t('homepage.instructions') }}</v-btn> -->
             <v-spacer></v-spacer>
             <v-btn style="background-color:#5FD083; color: #fff;" :prepend-icon="Icon" :to="Link">
                 {{ $t('homepage.try_it')  }}
