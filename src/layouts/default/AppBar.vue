@@ -91,9 +91,6 @@
       group: null,
       validate_correctness_score:0
     }),
-    created(){
-      this.me()
-    },
     computed: {
       loggedIn() {
         return this.$store.state.auth.status.loggedIn;
@@ -103,6 +100,7 @@
       EventBus.on("logout", () => {
         this.logOut();
       });
+      this.me();
     },
     beforeDestroy() {
       EventBus.remove("logout");
