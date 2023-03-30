@@ -89,7 +89,7 @@
     data: () => ({
       drawer: false,
       group: null,
-      validate_correctness_score:0
+      validate_correctness_score: localStorage.getItem("vc_points")
     }),
     computed: {
       loggedIn() {
@@ -130,7 +130,7 @@
       me(){
         AuthService.getme().then(
           (response) => {
-            console.log(response);
+            localStorage.setItem("vc_points", response.data.validate_correctness_tasks_no);
             this.validate_correctness_score=response.data.validate_correctness_tasks_no
           },
           (error) => {

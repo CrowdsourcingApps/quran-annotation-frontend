@@ -38,7 +38,6 @@ export const auth = {
       );
     },
     refreshToken({ commit }, user) {
-      console.log('refresh dispatch')
       commit('refreshSuccess', user);
     }
   },
