@@ -136,7 +136,7 @@
             </v-row>
             <!-- Question Footer Component-->
             <v-row style="margin: 15px;">
-                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline">
+                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline" @click="InstructionsClicked()">
                     {{ $t('homepage.instructions') }}
                     <v-dialog
                         v-model="Instructions_dialog"
@@ -168,6 +168,7 @@
  import ControlTasksService from "@/services/controltasks.service"
  import VcInstructions from '@/components/VcInstructions.vue';
  import Error from '@/components/Error.vue';
+ import amplitude from '@/amplitude/index.js'
  export default {
     components: {VcInstructions, Error},
     data: () => ({
@@ -203,6 +204,12 @@
         this.getTrainningTasks();
     },
     methods: {
+        InstructionsClicked(){
+            const eventProperties = {
+                location: 'VCTrain',
+            };
+            amplitude.track('VCInstructions Clicked', eventProperties);
+        },
         toggleProblem(){
             this.problem = !this.problem;
         },
