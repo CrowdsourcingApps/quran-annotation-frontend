@@ -28,7 +28,7 @@
           rounded="pill"
           color="secondary"
           variant="outlined"
-          to="/login"
+          @click.prevent="login()"
           v-if="!loggedIn"
         >
           {{ xsvalue? $t('nav.login') : $t('nav.register') }}
@@ -45,7 +45,7 @@
           >
         </v-select>
       </div>
-      <v-app-bar-nav-icon v-if="loggedIn||!mdAndUpvalue" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-if="loggedIn||!mdAndUpvalue" variant="text" @click.stop="NavbarIconClicked()"></v-app-bar-nav-icon>
     </v-app-bar>
 
     <v-navigation-drawer 
@@ -77,6 +77,9 @@
   import { useDisplay } from 'vuetify'
   import EventBus from "@/common/EventBus";
   import AuthService from "@/services/auth.service";
+  import amplitude from '@/amplitude/index.js'
+
+  const ENV = import.meta.env.VITE_ENV
 
   export default {
     setup () {
@@ -111,12 +114,23 @@
         {
           this.$router.push('/');
         }
+        const eventProperties = {
+            location: 'Navbar',
+        };
+        amplitude.track('Contribute Clicked', eventProperties);
         document.getElementById(id).scrollIntoView({
           behavior: "smooth"
         });
         if(this.drawer){
           this.drawer = false
         }
+      },
+      login(){
+        const eventProperties = {
+            location: 'Navbar',
+        };
+        amplitude.track('Login Clicked', eventProperties);
+        this.$router.push('/login');
       },
       logOut() {
         this.$store.dispatch('auth/logout');
@@ -137,6 +151,12 @@
             console.log(error);
           }
         );
+      },
+      NavbarIconClicked(){
+        if(this.drawer=== false) {
+          amplitude.track('Navbar Icon Clicked')
+        }
+        this.drawer = !this.drawer
       }
     },
     watch: {

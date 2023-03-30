@@ -87,6 +87,7 @@
   </template>
   <script>
   import User from '@/models/user'
+  import amplitude from '@/amplitude/index.js'
   export default {
     data: () => ({
       form: false,
@@ -130,6 +131,7 @@
         else{
           this.$store.dispatch("auth/register", this.user).then(
             () => {
+              amplitude.track('New User Registered');
               this.$router.replace(this.$route.query.redirect || '/');
             },
             (error) => {
@@ -156,6 +158,9 @@
         return v === this.user.password || this.$t('login.mismatch_password')
       },
       onSwitchMode() {
+        if(this.isLoginMode === true) {
+          amplitude.track('Register Clicked');
+        }
         this.isLoginMode = !this.isLoginMode;
       }
     },
