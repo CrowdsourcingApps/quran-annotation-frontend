@@ -413,7 +413,7 @@
     <v-row v-if="Showstart" style="text-align: center;">
         <v-col>
             <v-btn style="background-color:#5FD083; color: #fff;"
-                   :to="VCPass ? '/task/vc' : '/train/vc' ">
+                   @click="toTry()">
                 {{ $t('instruction.start')  }}
             </v-btn>
         </v-col>
@@ -424,6 +424,7 @@
  import UserInfoService from "@/services/userinfo.service";
  import ValidateQuestion from "./ValidateQuestion.vue";
  import { useDisplay } from 'vuetify'
+ import amplitude from '@/amplitude/index.js'
  export default {
     props:['Showstart'],
     components: {ValidateQuestion},
@@ -449,6 +450,20 @@
             var visited = UserInfoService.getVisitVCInstructions()
             if(!visited)
                 UserInfoService.updateVisitVCInstructions()
+        }
+    },
+    methods:{
+        toTry(){
+            if(this.VCPass){
+                this.$router.push('/task/vc');
+            }
+            else{
+                this.$router.push('/train/vc');
+            }
+            const eventProperties = {
+                location: 'VCInstructions',
+            };
+            amplitude.track('VCTry Clicked', eventProperties);
         }
     },
     computed: {

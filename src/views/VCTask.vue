@@ -91,7 +91,7 @@
                 </div>
             </v-card>
             <v-row style="margin: 15px;">
-                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline">
+                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline" @click="InstructionsClicked()">
                     {{ $t('homepage.instructions') }}
                     <v-dialog
                         v-model="Instructions_dialog"
@@ -116,11 +116,12 @@
     </v-row>
 </template>
 <script>
-import Question from "@/models/question"
+ import Question from "@/models/question"
  import quran from "@/Quran.json"
  import TasksService from "@/services/tasks.service"
  import VcInstructions from '@/components/VcInstructions.vue';
  import Error from '@/components/Error.vue';
+ import amplitude from '@/amplitude/index.js'
  export default {
     components: {VcInstructions, Error},
     data: () => ({
@@ -146,6 +147,12 @@ import Question from "@/models/question"
         this.getRealTasks();
     },
     methods: {
+        InstructionsClicked(){
+            const eventProperties = {
+                location: 'VCTask',
+            };
+            amplitude.track('VCInstructions Clicked', eventProperties);
+        },
         toggleProblem(){
             this.problem = !this.problem;
         },
@@ -204,6 +211,7 @@ import Question from "@/models/question"
             this.loading = false;
         },
         skip(){
+            amplitude.track('VCSkip Clicked');
             if(this.audio)
                 this.audio.pause();
             this.loading = true;

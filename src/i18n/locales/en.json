@@ -122,6 +122,6 @@
         "mash": "Ma Sha'Allah!",
         "jazak": "JazakumuLlahu khairan!"
     },
-    "error":"Something went wrong!",
+    "error":"Something went wrong! Please reload the page",
     "excuse": "Ops!"
 }
