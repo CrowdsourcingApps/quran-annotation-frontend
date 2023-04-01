@@ -22,7 +22,6 @@ const setup = (store) => {
       return res;
     },
     async (err) => {
-      console.log("I'm interceptors error")
       const originalConfig = err.config;
 
       if (originalConfig.url !== "/token" && err.response) {

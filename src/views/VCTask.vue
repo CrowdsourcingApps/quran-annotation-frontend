@@ -163,7 +163,6 @@
             TasksService.get_validate_correctness().then(
                 (response) => {
                     this.questions = response.data;
-                    console.log(this.questions);
                     this.currnet = this.questions[0];
                     this.time_line_colors= new Array(this.questions.length).fill('white');
                     this.time_line_colors[0] = 'blue'
