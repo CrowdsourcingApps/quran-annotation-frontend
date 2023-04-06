@@ -122,6 +122,14 @@
         "mash": "Ma Sha'Allah!",
         "jazak": "JazakumuLlahu khairan!"
     },
+    "about":{
+        "goal":"Our Goal",
+        "goal_sentence":"Learning to recite the Quran can be challenging, especially for non-native Arabic speakers, and our aim is to make the process as easy and effective as possible.",
+        "how": "How can we achieve that?",
+        "how_sentence":"Through developing an application that uses AI to assist Muslims worldwide in reciting the Quran by providing real-time feedback and correction. To do so, we need to collect accurately annotated audio recordings of Quran recitations from a diverse group of people. There will be no restrictions on the availability of data for those who are interested.",
+        "who":"Who are we?",
+        "who_sentence":"We are a group of engineers pursuing a Ph.D. and a master's degree. As part of our research on Crowdsourcing Arabic Linguistic assets, we aim to create applications that remove the obstacles and barriers between Non-Arabic Muslims and the Quran."
+    },
     "error":"Something went wrong! Please reload the page",
     "excuse": "Ops!"
 }

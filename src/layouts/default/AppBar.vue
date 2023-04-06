@@ -18,7 +18,7 @@
       <div class="d-flex align-center">
         <v-btn @click="scroll('contribute_section')" variant="text" class="d-none d-md-block mr-2">{{ $t('nav.contribute') }}</v-btn>
 
-        <v-btn variant="text" class="d-none d-md-block">{{ $t('nav.about') }}</v-btn>
+        <v-btn variant="text" class="d-none d-md-block" @click="about()">{{ $t('nav.about') }}</v-btn>
 
         <v-btn variant="text" class="d-none d-md-block mr-4">{{ $t('nav.contact') }}</v-btn>
 
@@ -66,7 +66,7 @@
       <v-divider class="d-md-none" v-if="loggedIn"></v-divider>
       <v-list class="d-md-none" nav>
         <v-list-item @click="scroll('contribute_section')" class="justify-center">{{ $t('nav.contribute') }}</v-list-item>
-        <v-list-item value="about" class="justify-center">{{ $t('nav.about') }}</v-list-item>
+        <v-list-item value="about" class="justify-center" to="about">{{ $t('nav.about') }}</v-list-item>
         <v-list-item value="contact" class="justify-center">{{ $t('nav.contact') }}</v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -109,6 +109,9 @@
       EventBus.remove("logout");
     },
     methods: {
+      about(){
+        this.$router.push('/about');
+      },
       scroll(id) {  
         if(this.$route.path!=='/')
         {
