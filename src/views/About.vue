@@ -5,12 +5,12 @@
             <v-col key=2 cols="12" sm="6">
                 <v-timeline side="end">
                     <v-timeline-item
-                    dot-color="yellow-darken-1"
+                    dot-color="gold"
                     icon="mdi-star-shooting"
                     fill-dot
                 >
                         <v-card>
-                        <v-card-title style="color: white !important;" :class="['text-h6', `bg-yellow-darken-1`]">
+                        <v-card-title :class="['text-h6', `bg-primary`]">
                             {{ $t('about.goal') }}
                         </v-card-title>
                         <v-card-text class="bg-white text--primary ma-2">
@@ -24,7 +24,7 @@
                     fill-dot
                 >
                         <v-card>
-                        <v-card-title style="color: white !important;" :class="['text-h6', `bg-success`]">
+                        <v-card-title :class="['text-h6', `bg-primary`]">
                             {{ $t('about.how') }}
                         </v-card-title>
                         <v-card-text class="bg-white text--primary ma-2">
@@ -38,7 +38,7 @@
                     fill-dot
                 >
                         <v-card>
-                        <v-card-title :class="['text-h6', `bg-blue`]">
+                        <v-card-title :class="['text-h6', `bg-primary`]">
                             {{ $t('about.who') }}
                         </v-card-title>
                         <v-card-text class="bg-white text--primary ma-2">
@@ -58,4 +58,8 @@
 .mdi-star-shooting::before,.mdi-lightbulb-on::before {
     color: white;
 }
+/* .card-border{
+    border-top-style: inset;
+    border-bottom-style: inset;
+} */
 </style>
