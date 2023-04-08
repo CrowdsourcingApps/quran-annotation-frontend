@@ -20,7 +20,7 @@
 
         <v-btn variant="text" class="d-none d-md-block">{{ $t('nav.about') }}</v-btn>
 
-        <v-btn variant="text" class="d-none d-md-block mr-4">{{ $t('nav.contact') }}</v-btn>
+        <v-btn variant="text" class="d-none d-md-block mr-4" @click="Contactus()">{{ $t('nav.contact') }}</v-btn>
 
         <v-btn
           class="mr-2"
@@ -67,7 +67,7 @@
       <v-list class="d-md-none" nav>
         <v-list-item @click="scroll('contribute_section')" class="justify-center">{{ $t('nav.contribute') }}</v-list-item>
         <v-list-item value="about" class="justify-center">{{ $t('nav.about') }}</v-list-item>
-        <v-list-item value="contact" class="justify-center">{{ $t('nav.contact') }}</v-list-item>
+        <v-list-item value="contact" class="justify-center" to="contactus">{{ $t('nav.contact') }}</v-list-item>
       </v-list>
     </v-navigation-drawer>
 </template>
@@ -109,6 +109,9 @@
       EventBus.remove("logout");
     },
     methods: {
+      Contactus(){
+        this.$router.push('/contactus');
+      },
       scroll(id) {  
         if(this.$route.path!=='/')
         {
