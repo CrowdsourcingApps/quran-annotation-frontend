@@ -102,9 +102,7 @@
         this.s_message = false;
         this.error = false;
         this.loading = true
-        console.log(this.msg.email)
         this.msg.email = this.msg.email.trim();
-        console.log(this.msg.email)
         this.msg.name = this.msg.name.trim();
         this.msg.message = this.msg.message.trim();
         if(this.msg.message===""){
