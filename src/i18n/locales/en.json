@@ -124,11 +124,11 @@
     },
     "about":{
         "goal":"Our Goal",
-        "goal_sentence":"Learning to recite the Quran can be challenging, especially for non-native Arabic speakers, and our aim is to make the process as easy and effective as possible.",
+        "goal_sentence":"It is known that mastering the recitation of the Noble Quran may be difficult for Arabic-speaking individuals themselves, which requires them to spend time and effort to learn in different ways, like attending the reciting programs at the Quranic schools. Our goal in this platform is to work to make the task of reciting the Quran an easy task for Muslim non-Arabic speakers brothers and sisters.",
         "how": "How can we achieve that?",
-        "how_sentence":"We can achieve our goal by developing an AI application that provides real-time feedback and correction to assist Muslims worldwide in reciting the Quran. To do so, we need to collect annotated audio recordings of Quran recitations from a diverse group of people accurately. Your contribution is so essential to bring success to this project.",
+        "how_sentence":"We can achieve this goal by providing the necessary data to develop artificial intelligence applications that act as a personal assistant that corrects mistakes and provides the necessary feedback in real-time, thus helping our Muslim brothers and sisters everywhere to learn to recite the Holy Quran. Your contribution is an essential part of our success and an investment that will benefit you in this life and the one after,  inshallah. The Messenger of Allah (ﷺ) said, <<The best amongst you is the one who learns the Quran and teaches it.>>",
         "who":"Who are we?",
-        "who_sentence":"We are a group of engineers pursuing a Ph.D. and a master's degree. As part of our research on Crowdsourcing Arabic Linguistic assets, we aim to create applications that remove the obstacles and barriers between Non-Arabic Muslims and the Quran."
+        "who_sentence":"We are a group of engineers and software developers, striving to find technical solutions that would overcome the difficulties and challenges faced by our non-Arabic-speaking Muslim brothers and sisters while learning to recite the Holy Quran."
     },
     "error":"Something went wrong! Please reload the page",
     "excuse": "Ops!"
