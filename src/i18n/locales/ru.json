@@ -121,6 +121,14 @@
         "mash": "МашаАллах!",
         "jazak": "ДжазакумуЛаху хайран"
     },
+    "about":{
+        "goal":"",
+        "goal_sentence":"",
+        "how": "",
+        "how_sentence":"",
+        "who":"",
+        "who_sentence":""
+    },
     "contact":{
         "happy":"",
         "name":"",
