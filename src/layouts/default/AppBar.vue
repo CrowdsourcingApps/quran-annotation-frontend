@@ -79,8 +79,6 @@
   import AuthService from "@/services/auth.service";
   import amplitude from '@/amplitude/index.js'
 
-  const ENV = import.meta.env.VITE_ENV
-
   export default {
     setup () {
         // Destructure only the keys we want to use
