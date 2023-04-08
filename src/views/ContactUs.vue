@@ -103,9 +103,13 @@
         this.error = false;
         this.loading = true
         this.msg.email = this.msg.email.trim();
-        this.msg.name = this.msg.name.trim();
-        this.msg.message = this.msg.message.trim();
-        if(this.msg.message===""){
+        if(this.msg.name !==null){
+          this.msg.name = this.msg.name.trim();
+        }
+        if(this.msg.message !==null){
+          this.msg.message = this.msg.message.trim();
+        }
+        if(this.msg.message==="" || this.msg.message===null){
           this.error = true;
           this.loading = false;
         }
@@ -117,6 +121,7 @@
               this.w_message = false;
               this.s_message = true;
               this.msg = new Message(null,null,null)
+              this.form = false;
             },
             (error) => {
               this.w_message = true
