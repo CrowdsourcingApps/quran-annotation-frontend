@@ -114,6 +114,7 @@
         if (!this.form) return
         this.message = null;
         this.loading = true
+        this.user.email = this.user.email.trim()
         if(this.isLoginMode) {
           this.$store.dispatch("auth/login", this.user).then(
             () => {

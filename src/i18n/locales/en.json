@@ -122,6 +122,15 @@
         "mash": "Ma Sha'Allah!",
         "jazak": "JazakumuLlahu khairan!"
     },
+    "contact":{
+        "happy":"We are happy to receive your opinions and suggestions!",
+        "name":"Name",
+        "name_placeholder":"Enter your name",
+        "message_placeholder": "Tell us what you think",
+        "message":"Message",
+        "send": "Send",
+        "success": "Thanks for contacting us!"
+    },
     "error":"Something went wrong! Please reload the page",
     "excuse": "Ops!"
 }

@@ -15,11 +15,14 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
       },
-      // {
-      //   path: 'instructions/vc',
-      //   name: 'vcInstructions',
-      //   component: () => import(/* webpackChunkName: "vcinstruction" */ '@/views/VCInstruction.vue'),
-      // }
+      {
+        path: 'contactus',
+        name: 'ContactUs',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "contactus" */ '@/views/ContactUs.vue'),
+      },
     ]
   },
   {
@@ -68,7 +71,7 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
-  const publicPages = ['/login', , '/', '/instructions/vc'];
+  const publicPages = ['/login', '/contactus' , '/', '/instructions/vc'];
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = localStorage.getItem('user');
 
