@@ -129,6 +129,14 @@
         "who":"",
         "who_sentence":""
     },
+    "contact":{
+        "happy":"",
+        "name":"",
+        "name_placeholder":"",
+        "message_placeholder": "",
+        "message":"",
+        "success": ""
+    },
     "error":"Что-то пошло не так",
     "excuse": "Проблема в работе приложения"
 }

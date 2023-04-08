@@ -130,6 +130,15 @@
         "who":"Who are we?",
         "who_sentence":"We are a group of engineers and software developers, striving to find technical solutions that would overcome the difficulties and challenges faced by our non-Arabic-speaking Muslim brothers and sisters while learning to recite the Holy Quran."
     },
+    "contact":{
+        "happy":"We are happy to receive your opinions and suggestions!",
+        "name":"Name",
+        "name_placeholder":"Enter your name",
+        "message_placeholder": "Tell us what you think",
+        "message":"Message",
+        "send": "Send",
+        "success": "Thanks for contacting us!"
+    },
     "error":"Something went wrong! Please reload the page",
     "excuse": "Ops!"
 }

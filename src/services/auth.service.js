@@ -64,6 +64,18 @@ class AuthService {
   getme() {
     return api.get('me');
   }
+
+  sendmessage(message) {
+    return axios
+      .post(API_URL + 'sendmail', {
+        email: message.email,
+        name: message.name,
+        message: message.message
+      })
+      .then(response => {
+        return response.data;
+      });
+  }
 }
 
 export default new AuthService();
