@@ -1,0 +1,1 @@
+import"./VRow.dd64bc8c.js";import{m as t,u as n}from"./VAvatar.cd1b5461.js";import{x as r,m as s}from"./index.30a016ab.js";const f=r({name:"VContainer",props:{fluid:{type:Boolean,default:!1},...t()},setup(e,a){let{slots:o}=a;return n(()=>s(e.tag,{class:["v-container",{"v-container--fluid":e.fluid}]},o)),{}}});export{f as V};
