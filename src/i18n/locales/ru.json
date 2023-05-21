@@ -30,8 +30,8 @@
         "coming_soon":"скоро будет",
         "try_it":"Попробовать",
         "instructions":"Инструкции",
-        "download": "",
-        "you_can_download":""
+        "download": "Download on the",
+        "you_can_download":"You can download our app now!"
     },
     "login":{
         "email":"email",
