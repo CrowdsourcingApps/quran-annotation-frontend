@@ -13,7 +13,8 @@
         </div>
         </v-card-item>
 
-        <v-card-subtitle class="ma-2 pa-2" style="margin-top: 26px !important;">
+        <v-card-subtitle class="ma-2 pa-2" 
+        :style="$i18n.locale === 'AR' ? 'margin-top: 26px !important;' : 'margin-top: 8px !important;'">
         <span class="ml-2">{{ $t('homepage.coming_soon') }}</span>
         <v-icon
           icon="mdi-sprout-outline"

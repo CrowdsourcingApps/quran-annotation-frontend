@@ -17,7 +17,7 @@
     "homepage":{
         "goal":"Contribute to a large open-source Quran dataset",
         "AI":"This dataset allows to build intelligent AI-based learning apps for Quran",
-        "statistics":"Over 2000 audios are waiting for your contribution",
+        "statistics":"Over 4000 audios are waiting for your contribution",
         "contribute":"Contribute Now",
         "validate_recitation":"Validate recitation",
         "validate_recitation_description":"Listen to an audio of a verse, check if it’s recited correctly.",
@@ -29,7 +29,9 @@
         "validate_Tajweed_description":"Check if Tajweed rules are applied correctly or not.",
         "coming_soon":"Coming Soon",
         "try_it":"Try it",
-        "instructions":"Instructions"
+        "instructions":"Instructions",
+        "download": "Download on the",
+        "you_can_download":"You can download our app now!"
     },
     "login":{
         "email":"Email",
@@ -77,7 +79,7 @@
     },
     "trainning":{
         "listen":"Please listen to the following audio:",
-        "recited_correctly":"Did the reciter read the following Verse / Duaa correctly?",
+        "recited_correctly":"Did the reciter pronounce the words with diacritics correctly?",
         "what_problem":"What is the problem?",
         "correct":"Correct",
         "incorrect":"Has mistakes",
