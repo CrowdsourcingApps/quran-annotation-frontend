@@ -14,7 +14,7 @@
         </v-card-item>
 
         <v-card-subtitle class="ma-2 pa-2" 
-        :style="$i18n.locale === 'AR' ? 'margin-top: 26px !important;' : 'margin-top: 8px !important;'">
+        :style="$i18n.locale === 'AR' ? 'margin-top: 45px !important;' : 'margin-top: 60px !important;'">
         <span class="ml-2">{{ $t('homepage.coming_soon') }}</span>
         <v-icon
           icon="mdi-sprout-outline"

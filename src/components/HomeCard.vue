@@ -9,7 +9,7 @@
             <div class="text-h6 mb-1">
                 {{ Title }} <v-icon>{{ Icon }}</v-icon>
             </div>
-            <div class="text-caption ma-2">{{ Description }}</div>
+            <div class="text-caption ma-2">{{ Description }}<b>{{ focus }}</b> {{ ruaya }} <b>{{ hafs }}</b></div>
         </div>
         </v-card-item>
 
@@ -31,7 +31,7 @@
 <script lang="ts">
     import amplitude from '@/amplitude/index.js'
     export default {
-        props: ['Title','Icon','Description', 'mdAndUpvalue', 'xsvalue','InsLink', 'Link'],
+        props: ['Title','Icon','Description','focus','ruaya','hafs', 'mdAndUpvalue', 'xsvalue','InsLink', 'Link'],
         methods:{
             toInstructions() {
                 if(this.InsLink ==="/instructions/vc"){

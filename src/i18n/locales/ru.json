@@ -19,8 +19,11 @@
         "AI":"Этот набор данных позволяет создавать умные приложения для обучения Корану с использованием искусственного интеллекта",
         "statistics":"Более 4000 аудиозаписей ждут вашего вклада",
         "contribute":"Внесите свой вклад прямо сейчас",
-        "validate_recitation":"Проверка правильности",
-        "validate_recitation_description":"Послушайте аудиозапись аята, проверьте, правильно ли он прочитан.",
+        "validate_recitation":"Validate the correctness of word pronunciation",
+        "validate_recitation_description":"Listen to the audio, check if it’s recited correctly by focusing on ",
+        "validate_focus":"letter exits and diacritics.",
+        "validate_recitation_ruaya":"The approved Riwaya is ",
+        "validate_hafs": "Hafs an Asim.",
         "transcribe_recitation":"Транскрипция услышанного",
         "transcribe_recitation_description":"Введите именно то, что вы слышите, включая ошибки.",
         "validate_transcription":"Проверка транскрипции",
@@ -59,7 +62,7 @@
         "summary": "Сводка"
     },
     "validate_instruction":{
-        "task": "На этом этапе вы прослушаете аудиозапись аята или дуа, а затем выберете вариант, который лучше всего описывает аудио",
+        "task": "click on the option that describes the audio.",
         "options":"Доступные варианты: правильно, ошибка в произношении, проблема с аудио",
         "problem":"Проблема с аудио",
         "problem_options": "Выберете <Проблема с аудио> если в аудио есть одна из следущих проблем",

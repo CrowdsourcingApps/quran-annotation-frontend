@@ -19,8 +19,11 @@
         "AI":"This dataset allows to build intelligent AI-based learning apps for Quran",
         "statistics":"Over 4000 audios are waiting for your contribution",
         "contribute":"Contribute Now",
-        "validate_recitation":"Validate recitation",
-        "validate_recitation_description":"Listen to an audio of a verse, check if it’s recited correctly.",
+        "validate_recitation":"Validate the correctness of word pronunciation",
+        "validate_recitation_description":"Listen to the audio, check if it’s recited correctly by focusing on ",
+        "validate_focus":"letter exits and diacritics.",
+        "validate_recitation_ruaya":"The approved Riwaya is ",
+        "validate_hafs": "Hafs an Asim.",
         "transcribe_recitation":"Transcribe recitation",
         "transcribe_recitation_description":"Type exactly what you hear including the mistakes.",
         "validate_transcription":"Validate transcription",
@@ -60,7 +63,8 @@
         "summary": "Summary"
     },
     "validate_instruction":{
-        "task": "What is required at this stage is to listen to an audio clip of a Verse or Duaa, then click on the option that describes the audio.",
+        "task": "click on the option that describes the audio.",
+        "hafs":"The approved Riwaya is Hafs an Asim",
         "options":"The available options are: Correct, Pronunciation Mistake, or Invalid Audio",
         "problem":"Invalid Audio.",
         "problem_options": "<Invalid Audio> is selected if the audio contains one of the following cases:",
