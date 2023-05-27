@@ -31,7 +31,8 @@
         "try_it":"Попробовать",
         "instructions":"Инструкции",
         "download": "Download on the",
-        "you_can_download":"You can download our app now!"
+        "you_can_download":"You can download our app now!",
+        "Copied":"Link copied to clipboard!"
     },
     "login":{
         "email":"email",

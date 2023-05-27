@@ -143,12 +143,14 @@
                            :xsvalue="xsvalue"/>
             </v-col>
         </v-row> -->
-        <v-row style="height:200px"></v-row>
+        <!-- <v-row style="height:200px"></v-row> -->
     </v-container>
+    <Navbar/>
 </template>
   
 <script lang="ts">
     import HomeCard from '@/components/HomeCard.vue'
+    import Navbar from '@/components/Navbar.vue';
     import HomeCardComming from '@/components/HomeCardComming.vue'
     import UserInfoService from "@/services/userinfo.service";
     import AuthService from "@/services/auth.service";
@@ -156,7 +158,7 @@
     import amplitude from '@/amplitude/index.js'
 
     export default {
-        components: {HomeCard, HomeCardComming},
+        components: {HomeCard, HomeCardComming,Navbar},
         data: () =>({
             vclink: "/instructions/vc",
         }),
@@ -185,7 +187,7 @@
                 };
                 amplitude.track('Login Clicked', eventProperties);
                 this.$router.push('/login');
-            }
+            },
         },
         computed: {
             loggedIn() {

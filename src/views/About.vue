@@ -51,8 +51,13 @@
             <v-col key=3 cols="" sm="3"></v-col>
         </v-row>
     </v-container>
+    <Navbar/>
   </template>
 <script>
+import Navbar from '@/components/Navbar.vue';
+export default {
+        components: {Navbar}
+}
 </script>
 <style>
 .mdi-star-shooting::before,.mdi-lightbulb-on::before {
