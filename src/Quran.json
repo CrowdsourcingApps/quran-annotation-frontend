@@ -41,6 +41,33 @@
           "ru":"Путем тех, кого Ты облагодетельствовал, а не тех, на ком гнев, и не заблудших."
        }
     },
+    "97":{
+       "1":{
+          "uthmani":"إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+          "en":"We have indeed revealed it (the Quran) in the Night of Decree (or Power):",
+          "ru":"Воистину, Мы ниспослали его [Коран] в ночь предопределения [или величия]."
+       },
+       "2":{
+          "uthmani":"وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+          "en":"And what will explain to you what the night of decree is?",
+          "ru":"Откуда ты мог знать, что такое ночь предопределения?"
+       },
+       "3":{
+          "uthmani":"لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+          "en":"The Night of Decree is better than a thousand months.",
+          "ru":"Ночь предопределения лучше тысячи месяцев."
+       },
+       "4":{
+          "uthmani":"تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+          "en":"The angels and the Spirit (Jibreel) descend therein by permission of their Lord for every matter.",
+          "ru":"В эту ночь ангелы и Дух [Джибрил] нисходят с дозволения их Господа по всем Его повелениям."
+       },
+       "5":{
+          "uthmani":"سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+          "en":"Peace it is until the emergence of dawn.",
+          "ru":"Она благополучна вплоть до наступления зари."
+       }
+    },
     "103":{
        "1":{
           "uthmani":"وَالْعَصْرِ",
@@ -103,6 +130,92 @@
           "uthmani":"فِي عَمَدٍ مُمَدَّدَةٍ",
           "en":"In extended columns.",
           "ru":"высокими столбами (мученики будут прикованы к этим столбам или врата Ада будут заперты и закреплены этими столбами)."
+       }
+    },
+    "105":{
+       "1":{
+          "uthmani":"أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+          "en":"Have you not considered how your Lord dealt with the People of the Elephant?",
+          "ru":"Разве ты не видел, что сделал твой Господь с владельцами слона?"
+       },
+       "2":{
+          "uthmani":"أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
+          "en":"Did He not make their plan go wrong?",
+          "ru":"Разве Он не запутал их козни"
+       },
+       "3":{
+          "uthmani":"وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+          "en":"He sent against them swarms of birds.",
+          "ru":"и не наслал на них птиц стаями?"
+       },
+       "4":{
+          "uthmani":"تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+          "en":"Throwing at them rocks of baked clay.",
+          "ru":"Они бросали в них каменья из обожженной глины"
+       },
+       "5":{
+          "uthmani":"فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
+          "en":"Leaving them like chewed-up leaves.",
+          "ru":"и превратили их в подобие изъеденных иссохших злаковых листьев."
+       }
+    },
+    "106":{
+       "1":{
+          "uthmani":"لِإِيلَـٰفِ قُرَيْشٍ",
+          "en":"For the security of Quraish.",
+          "ru":"Ради единения курейшитов,"
+       },
+       "2":{
+          "uthmani":"إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+          "en":"Their security during winter and summer journeys.",
+          "ru":"единения их во время зимних и летних поездок."
+       },
+       "3":{
+          "uthmani":"فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
+          "en":"Let them worship the Lord of this House.",
+          "ru":"Пусть же они поклоняются Господу этого Дома (Каабы),"
+       },
+       "4":{
+          "uthmani":"ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+          "en":"Who has fed them against hunger, and has secured them against fear.",
+          "ru":"Который накормил их после голода и избавил их от страха."
+       }
+    },
+    "107":{
+       "1":{
+          "uthmani":"أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+          "en":"Have you considered the one who denies the Judgment (to come)?",
+          "ru":"Видел ли ты того, кто считает ложью воздаяние?"
+       },
+       "2":{
+          "uthmani":"فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+          "en":"Then such is the (man) who mistreats the orphan (with harshness),",
+          "ru":"Это - тот, кто гонит сироту"
+       },
+       "3":{
+          "uthmani":"وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+          "en":"And does not encourage the feeding of the poor.",
+          "ru":"и не побуждает накормить бедняка."
+       },
+       "4":{
+          "uthmani":"فَوَيْلٌ لِّلْمُصَلِّينَ",
+          "en":"So woe to those who worshippers",
+          "ru":"Горе молящимся,"
+       },
+       "5":{
+          "uthmani":"ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+          "en":"Who are neglectful of their prayers",
+          "ru":"которые небрежны к своим намазам,"
+       },
+       "6":{
+          "uthmani":"ٱلَّذِينَ هُمْ يُرَآءُونَ",
+          "en":"Those who make show (of their deeds)",
+          "ru":"которые лицемерят"
+       },
+       "7":{
+          "uthmani":"وَيَمْنَعُونَ ٱلْمَاعُونَ",
+          "en":"And withhold (even simple) assistance.",
+          "ru":"и отказывают даже в мелочи!"
        }
     },
     "108":{
@@ -173,7 +286,7 @@
     },
     "111":{
        "1":{
-          "uthmani":"تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ ",
+          "uthmani":"تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
           "en":"May the hands of Abu Lahab be ruined, and ruined is he.",
           "ru":"Да пропадут пропадом руки Абу Лахаба, и сам он пропал."
        },
@@ -183,12 +296,12 @@
           "ru":"Не спасло его богатство и то, что он приобрел (положение в обществе и дети)."
        },
        "3":{
-          "uthmani":"سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ ",
+          "uthmani":"سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
           "en":"He will burn in a Fire of [blazing] flame.",
           "ru":"Он попадет в пламенный Огонь."
        },
        "4":{
-          "uthmani":"وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ ",
+          "uthmani":"وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ",
           "en":"And his wife [as well] - the carrier of firewood.",
           "ru":"Жена его будет носить дрова,"
        },
@@ -436,7 +549,7 @@
           "ru":"и возносим Тебе хвалу за все благое, и благодарим Тебя!"
        },
        "5":{
-          "uthmani":"وَلَا نَكْفُرُكَ ",
+          "uthmani":"وَلَا نَكْفُرُكَ",
           "en":"and we will not deny Your blessings.",
           "ru":"Мы не будем совершать неверия!"
        },
@@ -596,13 +709,8 @@
        }
     },
     "999007":{
-       "0":{
-          "uthmani":"بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
-          "en":"Istikhara is a way of asking Allah for help and guidance, when making a decision or choice.\nThe Prophet (peace and blessing be upon him) said: If any of you thinks of doing a job, he should offer two rak`at of a non-obligatory prayer and say:",
-          "ru":"Истихара - это способ обращения к Аллаху за помощью и руководством при принятии решений или выборе.\nПророк (мир ему и благословение) сказал: Если кто-то из думает предпринять какое-либо дело, ему следует совершить два ракъата необязательной молитвы и произнести следующее дуа:"
-       },
        "1":{
-          "uthmani":"اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ ",
+          "uthmani":"اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ",
           "en":"Dear God, I’m asking You to choose for me through Your [All-Encompassing] Knowledge,",
           "ru":"О Аллах, я прошу Тебя помочь мне выбрать через Твое Знание,"
        },
@@ -810,7 +918,7 @@
        "9":{
           "uthmani":"قَدْ قَامَتْ الصَّلَاةُ قَدْ قَامَتْ الصَّلَاةُ",
           "en":"The prayer has started, the prayer has started",
-          "ru":"Намаз уже начался, намаз уже начался, "
+          "ru":"Намаз уже начался, намаз уже начался,"
        },
        "10":{
           "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
