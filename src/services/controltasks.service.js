@@ -17,6 +17,10 @@ class ControlTasksService {
                 return response;
             });
         }
+    
+    get_validate_correctness_user_accuracy() {
+        return api.get(URL+'validate_correctness/user_accuracy');
+    }
 
 }
 export default new ControlTasksService();

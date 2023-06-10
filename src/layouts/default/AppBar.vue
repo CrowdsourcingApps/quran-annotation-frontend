@@ -57,7 +57,7 @@
         <v-list-item class="font-weight-bold justify-center">{{ $t('nav.mycontribution') }}</v-list-item>
         <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{$t('nav.today')}}{{ $t('nav.space') }}{{ this.validate_correctness_today }}</v-list-item>
         <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{$t('nav.total')}}{{ $t('nav.space') }}{{ this.validate_correctness_total }}</v-list-item>
-        <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{$t('nav.accuracy')}}{{ $t('nav.space') }}{{ this.validate_correctness_score }}</v-list-item>
+        <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{$t('nav.accuracy')}}{{ $t('nav.space') }}{{ this.validate_correctness_accuracy }}</v-list-item>
       </v-list>
       <v-divider v-if="loggedIn"></v-divider>
       <v-list v-if="loggedIn" nav>
@@ -80,6 +80,7 @@
   import EventBus from "@/common/EventBus";
   import AuthService from "@/services/auth.service";
   import TaskService from "@/services/tasks.service";
+  import controltasksService from '@/services/controltasks.service';
   import amplitude from '@/amplitude/index.js'
 
   export default {
@@ -108,6 +109,7 @@
       });
       this.me();
       this.get_today_vc_contribution();
+      this.get_vc_user_accuracy();
     },
     beforeDestroy() {
       EventBus.remove("logout");
@@ -167,7 +169,18 @@
           (response) => {
             localStorage.setItem("vc_points_today", response.data.count);
             this.validate_correctness_today=response.data.count
-            console.log(response.data.count)
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
+      },
+      get_vc_user_accuracy(){
+        controltasksService.get_validate_correctness_user_accuracy().then(
+          (response) => {
+            let acc = Math.round(response.data.acc)
+            localStorage.setItem("vc_accuracy", acc);
+            this.validate_correctness_accuracy=acc
           },
           (error) => {
             console.log(error);
