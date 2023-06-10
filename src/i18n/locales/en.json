@@ -8,7 +8,11 @@
         "logout":"Logout",
         "register":"Login",
         "account":"My account",
-        "mycontribution":"My contribution"
+        "mycontribution":"My contribution",
+        "today":"Today",
+        "total": "Total",
+        "accuracy": "My accuracy",
+        "space":" "
     },
     "footer":{
         "help":"Help us find other contributers",

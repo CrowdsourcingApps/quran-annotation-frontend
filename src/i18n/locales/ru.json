@@ -8,7 +8,11 @@
         "logout":"Выйти",
         "register":"Войти",
         "account":"Мой аккаунт",
-        "mycontribution":"История"
+        "mycontribution":"История",
+        "today":"",
+        "total": "",
+        "accuracy": "",
+        "space":" "
     },
     "footer":{
         "help":"Помогите нам найти других участников",

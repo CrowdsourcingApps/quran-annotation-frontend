@@ -8,7 +8,11 @@
         "logout":"تسجيل الخروج",
         "register":"تسجيل الدخول",
         "account":"حسابي",
-        "mycontribution":"مساهمتي"
+        "mycontribution":"مساهمتي",
+        "today":"اليوم",
+        "total": "الإجمالي",
+        "accuracy": "دقة أدائي",
+        "space":" "
     },
     "footer":{
         "help":"ساعدنا على إيجاد المزيد من المشاركين",
