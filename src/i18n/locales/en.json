@@ -125,7 +125,7 @@
         "404_message":"No more tasks to solve. Come later!",
         "400_message": "You should pass the training first",
         "completed":"You helped us get closer to our goal!",
-        "contribution_today":"You contributed today with",
+        "contribution_today":"You contributed with",
         "tasks": "verses",
         "contribute_again":"Contribute again",
         "skip":"Skip"

@@ -11,9 +11,9 @@
                 sm="6"
                 >
                 <v-card style="text-align: center" class="mt-5 mb-8">
-                    <v-card-title style="background-color:rgb(249 248 113 / 50%);">
+                    <v-card-text style="background-color:rgb(249 248 113 / 50%);">
                         {{ $t('homepage.validate_recitation') }} <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
-                    </v-card-title>
+                    </v-card-text>
                     <v-card-item >
                         <!-- <div class="text-h7 mb-1">
                             {{ $t('homepage.validate_recitation') }} <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
@@ -29,7 +29,7 @@
                                 </v-col>
                             <v-col key=1 cols="4">
                                 <p>{{$t('nav.accuracy')}}</p>
-                                <p class="mt-2"><v-chip>{{ this.validate_correctness_accuracy }}</v-chip></p>
+                                <p class="mt-2"><v-chip>{{ this.validate_correctness_accuracy }}%</v-chip></p>
                             </v-col>
                         </v-row>
                     </v-card-item>
