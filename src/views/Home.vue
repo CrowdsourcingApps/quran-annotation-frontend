@@ -1,5 +1,49 @@
 <template>
     <v-container>
+        <div v-if="loggedIn" style="text-align: center">
+            <p class="font-weight-bold text-h4 text-sm-h5">{{ $t('nav.mycontribution') }}</p>
+        </div>
+        <v-row v-if="loggedIn" id="my_contribute_section" ref="my_contribute_section" style="margin-top:-30px !important">
+            <v-col key=1 cols="" sm="3"></v-col>
+            <v-col
+                key=1
+                cols="12"
+                sm="6"
+                >
+                <v-card style="text-align: center" class="mt-5 mb-8">
+                    <v-card-title style="background-color:rgb(249 248 113 / 50%);">
+                        {{ $t('homepage.validate_recitation') }} <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
+                    </v-card-title>
+                    <v-card-item >
+                        <!-- <div class="text-h7 mb-1">
+                            {{ $t('homepage.validate_recitation') }} <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
+                        </div> -->
+                        <v-row style="margin-top:5px">
+                            <v-col key=1 cols="4">
+                                <p>{{$t('nav.today')}}</p>
+                                <p class="mt-2"><v-chip>0</v-chip></p>
+                            </v-col>
+                            <v-col key=1 cols="4">
+                                <p>{{$t('nav.total')}}</p>
+                                <p class="mt-2"><v-chip>0</v-chip></p>
+                                </v-col>
+                            <v-col key=1 cols="4">
+                                <p>{{$t('nav.accuracy')}}</p>
+                                <p class="mt-2"><v-chip>0</v-chip></p>
+                            </v-col>
+                        </v-row>
+                    </v-card-item>
+                    <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn style="background-color:#5FD083; color: #fff;" prepend-icon="mdi-checkbox-marked-circle-outline" :to="vclink">
+                            {{ $t('homepage.continue')  }}
+                        </v-btn>
+                        <v-spacer></v-spacer>
+                    </v-card-actions>
+                </v-card>
+            </v-col>
+            <v-col key=1 cols="" sm="3"></v-col>
+        </v-row>
         <v-row no-gutters>
             <v-col
             key=1

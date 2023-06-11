@@ -39,7 +39,8 @@
         "instructions":"التعليمات",
         "download": "حمّله من",
         "you_can_download":"يمكنكم تحميل تطبيقنا الآن !",
-        "Copied":"تم النسخ"
+        "Copied":"تم النسخ",
+        "continue":"تابع"
     },
     "login":{
         "email":"البريد الإلكتروني",

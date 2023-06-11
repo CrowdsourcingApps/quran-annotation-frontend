@@ -39,7 +39,8 @@
         "instructions":"Инструкции",
         "download": "Download on the",
         "you_can_download":"You can download our app now!",
-        "Copied":"Link copied to clipboard!"
+        "Copied":"Link copied to clipboard!",
+        "continue":""
     },
     "login":{
         "email":"email",
