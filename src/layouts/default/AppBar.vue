@@ -54,13 +54,7 @@
       temporary
       >
       <v-list v-if="loggedIn" nav>
-        <v-list-item class="font-weight-bold justify-center">{{ $t('nav.mycontribution') }}</v-list-item>
-        <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{$t('nav.today')}}{{ $t('nav.space') }}{{ this.validate_correctness_today }}</v-list-item>
-        <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{$t('nav.total')}}{{ $t('nav.space') }}{{ this.validate_correctness_total }}</v-list-item>
-        <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{$t('nav.accuracy')}}{{ $t('nav.space') }}{{ this.validate_correctness_accuracy }}</v-list-item>
-      </v-list>
-      <v-divider v-if="loggedIn"></v-divider>
-      <v-list v-if="loggedIn" nav>
+        <!-- <v-list-item class="justify-center" prepend-icon="mdi-account"></v-list-item> -->
         <v-list-item @click.prevent="Home" value="home" class="justify-center" prepend-icon="mdi-home-city">{{ $t('nav.home') }}</v-list-item>
         <!-- <v-list-item @click.prevent="me" value="account" class="justify-center" prepend-icon="mdi-account">{{ $t('nav.account') }}</v-list-item> -->
         <v-list-item @click.prevent="logOut" value="logout" class="justify-center" prepend-icon="mdi-logout">{{ $t('nav.logout') }}</v-list-item>
@@ -78,9 +72,6 @@
 <script>
   import { useDisplay } from 'vuetify'
   import EventBus from "@/common/EventBus";
-  import AuthService from "@/services/auth.service";
-  import TaskService from "@/services/tasks.service";
-  import controltasksService from '@/services/controltasks.service';
   import amplitude from '@/amplitude/index.js'
 
   export default {
@@ -93,10 +84,7 @@
         },
     data: () => ({
       drawer: false,
-      group: null,
-      validate_correctness_total: localStorage.getItem("vc_points"),
-      validate_correctness_today: localStorage.getItem("vc_points_today"),
-      validate_correctness_accuracy: localStorage.getItem("vc_accuracy")
+      group: null
     }),
     computed: {
       loggedIn() {
@@ -107,9 +95,6 @@
       EventBus.on("logout", () => {
         this.logOut();
       });
-      this.me();
-      this.get_today_vc_contribution();
-      this.get_vc_user_accuracy();
     },
     beforeDestroy() {
       EventBus.remove("logout");
@@ -152,40 +137,6 @@
       Home(){
         this.drawer = false
         this.$router.push('/');
-      },
-      me(){
-        AuthService.getme().then(
-          (response) => {
-            localStorage.setItem("vc_points", response.data.validate_correctness_tasks_no);
-            this.validate_correctness_total=response.data.validate_correctness_tasks_no
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
-      },
-      get_today_vc_contribution(){
-        TaskService.get_today_vc_contribution().then(
-          (response) => {
-            localStorage.setItem("vc_points_today", response.data.count);
-            this.validate_correctness_today=response.data.count
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
-      },
-      get_vc_user_accuracy(){
-        controltasksService.get_validate_correctness_user_accuracy().then(
-          (response) => {
-            let acc = Math.round(response.data.acc)
-            localStorage.setItem("vc_accuracy", acc);
-            this.validate_correctness_accuracy=acc
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
       },
       NavbarIconClicked(){
         if(this.drawer=== false) {

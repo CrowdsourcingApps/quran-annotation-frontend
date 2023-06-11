@@ -21,15 +21,15 @@
                         <v-row style="margin-top:5px">
                             <v-col key=1 cols="4">
                                 <p>{{$t('nav.today')}}</p>
-                                <p class="mt-2"><v-chip>0</v-chip></p>
+                                <p class="mt-2"><v-chip>{{ this.validate_correctness_today }}</v-chip></p>
                             </v-col>
                             <v-col key=1 cols="4">
                                 <p>{{$t('nav.total')}}</p>
-                                <p class="mt-2"><v-chip>0</v-chip></p>
+                                <p class="mt-2"><v-chip>{{ this.validate_correctness_total }}</v-chip></p>
                                 </v-col>
                             <v-col key=1 cols="4">
                                 <p>{{$t('nav.accuracy')}}</p>
-                                <p class="mt-2"><v-chip>0</v-chip></p>
+                                <p class="mt-2"><v-chip>{{ this.validate_correctness_accuracy }}</v-chip></p>
                             </v-col>
                         </v-row>
                     </v-card-item>
@@ -201,6 +201,8 @@
     import HomeCardComming from '@/components/HomeCardComming.vue'
     import UserInfoService from "@/services/userinfo.service";
     import AuthService from "@/services/auth.service";
+    import TaskService from "@/services/tasks.service";
+    import controltasksService from '@/services/controltasks.service';
     import { useDisplay } from 'vuetify'
     import amplitude from '@/amplitude/index.js'
 
@@ -208,6 +210,9 @@
         components: {HomeCard, HomeCardComming,Navbar},
         data: () =>({
             vclink: "/instructions/vc",
+            validate_correctness_total: localStorage.getItem("vc_points"),
+            validate_correctness_today: localStorage.getItem("vc_points_today"),
+            validate_correctness_accuracy: localStorage.getItem("vc_accuracy")
         }),
         setup () 
         {
@@ -234,6 +239,39 @@
                 };
                 amplitude.track('Login Clicked', eventProperties);
                 this.$router.push('/login');
+            },
+            get_today_vc_contribution(){
+                TaskService.get_today_vc_contribution().then(
+                (response) => {
+                    localStorage.setItem("vc_points_today", response.data.count);
+                    this.validate_correctness_today=response.data.count
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
+            },
+            get_vc_user_accuracy(){
+                controltasksService.get_validate_correctness_user_accuracy().then(
+                (response) => {
+                    let acc = Math.round(response.data.acc)
+                    localStorage.setItem("vc_accuracy", acc.toString());
+                    this.validate_correctness_accuracy=acc
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
+            }, me(){
+                AuthService.getme().then(
+                (response) => {
+                    localStorage.setItem("vc_points", response.data.validate_correctness_tasks_no);
+                    this.validate_correctness_total=response.data.validate_correctness_tasks_no
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
             },
         },
         computed: {
@@ -283,6 +321,11 @@
                 }  
                 
             }
+        },
+        mounted() {
+            this.get_today_vc_contribution();
+            this.get_vc_user_accuracy();
+            this.me();
         },
     }
 </script>
