@@ -8,7 +8,10 @@
         "logout":"Logout",
         "register":"Login",
         "account":"My account",
-        "mycontribution":"My contribution"
+        "mycontribution":"My contribution",
+        "today":"Today",
+        "total": "Total",
+        "accuracy": "My accuracy"
     },
     "footer":{
         "help":"Help us find other contributers",
@@ -17,7 +20,8 @@
     "homepage":{
         "goal":"Contribute to a large open-source Quran dataset",
         "AI":"This dataset allows to build intelligent AI-based learning apps for Quran",
-        "statistics":"Over 4000 audios are waiting for your contribution",
+        "more_than":"Over ",
+        "statistics":" audios are waiting for your contribution",
         "contribute":"Contribute Now",
         "validate_recitation":"Validate the correctness of word pronunciation",
         "validate_recitation_description":"Listen to the audio, check if it’s recited correctly by focusing on ",
@@ -35,7 +39,10 @@
         "instructions":"Instructions",
         "download": "Download on the",
         "you_can_download":"You can download our app now!",
-        "Copied":"Link copied to clipboard!"
+        "Copied":"Link copied to clipboard!",
+        "continue":"Continue",
+        "help":"Help us reach ",
+        "annotation":" annotation"
     },
     "login":{
         "email":"Email",
@@ -120,7 +127,7 @@
         "404_message":"No more tasks to solve. Come later!",
         "400_message": "You should pass the training first",
         "completed":"You helped us get closer to our goal!",
-        "contribution_today":"You contributed today with",
+        "contribution_today":"You contributed with",
         "tasks": "verses",
         "contribute_again":"Contribute again",
         "skip":"Skip"
