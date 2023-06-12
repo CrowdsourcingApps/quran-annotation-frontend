@@ -26,10 +26,36 @@
                             <v-col key=1 cols="4">
                                 <p>{{$t('nav.total')}}</p>
                                 <p class="mt-2"><v-chip>{{ this.validate_correctness_total }}</v-chip></p>
-                                </v-col>
+                            </v-col>
                             <v-col key=1 cols="4">
                                 <p>{{$t('nav.accuracy')}}</p>
                                 <p class="mt-2"><v-chip>{{ this.validate_correctness_accuracy }}%</v-chip></p>
+                            </v-col>
+                        </v-row>
+                        <p class="mt-4">{{$t('homepage.help')}}{{ this.target }}{{$t('homepage.annotation')}}</p>
+                        <v-row style="margin-top:-5px">
+                            <v-col key=1 cols="2" sm="2"></v-col>
+                            <v-col key=1 cols="8" sm="8">
+                                <v-progress-linear
+                                color="blue-lighten-3"
+                                :model-value="this.progress * 100 / this.target"
+                                :height="12"
+                                :reverse="$i18n.locale === 'AR'"
+                                rounded-bar
+                                striped
+                                class="mt-2"
+                                ></v-progress-linear>
+                            </v-col>
+                            <v-col key=1 cols="2" sm="2"></v-col>
+                        </v-row>
+                        <v-row style="margin-top:-42px !important">
+                            <v-col key=1 cols="3" sm="2">
+                               {{ this.progress }}
+                            </v-col>
+                            <v-col key=1 cols="6" sm="8">
+                            </v-col>
+                            <v-col key=1 cols="3" sm="2">
+                                {{ this.target }}
                             </v-col>
                         </v-row>
                     </v-card-item>
@@ -212,7 +238,9 @@
             vclink: "/instructions/vc",
             validate_correctness_total: localStorage.getItem("vc_points"),
             validate_correctness_today: localStorage.getItem("vc_points_today"),
-            validate_correctness_accuracy: localStorage.getItem("vc_accuracy")
+            validate_correctness_accuracy: localStorage.getItem("vc_accuracy"),
+            target: 1000,
+            progress: localStorage.getItem("progress")
         }),
         setup () 
         {
@@ -273,6 +301,11 @@
                 }
                 );
             },
+            vc_progress(){
+                let progress=600;
+                this.progress=progress;
+                localStorage.setItem("progress", this.progress);
+            }
         },
         computed: {
             loggedIn() {
@@ -326,6 +359,7 @@
             this.get_today_vc_contribution();
             this.get_vc_user_accuracy();
             this.me();
+            this.vc_progress();
         },
     }
 </script>

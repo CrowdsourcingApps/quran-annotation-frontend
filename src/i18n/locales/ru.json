@@ -9,10 +9,9 @@
         "register":"Войти",
         "account":"Мой аккаунт",
         "mycontribution":"История",
-        "today":"",
-        "total": "",
-        "accuracy": "",
-        "space":" "
+        "today":"Today",
+        "total": "Total",
+        "accuracy": "My accuracy"
     },
     "footer":{
         "help":"Помогите нам найти других участников",
@@ -40,7 +39,9 @@
         "download": "Download on the",
         "you_can_download":"You can download our app now!",
         "Copied":"Link copied to clipboard!",
-        "continue":""
+        "continue":"Continue",
+        "help":"Help us reach ",
+        "annotation":" annotation"
     },
     "login":{
         "email":"email",
