@@ -5,7 +5,10 @@
                 {{ $t('homepage.instructions') }}
             </p>
             <p class="text-h6 text-sm-subtitle-1 ma-2">
-                {{ $t('validate_instruction.task') }}
+                {{ $t('homepage.validate_recitation_description') }} {{ $t('homepage.validate_focus') }} {{ $t('validate_instruction.task') }}
+            </p>
+            <p class="font-weight-bold text-h4 text-sm-h5 ma-2 pa-2">
+                <b>{{ $t('validate_instruction.hafs') }}</b>
             </p>
             <iframe v-if="$i18n.locale === 'AR'"
                     :width="xsvalue? '100%' : '560'"

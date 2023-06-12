@@ -81,12 +81,15 @@
           </v-btn> 
         </v-form>
       </v-card>
+      <Navbar/>
 </template>
 <script>
+  import Navbar from '@/components/Navbar.vue';
   import Message from '@/models/message'
   import AuthService from "@/services/auth.service";
   import amplitude from '@/amplitude/index.js'
   export default {
+    components: {Navbar},
     data: () => ({
       form: false,
       msg: new Message(null,null,null),

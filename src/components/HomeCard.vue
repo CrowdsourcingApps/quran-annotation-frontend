@@ -1,15 +1,17 @@
 <template>
     <v-card
         class="mx-auto ma-2 pa-2"
-        :max-width="xsvalue? '100%' : mdAndUpvalue ? '60%' : '80%'"
-        style="background-color: #F5F5F5;"
+        :max-width="xsvalue? '100%' : mdAndUpvalue ? '70%' : '80%'"
+        style="background-color: #F5F5F5;text-align: center"
         >
         <v-card-item>
         <div>
             <div class="text-h6 mb-1">
                 {{ Title }} <v-icon>{{ Icon }}</v-icon>
             </div>
-            <div class="text-caption ma-2">{{ Description }}</div>
+            <div class="text-caption ma-2">{{ Description }}<b>{{ focus }}</b> {{ ruaya }} <b>{{ hafs }}</b></div>
+            <ProgressBar :vc_target="vc_target"
+                        :vc_progress="vc_progress"/>
         </div>
         </v-card-item>
 
@@ -30,8 +32,10 @@
 </template>
 <script lang="ts">
     import amplitude from '@/amplitude/index.js'
+    import ProgressBar from '@/components/ProgressBar.vue'
     export default {
-        props: ['Title','Icon','Description', 'mdAndUpvalue', 'xsvalue','InsLink', 'Link'],
+        components: {ProgressBar},
+        props: ['Title','Icon','Description','focus','ruaya','hafs', 'mdAndUpvalue', 'xsvalue','InsLink', 'Link','vc_target','vc_progress', 'loggedIn'],
         methods:{
             toInstructions() {
                 if(this.InsLink ==="/instructions/vc"){

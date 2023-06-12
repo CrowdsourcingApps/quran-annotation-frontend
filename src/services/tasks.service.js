@@ -14,6 +14,9 @@ class TasksService {
                 return response;
             });
         }
+    get_today_vc_contribution(){
+        return api.get(URL+'validate_correctness/today_contribution');
+    }
 
 }
 export default new TasksService();

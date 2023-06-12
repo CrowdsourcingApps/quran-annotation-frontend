@@ -1,5 +1,51 @@
 <template>
     <v-container>
+        <div v-if="loggedIn" style="text-align: center">
+            <p class="font-weight-bold text-h4 text-sm-h5">{{ $t('nav.mycontribution') }}</p>
+        </div>
+        <v-row v-if="loggedIn" id="my_contribute_section" ref="my_contribute_section" style="margin-top:-30px !important">
+            <v-col key=1 cols="" sm="3"></v-col>
+            <v-col
+                key=1
+                cols="12"
+                sm="6"
+                >
+                <v-card style="text-align: center" class="mt-5 mb-8">
+                    <v-card-text style="background-color:rgb(249 248 113 / 50%);">
+                        {{ $t('homepage.validate_recitation') }} <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
+                    </v-card-text>
+                    <v-card-item >
+                        <!-- <div class="text-h7 mb-1">
+                            {{ $t('homepage.validate_recitation') }} <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
+                        </div> -->
+                        <v-row style="margin-top:5px">
+                            <v-col key=1 cols="4">
+                                <p>{{$t('nav.today')}}</p>
+                                <p class="mt-2"><v-chip>{{ this.validate_correctness_today }}</v-chip></p>
+                            </v-col>
+                            <v-col key=1 cols="4">
+                                <p>{{$t('nav.total')}}</p>
+                                <p class="mt-2"><v-chip>{{ this.validate_correctness_total }}</v-chip></p>
+                            </v-col>
+                            <v-col key=1 cols="4">
+                                <p>{{$t('nav.accuracy')}}</p>
+                                <p class="mt-2"><v-chip>{{ this.validate_correctness_accuracy }}%</v-chip></p>
+                            </v-col>
+                        </v-row>
+                        <ProgressBar :vc_target="this.vc_target"
+                                     :vc_progress="this.vc_progress"/>
+                    </v-card-item>
+                    <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn style="background-color:#5FD083; color: #fff;" prepend-icon="mdi-checkbox-marked-circle-outline" @click="toContinue()">
+                            {{ $t('homepage.continue')  }}
+                        </v-btn>
+                        <v-spacer></v-spacer>
+                    </v-card-actions>
+                </v-card>
+            </v-col>
+            <v-col key=1 cols="" sm="3"></v-col>
+        </v-row>
         <v-row no-gutters>
             <v-col
             key=1
@@ -12,30 +58,10 @@
                 <v-btn v-if="!loggedIn" style="background-color:#5FD083; color: #fff;" @click.prevent="login()">{{ $t('nav.login') }}</v-btn>
                 <v-btn v-if="loggedIn" style="background-color:#5FD083; color: #fff;"
                 @click="scroll('contribute_section')">{{ $t('nav.contribute') }}</v-btn>
-                <p class="text-subtitle-1 text-sm-caption ma-2 pa-2">{{ $t('homepage.statistics') }}</p>
+                <p class="text-subtitle-1 text-sm-caption ma-2 pa-2">{{$t('homepage.more_than')}} {{this.vc_total}} {{ $t('homepage.statistics') }}</p>
             </div>
             <p style="text-align: center;" class="text-h6 text-sm-subtitle-1 ma-2 pa-2">{{ $t('homepage.you_can_download') }}</p>
             <div class="align-center ma-2 pa-2" style="text-align: center;">
-                <!-- <v-btn
-                    class="ma-2"
-                    color="primary"
-                >
-                    App Store
-                    <v-icon
-                    end
-                    icon="mdi-apple"
-                    ></v-icon>
-                </v-btn>
-                <v-btn
-                    class="ma-2"
-                    color="primary"
-                >
-                    Google Play
-                    <v-icon
-                    end
-                    icon="mdi-google-play"
-                    ></v-icon>
-                </v-btn> -->
                 <!-- App Store button -->
                 <a href="https://apps.apple.com/us/app/quran-app-read-memorize-learn/id1498169172?platform=iphone" target="_blank" class="market-btn apple-btn" role="button"
                    style="margin: 5px;">
@@ -91,10 +117,15 @@
                 <HomeCard  :Title="$t('homepage.validate_recitation')"
                            Icon="mdi-checkbox-marked-circle-outline"
                            :Description="$t('homepage.validate_recitation_description')"
+                           :focus="$t('homepage.validate_focus')"
+                           :ruaya="$t('homepage.validate_recitation_ruaya')"  
+                           :hafs="$t('homepage.validate_hafs')"
                            :mdAndUpvalue="mdAndUpvalue"
                            InsLink="/instructions/vc"
                            :Link="vclink"
-                           :xsvalue="xsvalue"/>
+                           :xsvalue="xsvalue"
+                           :vc_target="this.vc_target"
+                           :vc_progress="this.vc_progress"/>
             </v-col>
             <v-col
                 key=2
@@ -105,7 +136,9 @@
                            Icon="mdi-magnify"
                            :Description="$t('homepage.validate_Tajweed_description')"
                            :mdAndUpvalue="mdAndUpvalue"
-                           :xsvalue="xsvalue"/>
+                           :xsvalue="xsvalue"
+                           :vc_target="500"
+                           :vc_progress="0"/>
             </v-col>
             <!-- <v-col
                 key=2
@@ -143,22 +176,34 @@
                            :xsvalue="xsvalue"/>
             </v-col>
         </v-row> -->
-        <v-row style="height:200px"></v-row>
+        <!-- <v-row style="height:200px"></v-row> -->
     </v-container>
+    <Navbar/>
 </template>
   
 <script lang="ts">
     import HomeCard from '@/components/HomeCard.vue'
+    import Navbar from '@/components/Navbar.vue';
+    import ProgressBar from '@/components/ProgressBar.vue'
     import HomeCardComming from '@/components/HomeCardComming.vue'
     import UserInfoService from "@/services/userinfo.service";
     import AuthService from "@/services/auth.service";
+    import TaskService from "@/services/tasks.service";
+    import controltasksService from '@/services/controltasks.service';
+    import homeService from '@/services/home.service';
     import { useDisplay } from 'vuetify'
     import amplitude from '@/amplitude/index.js'
 
     export default {
-        components: {HomeCard, HomeCardComming},
+        components: {HomeCard, HomeCardComming,Navbar,ProgressBar},
         data: () =>({
             vclink: "/instructions/vc",
+            validate_correctness_total: localStorage.getItem("vc_points"),
+            validate_correctness_today: localStorage.getItem("vc_points_today"),
+            validate_correctness_accuracy: localStorage.getItem("vc_accuracy"),
+            vc_target: 1000,
+            vc_progress: localStorage.getItem("vc_progress"),
+            vc_total: localStorage.getItem("vc_total")
         }),
         setup () 
         {
@@ -185,6 +230,61 @@
                 };
                 amplitude.track('Login Clicked', eventProperties);
                 this.$router.push('/login');
+            },
+            get_today_vc_contribution(){
+                TaskService.get_today_vc_contribution().then(
+                (response) => {
+                    localStorage.setItem("vc_points_today", response.data.count);
+                    this.validate_correctness_today=response.data.count
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
+            },
+            get_vc_user_accuracy(){
+                controltasksService.get_validate_correctness_user_accuracy().then(
+                (response) => {
+                    let acc = Math.round(response.data.acc)
+                    localStorage.setItem("vc_accuracy", acc.toString());
+                    this.validate_correctness_accuracy=acc
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
+            }, me(){
+                AuthService.getme().then(
+                (response) => {
+                    localStorage.setItem("vc_points", response.data.validate_correctness_tasks_no);
+                    this.validate_correctness_total=response.data.validate_correctness_tasks_no
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
+            },
+            get_vc_progress(){
+                homeService.get_vc_statistics().then(
+                (response) => {
+                    let progress = response.data.solved_count
+                    let total = response.data.total_count
+                    this.vc_progress=progress;
+                    this.vc_total=total;
+                    localStorage.setItem("vc_progress", this.vc_progress);
+                    localStorage.setItem("vc_total", this.vc_total);
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
+            },
+            toContinue(){
+                const eventProperties = {
+                        location: 'Home',
+                    };
+                amplitude.track('VCContinue Clicked', eventProperties);
+                this.$router.push(this.vclink);
             }
         },
         computed: {
@@ -234,6 +334,12 @@
                 }  
                 
             }
+        },
+        mounted() {
+            this.get_today_vc_contribution();
+            this.get_vc_user_accuracy();
+            this.me();
+            this.get_vc_progress();
         },
     }
 </script>

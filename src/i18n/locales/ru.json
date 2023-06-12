@@ -8,7 +8,10 @@
         "logout":"Выйти",
         "register":"Войти",
         "account":"Мой аккаунт",
-        "mycontribution":"История"
+        "mycontribution":"История",
+        "today":"Today",
+        "total": "Total",
+        "accuracy": "My accuracy"
     },
     "footer":{
         "help":"Помогите нам найти других участников",
@@ -17,10 +20,14 @@
     "homepage":{
         "goal":"Внесите свой вклад в большой набор данных по чтению Корана с открытым исходным кодом",
         "AI":"Этот набор данных позволяет создавать умные приложения для обучения Корану с использованием искусственного интеллекта",
-        "statistics":"Более 4000 аудиозаписей ждут вашего вклада",
+        "more_than":"Более ",
+        "statistics":" аудиозаписей ждут вашего вклада",
         "contribute":"Внесите свой вклад прямо сейчас",
-        "validate_recitation":"Проверка правильности",
-        "validate_recitation_description":"Послушайте аудиозапись аята, проверьте, правильно ли он прочитан.",
+        "validate_recitation":"Validate the correctness of word pronunciation",
+        "validate_recitation_description":"Listen to the audio, check if it’s recited correctly by focusing on ",
+        "validate_focus":"letter exits and diacritics.",
+        "validate_recitation_ruaya":"The approved Riwaya is ",
+        "validate_hafs": "Hafs an Asim.",
         "transcribe_recitation":"Транскрипция услышанного",
         "transcribe_recitation_description":"Введите именно то, что вы слышите, включая ошибки.",
         "validate_transcription":"Проверка транскрипции",
@@ -31,7 +38,11 @@
         "try_it":"Попробовать",
         "instructions":"Инструкции",
         "download": "Download on the",
-        "you_can_download":"You can download our app now!"
+        "you_can_download":"You can download our app now!",
+        "Copied":"Link copied to clipboard!",
+        "continue":"Continue",
+        "help":"Help us reach ",
+        "annotation":" annotation"
     },
     "login":{
         "email":"email",
@@ -58,7 +69,7 @@
         "summary": "Сводка"
     },
     "validate_instruction":{
-        "task": "На этом этапе вы прослушаете аудиозапись аята или дуа, а затем выберете вариант, который лучше всего описывает аудио",
+        "task": "click on the option that describes the audio.",
         "options":"Доступные варианты: правильно, ошибка в произношении, проблема с аудио",
         "problem":"Проблема с аудио",
         "problem_options": "Выберете <Проблема с аудио> если в аудио есть одна из следущих проблем",
@@ -114,7 +125,7 @@
         "404_message":"Нет аудио для проверки. Пожалуйста, попробуйте позже.",
         "400_message": "Вам нужно сначала пройти обучение",
         "completed":"Ваш вклад придвинул нас ближе к цели",
-        "contribution_today":"Сегодня вы проверили",
+        "contribution_today":"You contributed with",
         "tasks": "аят(а)",
         "contribute_again":"Попроверять еще",
         "skip":"Пропустить"

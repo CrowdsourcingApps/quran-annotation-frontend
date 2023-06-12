@@ -54,11 +54,7 @@
       temporary
       >
       <v-list v-if="loggedIn" nav>
-        <v-list-item class="font-weight-bold justify-center">{{ $t('nav.mycontribution') }}</v-list-item>
-        <v-list-item class="justify-center" prepend-icon="mdi-checkbox-marked-circle-outline">{{ this.validate_correctness_score }}</v-list-item>
-      </v-list>
-      <v-divider v-if="loggedIn"></v-divider>
-      <v-list v-if="loggedIn" nav>
+        <!-- <v-list-item class="justify-center" prepend-icon="mdi-account"></v-list-item> -->
         <v-list-item @click.prevent="Home" value="home" class="justify-center" prepend-icon="mdi-home-city">{{ $t('nav.home') }}</v-list-item>
         <!-- <v-list-item @click.prevent="me" value="account" class="justify-center" prepend-icon="mdi-account">{{ $t('nav.account') }}</v-list-item> -->
         <v-list-item @click.prevent="logOut" value="logout" class="justify-center" prepend-icon="mdi-logout">{{ $t('nav.logout') }}</v-list-item>
@@ -76,7 +72,6 @@
 <script>
   import { useDisplay } from 'vuetify'
   import EventBus from "@/common/EventBus";
-  import AuthService from "@/services/auth.service";
   import amplitude from '@/amplitude/index.js'
 
   export default {
@@ -89,8 +84,7 @@
         },
     data: () => ({
       drawer: false,
-      group: null,
-      validate_correctness_score: localStorage.getItem("vc_points")
+      group: null
     }),
     computed: {
       loggedIn() {
@@ -101,7 +95,6 @@
       EventBus.on("logout", () => {
         this.logOut();
       });
-      this.me();
     },
     beforeDestroy() {
       EventBus.remove("logout");
@@ -144,17 +137,6 @@
       Home(){
         this.drawer = false
         this.$router.push('/');
-      },
-      me(){
-        AuthService.getme().then(
-          (response) => {
-            localStorage.setItem("vc_points", response.data.validate_correctness_tasks_no);
-            this.validate_correctness_score=response.data.validate_correctness_tasks_no
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
       },
       NavbarIconClicked(){
         if(this.drawer=== false) {
