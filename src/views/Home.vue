@@ -32,32 +32,8 @@
                                 <p class="mt-2"><v-chip>{{ this.validate_correctness_accuracy }}%</v-chip></p>
                             </v-col>
                         </v-row>
-                        <p class="mt-4">{{$t('homepage.help')}}{{ this.vc_target }}{{$t('homepage.annotation')}}</p>
-                        <v-row style="margin-top:-5px">
-                            <v-col key=1 cols="2" sm="2"></v-col>
-                            <v-col key=1 cols="8" sm="8">
-                                <v-progress-linear
-                                color="blue-lighten-3"
-                                :model-value="this.vc_progress * 100 / this.vc_target"
-                                :height="12"
-                                :reverse="$i18n.locale === 'AR'"
-                                rounded-bar
-                                striped
-                                class="mt-2"
-                                ></v-progress-linear>
-                            </v-col>
-                            <v-col key=1 cols="2" sm="2"></v-col>
-                        </v-row>
-                        <v-row style="margin-top:-42px !important">
-                            <v-col key=1 cols="3" sm="2">
-                               {{ this.vc_progress }}
-                            </v-col>
-                            <v-col key=1 cols="6" sm="8">
-                            </v-col>
-                            <v-col key=1 cols="3" sm="2">
-                                {{ this.vc_target }}
-                            </v-col>
-                        </v-row>
+                        <ProgressBar :vc_target="this.vc_target"
+                                     :vc_progress="this.vc_progress"/>
                     </v-card-item>
                     <v-card-actions>
                         <v-spacer></v-spacer>
@@ -167,7 +143,9 @@
                            :mdAndUpvalue="mdAndUpvalue"
                            InsLink="/instructions/vc"
                            :Link="vclink"
-                           :xsvalue="xsvalue"/>
+                           :xsvalue="xsvalue"
+                           :vc_target="this.vc_target"
+                           :vc_progress="this.vc_progress"/>
             </v-col>
             <v-col
                 key=2
@@ -178,7 +156,9 @@
                            Icon="mdi-magnify"
                            :Description="$t('homepage.validate_Tajweed_description')"
                            :mdAndUpvalue="mdAndUpvalue"
-                           :xsvalue="xsvalue"/>
+                           :xsvalue="xsvalue"
+                           :vc_target="500"
+                           :vc_progress="0"/>
             </v-col>
             <!-- <v-col
                 key=2
@@ -224,6 +204,7 @@
 <script lang="ts">
     import HomeCard from '@/components/HomeCard.vue'
     import Navbar from '@/components/Navbar.vue';
+    import ProgressBar from '@/components/ProgressBar.vue'
     import HomeCardComming from '@/components/HomeCardComming.vue'
     import UserInfoService from "@/services/userinfo.service";
     import AuthService from "@/services/auth.service";
@@ -234,7 +215,7 @@
     import amplitude from '@/amplitude/index.js'
 
     export default {
-        components: {HomeCard, HomeCardComming,Navbar},
+        components: {HomeCard, HomeCardComming,Navbar,ProgressBar},
         data: () =>({
             vclink: "/instructions/vc",
             validate_correctness_total: localStorage.getItem("vc_points"),
