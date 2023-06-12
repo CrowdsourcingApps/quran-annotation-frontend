@@ -32,13 +32,13 @@
                                 <p class="mt-2"><v-chip>{{ this.validate_correctness_accuracy }}%</v-chip></p>
                             </v-col>
                         </v-row>
-                        <p class="mt-4">{{$t('homepage.help')}}{{ this.target }}{{$t('homepage.annotation')}}</p>
+                        <p class="mt-4">{{$t('homepage.help')}}{{ this.vc_target }}{{$t('homepage.annotation')}}</p>
                         <v-row style="margin-top:-5px">
                             <v-col key=1 cols="2" sm="2"></v-col>
                             <v-col key=1 cols="8" sm="8">
                                 <v-progress-linear
                                 color="blue-lighten-3"
-                                :model-value="this.progress * 100 / this.target"
+                                :model-value="this.vc_progress * 100 / this.vc_target"
                                 :height="12"
                                 :reverse="$i18n.locale === 'AR'"
                                 rounded-bar
@@ -50,12 +50,12 @@
                         </v-row>
                         <v-row style="margin-top:-42px !important">
                             <v-col key=1 cols="3" sm="2">
-                               {{ this.progress }}
+                               {{ this.vc_progress }}
                             </v-col>
                             <v-col key=1 cols="6" sm="8">
                             </v-col>
                             <v-col key=1 cols="3" sm="2">
-                                {{ this.target }}
+                                {{ this.vc_target }}
                             </v-col>
                         </v-row>
                     </v-card-item>
@@ -82,7 +82,7 @@
                 <v-btn v-if="!loggedIn" style="background-color:#5FD083; color: #fff;" @click.prevent="login()">{{ $t('nav.login') }}</v-btn>
                 <v-btn v-if="loggedIn" style="background-color:#5FD083; color: #fff;"
                 @click="scroll('contribute_section')">{{ $t('nav.contribute') }}</v-btn>
-                <p class="text-subtitle-1 text-sm-caption ma-2 pa-2">{{ $t('homepage.statistics') }}</p>
+                <p class="text-subtitle-1 text-sm-caption ma-2 pa-2">{{$t('homepage.more_than')}} {{this.vc_total}} {{ $t('homepage.statistics') }}</p>
             </div>
             <p style="text-align: center;" class="text-h6 text-sm-subtitle-1 ma-2 pa-2">{{ $t('homepage.you_can_download') }}</p>
             <div class="align-center ma-2 pa-2" style="text-align: center;">
@@ -229,6 +229,7 @@
     import AuthService from "@/services/auth.service";
     import TaskService from "@/services/tasks.service";
     import controltasksService from '@/services/controltasks.service';
+    import homeService from '@/services/home.service';
     import { useDisplay } from 'vuetify'
     import amplitude from '@/amplitude/index.js'
 
@@ -239,8 +240,9 @@
             validate_correctness_total: localStorage.getItem("vc_points"),
             validate_correctness_today: localStorage.getItem("vc_points_today"),
             validate_correctness_accuracy: localStorage.getItem("vc_accuracy"),
-            target: 1000,
-            progress: localStorage.getItem("progress")
+            vc_target: 1000,
+            vc_progress: localStorage.getItem("vc_progress"),
+            vc_total: localStorage.getItem("vc_total")
         }),
         setup () 
         {
@@ -301,10 +303,20 @@
                 }
                 );
             },
-            vc_progress(){
-                let progress=600;
-                this.progress=progress;
-                localStorage.setItem("progress", this.progress);
+            get_vc_progress(){
+                homeService.get_vc_statistics().then(
+                (response) => {
+                    let progress = response.data.solved_count
+                    let total = response.data.total_count
+                    this.vc_progress=progress;
+                    this.vc_total=total;
+                    localStorage.setItem("vc_progress", this.vc_progress);
+                    localStorage.setItem("vc_total", this.vc_total);
+                },
+                (error) => {
+                    console.log(error);
+                }
+                );
             }
         },
         computed: {
@@ -359,7 +371,7 @@
             this.get_today_vc_contribution();
             this.get_vc_user_accuracy();
             this.me();
-            this.vc_progress();
+            this.get_vc_progress();
         },
     }
 </script>

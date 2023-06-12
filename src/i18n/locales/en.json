@@ -20,7 +20,8 @@
     "homepage":{
         "goal":"Contribute to a large open-source Quran dataset",
         "AI":"This dataset allows to build intelligent AI-based learning apps for Quran",
-        "statistics":"Over 4000 audios are waiting for your contribution",
+        "more_than":"Over ",
+        "statistics":" audios are waiting for your contribution",
         "contribute":"Contribute Now",
         "validate_recitation":"Validate the correctness of word pronunciation",
         "validate_recitation_description":"Listen to the audio, check if it’s recited correctly by focusing on ",
