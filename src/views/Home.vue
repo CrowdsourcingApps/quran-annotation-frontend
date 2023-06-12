@@ -37,7 +37,7 @@
                     </v-card-item>
                     <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn style="background-color:#5FD083; color: #fff;" prepend-icon="mdi-checkbox-marked-circle-outline" :to="vclink">
+                        <v-btn style="background-color:#5FD083; color: #fff;" prepend-icon="mdi-checkbox-marked-circle-outline" @click="toContinue()">
                             {{ $t('homepage.continue')  }}
                         </v-btn>
                         <v-spacer></v-spacer>
@@ -62,26 +62,6 @@
             </div>
             <p style="text-align: center;" class="text-h6 text-sm-subtitle-1 ma-2 pa-2">{{ $t('homepage.you_can_download') }}</p>
             <div class="align-center ma-2 pa-2" style="text-align: center;">
-                <!-- <v-btn
-                    class="ma-2"
-                    color="primary"
-                >
-                    App Store
-                    <v-icon
-                    end
-                    icon="mdi-apple"
-                    ></v-icon>
-                </v-btn>
-                <v-btn
-                    class="ma-2"
-                    color="primary"
-                >
-                    Google Play
-                    <v-icon
-                    end
-                    icon="mdi-google-play"
-                    ></v-icon>
-                </v-btn> -->
                 <!-- App Store button -->
                 <a href="https://apps.apple.com/us/app/quran-app-read-memorize-learn/id1498169172?platform=iphone" target="_blank" class="market-btn apple-btn" role="button"
                    style="margin: 5px;">
@@ -298,6 +278,13 @@
                     console.log(error);
                 }
                 );
+            },
+            toContinue(){
+                const eventProperties = {
+                        location: 'Home',
+                    };
+                amplitude.track('VCContinue Clicked', eventProperties);
+                this.$router.push(this.vclink);
             }
         },
         computed: {
