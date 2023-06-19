@@ -7,7 +7,16 @@ importScripts('https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js')
 // Initialize the Firebase app in the service worker by passing in
 // your app's Firebase config object.
 // https://firebase.google.com/docs/web/setup#config-object
-firebase.initializeApp(JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG));
+
+firebase.initializeApp({
+  apiKey: "AIzaSyBRadxrp_saY1CDAxJY-qFgQojyEJvEMgA",
+  authDomain: "quran-voice-notification.firebaseapp.com",
+  projectId: "quran-voice-notification",
+  storageBucket: "quran-voice-notification.appspot.com",
+  messagingSenderId: "689227498753",
+  appId: "1:689227498753:web:c96052624ecd5b68968700",
+  measurementId: "G-9ED35RV0GP"
+});
 
 // Retrieve an instance of Firebase Messaging so that it can handle background
 // messages.

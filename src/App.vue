@@ -6,8 +6,7 @@
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
-const firebaseConfig =JSON.parse(configstr);
-
+const firebaseConfig =JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG);
 const app = initializeApp(firebaseConfig);
 
 // Get registration token. Initially this makes a network call, once retrieved
