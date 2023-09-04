@@ -6,9 +6,12 @@ import api from './api';
 const API_URL = import.meta.env.VITE_API_URL;
 
 class AuthService {
-  login(user) {
+  login(user, anonymous_id) {
+    console.log(anonymous_id)
+    const url = `${API_URL}token?anonymous_id=${anonymous_id || ''}`;
+    console.log(url)
     return axios
-      .post(API_URL + 'token', new URLSearchParams({
+      .post(url, new URLSearchParams({
         username: user.email,
         password: user.password
       },

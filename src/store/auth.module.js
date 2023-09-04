@@ -12,8 +12,11 @@ export const auth = {
   state: initialState,
   actions: {
     login({ commit }, user) {
-      return AuthService.login(user).then(
+      console.log("from dispatch")
+      const anonymous_id = localStorage.getItem('anonymous_id')
+      return AuthService.login(user,anonymous_id).then(
         user => {
+          localStorage.removeItem("anonymous_id");
           commit('loginSuccess', user);
           return Promise.resolve(user);
         },
