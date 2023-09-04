@@ -11,6 +11,14 @@ class NotificationService {
         platform: 'web'
       });
   }
+
+  store_token_anonymous(anonymous_id, token) {
+    return api.post(API_URL + 'notifications/store_token_anonymous', {
+        anonymous_id: anonymous_id,
+        token: token,
+        platform: 'web'
+      });
+  }
 }
 
 export default new NotificationService();

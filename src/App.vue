@@ -6,6 +6,7 @@
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
 import NotificationService from "@/services/notification.service";
+import AuthService from "@/services/auth.service";
 
 const firebaseConfig =JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG);
 const app = initializeApp(firebaseConfig);
@@ -30,24 +31,54 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
       }
       );
     }
-    // if the cache is empty -> create anonymuse user & save id in cache -> store token in server & update the cache
-
-    // ...
+    else {
+      // check if user is anonymous
+      console.log("Not logged in")
+      var anonymous_id = localStorage.getItem('anonymous_id');
+      if(!anonymous_id){
+        console.log("register_anonymous")
+        // user open the website for the first time
+        AuthService.register_anonymous().then(
+        (response) => {
+          anonymous_id = response.anonymous_id
+          // store token for anonymous 
+          storeAnonymousToken(anonymous_id, currentToken)
+        },
+        (error) => {
+            console.log(error);
+        }
+        );
+      }
+      else
+      {
+        // store token for anonymous 
+        storeAnonymousToken(anonymous_id, currentToken)
+      }
+    }
     console.log("Notification token is: ",currentToken)
   } else {
     // Show permission request UI
     console.log('No registration token available. Request permission to generate one.');
-    // ...
   }
 }).catch((err) => {
   console.log('An error occurred while retrieving token. ', err);
-  // ...
 });
 
 onMessage(messaging, (payload) => {
   console.log('Message received. ', payload);
   // ...
 });
+
+function storeAnonymousToken(anonymous_id, currentToken){
+  NotificationService.store_token_anonymous(anonymous_id, currentToken).then(
+    (response) => {
+        console.log("store_token_anonymous: ",response)
+    },
+    (error) => {
+        console.log(error);
+    }
+  );
+}
 
 // Updating Registration Tokens
 // To ensure that a device’s registration token is fresh, you should periodically retrieve and update all existing registration tokens. 

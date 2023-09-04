@@ -46,6 +46,17 @@ class AuthService {
       });
   }
 
+  register_anonymous() {
+    return axios
+      .post(API_URL + 'register_anonumous')
+      .then(response => {
+        if(response.data.anonymous_id){
+          localStorage.setItem("anonymous_id",response.data.anonymous_id)
+        }
+        return response.data;
+      });
+  }
+
   refresh() {
     return axios.post(API_URL + 'token/refresh',null, {
         headers: { Authorization: 'Bearer ' + TokenService.getLocalRefreshToken() }
