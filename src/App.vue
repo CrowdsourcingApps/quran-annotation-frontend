@@ -35,12 +35,17 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
       // check if user is anonymous
       console.log("Not logged in")
       var anonymous_id = localStorage.getItem('anonymous_id');
-      if(!anonymous_id){
+      // I don't want to create anonymous account for users that are logged out and they have account already
+      const notification_token = localStorage.getItem('notification_token');
+      var notification_token_empty_or_different = !notification_token || (notification_token != currentToken)
+      if(!anonymous_id && notification_token_empty_or_different ){
         console.log("register_anonymous")
         // user open the website for the first time
         AuthService.register_anonymous().then(
         (response) => {
           anonymous_id = response.anonymous_id
+          localStorage.setItem('notification_token',currentToken);
+          console.log('notification token is cached')
           // store token for anonymous 
           storeAnonymousToken(anonymous_id, currentToken)
         },
@@ -49,7 +54,7 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
         }
         );
       }
-      else
+      else if(anonymous_id)
       {
         // store token for anonymous 
         storeAnonymousToken(anonymous_id, currentToken)

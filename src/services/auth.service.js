@@ -7,9 +7,11 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 class AuthService {
   login(user, anonymous_id) {
-    console.log(anonymous_id)
-    const url = `${API_URL}token?anonymous_id=${anonymous_id || ''}`;
-    console.log(url)
+    var url;
+    if(anonymous_id)
+      url = `${API_URL}token?anonymous_id=${anonymous_id}`;
+    else
+      url = `${API_URL}token`;
     return axios
       .post(url, new URLSearchParams({
         username: user.email,
@@ -34,9 +36,14 @@ class AuthService {
     UserInfoService.removeUserInfo();
   }
 
-  register(user) {
+  register(user, anonymous_id) {
+    var url;
+    if(anonymous_id)
+      url = `${API_URL}register?anonymous_id=${anonymous_id}`;
+    else
+      url = `${API_URL}register`;
     return axios
-      .post(API_URL + 'register', {
+      .post(url, {
         email: user.email,
         password: user.password
       })
