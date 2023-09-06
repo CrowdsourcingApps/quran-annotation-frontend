@@ -7,6 +7,9 @@ import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
 import NotificationService from "@/services/notification.service";
 import AuthService from "@/services/auth.service";
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+import CustomToast from "./components/CustomToast.vue";
 
 const firebaseConfig =JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG);
 const app = initializeApp(firebaseConfig);
@@ -58,6 +61,8 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
       {
         // store token for anonymous 
         storeAnonymousToken(anonymous_id, currentToken)
+        // TODO: remove the if condition and call a new endpoint to update the timestamp without 
+        // the need for providing the Ip.
       }
     }
     console.log("Notification token is: ",currentToken)
@@ -71,7 +76,21 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
 
 onMessage(messaging, (payload) => {
   console.log('Message received. ', payload);
-  // ...
+  var title = payload.notification.title
+  var body = payload.notification.body
+  var link = payload.fcmOptions?.link
+  toast(CustomToast, {
+        autoClose: false,
+        type: 'success',
+        icon: "🔔",
+        rtl: true,
+        position: toast.POSITION.BOTTOM_RIGHT,
+        data:{
+          title:title,
+          body: body,
+          link: 'https://localhost:3000/task/vc',
+        }
+      }); // ToastOptions
 });
 
 function storeAnonymousToken(anonymous_id, currentToken){
@@ -84,9 +103,4 @@ function storeAnonymousToken(anonymous_id, currentToken){
     }
   );
 }
-
-// Updating Registration Tokens
-// To ensure that a device’s registration token is fresh, you should periodically retrieve and update all existing registration tokens. 
-// To do so, you’ll need to add app logic in the client app to retrieve the current token, and then send the token along with a 
-// timestamp to the server to store. This could be a monthly job.
 </script>
