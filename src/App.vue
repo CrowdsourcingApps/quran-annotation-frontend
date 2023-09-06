@@ -10,6 +10,7 @@ import AuthService from "@/services/auth.service";
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
 import CustomToast from "./components/CustomToast.vue";
+import notificationSound from '@/assets/alert.mp3';
 
 const firebaseConfig =JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG);
 const app = initializeApp(firebaseConfig);
@@ -88,9 +89,11 @@ onMessage(messaging, (payload) => {
         data:{
           title:title,
           body: body,
-          link: 'https://localhost:3000/task/vc',
+          link: link,
         }
       }); // ToastOptions
+    var audioFile = new Audio(notificationSound);
+    audioFile.play();
 });
 
 function storeAnonymousToken(anonymous_id, currentToken){
