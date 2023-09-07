@@ -82,6 +82,16 @@ class AuthService {
       })
   }
 
+  update_language_anonymous(language, anonymous_id) {
+    return axios.put(API_URL + 'language_anonymous',{
+      language : language,
+      anonymous_id: anonymous_id
+    }).then(response =>{
+      localStorage.setItem("userLocale", language.toUpperCase());
+      return response;
+    })
+  }
+
   update_language(language) {
     return api.put(API_URL + 'language',{
       language : language

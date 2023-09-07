@@ -147,7 +147,7 @@
         this.drawer = !this.drawer
       },
       handleLanguageChange(){
-        let previousLocale = localStorage.getItem('userLocale');
+        const previousLocale = localStorage.getItem('userLocale');
         let newLocale = this.$i18n.locale
         if(previousLocale != newLocale)
           if(this.loggedIn){
@@ -158,6 +158,19 @@
                   console.log(error);
               }
             );
+          }
+          else{
+            const anonymous_id = localStorage.getItem('anonymous_id');
+            if(anonymous_id){
+              AuthService.update_language_anonymous(newLocale.toLowerCase(),anonymous_id).then(
+                (response) => {
+                  console.log("anonymous_update_language")
+                },
+                (error) => {
+                    console.log(error);
+                }
+              );
+            }
           }
       }
     },
