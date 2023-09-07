@@ -13,6 +13,7 @@ if (!initialLocale) {
     initialLocale = browserLanguage
   else
     initialLocale = 'EN'
+  localStorage.setItem("userLocale", browserLanguage);
 }
 
 const i18n = createI18n({

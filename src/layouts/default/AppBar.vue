@@ -42,6 +42,7 @@
             v-model="$i18n.locale"
             :items="$i18n.availableLocales"
             prepend-inner-icon="mdi-earth"
+            :on-change="handleLanguageChange()"
           >
         </v-select>
       </div>
@@ -72,7 +73,8 @@
 <script>
   import { useDisplay } from 'vuetify'
   import EventBus from "@/common/EventBus";
-  import amplitude from '@/amplitude/index.js'
+  import amplitude from '@/amplitude/index.js';
+  import AuthService from "@/services/auth.service";
 
   export default {
     setup () {
@@ -143,6 +145,20 @@
           amplitude.track('Navbar Icon Clicked')
         }
         this.drawer = !this.drawer
+      },
+      handleLanguageChange(){
+        let previousLocale = localStorage.getItem('userLocale');
+        let newLocale = this.$i18n.locale
+        if(previousLocale != newLocale)
+          if(this.loggedIn){
+            AuthService.update_language(newLocale.toLowerCase()).then(
+              (response) => {
+              },
+              (error) => {
+                  console.log(error);
+              }
+            );
+          }
       }
     },
     watch: {

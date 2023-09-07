@@ -82,6 +82,15 @@ class AuthService {
       })
   }
 
+  update_language(language) {
+    return api.put(API_URL + 'language',{
+      language : language
+    }).then(response =>{
+      localStorage.setItem("userLocale", language.toUpperCase());
+      return response;
+    })
+  }
+
   getme() {
     return api.get('me');
   }

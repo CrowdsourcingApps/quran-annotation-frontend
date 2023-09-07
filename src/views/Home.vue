@@ -257,7 +257,9 @@
                 AuthService.getme().then(
                 (response) => {
                     localStorage.setItem("vc_points", response.data.validate_correctness_tasks_no);
-                    this.validate_correctness_total=response.data.validate_correctness_tasks_no
+                    this.validate_correctness_total=response.data.validate_correctness_tasks_no;
+                    let user_language = response.data.language.toUpperCase();
+                    localStorage.setItem("userLocale", user_language);
                 },
                 (error) => {
                     console.log(error);
