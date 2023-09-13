@@ -7,13 +7,14 @@ const availableLocales = ['AR', 'EN', 'RU'];
 
 let initialLocale = localStorage.getItem('userLocale');
 if (!initialLocale) {
-  var browserLanguage = window.navigator.language; 
-  browserLanguage = browserLanguage.split('-')[0].toUpperCase()
-  if(availableLocales.includes(browserLanguage))
-    initialLocale = browserLanguage
-  else
-    initialLocale = 'EN'
-  localStorage.setItem("userLocale", browserLanguage);
+  // var browserLanguage = window.navigator.language; 
+  // browserLanguage = browserLanguage.split('-')[0].toUpperCase()
+  // if(availableLocales.includes(browserLanguage))
+  //   initialLocale = browserLanguage
+  // else
+  //   initialLocale = 'EN'
+  initialLocale = 'AR'
+  localStorage.setItem("userLocale", initialLocale);
 }
 
 const i18n = createI18n({
@@ -21,7 +22,7 @@ const i18n = createI18n({
     globalInjection: true,
     availableLocales: availableLocales,
     locale: initialLocale,
-    fallbackLocale: 'EN',
+    fallbackLocale: 'AR',
     messages: {EN,AR,RU},
   });
 

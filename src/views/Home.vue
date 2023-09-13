@@ -259,7 +259,12 @@
                     localStorage.setItem("vc_points", response.data.validate_correctness_tasks_no);
                     this.validate_correctness_total=response.data.validate_correctness_tasks_no;
                     let user_language = response.data.language.toUpperCase();
-                    localStorage.setItem("userLocale", user_language);
+                    let initialLocale = localStorage.getItem('userLocale');
+                    if(user_language != initialLocale){
+                        // set initialLocale to user_language
+                        this.$i18n.locale = user_language
+                        localStorage.setItem("userLocale", user_language);
+                    }
                 },
                 (error) => {
                     console.log(error);
@@ -313,6 +318,7 @@
                             this.vclink = "/task/vc"
                         }
                         UserInfoService.setUserInfo(data)
+                        console.log("AuthService called on created ",localStorage.getItem("userInfo"))
                     },
                     (error) => {
                         console.log(error);
@@ -338,9 +344,11 @@
             }
         },
         mounted() {
-            this.get_today_vc_contribution();
-            this.get_vc_user_accuracy();
-            this.me();
+            if (this.loggedIn) {
+                this.get_today_vc_contribution();
+                this.get_vc_user_accuracy();
+                this.me();
+            }
             this.get_vc_progress();
         },
     }

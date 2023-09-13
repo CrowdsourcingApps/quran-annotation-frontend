@@ -63,7 +63,7 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
         // store token for anonymous 
         storeAnonymousToken(anonymous_id, currentToken)
         // TODO: remove the if condition and call a new endpoint to update the timestamp without 
-        // the need for providing the Ip.
+        // the need for providing the Id.
       }
     }
     console.log("Notification token is: ",currentToken)
@@ -97,6 +97,7 @@ onMessage(messaging, (payload) => {
 });
 
 function storeAnonymousToken(anonymous_id, currentToken){
+  console.log(anonymous_id)
   NotificationService.store_token_anonymous(anonymous_id, currentToken).then(
     (response) => {
         console.log("store_token_anonymous: ",response)
