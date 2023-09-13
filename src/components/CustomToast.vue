@@ -2,8 +2,10 @@
     <div>
       <p class="notification-title">{{ toastProps?.data.title }}</p>
       <p class="notification-body">{{ toastProps?.data.body }}</p>
-      <div style="text-align: left">
-        <button class="notification-button" style="direction: ltr;" @click="to()"> هيّا </button>
+      <div :style="toastProps?.data.lang === 'AR' ? 'text-align: left;' : 'text-align: right;'">
+        <button class="notification-button" @click="to()">
+          {{ toastProps?.data.close }}
+        </button>
       </div>
     </div>
 </template>

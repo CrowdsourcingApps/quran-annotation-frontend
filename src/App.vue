@@ -80,7 +80,9 @@ onMessage(messaging, (payload) => {
   var title = payload.notification.title
   var body = payload.notification.body
   var link = payload.fcmOptions?.link
-  toast(CustomToast, {
+  const language = localStorage.getItem('userLocale')
+  if(language == 'AR'){
+    toast(CustomToast, {
         autoClose: false,
         type: 'success',
         icon: "🔔",
@@ -90,10 +92,33 @@ onMessage(messaging, (payload) => {
           title:title,
           body: body,
           link: link,
+          close: 'هيّا',
+          lang: language
         }
       }); // ToastOptions
-    var audioFile = new Audio(notificationSound);
-    audioFile.play();
+  }
+  else{
+    let close = 'Let\'s go'
+    if(language == 'RU')
+      close = 'Давай'
+      
+    toast(CustomToast, {
+        autoClose: false,
+        type: 'success',
+        icon: "🔔",
+        rtl: false,
+        position: toast.POSITION.BOTTOM_LEFT,
+        data:{
+          title:title,
+          body: body,
+          link: link,
+          close: close,
+          lang: language
+        }
+      }); // ToastOptions
+  }
+  var audioFile = new Audio(notificationSound);
+  audioFile.play();
 });
 
 function storeAnonymousToken(anonymous_id, currentToken){
