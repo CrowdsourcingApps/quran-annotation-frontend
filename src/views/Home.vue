@@ -350,6 +350,7 @@
                 this.me();
             }
             this.get_vc_progress();
+            this.vc_target = Math.ceil(this.vc_progress / 1000) * 1000;
         },
     }
 </script>
