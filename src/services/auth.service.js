@@ -6,9 +6,14 @@ import api from './api';
 const API_URL = import.meta.env.VITE_API_URL;
 
 class AuthService {
-  login(user) {
+  login(user, anonymous_id) {
+    var url;
+    if(anonymous_id)
+      url = `${API_URL}token?anonymous_id=${anonymous_id}`;
+    else
+      url = `${API_URL}token`;
     return axios
-      .post(API_URL + 'token', new URLSearchParams({
+      .post(url, new URLSearchParams({
         username: user.email,
         password: user.password
       },
@@ -31,9 +36,14 @@ class AuthService {
     UserInfoService.removeUserInfo();
   }
 
-  register(user) {
+  register(user, anonymous_id) {
+    var url;
+    if(anonymous_id)
+      url = `${API_URL}register?anonymous_id=${anonymous_id}`;
+    else
+      url = `${API_URL}register`;
     return axios
-      .post(API_URL + 'register', {
+      .post(url, {
         email: user.email,
         password: user.password
       })
@@ -42,6 +52,17 @@ class AuthService {
           TokenService.setUser(response.data);
         }
 
+        return response.data;
+      });
+  }
+
+  register_anonymous() {
+    return axios
+      .post(API_URL + 'register_anonumous')
+      .then(response => {
+        if(response.data.anonymous_id){
+          localStorage.setItem("anonymous_id",response.data.anonymous_id)
+        }
         return response.data;
       });
   }
@@ -59,6 +80,25 @@ class AuthService {
         }
         return response;
       })
+  }
+
+  update_language_anonymous(language, anonymous_id) {
+    return axios.put(API_URL + 'language_anonymous',{
+      language : language,
+      anonymous_id: anonymous_id
+    }).then(response =>{
+      localStorage.setItem("userLocale", language.toUpperCase());
+      return response;
+    })
+  }
+
+  update_language(language) {
+    return api.put(API_URL + 'language',{
+      language : language
+    }).then(response =>{
+      localStorage.setItem("userLocale", language.toUpperCase());
+      return response;
+    })
   }
 
   getme() {
