@@ -3,12 +3,26 @@ import AR from './locales/ar.json'
 import EN from './locales/en.json'
 import RU from './locales/ru.json'
 
+const availableLocales = ['AR', 'EN', 'RU'];
+
+let initialLocale = localStorage.getItem('userLocale');
+if (!initialLocale) {
+  // var browserLanguage = window.navigator.language; 
+  // browserLanguage = browserLanguage.split('-')[0].toUpperCase()
+  // if(availableLocales.includes(browserLanguage))
+  //   initialLocale = browserLanguage
+  // else
+  //   initialLocale = 'EN'
+  initialLocale = 'AR'
+  localStorage.setItem("userLocale", initialLocale);
+}
+
 const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    availableLocales: ['AR', 'EN', 'RU'],
-    locale: 'AR',
-    fallbackLocale: 'EN',
+    availableLocales: availableLocales,
+    locale: initialLocale,
+    fallbackLocale: 'AR',
     messages: {EN,AR,RU},
   });
 

@@ -1,5 +1,7 @@
 import AuthService from '../services/auth.service';
 
+//localStorage.setItem('user', null)
+//console.log('bad user',localStorage.getItem('user'))
 const user = JSON.parse(localStorage.getItem('user'));
 const initialState = user
   ? { status: { loggedIn: true }, user }
@@ -10,8 +12,11 @@ export const auth = {
   state: initialState,
   actions: {
     login({ commit }, user) {
-      return AuthService.login(user).then(
+      const anonymous_id = localStorage.getItem('anonymous_id')
+      return AuthService.login(user,anonymous_id).then(
         user => {
+          if(anonymous_id)
+            localStorage.removeItem("anonymous_id");
           commit('loginSuccess', user);
           return Promise.resolve(user);
         },
@@ -26,8 +31,11 @@ export const auth = {
       commit('logout');
     },
     register({ commit }, user) {
-      return AuthService.register(user).then(
+      const anonymous_id = localStorage.getItem('anonymous_id')
+      return AuthService.register(user,anonymous_id).then(
         user => {
+          if(anonymous_id)
+            localStorage.removeItem("anonymous_id");
           commit('registerSuccess',user);
           return Promise.resolve(user);
         },
