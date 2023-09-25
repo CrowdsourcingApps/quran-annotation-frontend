@@ -1,4 +1,34 @@
 <template>
+    <teleport to="head">
+        <component :is="'script'" type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                    "@type": "Question",
+                    "name": "{{ $t('about.goal') }}",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>{{ $t('about.goal_sentence') }}</p>"
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "{{ $t('about.how') }}",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ $t('about.how_sentence') }}"
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "{{ $t('about.who') }}",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ $t('about.who_sentence') }}"
+                    }
+                }]
+            }
+        </component>
+    </teleport>
     <v-container>
         <v-row no-gutters>
             <v-col key=1 cols="" sm="3"></v-col>
