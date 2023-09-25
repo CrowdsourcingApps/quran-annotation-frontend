@@ -84,12 +84,30 @@
       <Navbar/>
 </template>
 <script>
+  import { useHead } from '@unhead/vue'
   import Navbar from '@/components/Navbar.vue';
   import Message from '@/models/message'
   import AuthService from "@/services/auth.service";
   import amplitude from '@/amplitude/index.js'
   export default {
     components: {Navbar},
+    setup(){
+        useHead({
+        title: 'Quran Voice - Contact us',
+        meta: [
+            {
+            name: 'description',
+            content: 'Contact us by email. Follow us on social media',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/contactus', // Canonical URL
+            }
+        ]
+        })
+    },
     data: () => ({
       form: false,
       msg: new Message(null,null,null),

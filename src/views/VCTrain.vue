@@ -163,6 +163,7 @@
     </v-row>
 </template>
 <script>
+ import { useHead } from '@unhead/vue'
  import Question from "@/models/question"
  import quran from "@/Quran.json"
  import ControlTasksService from "@/services/controltasks.service"
@@ -171,6 +172,23 @@
  import amplitude from '@/amplitude/index.js'
  export default {
     components: {VcInstructions, Error},
+    setup(){
+        useHead({
+        title: 'Quran Voice - Training on validate correctness task',
+        meta: [
+            {
+            name: 'description',
+            content: 'Pass the training by specify correctlty if the reciter pronounce the words with diacritics correctly or not',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/train/vc', // Canonical URL
+            }
+        ]
+        })
+    },
     data: () => ({
       error : null,
       loading: true,

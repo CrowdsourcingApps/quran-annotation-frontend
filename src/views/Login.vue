@@ -86,9 +86,27 @@
     </v-sheet>
   </template>
   <script>
+  import { useHead } from '@unhead/vue'
   import User from '@/models/user'
   import amplitude from '@/amplitude/index.js'
   export default {
+    setup(){
+        useHead({
+        title: 'Quran Voice - Login',
+        meta: [
+            {
+            name: 'description',
+            content: 'Login with your account to Quran Voice website',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/login', // Canonical URL
+            }
+        ]
+        })
+    },
     data: () => ({
       form: false,
       user: new User(null,null),

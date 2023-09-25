@@ -53,10 +53,30 @@
     </v-container>
     <Navbar/>
   </template>
+
 <script>
+import { useHead } from '@unhead/vue'
 import Navbar from '@/components/Navbar.vue';
+
 export default {
-        components: {Navbar}
+    components: {Navbar},
+    setup(){
+        useHead({
+        title: 'Quran Voice - About us',
+        meta: [
+            {
+            name: 'description',
+            content: 'What is our goal and how we can achieve it',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/about', // Canonical URL
+            }
+        ]
+        })
+    }
 }
 </script>
 <style>
