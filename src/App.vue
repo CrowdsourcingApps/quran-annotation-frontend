@@ -47,7 +47,7 @@ if(CurrentLocale == 'AR')
       },
       {
           property: 'og:image',
-          content: 'https://www.quranvoice.live/src/assets/Quran-voice-meta.png', // Open Graph image URL
+          content: 'https://www.quranvoice.live/Quran-voice-meta.png', // Open Graph image URL
       },
       {
           property: 'og:image:type',
