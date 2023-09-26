@@ -209,65 +209,35 @@
         }),
         setup () 
         {
-            useHead({
-            title: 'Quran Voice',
-            meta:[
-                {
-                name: 'description',
-                content: 'Quran voice is a crowdsourcing platform that aims to collect carefully annotated Quran data for non-Arabic Muslims. This data can be used for building Quran learning apps using AI technologies.',
-                },
-                // {
-                //     name: 'keywords',
-                //     content: 'quran voice, quran, qur\'an, quran learning, quran recitation, quran reading, recite, recitation, reciting ,quran dataset, crowdsourcing, contribute to quran learning, AI technology, muslims, muslim community, quran labeling, quran annotation, recitation correction, quran crowdsourcing annotation platform',
-                // },
-                // {
-                //     name: 'author',
-                //     content: 'Raghad Salameh',
-                // },
-                // {
-                //     name: 'robots',
-                //     content: 'index, follow', // Control search engine indexing
-                // },
-                // {
-                //     property: 'og:title',
-                //     content: 'Quran Voice - Crowdsouring Annotation Platform', // Open Graph title
-                // },
-                // {
-                //     property: 'og:description',
-                //     content: 'Quran voice is a crowdsourcing platform that aims to collect carefully annotated Quran data for non-Arabic Muslims. This data can be used for building Quran learning apps using AI technologies.', // Open Graph description
-                // },
-                // {
-                //     property: 'og:image',
-                //     content: 'https://www.quranvoice.live/src/assets/Quran-voice-meta.png', // Open Graph image URL
-                // },
-                // {
-                //     property: 'og:image:type',
-                //     content: 'image/png', // Open Graph image URL
-                // },
-                // {
-                //     property: 'og:image:height',
-                //     content: '630', // Open Graph image URL
-                // },
-                // {
-                //     property: 'og:image:width',
-                //     content: '1200', // Open Graph image URL
-                // },
-                // {
-                //     property: 'og:url',
-                //     content: 'https://www.quranvoice.live', // Canonical URL
-                // },
-                // {
-                //     property: 'og:type',
-                //     content: 'website', // Type of content
-                // },
-            ],
-            // link: [
-            //     {
-            //         rel: 'canonical',
-            //         href: 'https://www.quranvoice.live', // Canonical URL
-            //     },
-            // ],
-            });
+            const CurrentLocale = localStorage.getItem('userLocale');
+            if(CurrentLocale == 'AR')
+            {
+                useHead({
+                title: 'صوت القرآن',
+                meta:[
+                    {
+                    name: 'description',
+                    content: 'قرآن فويس هو منصة تعهيد جماعي تهدف لجمع بيانات للقرآن للناطقين بغير اللغة العربية و توفيرها للمتطوعين الراغبين بتصنيفها بدقة بهدف بناء تطبيقات تعليمية للقرآن الكريم تستخدم الذكاء الاصطناعي',
+                    },
+                ],
+                });
+            }
+            else if(CurrentLocale == 'RU')
+            {
+
+            }
+            else{
+                useHead({
+                title: 'Quran Voice',
+                meta:[
+                    {
+                    name: 'description',
+                    content: 'Quran voice is a crowdsourcing platform that aims to collect carefully annotated Quran data for non-Arabic Muslims. This data can be used for building Quran learning apps using AI technologies.',
+                    },
+                
+                ],
+                });
+            }
             // get screen size values
             // Destructure only the keys we want to use
             const { xs, mdAndUp } = useDisplay()

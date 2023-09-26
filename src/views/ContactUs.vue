@@ -92,6 +92,30 @@
   export default {
     components: {Navbar},
     setup(){
+      const CurrentLocale = localStorage.getItem('userLocale');
+      if(CurrentLocale == 'AR')
+      {
+        useHead({
+        title: 'صوت القرآن - تواصل معنا',
+        meta: [
+            {
+            name: 'description',
+            content: 'تواصل معنا عن طريق البريد الالكتروني. تابعنا على مواقع التواصل الاجتماعي.',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/contactus', // Canonical URL
+            }
+        ]
+        })
+      }
+      else if(CurrentLocale == 'RU')
+      {
+
+      }
+      else{
         useHead({
         title: 'Quran Voice - Contact us',
         meta: [
@@ -107,6 +131,7 @@
             }
         ]
         })
+      }
     },
     data: () => ({
       form: false,

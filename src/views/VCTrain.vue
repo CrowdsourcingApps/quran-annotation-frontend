@@ -173,6 +173,30 @@
  export default {
     components: {VcInstructions, Error},
     setup(){
+        const CurrentLocale = localStorage.getItem('userLocale');
+        if(CurrentLocale == 'AR')
+        {
+            useHead({
+            title: 'صوت القرآن - تدريب على التحقق من صحة التلاوة',
+            meta: [
+                {
+                name: 'description',
+                content: 'قم باجتياز التدريب من خلال التحديد بشكل صحيح فيما إذا قام القارئ بنطق الكلمات مع الحركات بشكل صحيح.',
+                },
+            ],
+            link:[
+                {
+                    rel: 'canonical',
+                    href: 'https://www.quranvoice.live/train/vc', // Canonical URL
+                }
+            ]
+            })
+        }
+        else if(CurrentLocale == 'RU')
+        {
+
+        }
+        else{
         useHead({
         title: 'Quran Voice - Training on validate correctness task',
         meta: [
@@ -188,6 +212,7 @@
             }
         ]
         })
+        }
     },
     data: () => ({
       error : null,

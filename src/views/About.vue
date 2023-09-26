@@ -91,21 +91,46 @@ import Navbar from '@/components/Navbar.vue';
 export default {
     components: {Navbar},
     setup(){
-        useHead({
-        title: 'Quran Voice - About us',
-        meta: [
-            {
-            name: 'description',
-            content: 'What is our goal and how we can achieve it',
-            },
-        ],
-        link:[
-            {
-                rel: 'canonical',
-                href: 'https://www.quranvoice.live/about', // Canonical URL
-            }
-        ]
-        })
+        const CurrentLocale = localStorage.getItem('userLocale');
+        if(CurrentLocale == 'AR')
+        {
+            useHead({
+            title: 'صوت القرآن - من نحن',
+            meta: [
+                {
+                name: 'description',
+                content: 'ما هو هدفنا و كيف يمكن تحقيقه',
+                },
+            ],
+            link:[
+                {
+                    rel: 'canonical',
+                    href: 'https://www.quranvoice.live/about', // Canonical URL
+                }
+            ]
+            })
+        }
+        else if(CurrentLocale == 'RU')
+        {
+
+        }
+        else{
+            useHead({
+            title: 'Quran Voice - About us',
+            meta: [
+                {
+                name: 'description',
+                content: 'What is our goal and how we can achieve it',
+                },
+            ],
+            link:[
+                {
+                    rel: 'canonical',
+                    href: 'https://www.quranvoice.live/about', // Canonical URL
+                }
+            ]
+            })
+        }
     }
 }
 </script>

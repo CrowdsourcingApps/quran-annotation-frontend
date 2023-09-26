@@ -126,6 +126,30 @@
  export default {
     components: {VcInstructions, Error},
     setup(){
+        const CurrentLocale = localStorage.getItem('userLocale');
+        if(CurrentLocale == 'AR')
+        {
+            useHead({
+            title: 'صوت القرآن - المساهمة في التحقق من التلاوة',
+            meta: [
+                {
+                name: 'description',
+                content: 'قم بتحديد فيما إذا قام القارئ بلفظ الكلمات مع الحركات بشكل صحيح.',
+                },
+            ],
+            link:[
+                {
+                    rel: 'canonical',
+                    href: 'https://www.quranvoice.live/task/vc', // Canonical URL
+                }
+            ]
+            })
+        }
+        else if(CurrentLocale == 'RU')
+        {
+
+        }
+        else{
         useHead({
         title: 'Quran Voice - Contribute to validate correctness task',
         meta: [
@@ -141,6 +165,7 @@
             }
         ]
         })
+    }
     },
     data: () => ({
       error : null,
