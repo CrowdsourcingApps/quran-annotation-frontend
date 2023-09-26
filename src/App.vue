@@ -27,7 +27,7 @@ if(CurrentLocale == 'AR')
       },
       {
           name: 'keywords',
-          content: 'صوت القرآن, القرآن, تعلم القرآن, تلاوة القرآن, قراءة القرآن, تلاوة, مجموعة بيانات القرآن, التعهيد الجماعي, المساهمة في تعلم القرآن, تكنولوجيا الذكاء الاصطناعي, المسلمين, المجتمع الإسلامي, تصنيف تلاوات القرآن, شرح القرآن, تصحيح التلاوة, منصة تعهيد الجماعي لتصنيف تلاوات القرآن الكريم, جمع بيانات للقرآن الكريم, مساعدة الناطقين بغير اللغة العربي',
+          content: 'المسلمين, تصحيح التلاوة, مساعدة الناطقين بغير اللغة العربية,الذكاء الاصطناعي في خدمة القرآن الكريم, تلاوة, التعهيد الجماعي, صوت القرآن, القرآن ,منصة تعهيد جماعي لتصنيف تلاوات القرآن الكريم, المساهمة في تعلم القرآن',
       },
       {
           name: 'author',
@@ -93,7 +93,7 @@ else
       },
       {
           name: 'keywords',
-          content: 'quran voice, quran, qur\'an, quran learning, quran recitation, quran reading, recite, recitation, reciting ,quran dataset, crowdsourcing, contribute to quran learning, AI technology, muslims, muslim community, quran labeling, quran annotation, recitation correction, quran crowdsourcing annotation platform',
+          content: 'quran, koran, quran voice, quran dataset, quran labeling, muslims, recitation correction,quran ai,quran crowdsourcing annotation platform, crowdsourcing',
       },
       {
           name: 'author',
