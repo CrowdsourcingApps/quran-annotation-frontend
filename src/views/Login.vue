@@ -86,9 +86,52 @@
     </v-sheet>
   </template>
   <script>
+  import { useHead } from '@unhead/vue'
   import User from '@/models/user'
   import amplitude from '@/amplitude/index.js'
   export default {
+    setup(){
+      const CurrentLocale = localStorage.getItem('userLocale');
+      if(CurrentLocale == 'AR')
+      {
+        useHead({
+        title: 'صوت القرآن - تسجيل الدخول',
+        meta: [
+            {
+            name: 'description',
+            content: 'قم بتسجيل الدخول بحسابك إلى موقع صوت القرآن',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/login', // Canonical URL
+            }
+        ]
+        })
+      }
+      else if(CurrentLocale == 'RU')
+      {
+
+      }
+      else{
+        useHead({
+        title: 'Quran Voice - Login',
+        meta: [
+            {
+            name: 'description',
+            content: 'Login with your account to Quran Voice website',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/login', // Canonical URL
+            }
+        ]
+        })
+      }
+    },
     data: () => ({
       form: false,
       user: new User(null,null),

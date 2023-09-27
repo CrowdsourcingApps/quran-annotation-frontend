@@ -150,6 +150,7 @@
         const previousLocale = localStorage.getItem('userLocale');
         let newLocale = this.$i18n.locale
         if(previousLocale != newLocale)
+        {
           if(this.loggedIn){
             AuthService.update_language(newLocale.toLowerCase()).then(
               (response) => {
@@ -172,6 +173,8 @@
               );
             }
           }
+          document.documentElement.setAttribute('lang', newLocale.toLowerCase());
+        }
       }
     },
     watch: {

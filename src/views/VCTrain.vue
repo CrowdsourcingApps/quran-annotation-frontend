@@ -163,6 +163,7 @@
     </v-row>
 </template>
 <script>
+ import { useHead } from '@unhead/vue'
  import Question from "@/models/question"
  import quran from "@/Quran.json"
  import ControlTasksService from "@/services/controltasks.service"
@@ -171,6 +172,48 @@
  import amplitude from '@/amplitude/index.js'
  export default {
     components: {VcInstructions, Error},
+    setup(){
+        const CurrentLocale = localStorage.getItem('userLocale');
+        if(CurrentLocale == 'AR')
+        {
+            useHead({
+            title: 'صوت القرآن - تدريب على التحقق من صحة التلاوة',
+            meta: [
+                {
+                name: 'description',
+                content: 'قم باجتياز التدريب من خلال التحديد بشكل صحيح فيما إذا قام القارئ بنطق الكلمات مع الحركات بشكل صحيح.',
+                },
+            ],
+            link:[
+                {
+                    rel: 'canonical',
+                    href: 'https://www.quranvoice.live/train/vc', // Canonical URL
+                }
+            ]
+            })
+        }
+        else if(CurrentLocale == 'RU')
+        {
+
+        }
+        else{
+        useHead({
+        title: 'Quran Voice - Training on validate correctness task',
+        meta: [
+            {
+            name: 'description',
+            content: 'Pass the training by specify correctlty if the reciter pronounce the words with diacritics correctly or not',
+            },
+        ],
+        link:[
+            {
+                rel: 'canonical',
+                href: 'https://www.quranvoice.live/train/vc', // Canonical URL
+            }
+        ]
+        })
+        }
+    },
     data: () => ({
       error : null,
       loading: true,
