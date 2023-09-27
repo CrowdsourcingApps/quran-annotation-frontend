@@ -1,4 +1,34 @@
 <template>
+    <teleport to="head">
+        <component :is="'script'" type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                    "@type": "Question",
+                    "name": "{{ $t('about.goal') }}",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>{{ $t('about.goal_sentence') }}</p>"
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "{{ $t('about.how') }}",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ $t('about.how_sentence') }}"
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "{{ $t('about.who') }}",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ $t('about.who_sentence') }}"
+                    }
+                }]
+            }
+        </component>
+    </teleport>
     <v-container>
         <v-row no-gutters>
             <v-col key=1 cols="" sm="3"></v-col>
@@ -53,10 +83,55 @@
     </v-container>
     <Navbar/>
   </template>
+
 <script>
+import { useHead } from '@unhead/vue'
 import Navbar from '@/components/Navbar.vue';
+
 export default {
-        components: {Navbar}
+    components: {Navbar},
+    setup(){
+        const CurrentLocale = localStorage.getItem('userLocale');
+        if(CurrentLocale == 'AR')
+        {
+            useHead({
+            title: 'صوت القرآن - من نحن',
+            meta: [
+                {
+                name: 'description',
+                content: 'ما هو هدفنا و كيف يمكن تحقيقه',
+                },
+            ],
+            link:[
+                {
+                    rel: 'canonical',
+                    href: 'https://www.quranvoice.live/about', // Canonical URL
+                }
+            ]
+            })
+        }
+        else if(CurrentLocale == 'RU')
+        {
+
+        }
+        else{
+            useHead({
+            title: 'Quran Voice - About us',
+            meta: [
+                {
+                name: 'description',
+                content: 'What is our goal and how we can achieve it',
+                },
+            ],
+            link:[
+                {
+                    rel: 'canonical',
+                    href: 'https://www.quranvoice.live/about', // Canonical URL
+                }
+            ]
+            })
+        }
+    }
 }
 </script>
 <style>

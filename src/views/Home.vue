@@ -194,6 +194,8 @@
     import { useDisplay } from 'vuetify'
     import amplitude from '@/amplitude/index.js'
 
+    import { useHead } from '@unhead/vue';
+
     export default {
         components: {HomeCard, HomeCardComming,Navbar,ProgressBar},
         data: () =>({
@@ -207,6 +209,35 @@
         }),
         setup () 
         {
+            const CurrentLocale = localStorage.getItem('userLocale');
+            if(CurrentLocale == 'AR')
+            {
+                useHead({
+                title: 'صوت القرآن',
+                meta:[
+                    {
+                    name: 'description',
+                    content: 'قرآن فويس هو منصة تعهيد جماعي تهدف لجمع بيانات للقرآن للناطقين بغير اللغة العربية و توفيرها للمتطوعين الراغبين بتصنيفها بدقة بهدف بناء تطبيقات تعليمية للقرآن الكريم تستخدم الذكاء الاصطناعي',
+                    },
+                ],
+                });
+            }
+            else if(CurrentLocale == 'RU')
+            {
+
+            }
+            else{
+                useHead({
+                title: 'Quran Voice',
+                meta:[
+                    {
+                    name: 'description',
+                    content: 'Quran voice is a crowdsourcing platform that aims to collect carefully annotated Quran data for non-Arabic Muslims. This data can be used for building Quran learning apps using AI technologies.',
+                    },
+                
+                ],
+                });
+            }
             // get screen size values
             // Destructure only the keys we want to use
             const { xs, mdAndUp } = useDisplay()
