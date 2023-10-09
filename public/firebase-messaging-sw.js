@@ -28,11 +28,21 @@ messaging.onBackgroundMessage((payload) => {
       payload
     );
     // Customize notification here
-    const notificationTitle = payload.notification.title;
+    const notificationTitle = payload.data.title;
     const notificationOptions = {
-      body: payload.notification.body,
-      icon: '/logo.ico',
+      body: payload.data.body,
+      icon: '/notification-icon.png',
+      data: {
+        url: payload.data.link
+      }
     };
 
-    // self.registration.showNotification(notificationTitle, notificationOptions);
+    self.registration.showNotification(notificationTitle, notificationOptions);
   });
+
+  function handleClick (event) {
+    event.notification.close();
+    // Open the url you set on notification.data
+    clients.openWindow(event.notification.data.url)
+  }
+  self.addEventListener('notificationclick', handleClick);
