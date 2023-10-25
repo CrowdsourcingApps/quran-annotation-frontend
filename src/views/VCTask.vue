@@ -216,6 +216,8 @@
                         this.error = 'tasks.404_message'
                     else if(error.response.status === 400)
                         this.error = 'tasks.400_message'
+                    else if(error.response.status === 403)
+                        this.error = 'tasks.403_message'
                     else
                         this.error = 'error'
                     this.loading = false;
