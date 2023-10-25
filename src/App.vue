@@ -210,9 +210,9 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
 
 onMessage(messaging, (payload) => {
   console.log('Message received. ', payload);
-  var title = payload.notification.title
-  var body = payload.notification.body
-  var link = payload.fcmOptions?.link
+  var title = payload.data.title
+  var body = payload.data.body
+  var link = payload.data?.link
   const language = localStorage.getItem('userLocale')
   if(language == 'AR'){
     toast(CustomToast, {
