@@ -126,7 +126,7 @@
     "tasks":{
         "404_message":"No more tasks to solve. Come later!",
         "400_message": "You should pass the training first",
-        "403_message": "You can't participate in this mission becuse of your low accuracy. You can participate in other missions.",
+        "403_message": "You can't participate in this mission because of your low accuracy. You can participate in other missions.",
         "completed":"You helped us get closer to our goal!",
         "contribution_today":"You contributed with",
         "tasks": "verses",
