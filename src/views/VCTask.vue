@@ -33,7 +33,7 @@
    <v-row v-if="!loading && !end && !error" style="justify-content: center">
         <v-col cols="12" sm="6">
             <v-timeline line-inset="200" direction="horizontal" >
-                    <v-timeline-item v-for="(color, index) in time_line_colors" :key="index" 
+                    <v-timeline-item @click="timelineItemClicked(index)" v-for="(color, index) in time_line_colors" :key="index" 
                         size="small" :dot-color="color" icon="mdi-check"></v-timeline-item>
             </v-timeline> 
         </v-col>
@@ -190,6 +190,23 @@
         this.getRealTasks();
     },
     methods: {
+        timelineItemClicked(index) {
+            // Check if the timeline item is blue before allowing interaction
+            if ((this.time_line_colors[index] === 'success' || 'blue') && this.index != index) {
+            // Handle the interaction or navigation here
+            // You can perform any action you want when the user clicks a blue timeline item
+            // For example, you can navigate to a specific question or perform some other action
+            console.log(index)
+            if(this.audio)
+                this.audio.pause();
+            this.index = index
+            this.loading = true;
+            this.problem = false;
+            this.currnet = this.questions[this.index];
+            this.disabled = false;
+            this.loading = false;
+            }
+        },
         InstructionsClicked(){
             const eventProperties = {
                 location: 'VCTask',
@@ -226,14 +243,21 @@
         },
         setAnswer(label){
             this.disabled = true;
+            // Check if an answer with the same id already exists in the answers array
+            const existingAnswer = this.answers.find((answer) => answer.id === this.currnet.id);
+            if (existingAnswer) {
+                // Update the existing answer
+                existingAnswer.label = label;
+            } else {
             let newAnswer = {
-                            id: this.currnet.id,
-                            label: label,
-                            control_task: this.currnet.control_task
-                        };
+                        id: this.currnet.id,
+                        label: label,
+                        control_task: this.currnet.control_task
+                    };
             this.answers.push(newAnswer);
             this.time_line_colors[this.index] = 'success';
-
+            }
+            console.log(this.answers)
             // see if it's the last questions
             if(this.index === this.questions.length - 1){
                 // submit answers
@@ -250,6 +274,9 @@
             this.loading = true;
             this.problem = false;
             this.index = this.index +1;
+            while(this.time_line_colors[this.index] == 'success'){
+                this.index = this.index +1;
+            }
             this.currnet = this.questions[this.index];
             this.time_line_colors[this.index] = 'blue';
             this.disabled = false;
