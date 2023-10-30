@@ -31,7 +31,7 @@
         </v-col>
    </v-row>
    <v-row v-if="!loading && !end && !error" style="justify-content: center">
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="9">
             <v-timeline line-inset="200" direction="horizontal" >
                     <v-timeline-item @click="timelineItemClicked(index)" v-for="(color, index) in time_line_colors" :key="index" 
                         size="small" :dot-color="color" icon="mdi-check"></v-timeline-item>
