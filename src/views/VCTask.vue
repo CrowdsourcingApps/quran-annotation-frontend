@@ -91,9 +91,16 @@
                 </div>
             </v-card>
             <v-row style="margin: 15px;">
-                <v-btn @click="back()" :disabled="index==0" variant="outlined" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-right' : 'mdi-chevron-left' ">{{ $t('tasks.back') }}</v-btn>
-                <v-spacer></v-spacer>
-                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline" @click="InstructionsClicked()">
+                <v-btn @click="back()" 
+                    :disabled="index==0" 
+                    variant="outlined" 
+                    color="info" 
+                    :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-right' : 'mdi-chevron-left' ">{{ $t('tasks.back') }}</v-btn>
+                <v-spacer class="d-none d-md-block"></v-spacer>
+                <v-btn 
+                    v-if="mdAndUpvalue"
+                    variant="outlined" color="info" prepend-icon="mdi-notebook-outline" 
+                    @click="InstructionsClicked()">
                     {{ $t('homepage.instructions') }}
                     <v-dialog
                         v-model="Instructions_dialog"
@@ -112,6 +119,28 @@
                 <!-- Here we should put report button-->
                 <v-btn @click="skip()" v-if="index!=this.questions.length" variant="outlined" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('tasks.skip') }}</v-btn>
             </v-row>
+            <v-row style="margin: -20px;text-align: center;">
+                <v-col>
+                    <v-btn
+                    class="d-md-none"
+                    variant="outlined" color="info" prepend-icon="mdi-notebook-outline" 
+                    @click="InstructionsClicked()">
+                    {{ $t('homepage.instructions') }}
+                    <v-dialog
+                        v-model="Instructions_dialog"
+                        activator="parent"
+                        width="auto"
+                    >
+                        <v-card>
+                            <VcInstructions :Showstart=false />
+                            <v-card-actions>
+                                <v-btn color="invalid" block @click="Instructions_dialog = false">{{ $t('trainning.close') }}</v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+                </v-btn>
+                </v-col>
+            </v-row>
         </v-col>
         <v-col col="1" sm="3">
         </v-col>
@@ -124,7 +153,8 @@
  import TasksService from "@/services/tasks.service"
  import VcInstructions from '@/components/VcInstructions.vue';
  import Error from '@/components/Error.vue';
- import amplitude from '@/amplitude/index.js'
+ import { useDisplay } from 'vuetify';
+ import amplitude from '@/amplitude/index.js';
  export default {
     components: {VcInstructions, Error},
     setup(){
@@ -167,7 +197,12 @@
             }
         ]
         })
-    }
+        }
+        // get screen size values
+        // Destructure only the keys we want to use
+        const { mdAndUp } = useDisplay()
+        var mdAndUpvalue = mdAndUp.value
+        return { mdAndUpvalue }
     },
     data: () => ({
       error : null,
@@ -317,6 +352,8 @@
         playAudio(){
             this.loading_audio = true;
             this.audio.src = 'https://'+this.currnet.audio_file_name;
+            // For collecting data for next stage
+            console.log(this.audio.src)
             this.audio.load();
             this.audio.addEventListener('canplaythrough', () => {
                 if (this.audio.readyState === 4) {
