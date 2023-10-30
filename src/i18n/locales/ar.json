@@ -131,7 +131,8 @@
         "contribution_today":"لقد ساهمت ب",
         "tasks": "آيات",
         "contribute_again":"ساهم مجدداً",
-        "skip":"تخطي"
+        "skip":"تخطي",
+        "back":"عودة"
     },
     "support":{
         "mash": "ما شاء الله!",

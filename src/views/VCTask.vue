@@ -91,6 +91,8 @@
                 </div>
             </v-card>
             <v-row style="margin: 15px;">
+                <v-btn @click="back()" :disabled="index==0" variant="outlined" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-right' : 'mdi-chevron-left' ">{{ $t('tasks.back') }}</v-btn>
+                <v-spacer></v-spacer>
                 <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline" @click="InstructionsClicked()">
                     {{ $t('homepage.instructions') }}
                     <v-dialog
@@ -192,11 +194,10 @@
     methods: {
         timelineItemClicked(index) {
             // Check if the timeline item is blue before allowing interaction
-            if ((this.time_line_colors[index] === 'success' || 'blue') && this.index != index) {
+            if ((this.time_line_colors[index] === 'success' || this.time_line_colors[index] ==='blue') && this.index != index) {
             // Handle the interaction or navigation here
             // You can perform any action you want when the user clicks a blue timeline item
             // For example, you can navigate to a specific question or perform some other action
-            console.log(index)
             if(this.audio)
                 this.audio.pause();
             this.index = index
@@ -257,7 +258,6 @@
             this.answers.push(newAnswer);
             this.time_line_colors[this.index] = 'success';
             }
-            console.log(this.answers)
             // see if it's the last questions
             if(this.index === this.questions.length - 1){
                 // submit answers
@@ -302,6 +302,17 @@
                 this.disabled = false;
                 this.loading = false;
             }
+        },
+        back(){
+            amplitude.track('VCBack Clicked');
+            if(this.audio)
+                this.audio.pause();
+            this.loading = true;
+            this.problem = false;
+            this.index = this.index -1;
+            this.currnet = this.questions[this.index];
+            this.disabled = false;
+            this.loading = false;
         },
         playAudio(){
             this.loading_audio = true;

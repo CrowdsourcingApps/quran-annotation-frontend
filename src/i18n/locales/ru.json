@@ -129,7 +129,8 @@
         "contribution_today":"You contributed with",
         "tasks": "аят(а)",
         "contribute_again":"Попроверять еще",
-        "skip":"Пропустить"
+        "skip":"Пропустить",
+        "back":"Back"
     },
     "support":{
         "mash": "МашаАллах!",

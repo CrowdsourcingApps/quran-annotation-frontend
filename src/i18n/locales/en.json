@@ -131,7 +131,8 @@
         "contribution_today":"You contributed with",
         "tasks": "verses",
         "contribute_again":"Contribute again",
-        "skip":"Skip"
+        "skip":"Skip",
+        "back":"Back"
     },
     "support":{
         "mash": "Ma Sha'Allah!",
