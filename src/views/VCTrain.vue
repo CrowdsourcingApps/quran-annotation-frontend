@@ -1,4 +1,7 @@
 <template>
+   <div style="text-align: center;margin-top: 10px;">
+        <p class="text-h4 text-sm-h5">{{ $t('trainning.title') }} - {{ $t('trainning.correct_answers') }} {{ this.correct_answers }} / {{ this.questions.length }}</p>
+   </div>
    <!-- Put error component-->
    <Error :error="error"/>
    <!-- You made it or try again Card-->
@@ -35,7 +38,6 @@
             <v-progress-circular indeterminate :size="51" :width="7"></v-progress-circular>
         </v-col>
    </v-row>
-
     <v-row v-if="!loading && !end && !error" style="justify-content: center">
         <v-col cols="12" sm="6">
             <v-timeline line-inset="50" direction="horizontal" >
@@ -63,6 +65,27 @@
         <v-col cols="1" sm="3">
         </v-col>
         <v-col cols="10" sm="6">
+            <!-- Feedback Component-->
+            <v-row>
+                <v-col>
+                    <v-alert
+                        v-if="message"
+                        style="color: #fff !important;"
+                        density="compact"
+                        type="success"
+                        :title="title"
+                        :text="text"
+                    ></v-alert>
+                    <v-alert
+                        v-if="message === false"
+                        style="background-color: #F79191 !important; color: #fff !important;"
+                        density="compact"
+                        type="warning"
+                        :title="title"
+                        :text="text"
+                    ></v-alert>
+                </v-col>
+            </v-row>
             <!-- Question Component-->
             <v-card class="mx-auto" style="text-align: center;">
                 <v-card-text class="ma-2 pa-2">
@@ -113,27 +136,7 @@
                 </div>
             </v-card>
 
-            <!-- Feedback Component-->
-            <v-row style="margin-top: 10px;">
-                <v-col>
-                    <v-alert
-                        v-if="message"
-                        style="color: #fff !important;"
-                        density="compact"
-                        type="success"
-                        :title="title"
-                        :text="text"
-                    ></v-alert>
-                    <v-alert
-                        v-if="message === false"
-                        style="background-color: #F79191 !important; color: #fff !important;"
-                        density="compact"
-                        type="warning"
-                        :title="title"
-                        :text="text"
-                    ></v-alert>
-                </v-col>
-            </v-row>
+           
             <!-- Question Footer Component-->
             <v-row style="margin: 15px;">
                 <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline" @click="InstructionsClicked()">
@@ -292,6 +295,16 @@
                         };
             this.answers.push(newAnswer);
             const correct_label = this.currnet.label
+            let reason =""
+            const CurrentLocale = localStorage.getItem('userLocale');
+            if (CurrentLocale === 'AR') {
+                reason = this.currnet.reason_ar;
+            } else if (CurrentLocale === 'EN') {
+                reason = this.currnet.reason_en;
+            } else {
+                reason = this.currnet.reason_ru;
+            }
+
             if(label === correct_label)
             {
                 this['q' + (this.index + 1)] = 'success';
@@ -306,17 +319,43 @@
             }
             this.text = this.$t('trainning.answer_correct_is')+ " "
             if(correct_label === 'multiple_aya')
-                this.text = this.text + this.$t('trainning.problem') +" < " + this.$t('trainning.multiple')+" >. "+ this.$t('trainning.multiple_feedback')
-            else if(correct_label === 'correct') 
-                this.text = this.text  +" < "+  this.$t('trainning.correct')+" >. "+ this.$t('trainning.correct_feedback')
-            else if(correct_label === 'in_correct') 
-                this.text = this.text  +" < "+  this.$t('trainning.incorrect')+" >. "+ this.$t('trainning.incorrect_feedback')
-            else if(correct_label === 'not_related_quran') 
-                this.text = this.text + this.$t('trainning.problem') +" < "+ this.$t('trainning.empty')+" >. "+ this.$t('trainning.empty_feedback')
-            else if(correct_label === 'not_match_aya') 
-                this.text = this.text + this.$t('trainning.problem') +" < "+ this.$t('trainning.different')+" >. "+ this.$t('trainning.different_feedback')
-            else if(correct_label === 'in_complete') 
-            this.text = this.text + this.$t('trainning.problem') +" < "+ this.$t('trainning.incomplete')+" >. "+ this.$t('trainning.incomplete_feedback')
+            {
+                this.text += this.$t('trainning.problem') +" < " + this.$t('trainning.multiple')+" >. " 
+                this.text += reason !== null ? reason + ". " : '';
+                this.text += this.$t('trainning.multiple_feedback')
+            }
+            else if(correct_label === 'correct')
+            {
+                this.text += " < "+  this.$t('trainning.correct')+" >. "
+                this.text += reason !== null ? reason + ". " : '';
+                this.text += this.$t('trainning.correct_feedback')
+            }
+            else if(correct_label === 'in_correct')
+            {
+                this.text +=" < "+  this.$t('trainning.incorrect')+" >. "
+                this.text += reason !== null ? reason + ". " : '';
+                // this.text += this.$t('trainning.incorrect_feedback')
+            } 
+               
+            else if(correct_label === 'not_related_quran')
+            {
+                this.text +=this.$t('trainning.problem') +" < "+ this.$t('trainning.empty')+" >. "
+                this.text += reason !== null ? reason + ". " : '';
+                this.text +=this.$t('trainning.empty_feedback')
+            } 
+                
+            else if(correct_label === 'not_match_aya')
+            {
+                this.text +=this.$t('trainning.problem') +" < "+ this.$t('trainning.different')+" >. "
+                this.text += reason !== null ? reason + ". " : '';
+                this.text +=this.$t('trainning.different_feedback')
+            } 
+            else if(correct_label === 'in_complete')
+            {
+                this.text +=this.$t('trainning.problem') +" < "+ this.$t('trainning.incomplete')+" >. "
+                this.text += reason !== null ? reason + ". " : '';
+                this.text +=this.$t('trainning.incomplete_feedback')
+            } 
             // see if it's the last questions
             if(this.index === 7){
                 // submit answers

@@ -90,6 +90,8 @@
         "four": "4. If there are no errors, the recitation is correct. Click <Correct>."
     },
     "trainning":{
+        "title":"Test",
+        "correct_answers": "Correct answers",
         "listen":"Please listen to the following audio:",
         "recited_correctly":"Did the reciter pronounce the words with diacritics correctly?",
         "what_problem":"What is the problem?",
