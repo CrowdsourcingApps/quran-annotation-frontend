@@ -124,12 +124,13 @@
     "tasks":{
         "404_message":"Нет аудио для проверки. Пожалуйста, попробуйте позже.",
         "400_message": "Вам нужно сначала пройти обучение",
-        "403_message": "You can't participate in this mission becuse of your low accuracy. You can participate in other missions.",
+        "403_message": "You can't participate in this mission because of your low accuracy. You can participate in other missions.",
         "completed":"Ваш вклад придвинул нас ближе к цели",
         "contribution_today":"You contributed with",
         "tasks": "аят(а)",
         "contribute_again":"Попроверять еще",
-        "skip":"Пропустить"
+        "skip":"Пропустить",
+        "back":"Back"
     },
     "support":{
         "mash": "МашаАллах!",

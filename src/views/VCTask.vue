@@ -31,9 +31,9 @@
         </v-col>
    </v-row>
    <v-row v-if="!loading && !end && !error" style="justify-content: center">
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="9">
             <v-timeline line-inset="200" direction="horizontal" >
-                    <v-timeline-item v-for="(color, index) in time_line_colors" :key="index" 
+                    <v-timeline-item @click="timelineItemClicked(index)" v-for="(color, index) in time_line_colors" :key="index" 
                         size="small" :dot-color="color" icon="mdi-check"></v-timeline-item>
             </v-timeline> 
         </v-col>
@@ -91,7 +91,16 @@
                 </div>
             </v-card>
             <v-row style="margin: 15px;">
-                <v-btn variant="outlined" color="info" prepend-icon="mdi-notebook-outline" @click="InstructionsClicked()">
+                <v-btn @click="back()" 
+                    :disabled="index==0" 
+                    variant="outlined" 
+                    color="info" 
+                    :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-right' : 'mdi-chevron-left' ">{{ $t('tasks.back') }}</v-btn>
+                <v-spacer class="d-none d-md-block"></v-spacer>
+                <v-btn 
+                    v-if="mdAndUpvalue"
+                    variant="outlined" color="info" prepend-icon="mdi-notebook-outline" 
+                    @click="InstructionsClicked()">
                     {{ $t('homepage.instructions') }}
                     <v-dialog
                         v-model="Instructions_dialog"
@@ -110,6 +119,28 @@
                 <!-- Here we should put report button-->
                 <v-btn @click="skip()" v-if="index!=this.questions.length" variant="outlined" color="info" :prepend-icon="$i18n.locale === 'AR'? 'mdi-chevron-left' : 'mdi-chevron-right' ">{{ $t('tasks.skip') }}</v-btn>
             </v-row>
+            <v-row style="margin: -20px;text-align: center;">
+                <v-col>
+                    <v-btn
+                    class="d-md-none"
+                    variant="outlined" color="info" prepend-icon="mdi-notebook-outline" 
+                    @click="InstructionsClicked()">
+                    {{ $t('homepage.instructions') }}
+                    <v-dialog
+                        v-model="Instructions_dialog"
+                        activator="parent"
+                        width="auto"
+                    >
+                        <v-card>
+                            <VcInstructions :Showstart=false />
+                            <v-card-actions>
+                                <v-btn color="invalid" block @click="Instructions_dialog = false">{{ $t('trainning.close') }}</v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+                </v-btn>
+                </v-col>
+            </v-row>
         </v-col>
         <v-col col="1" sm="3">
         </v-col>
@@ -122,7 +153,8 @@
  import TasksService from "@/services/tasks.service"
  import VcInstructions from '@/components/VcInstructions.vue';
  import Error from '@/components/Error.vue';
- import amplitude from '@/amplitude/index.js'
+ import { useDisplay } from 'vuetify';
+ import amplitude from '@/amplitude/index.js';
  export default {
     components: {VcInstructions, Error},
     setup(){
@@ -165,7 +197,12 @@
             }
         ]
         })
-    }
+        }
+        // get screen size values
+        // Destructure only the keys we want to use
+        const { mdAndUp } = useDisplay()
+        var mdAndUpvalue = mdAndUp.value
+        return { mdAndUpvalue }
     },
     data: () => ({
       error : null,
@@ -190,6 +227,22 @@
         this.getRealTasks();
     },
     methods: {
+        timelineItemClicked(index) {
+            // Check if the timeline item is blue before allowing interaction
+            if ((this.time_line_colors[index] === 'success' || this.time_line_colors[index] ==='blue') && this.index != index) {
+            // Handle the interaction or navigation here
+            // You can perform any action you want when the user clicks a blue timeline item
+            // For example, you can navigate to a specific question or perform some other action
+            if(this.audio)
+                this.audio.pause();
+            this.index = index
+            this.loading = true;
+            this.problem = false;
+            this.currnet = this.questions[this.index];
+            this.disabled = false;
+            this.loading = false;
+            }
+        },
         InstructionsClicked(){
             const eventProperties = {
                 location: 'VCTask',
@@ -226,14 +279,20 @@
         },
         setAnswer(label){
             this.disabled = true;
+            // Check if an answer with the same id already exists in the answers array
+            const existingAnswer = this.answers.find((answer) => answer.id === this.currnet.id);
+            if (existingAnswer) {
+                // Update the existing answer
+                existingAnswer.label = label;
+            } else {
             let newAnswer = {
-                            id: this.currnet.id,
-                            label: label,
-                            control_task: this.currnet.control_task
-                        };
+                        id: this.currnet.id,
+                        label: label,
+                        control_task: this.currnet.control_task
+                    };
             this.answers.push(newAnswer);
             this.time_line_colors[this.index] = 'success';
-
+            }
             // see if it's the last questions
             if(this.index === this.questions.length - 1){
                 // submit answers
@@ -250,6 +309,9 @@
             this.loading = true;
             this.problem = false;
             this.index = this.index +1;
+            while(this.time_line_colors[this.index] == 'success'){
+                this.index = this.index +1;
+            }
             this.currnet = this.questions[this.index];
             this.time_line_colors[this.index] = 'blue';
             this.disabled = false;
@@ -276,9 +338,22 @@
                 this.loading = false;
             }
         },
+        back(){
+            amplitude.track('VCBack Clicked');
+            if(this.audio)
+                this.audio.pause();
+            this.loading = true;
+            this.problem = false;
+            this.index = this.index -1;
+            this.currnet = this.questions[this.index];
+            this.disabled = false;
+            this.loading = false;
+        },
         playAudio(){
             this.loading_audio = true;
             this.audio.src = 'https://'+this.currnet.audio_file_name;
+            // For collecting data for next stage
+            console.log(this.audio.src)
             this.audio.load();
             this.audio.addEventListener('canplaythrough', () => {
                 if (this.audio.readyState === 4) {
