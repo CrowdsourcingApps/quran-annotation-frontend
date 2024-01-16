@@ -1,5 +1,5 @@
 <template>
-   <div style="text-align: center;margin-top: 10px;">
+   <div v-if="end_result == null" style="text-align: center;margin-top: 10px;">
         <p class="text-h4 text-sm-h5">{{ $t('trainning.title') }} - {{ $t('trainning.correct_answers') }} {{ this.correct_answers }} / {{ this.questions.length }}</p>
    </div>
    <!-- Put error component-->
@@ -9,12 +9,17 @@
         <v-col cols="1" sm="3"></v-col>
         <v-col col ="10" sm="6">
             <v-card class="mx-auto ma-2 pa-2" style="text-align: center;">
-                <v-card-text class=" text-h5 ma-2 pa-2" style="text-align: center">
+                <v-card-text  v-if="end_result" class=" text-h5 ma-2 pa-2" style="text-align: center">
                     <v-icon class="ma-2" icon="mdi-party-popper" color="gold"></v-icon>
                     {{ $t('support.mash')  }} 
                     <v-icon class="ma-2" icon="mdi-party-popper" color="gold"></v-icon>
                 </v-card-text>
-                <v-card-text class=" text-h5 ma-2 pa-2" style="text-align: center;line-height: 2.25rem;">
+                <v-card-text  v-if="!end_result" class=" text-h5 ma-2 pa-2" style="text-align: center">
+                    <v-icon class="ma-2" icon="mdi-emoticon-sad-outline" color="fail"></v-icon>
+                    {{ $t('trainning_session.sorry')  }} 
+                    <v-icon class="ma-2" icon="mdi-emoticon-sad-outline" color="fail"></v-icon>
+                </v-card-text>
+                <v-card-text v-if="end_result" class=" text-h5 ma-2 pa-2" style="text-align: center;line-height: 2.25rem;">
                     {{ $t('trainning_session.completed')  }} 
                 </v-card-text>
                 <v-card-text> {{$t('trainning_session.Points')+ " "+this.correct_answers+" / 8"  }}</v-card-text>
@@ -180,7 +185,7 @@
         if(CurrentLocale == 'AR')
         {
             useHead({
-            title: 'صوت القرآن - تدريب على التحقق من صحة التلاوة',
+            title: 'صوت القرآن - اختبار التحقق من صحة التلاوة',
             meta: [
                 {
                 name: 'description',
@@ -201,7 +206,7 @@
         }
         else{
         useHead({
-        title: 'Quran Voice - Training on validate correctness task',
+        title: 'Quran Voice - Validate correctness task Test',
         meta: [
             {
             name: 'description',
