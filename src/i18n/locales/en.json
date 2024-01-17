@@ -63,7 +63,7 @@
         "400_message":"Email already registered"
     },
     "instruction": {
-        "intro":"Before beginning your contribution, we would like to provide you with some training and ensure that you are familiar with the instructions. This will help to ensure the quality of the dataset.",
+        "intro":"Before beginning your contribution, we would like to examine your qualification and ensure that you are familiar with the instructions. This will help to ensure the quality of the correction you provide.",
         "start":"Let's start!",
         "examples": "Examples",
         "calm": "It is preferable to do the task in a quiet environment and with headphones. If necessary, listen to the recording several times.",
@@ -90,6 +90,8 @@
         "four": "4. If there are no errors, the recitation is correct. Click <Correct>."
     },
     "trainning":{
+        "title":"Test",
+        "correct_answers": "Correct answers",
         "listen":"Please listen to the following audio:",
         "recited_correctly":"Did the reciter pronounce the words with diacritics correctly?",
         "what_problem":"What is the problem?",
@@ -116,12 +118,13 @@
         "close": "Close"
     },
     "trainning_session":{
-        "completed":"You have completed the training session!",
+        "completed":"You have completed the test!",
         "Points": "You answered correctly",
         "ready": "You are now ready to start your real contribution.",
         "train_again": "You need a little training yet to start your real contribution",
         "try": "Train now",
-        "contribute": "Contribute now"
+        "contribute": "Contribute now",
+        "sorry": "Sorry, you haven't pass the test"
     },
     "tasks":{
         "404_message":"No more tasks to solve. Come later!",
