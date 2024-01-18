@@ -7,11 +7,11 @@
      
       <router-link to="/">
          <!-- hide on screens larger than md-->
-        <img class="d-md-none ml-5 mr-5 mt-2" src="@/assets/logo.svg" height="40"/>
+        <img class="d-md-none ml-5 mr-5 mt-2" src="@/assets/logo.svg" height="60"/>
         <!-- hide on screens smaller than md-->
-        <img class="d-none d-md-block ml-16" src="@/assets/Quran-Icon.png" height="40"/>
+        <img class="d-none d-md-block ml-16" src="@/assets/Quran-Icon.png" height="60"/>
       </router-link>
-      <v-toolbar-title class="d-none d-md-block mr-1">Quran Voice</v-toolbar-title>
+      <!-- <v-toolbar-title class="d-none d-md-block mr-1">صوت القرآن</v-toolbar-title> -->
 
       <v-spacer></v-spacer>
 
