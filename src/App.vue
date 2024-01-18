@@ -23,7 +23,7 @@ if(CurrentLocale == 'AR')
   meta:[
       {
       name: 'description',
-      content: 'قرآن فويس هو منصة تعهيد جماعي تهدف لجمع بيانات للقرآن للناطقين بغير اللغة العربية و توفيرها للمتطوعين الراغبين بتصنيفها بدقة بهدف بناء تطبيقات تعليمية للقرآن الكريم تستخدم الذكاء الاصطناعي',
+      content: 'منصة صوت القرآن هي منصة تهدف لمساعدة المسلمين غير الناطقين باللغة العربية في تلاوة القرآن الكريم من خلال تصويب تلاواتهم عن طريق مجموعة من المتطوعين المؤهلين في هذه المنصة. يمكنكم أنتم أيضاً التطوع في مساعدة تلاوة القرآن الكريم من خلال الانضمام إلى منصة صوت القرآن. انضموا الآن!',
       },
       {
           name: 'keywords',
@@ -39,11 +39,11 @@ if(CurrentLocale == 'AR')
       },
       {
           property: 'og:title',
-          content: 'صوت القرآن - منصة لجمع بيانات للقرآن الكريم', // Open Graph title
+          content: 'صوت القرآن - منصة لتصويب تلاواة من القرآن الكريم', // Open Graph title
       },
       {
           property: 'og:description',
-          content: 'قرآن فويس هو منصة تعهيد جماعي تهدف لجمع بيانات للقرآن للناطقين بغير اللغة العربية و توفيرها للمتطوعين الراغبين بتصنيفها بدقة بهدف بناء تطبيقات تعليمية للقرآن الكريم تستخدم الذكاء الاصطناعي', // Open Graph description
+          content: 'منصة صوت القرآن هي منصة تهدف لمساعدة المسلمين غير الناطقين باللغة العربية في تلاوة القرآن الكريم من خلال تصويب تلاواتهم عن طريق مجموعة من المتطوعين المؤهلين في هذه المنصة. يمكنكم أنتم أيضاً التطوع في مساعدة تلاوة القرآن الكريم من خلال الانضمام إلى منصة صوت القرآن. انضموا الآن!', // Open Graph description
       },
       {
           property: 'og:image',
@@ -89,7 +89,7 @@ else
   meta:[
       {
       name: 'description',
-      content: 'Quran voice is a crowdsourcing platform that aims to collect carefully annotated Quran data for non-Arabic Muslims. This data can be used for building Quran learning apps using AI technologies.',
+      content: 'Quran voice is a platform that aims to help non-Arabic Muslims reciting Quran. You can be part of this by joining Quran Voice platform.',
       },
       {
           name: 'keywords',
@@ -109,7 +109,7 @@ else
       },
       {
           property: 'og:description',
-          content: 'Quran voice is a crowdsourcing platform that aims to collect carefully annotated Quran data for non-Arabic Muslims. This data can be used for building Quran learning apps using AI technologies.', // Open Graph description
+          content: 'Quran voice is a platform that aims to help non-Arabic Muslims reciting Quran. You can be part of this by joining Quran Voice platform.', // Open Graph description
       },
       {
           property: 'og:image',
@@ -209,7 +209,7 @@ getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_API_KEY}).then((cu
 });
 
 onMessage(messaging, (payload) => {
-  console.log('Message received. ', payload);
+  //console.log('Message received. ', payload);
   var title = payload.data.title
   var body = payload.data.body
   var link = payload.data?.link
@@ -255,7 +255,7 @@ onMessage(messaging, (payload) => {
 });
 
 function storeAnonymousToken(anonymous_id, currentToken){
-  console.log(anonymous_id)
+  //console.log(anonymous_id)
   NotificationService.store_token_anonymous(anonymous_id, currentToken).then(
     (response) => {
         console.log("store_token_anonymous: ",response)
