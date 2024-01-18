@@ -1,6 +1,6 @@
 <template>
-   <div v-if="end_result == null" style="text-align: center;margin-top: 10px;">
-        <p class="text-h4 text-sm-h5">{{ $t('trainning.title') }} - {{ $t('trainning.correct_answers') }} {{ this.correct_answers }} / {{ this.questions.length }}</p>
+   <div v-if="end_result == null && !error" style="text-align: center;margin-top: 10px;">
+        <p class="text-h6 text-sm-h5">{{ $t('trainning.title') }} - {{ $t('trainning.correct_answers') }} {{ this.correct_answers }} / {{ this.questions.length }}</p>
    </div>
    <!-- Put error component-->
    <Error :error="error"/>
