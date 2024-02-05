@@ -1,934 +1,2333 @@
 {
+  "1":{
+    "0":{
+       "uthmani":"أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ"
+    },
     "1":{
-       "0":{
-          "uthmani":"أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ",
-          "en":"I seek refuge in Allah from Satan the accursed.",
-          "ru":"Ищу убежища у Аллаха от проклятого сатаны."
-       },
-       "1":{
-          "uthmani":"بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
-          "en":"In the name of Allah, Most Gracious, Ever-Merciful.",
-          "ru":"Во имя Аллаха, Милостивого, Милосердного."
-       },
-       "2":{
-          "uthmani":"الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-          "en":"Praise be to Allah, the Cherisher and Sustainer of the worlds.",
-          "ru":"Хвала Аллаху, Господу миров!"
-       },
-       "3":{
-          "uthmani":"الرَّحْمَنِ الرَّحِيمِ",
-          "en":"Most Gracious, Ever-Merciful.",
-          "ru":"Милостивому, Милосердному,"
-       },
-       "4":{
-          "uthmani":"مَالِكِ يَوْمِ الدِّينِ",
-          "en":"Master of the Day of Judgment.",
-          "ru":"Властелину Дня воздаяния."
-       },
-       "5":{
-          "uthmani":"إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
-          "en":"You alone we worship, and Your help we seek.",
-          "ru":"Тебе одному мы поклоняемся и Тебя одного молим о помощи!"
-       },
-       "6":{
-          "uthmani":"اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
-          "en":"Guide us to the straight path.",
-          "ru":"Веди нас прямым путем!"
-       },
-       "7":{
-          "uthmani":"صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
-          "en":"The path of those You’ve bestowed favor upon, not of those who have earned anger, nor of those who are lost.",
-          "ru":"Путем тех, кого Ты облагодетельствовал, а не тех, на ком гнев, и не заблудших."
-       }
+       "uthmani":"بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ"
     },
-    "97":{
-       "1":{
-          "uthmani":"إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
-          "en":"We have indeed revealed it (the Quran) in the Night of Decree (or Power):",
-          "ru":"Воистину, Мы ниспослали его [Коран] в ночь предопределения [или величия]."
-       },
-       "2":{
-          "uthmani":"وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
-          "en":"And what will explain to you what the night of decree is?",
-          "ru":"Откуда ты мог знать, что такое ночь предопределения?"
-       },
-       "3":{
-          "uthmani":"لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
-          "en":"The Night of Decree is better than a thousand months.",
-          "ru":"Ночь предопределения лучше тысячи месяцев."
-       },
-       "4":{
-          "uthmani":"تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
-          "en":"The angels and the Spirit (Jibreel) descend therein by permission of their Lord for every matter.",
-          "ru":"В эту ночь ангелы и Дух [Джибрил] нисходят с дозволения их Господа по всем Его повелениям."
-       },
-       "5":{
-          "uthmani":"سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
-          "en":"Peace it is until the emergence of dawn.",
-          "ru":"Она благополучна вплоть до наступления зари."
-       }
+    "2":{
+       "uthmani":"الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ"
     },
-    "103":{
-       "1":{
-          "uthmani":"وَالْعَصْرِ",
-          "en":"By time,",
-          "ru":"Клянусь временем!"
-       },
-       "2":{
-          "uthmani":"إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ",
-          "en":"Indeed, mankind is in loss,",
-          "ru":"Воистину, каждый человек в убытке,"
-       },
-       "3":{
-          "uthmani":"إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
-          "en":"Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
-          "ru":"кроме тех, которые уверовали, совершали праведные деяния, заповедали друг другу истину и заповедали друг другу терпение!"
-       }
+    "3":{
+       "uthmani":"الرَّحْمَنِ الرَّحِيمِ"
     },
-    "104":{
-       "1":{
-          "uthmani":"وَيْلٌ لِكُلِّ هُمَزَةٍ لُمَزَةٍ",
-          "en":"Woe to every scorner and mocker",
-          "ru":"Горе всякому хулителю и обидчику,"
-       },
-       "2":{
-          "uthmani":"الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ",
-          "en":"Who collects wealth and [continuously] counts it.",
-          "ru":"который копит состояние и пересчитывает его,"
-       },
-       "3":{
-          "uthmani":"يَحْسَبُ أَنَّ مَالَهُ أَخْلَدَهُ",
-          "en":"He thinks that his wealth will make him immortal.",
-          "ru":"думая, что богатство увековечит его."
-       },
-       "4":{
-          "uthmani":"كَلَّا لَيُنْبَذَنَّ فِي الْحُطَمَةِ",
-          "en":"No! He will surely be thrown into the Crusher.",
-          "ru":"Но нет! Его непременно ввергнут в Огонь сокрушающий."
-       },
-       "5":{
-          "uthmani":"وَمَا أَدْرَاكَ مَا الْحُطَمَةُ",
-          "en":"And what can make you know what is the Crusher?",
-          "ru":"Откуда ты мог знать, что такое Огонь сокрушающий?"
-       },
-       "6":{
-          "uthmani":"نَارُ اللَّهِ الْمُوقَدَةُ",
-          "en":"It is the fire of Allah, [eternally] fueled,",
-          "ru":"Это - разожженный Огонь Аллаха,"
-       },
-       "7":{
-          "uthmani":"الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ",
-          "en":"Which mounts directed at the hearts.",
-          "ru":"который вздымается над сердцами."
-       },
-       "8":{
-          "uthmani":"إِنَّهَا عَلَيْهِمْ مُؤْصَدَةٌ",
-          "en":"Indeed, Hellfire will be closed down upon them",
-          "ru":"Воистину, он сомкнется над ними"
-       },
-       "9":{
-          "uthmani":"فِي عَمَدٍ مُمَدَّدَةٍ",
-          "en":"In extended columns.",
-          "ru":"высокими столбами (мученики будут прикованы к этим столбам или врата Ада будут заперты и закреплены этими столбами)."
-       }
+    "4":{
+       "uthmani":"مَالِكِ يَوْمِ الدِّينِ"
     },
-    "105":{
-       "1":{
-          "uthmani":"أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
-          "en":"Have you not considered how your Lord dealt with the People of the Elephant?",
-          "ru":"Разве ты не видел, что сделал твой Господь с владельцами слона?"
-       },
-       "2":{
-          "uthmani":"أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
-          "en":"Did He not make their plan go wrong?",
-          "ru":"Разве Он не запутал их козни"
-       },
-       "3":{
-          "uthmani":"وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
-          "en":"He sent against them swarms of birds.",
-          "ru":"и не наслал на них птиц стаями?"
-       },
-       "4":{
-          "uthmani":"تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
-          "en":"Throwing at them rocks of baked clay.",
-          "ru":"Они бросали в них каменья из обожженной глины"
-       },
-       "5":{
-          "uthmani":"فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
-          "en":"Leaving them like chewed-up leaves.",
-          "ru":"и превратили их в подобие изъеденных иссохших злаковых листьев."
-       }
+    "5":{
+       "uthmani":"إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
     },
-    "106":{
-       "1":{
-          "uthmani":"لِإِيلَـٰفِ قُرَيْشٍ",
-          "en":"For the security of Quraish.",
-          "ru":"Ради единения курейшитов,"
-       },
-       "2":{
-          "uthmani":"إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
-          "en":"Their security during winter and summer journeys.",
-          "ru":"единения их во время зимних и летних поездок."
-       },
-       "3":{
-          "uthmani":"فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
-          "en":"Let them worship the Lord of this House.",
-          "ru":"Пусть же они поклоняются Господу этого Дома (Каабы),"
-       },
-       "4":{
-          "uthmani":"ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
-          "en":"Who has fed them against hunger, and has secured them against fear.",
-          "ru":"Который накормил их после голода и избавил их от страха."
-       }
+    "6":{
+       "uthmani":"اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ"
     },
-    "107":{
-       "1":{
-          "uthmani":"أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
-          "en":"Have you considered the one who denies the Judgment (to come)?",
-          "ru":"Видел ли ты того, кто считает ложью воздаяние?"
-       },
-       "2":{
-          "uthmani":"فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
-          "en":"Then such is the (man) who mistreats the orphan (with harshness),",
-          "ru":"Это - тот, кто гонит сироту"
-       },
-       "3":{
-          "uthmani":"وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
-          "en":"And does not encourage the feeding of the poor.",
-          "ru":"и не побуждает накормить бедняка."
-       },
-       "4":{
-          "uthmani":"فَوَيْلٌ لِّلْمُصَلِّينَ",
-          "en":"So woe to those who worshippers",
-          "ru":"Горе молящимся,"
-       },
-       "5":{
-          "uthmani":"ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
-          "en":"Who are neglectful of their prayers",
-          "ru":"которые небрежны к своим намазам,"
-       },
-       "6":{
-          "uthmani":"ٱلَّذِينَ هُمْ يُرَآءُونَ",
-          "en":"Those who make show (of their deeds)",
-          "ru":"которые лицемерят"
-       },
-       "7":{
-          "uthmani":"وَيَمْنَعُونَ ٱلْمَاعُونَ",
-          "en":"And withhold (even simple) assistance.",
-          "ru":"и отказывают даже в мелочи!"
-       }
+    "7":{
+       "uthmani":"صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ"
+    }
+ },
+  "78": {
+    "1": {
+      "uthmani": "عَمَّ یَتَسَاۤءَلُونَ"
     },
-    "108":{
-       "1":{
-          "uthmani":"إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
-          "en":"Indeed, We have granted you, [O Muhammad], al-Kawthar (a river in Paradise).",
-          "ru":"Мы даровали тебе аль-Каусар (бесчисленные блага, в том числе одноименную реку в Раю)."
-       },
-       "2":{
-          "uthmani":"فَصَلِّ لِرَبِّكَ وَانْحَرْ",
-          "en":"So pray to your Lord and sacrifice [to Him alone].",
-          "ru":"Посему совершай намаз ради своего Господа и закалывай жертву."
-       },
-       "3":{
-          "uthmani":"إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
-          "en":"Indeed, your enemy is the one cut off.",
-          "ru":"Воистину, твой ненавистник сам окажется безвестным."
-       }
+    "2": {
+      "uthmani": "عَنِ ٱلنَّبَإِ ٱلۡعَظِیمِ"
     },
-    "109":{
-       "1":{
-          "uthmani":"قُلْ يَا أَيُّهَا الْكَافِرُونَ",
-          "en":"Say: O disbelievers!",
-          "ru":"Скажи: О неверующие!"
-       },
-       "2":{
-          "uthmani":"لَا أَعْبُدُ مَا تَعْبُدُونَ",
-          "en":"I do not worship what you worship.",
-          "ru":"Я не поклоняюсь тому, чему поклоняетесь вы."
-       },
-       "3":{
-          "uthmani":"وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
-          "en":"Nor do you worship what I worship.",
-          "ru":"А вы не поклоняетесь Тому, Кому поклоняюсь я."
-       },
-       "4":{
-          "uthmani":"وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
-          "en":"Nor do I serve what you serve.",
-          "ru":"И я не поклоняюсь так, как поклоняетесь вы."
-       },
-       "5":{
-          "uthmani":"وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
-          "en":"Nor do you serve what I serve.",
-          "ru":"А вы не поклоняетесь так, как поклоняюсь я."
-       },
-       "6":{
-          "uthmani":"لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
-          "en":"You have your religion, and I have my religion.",
-          "ru":"Вам ваша религия, а мне моя религия!"
-       }
+    "3": {
+      "uthmani": "ٱلَّذِی هُمۡ فِیهِ مُخۡتَلِفُونَ"
     },
-    "110":{
-       "1":{
-          "uthmani":"إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
-          "en":"When comes the Help of Allah, and Victory,",
-          "ru":"Когда придет помощь Аллаха и настанет победа,"
-       },
-       "2":{
-          "uthmani":"وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
-          "en":"And you see the people enter Allah's Religion in crowds,",
-          "ru":"когда ты увидишь, как люди толпами обращаются в религию Аллаха,"
-       },
-       "3":{
-          "uthmani":"فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا",
-          "en":"Celebrate the praises of your Lord, and pray for His Forgiveness: For He is ever Accepting of repentance.",
-          "ru":"восславь же хвалой Господа своего и попроси у Него прощения. Воистину, Он - Принимающий покаяния."
-       }
+    "4": {
+      "uthmani": "كَلَّا سَیَعۡلَمُونَ"
     },
-    "111":{
-       "1":{
-          "uthmani":"تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
-          "en":"May the hands of Abu Lahab be ruined, and ruined is he.",
-          "ru":"Да пропадут пропадом руки Абу Лахаба, и сам он пропал."
-       },
-       "2":{
-          "uthmani":"مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ",
-          "en":"His wealth will not avail him nor that which he gained.",
-          "ru":"Не спасло его богатство и то, что он приобрел (положение в обществе и дети)."
-       },
-       "3":{
-          "uthmani":"سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
-          "en":"He will burn in a Fire of [blazing] flame.",
-          "ru":"Он попадет в пламенный Огонь."
-       },
-       "4":{
-          "uthmani":"وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ",
-          "en":"And his wife [as well] - the carrier of firewood.",
-          "ru":"Жена его будет носить дрова,"
-       },
-       "5":{
-          "uthmani":"فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
-          "en":"Around her neck is a rope of [twisted] fiber.",
-          "ru":"а на шее у нее будет плетеная веревка из пальмовых волокон."
-       }
+    "5": {
+      "uthmani": "ثُمَّ كَلَّا سَیَعۡلَمُونَ"
     },
-    "112":{
-       "1":{
-          "uthmani":"قُلْ هُوَ اللَّهُ أَحَدٌ",
-          "en":"Say: He is Allah, the One and Only.",
-          "ru":"Скажи: Он - Аллах Единый,"
-       },
-       "2":{
-          "uthmani":"اللَّهُ الصَّمَدُ",
-          "en":"Allah, the Eternal, Absolute.",
-          "ru":"Аллах Самодостаточный."
-       },
-       "3":{
-          "uthmani":"لَمْ يَلِدْ وَلَمْ يُولَدْ",
-          "en":"He has no offspring, nor is He born from anything.",
-          "ru":"Он не родил и не был рожден,"
-       },
-       "4":{
-          "uthmani":"وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
-          "en":"And no one is comparable to Him.",
-          "ru":"и нет никого равного Ему."
-       }
+    "6": {
+      "uthmani": "أَلَمۡ نَجۡعَلِ ٱلۡأَرۡضَ مِهَـٰدࣰا"
     },
-    "113":{
-       "1":{
-          "uthmani":"قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
-          "en":"Say: I seek refuge with the Lord of the Dawn",
-          "ru":"Скажи: Ищу убежища у Господа рассвета,"
-       },
-       "2":{
-          "uthmani":"مِن شَرِّ مَا خَلَقَ",
-          "en":"from the mischief of created things,",
-          "ru":"от зла того, что сотворил Он,"
-       },
-       "3":{
-          "uthmani":"وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-          "en":"and from the mischief of Darkness as it overspreads,",
-          "ru":"и от зла ночной темноты, когда она все покрывает,"
-       },
-       "4":{
-          "uthmani":"وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-          "en":"from the mischief of those who practise secret arts,",
-          "ru":"и от зла колдуний, дующих на узлы,"
-       },
-       "5":{
-          "uthmani":"وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-          "en":"and from the mischief of the envious one as he practises envy.",
-          "ru":"и от зла завистника, когда он завидует."
-       }
+    "7": {
+      "uthmani": "وَٱلۡجِبَالَ أَوۡتَادࣰا"
     },
-    "114":{
-       "1":{
-          "uthmani":"قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "en":"Say: I seek refuge with the Master of men,",
-          "ru":"Скажи: Ищу убежища у Господа людей,"
-       },
-       "2":{
-          "uthmani":"مَلِكِ النَّاسِ",
-          "en":"the King of men,",
-          "ru":"Царя людей,"
-       },
-       "3":{
-          "uthmani":"إِلَهِ النَّاسِ",
-          "en":"the God of men.",
-          "ru":"Бога людей,"
-       },
-       "4":{
-          "uthmani":"مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
-          "en":"From the evil of the sneaky whisperer,",
-          "ru":"от зла искусителя отступающего (при поминании Аллаха),"
-       },
-       "5":{
-          "uthmani":"الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
-          "en":"who whispers into the hearts of men,",
-          "ru":"который наущает в груди людей,"
-       },
-       "6":{
-          "uthmani":"مِنَ الْجِنَّةِ وَالنَّاسِ",
-          "en":"from among the jinn and the men.",
-          "ru":"и бывает из джиннов и людей."
-       }
+    "8": {
+      "uthmani": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جࣰا"
     },
-    "2255":{
-       "1":{
-          "uthmani":"اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
-          "en":"Allah! There is no god but He, the Living, the Self-subsisting, Eternal.",
-          "ru":"Аллах - нет божества, кроме Него, Живого, Вседержителя."
-       },
-       "2":{
-          "uthmani":"لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
-          "en":"Neither drowsiness overtakes Him, nor sleep.",
-          "ru":"Им не овладевают ни дремота, ни сон."
-       },
-       "3":{
-          "uthmani":"لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
-          "en":"His are all things in the heavens and on earth.",
-          "ru":"Ему принадлежит то, что на небесах, и то, что на земле."
-       },
-       "4":{
-          "uthmani":"مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ",
-          "en":"Who is it that can intercede with Him except by His permission?",
-          "ru":"Кто станет заступаться перед Ним без Его дозволения?"
-       },
-       "5":{
-          "uthmani":"يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ",
-          "en":"He knows what is before them and what is after (or behind) them, and they compass not a thing of His knowledge except for what He wills.",
-          "ru":"Он знает их будущее и прошлое. Они постигают из Его знания только то, что Он пожелает."
-       },
-       "6":{
-          "uthmani":"وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا",
-          "en":"His Throne extends over the heavens and the earth, and He feels no fatigue in guarding and preserving them,",
-          "ru":"Его Престол объемлет небеса и землю, и не тяготит Его оберегание их,"
-       },
-       "7":{
-          "uthmani":"وَهُوَ الْعَلِيُّ الْعَظِيمُ",
-          "en":"and He is the High, the Most Great.",
-          "ru":"ведь Он - Возвышенный, Великий."
-       }
+    "9": {
+      "uthmani": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتࣰا"
     },
-    "2185":{
-       "1":{
-          "uthmani":"شَهْرُ رَمَضَانَ الَّذِي أُنْزِلَ فِيهِ الْقُرْآنُ هُدًى لِلنَّاسِ وَبَيِّنَاتٍ مِنَ الْهُدَى وَالْفُرْقَانِ",
-          "en":"Ramadan is the month in which the Qur'an was sent down, as a guide to mankind, and clear proofs of guidance, and differentiator [between right and wrong].",
-          "ru":"В месяц рамадан был ниспослан Коран - верное руководство для людей, ясные доказательства из верного руководства и различение."
-       },
-       "2":{
-          "uthmani":"فَمَنْ شَهِدَ مِنْكُمُ الشَّهْرَ فَلْيَصُمْهُ",
-          "en":"So every one of you who witnesses the month, let him fast it,",
-          "ru":"Тот из вас, кого застанет этот месяц, должен поститься."
-       },
-       "3":{
-          "uthmani":"وَمَنْ كَانَ مَرِيضًا أَوْ عَلَى سَفَرٍ فَعِدَّةٌ مِنْ أَيَّامٍ أُخَرَ",
-          "en":"but if any one of you is ill, or on a journey, then an equal number of other days.",
-          "ru":"А если кто болен или находится в пути, то пусть постится столько же дней в другое время."
-       },
-       "4":{
-          "uthmani":"يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَى مَا هَدَاكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ",
-          "en":"Allah intends for you ease and does not intend for you hardship and [wants] for you to complete the period and to glorify Allah for that [to] which He has guided you; and perhaps you will be grateful.",
-          "ru":"Аллах желает вам облегчения и не желает вам затруднения. Он желает, чтобы вы довели до конца определенное число дней и возвеличили Аллаха за то, что Он наставил вас на прямой путь. Быть может, вы будете благодарны."
-       }
+    "10": {
+      "uthmani": "وَجَعَلۡنَا ٱلَّیۡلَ لِبَاسࣰا"
     },
-    "999002":{
-       "1":{
-          "uthmani":"سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ",
-          "en":"Perfect You are, O Allah, and Yours is praise!",
-          "ru":"Тебя прославляю, о мой Аллах, и Тебе возношу хвалу!"
-       },
-       "2":{
-          "uthmani":"وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ",
-          "en":"Blessed is Your Name and high is Your Majesty,",
-          "ru":"Благословенно Имя Твое, и превыше всего Твое Величие,"
-       },
-       "3":{
-          "uthmani":"وَلَا إِلٰهَ غَيْرُكَ",
-          "en":"and none is worthy of worship but You.",
-          "ru":"и только Ты достоин поклонения."
-       }
+    "11": {
+      "uthmani": "وَجَعَلۡنَا ٱلنَّهَارَ مَعَاشࣰا"
     },
-    "999001":{
-       "1":{
-          "uthmani":"التَّحِيِّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ",
-          "en":"All greetings, prayers and beautiful expressions are for Allah.",
-          "ru":"Приветствия Аллаху, и молитвы, и лучшие слова."
-       },
-       "2":{
-          "uthmani":"السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ",
-          "en":"Peace be upon you, O Prophet, and Allah's mercy and blessings!",
-          "ru":"Мир тебе, о Пророк, и милость Аллаха и Его благословение!"
-       },
-       "3":{
-          "uthmani":"السَّلَامُ عَلَيْنَا وَ عَلٰى عِبَادِ اللَّهِ الصَّالِحِيْنَ",
-          "en":"Peace be upon us and upon all righteous servants of Allah.",
-          "ru":"Мир нам и праведным рабам Аллаха."
-       },
-       "4":{
-          "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"I bear witness that there is no god except Allah,",
-          "ru":"Свидетельствую, что нету бога кроме Аллаха,"
-       },
-       "5":{
-          "uthmani":"وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَ رَسُولُهُ",
-          "en":"And I bear witness that Muhammad is His servant and messenger.",
-          "ru":"и свидетельствую что Мухаммад - Его раб и посланник."
-       }
+    "12": {
+      "uthmani": "وَبَنَیۡنَا فَوۡقَكُمۡ سَبۡعࣰا شِدَادࣰا"
     },
-    "999003":{
-       "1":{
-          "uthmani":"اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
-          "en":"O Allah, honor Muhammad and the family of Muhammad,",
-          "ru":"О Аллах, благослови Мухаммада и семейство Мухаммада,"
-       },
-       "2":{
-          "uthmani":"كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ",
-          "en":"as You honored Ibrahim and the family of Ibrahim,",
-          "ru":"как благословил Ты Ибрахима и семейство Ибрахима,"
-       },
-       "3":{
-          "uthmani":"إِنَّكَ حَمِيدٌ مَجِيدٌ",
-          "en":"Verily, You are the Praiseworthy, the Glorious.",
-          "ru":"Поистине, Ты – Восхваляемый, Славный!"
-       },
-       "4":{
-          "uthmani":"اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
-          "en":"O Allah, bless Muhammad and the family of Muhammad,",
-          "ru":"О Аллах, ниспошли благодать Мухаммаду и семейству Мухаммада,"
-       },
-       "5":{
-          "uthmani":"كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ",
-          "en":"as You blessed Ibrahim and the family of Ibrahim,",
-          "ru":"как ниспослал Ты благодать Ибрахиму и семейству Ибрахима,"
-       },
-       "6":{
-          "uthmani":"إِنَّكَ حَمِيدٌ مَجِيدٌ",
-          "en":"Verily, You are the Praiseworthy, the Glorious.",
-          "ru":"Поистине, Ты – Восхваляемый, Славный!"
-       }
+    "13": {
+      "uthmani": "وَجَعَلۡنَا سِرَاجࣰا وَهَّاجࣰا"
     },
-    "999004":{
-       "1":{
-          "uthmani":"اللَّهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ وَنَسْتَهْدِيكَ",
-          "en":"Oh Allah, we seek from You help, forgiveness and guidance.",
-          "ru":"О мой Аллаh! Просим у Тебя помощи и прощения! Укажи нам истинный путь."
-       },
-       "2":{
-          "uthmani":"وَنُؤْمِنُ بِكَ وَنَتُوبُ إِلَيْكَ",
-          "en":"We believe in You, and turn to You in repentance.",
-          "ru":"Мы верим в Тебя и каемся пред Тобой!"
-       },
-       "3":{
-          "uthmani":"وَنَتَوَكَّلُ عَلَيْكَ",
-          "en":"We trust and rely on You,",
-          "ru":"Мы полагаемся на Тебя"
-       },
-       "4":{
-          "uthmani":"وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ",
-          "en":"We praise You for all the good things, and are grateful to You,",
-          "ru":"и возносим Тебе хвалу за все благое, и благодарим Тебя!"
-       },
-       "5":{
-          "uthmani":"وَلَا نَكْفُرُكَ",
-          "en":"and we will not deny Your blessings.",
-          "ru":"Мы не будем совершать неверия!"
-       },
-       "6":{
-          "uthmani":"وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ",
-          "en":"We turn away from and give up the one who disobeys You.",
-          "ru":"Отвергнем и отвернемся от того, кто распутствует против Тебя."
-       },
-       "7":{
-          "uthmani":"اللَّهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ",
-          "en":"O Allah! You alone do we worship, and You alone do we pray to and prostrate before,",
-          "ru":"О мой Аллаh! Тебе одному мы поклоняемся, и ради Тебя совершаем намаз и земные поклоны."
-       },
-       "8":{
-          "uthmani":"وَإِلَيْكَ نَسْعَى وَنَحْفِدُ",
-          "en":"And You alone do we hasten to and strive to serve.",
-          "ru":"К Тебе одному стремимся и Тебе спешим служить."
-       },
-       "9":{
-          "uthmani":"نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ",
-          "en":"We hope for Your Mercy and fear Your punishment,",
-          "ru":"Надеемся на Твою Милость, и страшимся Твоего наказания!"
-       },
-       "10":{
-          "uthmani":"إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ",
-          "en":"Verily, Your punishment is going to overtake the disbelievers.",
-          "ru":"Нет сомнения, наказание Твое постигнет неверующих."
-       }
+    "14": {
+      "uthmani": "وَأَنزَلۡنَا مِنَ ٱلۡمُعۡصِرَ ٰ⁠تِ مَاۤءࣰ ثَجَّاجࣰا"
     },
-    "999006":{
-       "1":{
-          "uthmani":"حَسْبِيَ اللَّهُ لَا إِلٰهَ إِلَا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
-          "en":"Allah is my sufficiency, there is no god but He, on Him I rely, and He is Lord of the Mighty Throne.",
-          "ru":"Мне достаточно Аллаха! Нет божества, кроме Него. Я уповаю только на Него, ибо Он - Господь великого Трона."
-       },
-       "2":{
-          "uthmani":"بِسْمِ اللَّهُ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
-          "en":"In the name of Allah, with whose name nothing can cause harm in the earth or sky, and He is the the All-hearing, the All-knowing.",
-          "ru":"С именем Аллаха, с которым ничто не навредит ни на земле, ни на небе, и Он Всеслышащий и Всезнающий."
-       },
-       "3":{
-          "uthmani":"أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
-          "en":"I take refuge in the perfect words of Allah from the evil of what He has created.",
-          "ru":"Ищу убежища в совершенных словах Аллаха от зла того, что сотворил Он."
-       },
-       "4":{
-          "uthmani":"وَلَا حَوْلَ وَ لَا قُوَّةَ إِلَا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
-          "en":"And there is no power or strength except by Allah, the High, the Most Great.",
-          "ru":"И нет ни могущества, ни силы кроме как у Аллаха, Возвышенного, Великого."
-       },
-       "5":{
-          "uthmani":"وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَ عَلَى آلِهِ وَ صَحْبِهِ وَ سَلَّمَ",
-          "en":"And Allah bless our leader Muhammad, and his folk and companions and give them peace.",
-          "ru":"И да благословит Аллах нашего предводителя Мухаммада, и его семью и сподвижников, и дарует им мира."
-       }
+    "15": {
+      "uthmani": "لِّنُخۡرِجَ بِهِۦ حَبࣰّا وَنَبَاتࣰا"
     },
-    "999005":{
-       "1":{
-          "uthmani":"أَسْتَغْفِرُ اللَّهَ أَسْتَغْفِرُ اللَّهَ أَسْتَغْفِرُ اللَّهَ",
-          "en":"I seek forgiveness of Allah, I seek forgiveness of Allah, I seek forgiveness of Allah.",
-          "ru":"Прошу прощения у Аллаhа, прошу прощения у Аллаhа, прошу прощения у Аллаhа."
-       },
-       "2":{
-          "uthmani":"اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالإِكْرَامِ",
-          "en":"O Allah, You are Free from any imperfection, and from You comes peace, blessed You are, O Possessor of majesty and generosity.",
-          "ru":"О Аллаh, Ты - Тот, у Которого нет недостатков и изъянов, от Тебя исходит мир и безопасность. Благословен Ты, о Обладатель Величия и Щедрости."
-       },
-       "3":{
-          "uthmani":"اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
-          "en":"O Allah, help me to remember You, expressing gratitude towards You, and to worship You in the best manner.",
-          "ru":"О Аллаh, помоги мне поминать Тебя, благодарить Тебя, и поклоняться Тебе наилучшим образом!"
-       },
-       "4":{
-          "uthmani":"أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ",
-          "en":"I seek refuge in Allah from Satan the accursed.",
-          "ru":"Ищу убежища у Аллаhа от проклятого сатаны."
-       },
-       "5":{
-          "uthmani":"اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
-          "en":"Allah! There is no god but He, the Living, the Self-subsisting, Eternal.",
-          "ru":"Аллаh - нет божества, кроме Него, Живого, Вседержителя."
-       },
-       "6":{
-          "uthmani":"لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
-          "en":"Neither drowsiness overtakes Him nor sleep.",
-          "ru":"Им не овладевают ни дремота, ни сон."
-       },
-       "7":{
-          "uthmani":"لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
-          "en":"His are all things in the heavens and on earth.",
-          "ru":"Ему принадлежит то, что на небесах, и то, что на земле."
-       },
-       "8":{
-          "uthmani":"مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ",
-          "en":"Who is it that can intercede with Him except by His permission?",
-          "ru":"Кто станет заступаться перед Ним без Его дозволения?"
-       },
-       "9":{
-          "uthmani":"يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ",
-          "en":"He knows what is before them and what is after (or behind) them,",
-          "ru":"Он знает их будущее и прошлое."
-       },
-       "10":{
-          "uthmani":"وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ",
-          "en":"and they compass not a thing of His knowledge except for what He wills.",
-          "ru":"Они постигают из Его знания только то, что Он пожелает."
-       },
-       "11":{
-          "uthmani":"وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ",
-          "en":"His Throne extends over the heavens and the earth,",
-          "ru":"Его Престол объемлет небеса и землю,"
-       },
-       "12":{
-          "uthmani":"وَلَا يَئُودُهُ حِفْظُهُمَا",
-          "en":"and He feels no fatigue in guarding and preserving them,",
-          "ru":"и не тяготит Его оберегание их,"
-       },
-       "13":{
-          "uthmani":"وَهُوَ الْعَلِيُّ الْعَظِيمُ",
-          "en":"for He is the High, the Most Great.",
-          "ru":"ведь Он - Возвышенный, Великий."
-       },
-       "14":{
-          "uthmani":"سُبْحَانَ اللَّهِ",
-          "en":"Allah is exalted above imperfection (repeat 33 times)",
-          "ru":"Аллаh Пречист! (от любых недостатков и несовершеств) [произносится 33 раза]"
-       },
-       "15":{
-          "uthmani":"الحَمْدُ لِلَّهِ",
-          "en":"All praise belongs to Allah (repeat 33 times)",
-          "ru":"Вся хвала принадлежит Аллаhу! [произносится 33 раза]"
-       },
-       "16":{
-          "uthmani":"اللَّهُ أكْبَرُ",
-          "en":"Allah is greater (repeat 33 times)",
-          "ru":"Аллах - Величайший! (Важнее и величественнее всего)  [произносится 33 раза]"
-       },
-       "17":{
-          "uthmani":"لاَ إلَهَ إلاَّ اللَّهُ",
-          "en":"There is no god but Allah,",
-          "ru":"Нет бога кроме Аллаhа,"
-       },
-       "18":{
-          "uthmani":"وَحْدَهُ لاَ شَرِيكَ لَهُ",
-          "en":"the only One, without a partner,",
-          "ru":"Он - один, нет у Него сотоварищей."
-       },
-       "19":{
-          "uthmani":"لَهُ المُلْكُ ولَهُ الحَمْدُ",
-          "en":"To Him alone belongs the dominion, and to Him alone belongs all praise,",
-          "ru":"Ему одному принадлежить власть, и Ему одному принадлежит вся хвала,"
-       },
-       "20":{
-          "uthmani":"وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
-          "en":"and He is over all things powerful.",
-          "ru":"И Он над каждой вещью властен!"
-       }
+    "16": {
+      "uthmani": "وَجَنَّـٰتٍ أَلۡفَافًا"
     },
-    "999007":{
-       "1":{
-          "uthmani":"اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ",
-          "en":"Dear God, I’m asking You to choose for me through Your [All-Encompassing] Knowledge,",
-          "ru":"О Аллах, я прошу Тебя помочь мне выбрать через Твое Знание,"
-       },
-       "2":{
-          "uthmani":"وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ",
-          "en":"and I’m asking You to enable me through Your [Absolute] Power,",
-          "ru":"и прошу тебя даровать мне способность через Твое Могущество,"
-       },
-       "3":{
-          "uthmani":"وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ",
-          "en":"and I’m asking You from Your Incommensurable Grace.",
-          "ru":"и прошу Тебя из Твоей Великой Щедрости,"
-       },
-       "4":{
-          "uthmani":"فَإِنَّكَ تَقْدِرُ وَلاَ أَقْدِرُ",
-          "en":"Since verily You have power, while I do not.",
-          "ru":"ибо поистине Ты обладаешь cилой, а я не обладаю,"
-       },
-       "5":{
-          "uthmani":"وَتَعْلَمُ وَلاَ أَعْلَمُ",
-          "en":"And You know, while I know not,",
-          "ru":"ибо поистине Ты знаешь, а я не знаю,"
-       },
-       "6":{
-          "uthmani":"وَأَنْتَ عَلاَّمُ الْغُيُوبِ",
-          "en":"and You are the Knower of all things unseen.",
-          "ru":"и Ты – Знающий все скрытое."
-       },
-       "7":{
-          "uthmani":"اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي",
-          "en":"Dear God, if You know that this affair is good for my religion, and my worldly life, and the final outcome of my affairs,",
-          "ru":"О Аллах, если Ты знаешь, что это дело будет благом для меня в моей религии, в моей жизни, и для исхода моих дел,"
-       },
-       "8":{
-          "uthmani":"فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ",
-          "en":"then decree it for me, and facilitate it for me with ease, and bless it for me.",
-          "ru":"то предопредели его для меня, и облегчи его для меня, а затем сделай его для меня благословенным."
-       },
-       "9":{
-          "uthmani":"وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي",
-          "en":"But if You know that this affair is bad for my religion, my worldly life, and the final outcome of my affairs,",
-          "ru":"А если Ты знаешь, что это дело обернётся злом для моей религии, моей жизни и для исхода моих дел,"
-       },
-       "10":{
-          "uthmani":"فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِي الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ",
-          "en":"then get it away from me, and get me away from it, and decree what’s better for me, wherever it may be, and make me content with it.",
-          "ru":"то отдали его от меня, и отдали меня от него, и предопредели мне благо, где бы оно ни было, а потом сделай меня довольным этим."
-       }
+    "17": {
+      "uthmani": "إِنَّ یَوۡمَ ٱلۡفَصۡلِ كَانَ مِیقَـٰتࣰا"
     },
-    "999008":{
-       "1":{
-          "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
-          "en":"Allah is greater! Allah is greater! (Greater than anything)",
-          "ru":"Аллах - Величайший! Аллах - Величайший! (важнее и величественнее всего)"
-       },
-       "2":{
-          "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
-          "en":"Allah is greater! Allah is greater! (Greater than anything)",
-          "ru":"Аллах - Величайший! Аллах - Величайший! (важнее и величественнее всего)"
-       },
-       "3":{
-          "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"I bear witness that there is no god except Allah",
-          "ru":"Свидетельствую, что нету бога кроме Аллаха"
-       },
-       "4":{
-          "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"I bear witness that there is no god except Allah",
-          "ru":"Свидетельствую, что нету бога кроме Аллаха"
-       },
-       "5":{
-          "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
-          "en":"I bear witness that Muhammad is the messenger of Allah",
-          "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
-       },
-       "6":{
-          "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
-          "en":"I bear witness that Muhammad is the messenger of Allah",
-          "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
-       },
-       "7":{
-          "uthmani":"حَيَّ عَلَى الصَّلاَةِ",
-          "en":"Come to prayer",
-          "ru":"Спешите к молитве"
-       },
-       "8":{
-          "uthmani":"حَيَّ عَلَى الصَّلاَةِ",
-          "en":"Come to prayer",
-          "ru":"Спешите к молитве"
-       },
-       "9":{
-          "uthmani":"حَيَّ عَلَى الْفَلاَحِ",
-          "en":"Come to success",
-          "ru":"Спешите к успеху"
-       },
-       "10":{
-          "uthmani":"حَيَّ عَلَى الْفَلاَحِ",
-          "en":"Come to success",
-          "ru":"Спешите к успеху"
-       },
-       "11":{
-          "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
-          "en":"Allah is greater! Allah is greater! (Greater than anything)",
-          "ru":"Аллах - Величайший! Аллах - Величайший!"
-       },
-       "12":{
-          "uthmani":"لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"There is no god but Allah",
-          "ru":"Нет бога кроме Аллаха"
-       }
+    "18": {
+      "uthmani": "یَوۡمَ یُنفَخُ فِی ٱلصُّورِ فَتَأۡتُونَ أَفۡوَاجࣰا"
     },
-    "999009":{
-       "1":{
-          "uthmani":"اللَّهُمَّ رَبَّ هذِه الدَّعْوَةِ التّامَّةِ",
-          "en":"O Allah! Lord of this perfect call",
-          "ru":"О, Аллах, Владыка этого совершенного призыва"
-       },
-       "2":{
-          "uthmani":"والصَّلاةِ القائِمَةِ",
-          "en":"and of the prayer being established,",
-          "ru":"и готовящегося намаза!"
-       },
-       "3":{
-          "uthmani":"آتِ سَيِّدَنَا مُحَمَّداً الوَسِيلَةَ والفَضِيلَةَ",
-          "en":"give to our master Muhammad the right of intercession and illustriousness,",
-          "ru":"Даруй нашему господину Мухаммаду наивысшую ступень в Раю и превосходное положение,"
-       },
-       "4":{
-          "uthmani":"وابْعَثْهُ مَقاماً مَحْمُوداً الذي وعَدْتَهُ",
-          "en":"and resurrect him to the glorious station that You promised him (of).",
-          "ru":"и воскреси его на хвалимом месте, которое Ты обещал ему."
-       },
-       "5":{
-          "uthmani":"وَأَنَا أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"And I too bear witness that there is no god except Allah,",
-          "ru":"И я тоже свидетельствую, что нету бога кроме Аллаха,"
-       },
-       "6":{
-          "uthmani":"وَحْدَهُ لاَ شَرِيكَ لَهُ",
-          "en":"the only One, without a partner,",
-          "ru":"Он - один, нет у Него сотоварищей."
-       },
-       "7":{
-          "uthmani":"وَأَنَّ مُحَمَّدًا عَبْدُهُ وَ رَسُولُهُ",
-          "en":"And that Muhammad is His servant and messenger.",
-          "ru":"и что Мухаммад - Его раб и посланник."
-       },
-       "8":{
-          "uthmani":"رَضِيتُ بِاللَّهِ رَبَّاً",
-          "en":"I am pleased with Allah as my Lord,",
-          "ru":"Я доволен Аллахом - как Господом,"
-       },
-       "9":{
-          "uthmani":"وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ رَسُولاً",
-          "en":"with Muhammad (May Allah bless him and give him peace) as my Messenger,",
-          "ru":"Мухаммадом - да благословит его Аллах и дарует ему мира - как посланником,"
-       },
-       "10":{
-          "uthmani":"وَبِالْإِسلَامِ دِينَاً",
-          "en":"and with Islam as my religion.",
-          "ru":"и Исламом - как религией."
-       }
+    "19": {
+      "uthmani": "وَفُتِحَتِ ٱلسَّمَاۤءُ فَكَانَتۡ أَبۡوَ ٰ⁠بࣰا"
     },
-    "999010":{
-       "1":{
-          "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
-          "en":"Allah is greater! Allah is greater! (Greater than anything)",
-          "ru":"Аллах - Величайший! Аллах - Величайший! (важнее и величественнее всего)"
-       },
-       "2":{
-          "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
-          "en":"Allah is greater! Allah is greater!",
-          "ru":"Аллах - Величайший! Аллах - Величайший!"
-       },
-       "3":{
-          "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"I bear witness that there is no god except Allah",
-          "ru":"Свидетельствую, что нету бога кроме Аллаха"
-       },
-       "4":{
-          "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"I bear witness that there is no god except Allah",
-          "ru":"Свидетельствую, что нету бога кроме Аллаха"
-       },
-       "5":{
-          "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
-          "en":"I bear witness that Muhammad is the messenger of Allah",
-          "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
-       },
-       "6":{
-          "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
-          "en":"I bear witness that Muhammad is the messenger of Allah",
-          "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
-       },
-       "7":{
-          "uthmani":"حَيَّ عَلَى الصَّلاَةِ حَيَّ عَلَى الصَّلاَةِ",
-          "en":"Come to prayer, come to prayer",
-          "ru":"Спешите к молитве, спешите к молитве"
-       },
-       "8":{
-          "uthmani":"حَيَّ عَلَى الْفَلاَح حَيَّ عَلَى الْفَلاَحِ",
-          "en":"Come to success, come to success",
-          "ru":"Спешите к успеху, спешите к успеху"
-       },
-       "9":{
-          "uthmani":"قَدْ قَامَتْ الصَّلَاةُ قَدْ قَامَتْ الصَّلَاةُ",
-          "en":"The prayer has started, the prayer has started",
-          "ru":"Намаз уже начался, намаз уже начался,"
-       },
-       "10":{
-          "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
-          "en":"Allah is greater! Allah is greater! (Greater than anything)",
-          "ru":"Аллах - Величайший! Аллах - Величайший!"
-       },
-       "11":{
-          "uthmani":"لَا إِلٰهَ إِلَّا اللَّهُ",
-          "en":"There is no god but Allah",
-          "ru":"Нет бога кроме Аллаха"
-       }
+    "20": {
+      "uthmani": "وَسُیِّرَتِ ٱلۡجِبَالُ فَكَانَتۡ سَرَابًا"
+    },
+    "21": {
+      "uthmani": "إِنَّ جَهَنَّمَ كَانَتۡ مِرۡصَادࣰا"
+    },
+    "22": {
+      "uthmani": "لِّلطَّـٰغِینَ مَـَٔابࣰا"
+    },
+    "23": {
+      "uthmani": "لَّـٰبِثِینَ فِیهَاۤ أَحۡقَابࣰا"
+    },
+    "24": {
+      "uthmani": "لَّا یَذُوقُونَ فِیهَا بَرۡدࣰا وَلَا شَرَابًا"
+    },
+    "25": {
+      "uthmani": "إِلَّا حَمِیمࣰا وَغَسَّاقࣰا"
+    },
+    "26": {
+      "uthmani": "جَزَاۤءࣰ وِفَاقًا"
+    },
+    "27": {
+      "uthmani": "إِنَّهُمۡ كَانُوا۟ لَا یَرۡجُونَ حِسَابࣰا"
+    },
+    "28": {
+      "uthmani": "وَكَذَّبُوا۟ بِـَٔایَـٰتِنَا كِذَّابࣰا"
+    },
+    "29": {
+      "uthmani": "وَكُلَّ شَیۡءٍ أَحۡصَیۡنَـٰهُ كِتَـٰبࣰا"
+    },
+    "30": {
+      "uthmani": "فَذُوقُوا۟ فَلَن نَّزِیدَكُمۡ إِلَّا عَذَابًا"
+    },
+    "31": {
+      "uthmani": "إِنَّ لِلۡمُتَّقِینَ مَفَازًا"
+    },
+    "32": {
+      "uthmani": "حَدَاۤىِٕقَ وَأَعۡنَـٰبࣰا"
+    },
+    "33": {
+      "uthmani": "وَكَوَاعِبَ أَتۡرَابࣰا"
+    },
+    "34": {
+      "uthmani": "وَكَأۡسࣰا دِهَاقࣰا"
+    },
+    "35": {
+      "uthmani": "لَّا یَسۡمَعُونَ فِیهَا لَغۡوࣰا وَلَا كِذَّ ٰ⁠بࣰا"
+    },
+    "36": {
+      "uthmani": "جَزَاۤءࣰ مِّن رَّبِّكَ عَطَاۤءً حِسَابࣰا"
+    },
+    "37": {
+      "uthmani": "رَّبِّ ٱلسَّمَـٰوَ ٰ⁠تِ وَٱلۡأَرۡضِ وَمَا بَیۡنَهُمَا ٱلرَّحۡمَـٰنِۖ لَا یَمۡلِكُونَ مِنۡهُ خِطَابࣰا"
+    },
+    "38": {
+      "uthmani": "یَوۡمَ یَقُومُ ٱلرُّوحُ وَٱلۡمَلَـٰۤىِٕكَةُ صَفࣰّاۖ لَّا یَتَكَلَّمُونَ إِلَّا مَنۡ أَذِنَ لَهُ ٱلرَّحۡمَـٰنُ وَقَالَ صَوَابࣰا"
+    },
+    "39": {
+      "uthmani": "ذَ ٰ⁠لِكَ ٱلۡیَوۡمُ ٱلۡحَقُّۖ فَمَن شَاۤءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ مَـَٔابًا"
+    },
+    "40": {
+      "uthmani": "إِنَّاۤ أَنذَرۡنَـٰكُمۡ عَذَابࣰا قَرِیبࣰا یَوۡمَ یَنظُرُ ٱلۡمَرۡءُ مَا قَدَّمَتۡ یَدَاهُ وَیَقُولُ ٱلۡكَافِرُ یَـٰلَیۡتَنِی كُنتُ تُرَ ٰ⁠بَۢا"
+    }
+  },
+  "79": {
+    "1": {
+      "uthmani": "وَٱلنَّـٰزِعَـٰتِ غَرۡقࣰا"
+    },
+    "2": {
+      "uthmani": "وَٱلنَّـٰشِطَـٰتِ نَشۡطࣰا"
+    },
+    "3": {
+      "uthmani": "وَٱلسَّـٰبِحَـٰتِ سَبۡحࣰا"
+    },
+    "4": {
+      "uthmani": "فَٱلسَّـٰبِقَـٰتِ سَبۡقࣰا"
+    },
+    "5": {
+      "uthmani": "فَٱلۡمُدَبِّرَ ٰ⁠تِ أَمۡرࣰا"
+    },
+    "6": {
+      "uthmani": "یَوۡمَ تَرۡجُفُ ٱلرَّاجِفَةُ"
+    },
+    "7": {
+      "uthmani": "تَتۡبَعُهَا ٱلرَّادِفَةُ"
+    },
+    "8": {
+      "uthmani": "قُلُوبࣱ یَوۡمَىِٕذࣲ وَاجِفَةٌ"
+    },
+    "9": {
+      "uthmani": "أَبۡصَـٰرُهَا خَـٰشِعَةࣱ"
+    },
+    "10": {
+      "uthmani": "یَقُولُونَ أَءِنَّا لَمَرۡدُودُونَ فِی ٱلۡحَافِرَةِ"
+    },
+    "11": {
+      "uthmani": "أَءِذَا كُنَّا عِظَـٰمࣰا نَّخِرَةࣰ"
+    },
+    "12": {
+      "uthmani": "قَالُوا۟ تِلۡكَ إِذࣰا كَرَّةٌ خَاسِرَةࣱ"
+    },
+    "13": {
+      "uthmani": "فَإِنَّمَا هِیَ زَجۡرَةࣱ وَ ٰ⁠حِدَةࣱ"
+    },
+    "14": {
+      "uthmani": "فَإِذَا هُم بِٱلسَّاهِرَةِ"
+    },
+    "15": {
+      "uthmani": "هَلۡ أَتَىٰكَ حَدِیثُ مُوسَىٰۤ"
+    },
+    "16": {
+      "uthmani": "إِذۡ نَادَىٰهُ رَبُّهُۥ بِٱلۡوَادِ ٱلۡمُقَدَّسِ طُوًى"
+    },
+    "17": {
+      "uthmani": "ٱذۡهَبۡ إِلَىٰ فِرۡعَوۡنَ إِنَّهُۥ طَغَىٰ"
+    },
+    "18": {
+      "uthmani": "فَقُلۡ هَل لَّكَ إِلَىٰۤ أَن تَزَكَّىٰ"
+    },
+    "19": {
+      "uthmani": "وَأَهۡدِیَكَ إِلَىٰ رَبِّكَ فَتَخۡشَىٰ"
+    },
+    "20": {
+      "uthmani": "فَأَرَىٰهُ ٱلۡـَٔایَةَ ٱلۡكُبۡرَىٰ"
+    },
+    "21": {
+      "uthmani": "فَكَذَّبَ وَعَصَىٰ"
+    },
+    "22": {
+      "uthmani": "ثُمَّ أَدۡبَرَ یَسۡعَىٰ"
+    },
+    "23": {
+      "uthmani": "فَحَشَرَ فَنَادَىٰ"
+    },
+    "24": {
+      "uthmani": "فَقَالَ أَنَا۠ رَبُّكُمُ ٱلۡأَعۡلَىٰ"
+    },
+    "25": {
+      "uthmani": "فَأَخَذَهُ ٱللَّهُ نَكَالَ ٱلۡـَٔاخِرَةِ وَٱلۡأُولَىٰۤ"
+    },
+    "26": {
+      "uthmani": "إِنَّ فِی ذَ ٰ⁠لِكَ لَعِبۡرَةࣰ لِّمَن یَخۡشَىٰۤ"
+    },
+    "27": {
+      "uthmani": "ءَأَنتُمۡ أَشَدُّ خَلۡقًا أَمِ ٱلسَّمَاۤءُۚ بَنَىٰهَا"
+    },
+    "28": {
+      "uthmani": "رَفَعَ سَمۡكَهَا فَسَوَّىٰهَا"
+    },
+    "29": {
+      "uthmani": "وَأَغۡطَشَ لَیۡلَهَا وَأَخۡرَجَ ضُحَىٰهَا"
+    },
+    "30": {
+      "uthmani": "وَٱلۡأَرۡضَ بَعۡدَ ذَ ٰ⁠لِكَ دَحَىٰهَاۤ"
+    },
+    "31": {
+      "uthmani": "أَخۡرَجَ مِنۡهَا مَاۤءَهَا وَمَرۡعَىٰهَا"
+    },
+    "32": {
+      "uthmani": "وَٱلۡجِبَالَ أَرۡسَىٰهَا"
+    },
+    "33": {
+      "uthmani": "مَتَـٰعࣰا لَّكُمۡ وَلِأَنۡعَـٰمِكُمۡ"
+    },
+    "34": {
+      "uthmani": "فَإِذَا جَاۤءَتِ ٱلطَّاۤمَّةُ ٱلۡكُبۡرَىٰ"
+    },
+    "35": {
+      "uthmani": "یَوۡمَ یَتَذَكَّرُ ٱلۡإِنسَـٰنُ مَا سَعَىٰ"
+    },
+    "36": {
+      "uthmani": "وَبُرِّزَتِ ٱلۡجَحِیمُ لِمَن یَرَىٰ"
+    },
+    "37": {
+      "uthmani": "فَأَمَّا مَن طَغَىٰ"
+    },
+    "38": {
+      "uthmani": "وَءَاثَرَ ٱلۡحَیَوٰةَ ٱلدُّنۡیَا"
+    },
+    "39": {
+      "uthmani": "فَإِنَّ ٱلۡجَحِیمَ هِیَ ٱلۡمَأۡوَىٰ"
+    },
+    "40": {
+      "uthmani": "وَأَمَّا مَنۡ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفۡسَ عَنِ ٱلۡهَوَىٰ"
+    },
+    "41": {
+      "uthmani": "فَإِنَّ ٱلۡجَنَّةَ هِیَ ٱلۡمَأۡوَىٰ"
+    },
+    "42": {
+      "uthmani": "یَسۡـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَیَّانَ مُرۡسَىٰهَا"
+    },
+    "43": {
+      "uthmani": "فِیمَ أَنتَ مِن ذِكۡرَىٰهَاۤ"
+    },
+    "44": {
+      "uthmani": "إِلَىٰ رَبِّكَ مُنتَهَىٰهَاۤ"
+    },
+    "45": {
+      "uthmani": "إِنَّمَاۤ أَنتَ مُنذِرُ مَن یَخۡشَىٰهَا"
+    },
+    "46": {
+      "uthmani": "كَأَنَّهُمۡ یَوۡمَ یَرَوۡنَهَا لَمۡ یَلۡبَثُوۤا۟ إِلَّا عَشِیَّةً أَوۡ ضُحَىٰهَا"
+    }
+  },
+  "80": {
+    "1": {
+      "uthmani": "عَبَسَ وَتَوَلَّىٰۤ"
+    },
+    "2": {
+      "uthmani": "أَن جَاۤءَهُ ٱلۡأَعۡمَىٰ"
+    },
+    "3": {
+      "uthmani": "وَمَا یُدۡرِیكَ لَعَلَّهُۥ یَزَّكَّىٰۤ"
+    },
+    "4": {
+      "uthmani": "أَوۡ یَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكۡرَىٰۤ"
+    },
+    "5": {
+      "uthmani": "أَمَّا مَنِ ٱسۡتَغۡنَىٰ"
+    },
+    "6": {
+      "uthmani": "فَأَنتَ لَهُۥ تَصَدَّىٰ"
+    },
+    "7": {
+      "uthmani": "وَمَا عَلَیۡكَ أَلَّا یَزَّكَّىٰ"
+    },
+    "8": {
+      "uthmani": "وَأَمَّا مَن جَاۤءَكَ یَسۡعَىٰ"
+    },
+    "9": {
+      "uthmani": "وَهُوَ یَخۡشَىٰ"
+    },
+    "10": {
+      "uthmani": "فَأَنتَ عَنۡهُ تَلَهَّىٰ"
+    },
+    "11": {
+      "uthmani": "كَلَّاۤ إِنَّهَا تَذۡكِرَةࣱ"
+    },
+    "12": {
+      "uthmani": "فَمَن شَاۤءَ ذَكَرَهُۥ"
+    },
+    "13": {
+      "uthmani": "فِی صُحُفࣲ مُّكَرَّمَةࣲ"
+    },
+    "14": {
+      "uthmani": "مَّرۡفُوعَةࣲ مُّطَهَّرَةِۭ"
+    },
+    "15": {
+      "uthmani": "بِأَیۡدِی سَفَرَةࣲ"
+    },
+    "16": {
+      "uthmani": "كِرَامِۭ بَرَرَةࣲ"
+    },
+    "17": {
+      "uthmani": "قُتِلَ ٱلۡإِنسَـٰنُ مَاۤ أَكۡفَرَهُۥ"
+    },
+    "18": {
+      "uthmani": "مِنۡ أَیِّ شَیۡءٍ خَلَقَهُۥ"
+    },
+    "19": {
+      "uthmani": "مِن نُّطۡفَةٍ خَلَقَهُۥ فَقَدَّرَهُۥ"
+    },
+    "20": {
+      "uthmani": "ثُمَّ ٱلسَّبِیلَ یَسَّرَهُۥ"
+    },
+    "21": {
+      "uthmani": "ثُمَّ أَمَاتَهُۥ فَأَقۡبَرَهُۥ"
+    },
+    "22": {
+      "uthmani": "ثُمَّ إِذَا شَاۤءَ أَنشَرَهُۥ"
+    },
+    "23": {
+      "uthmani": "كَلَّا لَمَّا یَقۡضِ مَاۤ أَمَرَهُۥ"
+    },
+    "24": {
+      "uthmani": "فَلۡیَنظُرِ ٱلۡإِنسَـٰنُ إِلَىٰ طَعَامِهِۦۤ"
+    },
+    "25": {
+      "uthmani": "أَنَّا صَبَبۡنَا ٱلۡمَاۤءَ صَبࣰّا"
+    },
+    "26": {
+      "uthmani": "ثُمَّ شَقَقۡنَا ٱلۡأَرۡضَ شَقࣰّا"
+    },
+    "27": {
+      "uthmani": "فَأَنۢبَتۡنَا فِیهَا حَبࣰّا"
+    },
+    "28": {
+      "uthmani": "وَعِنَبࣰا وَقَضۡبࣰا"
+    },
+    "29": {
+      "uthmani": "وَزَیۡتُونࣰا وَنَخۡلࣰا"
+    },
+    "30": {
+      "uthmani": "وَحَدَاۤىِٕقَ غُلۡبࣰا"
+    },
+    "31": {
+      "uthmani": "وَفَـٰكِهَةࣰ وَأَبࣰّا"
+    },
+    "32": {
+      "uthmani": "مَّتَـٰعࣰا لَّكُمۡ وَلِأَنۡعَـٰمِكُمۡ"
+    },
+    "33": {
+      "uthmani": "فَإِذَا جَاۤءَتِ ٱلصَّاۤخَّةُ"
+    },
+    "34": {
+      "uthmani": "یَوۡمَ یَفِرُّ ٱلۡمَرۡءُ مِنۡ أَخِیهِ"
+    },
+    "35": {
+      "uthmani": "وَأُمِّهِۦ وَأَبِیهِ"
+    },
+    "36": {
+      "uthmani": "وَصَـٰحِبَتِهِۦ وَبَنِیهِ"
+    },
+    "37": {
+      "uthmani": "لِكُلِّ ٱمۡرِئࣲ مِّنۡهُمۡ یَوۡمَىِٕذࣲ شَأۡنࣱ یُغۡنِیهِ"
+    },
+    "38": {
+      "uthmani": "وُجُوهࣱ یَوۡمَىِٕذࣲ مُّسۡفِرَةࣱ"
+    },
+    "39": {
+      "uthmani": "ضَاحِكَةࣱ مُّسۡتَبۡشِرَةࣱ"
+    },
+    "40": {
+      "uthmani": "وَوُجُوهࣱ یَوۡمَىِٕذٍ عَلَیۡهَا غَبَرَةࣱ"
+    },
+    "41": {
+      "uthmani": "تَرۡهَقُهَا قَتَرَةٌ"
+    },
+    "42": {
+      "uthmani": "أُو۟لَـٰۤىِٕكَ هُمُ ٱلۡكَفَرَةُ ٱلۡفَجَرَةُ"
+    }
+  },
+  "81": {
+    "1": {
+      "uthmani": "إِذَا ٱلشَّمۡسُ كُوِّرَتۡ"
+    },
+    "2": {
+      "uthmani": "وَإِذَا ٱلنُّجُومُ ٱنكَدَرَتۡ"
+    },
+    "3": {
+      "uthmani": "وَإِذَا ٱلۡجِبَالُ سُیِّرَتۡ"
+    },
+    "4": {
+      "uthmani": "وَإِذَا ٱلۡعِشَارُ عُطِّلَتۡ"
+    },
+    "5": {
+      "uthmani": "وَإِذَا ٱلۡوُحُوشُ حُشِرَتۡ"
+    },
+    "6": {
+      "uthmani": "وَإِذَا ٱلۡبِحَارُ سُجِّرَتۡ"
+    },
+    "7": {
+      "uthmani": "وَإِذَا ٱلنُّفُوسُ زُوِّجَتۡ"
+    },
+    "8": {
+      "uthmani": "وَإِذَا ٱلۡمَوۡءُۥدَةُ سُىِٕلَتۡ"
+    },
+    "9": {
+      "uthmani": "بِأَیِّ ذَنۢبࣲ قُتِلَتۡ"
+    },
+    "10": {
+      "uthmani": "وَإِذَا ٱلصُّحُفُ نُشِرَتۡ"
+    },
+    "11": {
+      "uthmani": "وَإِذَا ٱلسَّمَاۤءُ كُشِطَتۡ"
+    },
+    "12": {
+      "uthmani": "وَإِذَا ٱلۡجَحِیمُ سُعِّرَتۡ"
+    },
+    "13": {
+      "uthmani": "وَإِذَا ٱلۡجَنَّةُ أُزۡلِفَتۡ"
+    },
+    "14": {
+      "uthmani": "عَلِمَتۡ نَفۡسࣱ مَّاۤ أَحۡضَرَتۡ"
+    },
+    "15": {
+      "uthmani": "فَلَاۤ أُقۡسِمُ بِٱلۡخُنَّسِ"
+    },
+    "16": {
+      "uthmani": "ٱلۡجَوَارِ ٱلۡكُنَّسِ"
+    },
+    "17": {
+      "uthmani": "وَٱلَّیۡلِ إِذَا عَسۡعَسَ"
+    },
+    "18": {
+      "uthmani": "وَٱلصُّبۡحِ إِذَا تَنَفَّسَ"
+    },
+    "19": {
+      "uthmani": "إِنَّهُۥ لَقَوۡلُ رَسُولࣲ كَرِیمࣲ"
+    },
+    "20": {
+      "uthmani": "ذِی قُوَّةٍ عِندَ ذِی ٱلۡعَرۡشِ مَكِینࣲ"
+    },
+    "21": {
+      "uthmani": "مُّطَاعࣲ ثَمَّ أَمِینࣲ"
+    },
+    "22": {
+      "uthmani": "وَمَا صَاحِبُكُم بِمَجۡنُونࣲ"
+    },
+    "23": {
+      "uthmani": "وَلَقَدۡ رَءَاهُ بِٱلۡأُفُقِ ٱلۡمُبِینِ"
+    },
+    "24": {
+      "uthmani": "وَمَا هُوَ عَلَى ٱلۡغَیۡبِ بِضَنِینࣲ"
+    },
+    "25": {
+      "uthmani": "وَمَا هُوَ بِقَوۡلِ شَیۡطَـٰنࣲ رَّجِیمࣲ"
+    },
+    "26": {
+      "uthmani": "فَأَیۡنَ تَذۡهَبُونَ"
+    },
+    "27": {
+      "uthmani": "إِنۡ هُوَ إِلَّا ذِكۡرࣱ لِّلۡعَـٰلَمِینَ"
+    },
+    "28": {
+      "uthmani": "لِمَن شَاۤءَ مِنكُمۡ أَن یَسۡتَقِیمَ"
+    },
+    "29": {
+      "uthmani": "وَمَا تَشَاۤءُونَ إِلَّاۤ أَن یَشَاۤءَ ٱللَّهُ رَبُّ ٱلۡعَـٰلَمِینَ"
+    }
+  },
+  "82": {
+    "1": {
+      "uthmani": "إِذَا ٱلسَّمَاۤءُ ٱنفَطَرَتۡ"
+    },
+    "2": {
+      "uthmani": "وَإِذَا ٱلۡكَوَاكِبُ ٱنتَثَرَتۡ"
+    },
+    "3": {
+      "uthmani": "وَإِذَا ٱلۡبِحَارُ فُجِّرَتۡ"
+    },
+    "4": {
+      "uthmani": "وَإِذَا ٱلۡقُبُورُ بُعۡثِرَتۡ"
+    },
+    "5": {
+      "uthmani": "عَلِمَتۡ نَفۡسࣱ مَّا قَدَّمَتۡ وَأَخَّرَتۡ"
+    },
+    "6": {
+      "uthmani": "یَـٰۤأَیُّهَا ٱلۡإِنسَـٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلۡكَرِیمِ"
+    },
+    "7": {
+      "uthmani": "ٱلَّذِی خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ"
+    },
+    "8": {
+      "uthmani": "فِیۤ أَیِّ صُورَةࣲ مَّا شَاۤءَ رَكَّبَكَ"
+    },
+    "9": {
+      "uthmani": "كَلَّا بَلۡ تُكَذِّبُونَ بِٱلدِّینِ"
+    },
+    "10": {
+      "uthmani": "وَإِنَّ عَلَیۡكُمۡ لَحَـٰفِظِینَ"
+    },
+    "11": {
+      "uthmani": "كِرَامࣰا كَـٰتِبِینَ"
+    },
+    "12": {
+      "uthmani": "یَعۡلَمُونَ مَا تَفۡعَلُونَ"
+    },
+    "13": {
+      "uthmani": "إِنَّ ٱلۡأَبۡرَارَ لَفِی نَعِیمࣲ"
+    },
+    "14": {
+      "uthmani": "وَإِنَّ ٱلۡفُجَّارَ لَفِی جَحِیمࣲ"
+    },
+    "15": {
+      "uthmani": "یَصۡلَوۡنَهَا یَوۡمَ ٱلدِّینِ"
+    },
+    "16": {
+      "uthmani": "وَمَا هُمۡ عَنۡهَا بِغَاۤىِٕبِینَ"
+    },
+    "17": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا یَوۡمُ ٱلدِّینِ"
+    },
+    "18": {
+      "uthmani": "ثُمَّ مَاۤ أَدۡرَىٰكَ مَا یَوۡمُ ٱلدِّینِ"
+    },
+    "19": {
+      "uthmani": "یَوۡمَ لَا تَمۡلِكُ نَفۡسࣱ لِّنَفۡسࣲ شَیۡـࣰٔاۖ وَٱلۡأَمۡرُ یَوۡمَىِٕذࣲ لِّلَّهِ"
+    }
+  },
+  "83": {
+    "1": {
+      "uthmani": "وَیۡلࣱ لِّلۡمُطَفِّفِینَ"
+    },
+    "2": {
+      "uthmani": "ٱلَّذِینَ إِذَا ٱكۡتَالُوا۟ عَلَى ٱلنَّاسِ یَسۡتَوۡفُونَ"
+    },
+    "3": {
+      "uthmani": "وَإِذَا كَالُوهُمۡ أَو وَّزَنُوهُمۡ یُخۡسِرُونَ"
+    },
+    "4": {
+      "uthmani": "أَلَا یَظُنُّ أُو۟لَـٰۤىِٕكَ أَنَّهُم مَّبۡعُوثُونَ"
+    },
+    "5": {
+      "uthmani": "لِیَوۡمٍ عَظِیمࣲ"
+    },
+    "6": {
+      "uthmani": "یَوۡمَ یَقُومُ ٱلنَّاسُ لِرَبِّ ٱلۡعَـٰلَمِینَ"
+    },
+    "7": {
+      "uthmani": "كَلَّاۤ إِنَّ كِتَـٰبَ ٱلۡفُجَّارِ لَفِی سِجِّینࣲ"
+    },
+    "8": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا سِجِّینࣱ"
+    },
+    "9": {
+      "uthmani": "كِتَـٰبࣱ مَّرۡقُومࣱ"
+    },
+    "10": {
+      "uthmani": "وَیۡلࣱ یَوۡمَىِٕذࣲ لِّلۡمُكَذِّبِینَ"
+    },
+    "11": {
+      "uthmani": "ٱلَّذِینَ یُكَذِّبُونَ بِیَوۡمِ ٱلدِّینِ"
+    },
+    "12": {
+      "uthmani": "وَمَا یُكَذِّبُ بِهِۦۤ إِلَّا كُلُّ مُعۡتَدٍ أَثِیمٍ"
+    },
+    "13": {
+      "uthmani": "إِذَا تُتۡلَىٰ عَلَیۡهِ ءَایَـٰتُنَا قَالَ أَسَـٰطِیرُ ٱلۡأَوَّلِینَ"
+    },
+    "14": {
+      "uthmani": "كَلَّاۖ بَلۡۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ یَكۡسِبُونَ"
+    },
+    "15": {
+      "uthmani": "كَلَّاۤ إِنَّهُمۡ عَن رَّبِّهِمۡ یَوۡمَىِٕذࣲ لَّمَحۡجُوبُونَ"
+    },
+    "16": {
+      "uthmani": "ثُمَّ إِنَّهُمۡ لَصَالُوا۟ ٱلۡجَحِیمِ"
+    },
+    "17": {
+      "uthmani": "ثُمَّ یُقَالُ هَـٰذَا ٱلَّذِی كُنتُم بِهِۦ تُكَذِّبُونَ"
+    },
+    "18": {
+      "uthmani": "كَلَّاۤ إِنَّ كِتَـٰبَ ٱلۡأَبۡرَارِ لَفِی عِلِّیِّینَ"
+    },
+    "19": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا عِلِّیُّونَ"
+    },
+    "20": {
+      "uthmani": "كِتَـٰبࣱ مَّرۡقُومࣱ"
+    },
+    "21": {
+      "uthmani": "یَشۡهَدُهُ ٱلۡمُقَرَّبُونَ"
+    },
+    "22": {
+      "uthmani": "إِنَّ ٱلۡأَبۡرَارَ لَفِی نَعِیمٍ"
+    },
+    "23": {
+      "uthmani": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ"
+    },
+    "24": {
+      "uthmani": "تَعۡرِفُ فِی وُجُوهِهِمۡ نَضۡرَةَ ٱلنَّعِیمِ"
+    },
+    "25": {
+      "uthmani": "یُسۡقَوۡنَ مِن رَّحِیقࣲ مَّخۡتُومٍ"
+    },
+    "26": {
+      "uthmani": "خِتَـٰمُهُۥ مِسۡكࣱۚ وَفِی ذَ ٰ⁠لِكَ فَلۡیَتَنَافَسِ ٱلۡمُتَنَـٰفِسُونَ"
+    },
+    "27": {
+      "uthmani": "وَمِزَاجُهُۥ مِن تَسۡنِیمٍ"
+    },
+    "28": {
+      "uthmani": "عَیۡنࣰا یَشۡرَبُ بِهَا ٱلۡمُقَرَّبُونَ"
+    },
+    "29": {
+      "uthmani": "إِنَّ ٱلَّذِینَ أَجۡرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِینَ ءَامَنُوا۟ یَضۡحَكُونَ"
+    },
+    "30": {
+      "uthmani": "وَإِذَا مَرُّوا۟ بِهِمۡ یَتَغَامَزُونَ"
+    },
+    "31": {
+      "uthmani": "وَإِذَا ٱنقَلَبُوۤا۟ إِلَىٰۤ أَهۡلِهِمُ ٱنقَلَبُوا۟ فَكِهِینَ"
+    },
+    "32": {
+      "uthmani": "وَإِذَا رَأَوۡهُمۡ قَالُوۤا۟ إِنَّ هَـٰۤؤُلَاۤءِ لَضَاۤلُّونَ"
+    },
+    "33": {
+      "uthmani": "وَمَاۤ أُرۡسِلُوا۟ عَلَیۡهِمۡ حَـٰفِظِینَ"
+    },
+    "34": {
+      "uthmani": "فَٱلۡیَوۡمَ ٱلَّذِینَ ءَامَنُوا۟ مِنَ ٱلۡكُفَّارِ یَضۡحَكُونَ"
+    },
+    "35": {
+      "uthmani": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ"
+    },
+    "36": {
+      "uthmani": "هَلۡ ثُوِّبَ ٱلۡكُفَّارُ مَا كَانُوا۟ یَفۡعَلُونَ"
+    }
+  },
+  "84": {
+    "1": {
+      "uthmani": "إِذَا ٱلسَّمَاۤءُ ٱنشَقَّتۡ"
+    },
+    "2": {
+      "uthmani": "وَأَذِنَتۡ لِرَبِّهَا وَحُقَّتۡ"
+    },
+    "3": {
+      "uthmani": "وَإِذَا ٱلۡأَرۡضُ مُدَّتۡ"
+    },
+    "4": {
+      "uthmani": "وَأَلۡقَتۡ مَا فِیهَا وَتَخَلَّتۡ"
+    },
+    "5": {
+      "uthmani": "وَأَذِنَتۡ لِرَبِّهَا وَحُقَّتۡ"
+    },
+    "6": {
+      "uthmani": "یَـٰۤأَیُّهَا ٱلۡإِنسَـٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدۡحࣰا فَمُلَـٰقِیهِ"
+    },
+    "7": {
+      "uthmani": "فَأَمَّا مَنۡ أُوتِیَ كِتَـٰبَهُۥ بِیَمِینِهِۦ"
+    },
+    "8": {
+      "uthmani": "فَسَوۡفَ یُحَاسَبُ حِسَابࣰا یَسِیرࣰا"
+    },
+    "9": {
+      "uthmani": "وَیَنقَلِبُ إِلَىٰۤ أَهۡلِهِۦ مَسۡرُورࣰا"
+    },
+    "10": {
+      "uthmani": "وَأَمَّا مَنۡ أُوتِیَ كِتَـٰبَهُۥ وَرَاۤءَ ظَهۡرِهِۦ"
+    },
+    "11": {
+      "uthmani": "فَسَوۡفَ یَدۡعُوا۟ ثُبُورࣰا"
+    },
+    "12": {
+      "uthmani": "وَیَصۡلَىٰ سَعِیرًا"
+    },
+    "13": {
+      "uthmani": "إِنَّهُۥ كَانَ فِیۤ أَهۡلِهِۦ مَسۡرُورًا"
+    },
+    "14": {
+      "uthmani": "إِنَّهُۥ ظَنَّ أَن لَّن یَحُورَ"
+    },
+    "15": {
+      "uthmani": "بَلَىٰۤۚ إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِیرࣰا"
+    },
+    "16": {
+      "uthmani": "فَلَاۤ أُقۡسِمُ بِٱلشَّفَقِ"
+    },
+    "17": {
+      "uthmani": "وَٱلَّیۡلِ وَمَا وَسَقَ"
+    },
+    "18": {
+      "uthmani": "وَٱلۡقَمَرِ إِذَا ٱتَّسَقَ"
+    },
+    "19": {
+      "uthmani": "لَتَرۡكَبُنَّ طَبَقًا عَن طَبَقࣲ"
+    },
+    "20": {
+      "uthmani": "فَمَا لَهُمۡ لَا یُؤۡمِنُونَ"
+    },
+    "21": {
+      "uthmani": "وَإِذَا قُرِئَ عَلَیۡهِمُ ٱلۡقُرۡءَانُ لَا یَسۡجُدُونَ ۩"
+    },
+    "22": {
+      "uthmani": "بَلِ ٱلَّذِینَ كَفَرُوا۟ یُكَذِّبُونَ"
+    },
+    "23": {
+      "uthmani": "وَٱللَّهُ أَعۡلَمُ بِمَا یُوعُونَ"
+    },
+    "24": {
+      "uthmani": "فَبَشِّرۡهُم بِعَذَابٍ أَلِیمٍ"
+    },
+    "25": {
+      "uthmani": "إِلَّا ٱلَّذِینَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمۡ أَجۡرٌ غَیۡرُ مَمۡنُونِۭ"
+    }
+  },
+  "85": {
+    "1": {
+      "uthmani": "وَٱلسَّمَاۤءِ ذَاتِ ٱلۡبُرُوجِ"
+    },
+    "2": {
+      "uthmani": "وَٱلۡیَوۡمِ ٱلۡمَوۡعُودِ"
+    },
+    "3": {
+      "uthmani": "وَشَاهِدࣲ وَمَشۡهُودࣲ"
+    },
+    "4": {
+      "uthmani": "قُتِلَ أَصۡحَـٰبُ ٱلۡأُخۡدُودِ"
+    },
+    "5": {
+      "uthmani": "ٱلنَّارِ ذَاتِ ٱلۡوَقُودِ"
+    },
+    "6": {
+      "uthmani": "إِذۡ هُمۡ عَلَیۡهَا قُعُودࣱ"
+    },
+    "7": {
+      "uthmani": "وَهُمۡ عَلَىٰ مَا یَفۡعَلُونَ بِٱلۡمُؤۡمِنِینَ شُهُودࣱ"
+    },
+    "8": {
+      "uthmani": "وَمَا نَقَمُوا۟ مِنۡهُمۡ إِلَّاۤ أَن یُؤۡمِنُوا۟ بِٱللَّهِ ٱلۡعَزِیزِ ٱلۡحَمِیدِ"
+    },
+    "9": {
+      "uthmani": "ٱلَّذِی لَهُۥ مُلۡكُ ٱلسَّمَـٰوَ ٰ⁠تِ وَٱلۡأَرۡضِۚ وَٱللَّهُ عَلَىٰ كُلِّ شَیۡءࣲ شَهِیدٌ"
+    },
+    "10": {
+      "uthmani": "إِنَّ ٱلَّذِینَ فَتَنُوا۟ ٱلۡمُؤۡمِنِینَ وَٱلۡمُؤۡمِنَـٰتِ ثُمَّ لَمۡ یَتُوبُوا۟ فَلَهُمۡ عَذَابُ جَهَنَّمَ وَلَهُمۡ عَذَابُ ٱلۡحَرِیقِ"
+    },
+    "11": {
+      "uthmani": "إِنَّ ٱلَّذِینَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمۡ جَنَّـٰتࣱ تَجۡرِی مِن تَحۡتِهَا ٱلۡأَنۡهَـٰرُۚ ذَ ٰ⁠لِكَ ٱلۡفَوۡزُ ٱلۡكَبِیرُ"
+    },
+    "12": {
+      "uthmani": "إِنَّ بَطۡشَ رَبِّكَ لَشَدِیدٌ"
+    },
+    "13": {
+      "uthmani": "إِنَّهُۥ هُوَ یُبۡدِئُ وَیُعِیدُ"
+    },
+    "14": {
+      "uthmani": "وَهُوَ ٱلۡغَفُورُ ٱلۡوَدُودُ"
+    },
+    "15": {
+      "uthmani": "ذُو ٱلۡعَرۡشِ ٱلۡمَجِیدُ"
+    },
+    "16": {
+      "uthmani": "فَعَّالࣱ لِّمَا یُرِیدُ"
+    },
+    "17": {
+      "uthmani": "هَلۡ أَتَىٰكَ حَدِیثُ ٱلۡجُنُودِ"
+    },
+    "18": {
+      "uthmani": "فِرۡعَوۡنَ وَثَمُودَ"
+    },
+    "19": {
+      "uthmani": "بَلِ ٱلَّذِینَ كَفَرُوا۟ فِی تَكۡذِیبࣲ"
+    },
+    "20": {
+      "uthmani": "وَٱللَّهُ مِن وَرَاۤىِٕهِم مُّحِیطُۢ"
+    },
+    "21": {
+      "uthmani": "بَلۡ هُوَ قُرۡءَانࣱ مَّجِیدࣱ"
+    },
+    "22": {
+      "uthmani": "فِی لَوۡحࣲ مَّحۡفُوظِۭ"
+    }
+  },
+  "86": {
+    "1": {
+      "uthmani": "وَٱلسَّمَاۤءِ وَٱلطَّارِقِ"
+    },
+    "2": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلطَّارِقُ"
+    },
+    "3": {
+      "uthmani": "ٱلنَّجۡمُ ٱلثَّاقِبُ"
+    },
+    "4": {
+      "uthmani": "إِن كُلُّ نَفۡسࣲ لَّمَّا عَلَیۡهَا حَافِظࣱ"
+    },
+    "5": {
+      "uthmani": "فَلۡیَنظُرِ ٱلۡإِنسَـٰنُ مِمَّ خُلِقَ"
+    },
+    "6": {
+      "uthmani": "خُلِقَ مِن مَّاۤءࣲ دَافِقࣲ"
+    },
+    "7": {
+      "uthmani": "یَخۡرُجُ مِنۢ بَیۡنِ ٱلصُّلۡبِ وَٱلتَّرَاۤىِٕبِ"
+    },
+    "8": {
+      "uthmani": "إِنَّهُۥ عَلَىٰ رَجۡعِهِۦ لَقَادِرࣱ"
+    },
+    "9": {
+      "uthmani": "یَوۡمَ تُبۡلَى ٱلسَّرَاۤىِٕرُ"
+    },
+    "10": {
+      "uthmani": "فَمَا لَهُۥ مِن قُوَّةࣲ وَلَا نَاصِرࣲ"
+    },
+    "11": {
+      "uthmani": "وَٱلسَّمَاۤءِ ذَاتِ ٱلرَّجۡعِ"
+    },
+    "12": {
+      "uthmani": "وَٱلۡأَرۡضِ ذَاتِ ٱلصَّدۡعِ"
+    },
+    "13": {
+      "uthmani": "إِنَّهُۥ لَقَوۡلࣱ فَصۡلࣱ"
+    },
+    "14": {
+      "uthmani": "وَمَا هُوَ بِٱلۡهَزۡلِ"
+    },
+    "15": {
+      "uthmani": "إِنَّهُمۡ یَكِیدُونَ كَیۡدࣰا"
+    },
+    "16": {
+      "uthmani": "وَأَكِیدُ كَیۡدࣰا"
+    },
+    "17": {
+      "uthmani": "فَمَهِّلِ ٱلۡكَـٰفِرِینَ أَمۡهِلۡهُمۡ رُوَیۡدَۢا"
+    }
+  },
+  "87": {
+    "1": {
+      "uthmani": "سَبِّحِ ٱسۡمَ رَبِّكَ ٱلۡأَعۡلَى"
+    },
+    "2": {
+      "uthmani": "ٱلَّذِی خَلَقَ فَسَوَّىٰ"
+    },
+    "3": {
+      "uthmani": "وَٱلَّذِی قَدَّرَ فَهَدَىٰ"
+    },
+    "4": {
+      "uthmani": "وَٱلَّذِیۤ أَخۡرَجَ ٱلۡمَرۡعَىٰ"
+    },
+    "5": {
+      "uthmani": "فَجَعَلَهُۥ غُثَاۤءً أَحۡوَىٰ"
+    },
+    "6": {
+      "uthmani": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ"
+    },
+    "7": {
+      "uthmani": "إِلَّا مَا شَاۤءَ ٱللَّهُۚ إِنَّهُۥ یَعۡلَمُ ٱلۡجَهۡرَ وَمَا یَخۡفَىٰ"
+    },
+    "8": {
+      "uthmani": "وَنُیَسِّرُكَ لِلۡیُسۡرَىٰ"
+    },
+    "9": {
+      "uthmani": "فَذَكِّرۡ إِن نَّفَعَتِ ٱلذِّكۡرَىٰ"
+    },
+    "10": {
+      "uthmani": "سَیَذَّكَّرُ مَن یَخۡشَىٰ"
+    },
+    "11": {
+      "uthmani": "وَیَتَجَنَّبُهَا ٱلۡأَشۡقَى"
+    },
+    "12": {
+      "uthmani": "ٱلَّذِی یَصۡلَى ٱلنَّارَ ٱلۡكُبۡرَىٰ"
+    },
+    "13": {
+      "uthmani": "ثُمَّ لَا یَمُوتُ فِیهَا وَلَا یَحۡیَىٰ"
+    },
+    "14": {
+      "uthmani": "قَدۡ أَفۡلَحَ مَن تَزَكَّىٰ"
+    },
+    "15": {
+      "uthmani": "وَذَكَرَ ٱسۡمَ رَبِّهِۦ فَصَلَّىٰ"
+    },
+    "16": {
+      "uthmani": "بَلۡ تُؤۡثِرُونَ ٱلۡحَیَوٰةَ ٱلدُّنۡیَا"
+    },
+    "17": {
+      "uthmani": "وَٱلۡـَٔاخِرَةُ خَیۡرࣱ وَأَبۡقَىٰۤ"
+    },
+    "18": {
+      "uthmani": "إِنَّ هَـٰذَا لَفِی ٱلصُّحُفِ ٱلۡأُولَىٰ"
+    },
+    "19": {
+      "uthmani": "صُحُفِ إِبۡرَ ٰ⁠هِیمَ وَمُوسَىٰ"
+    }
+  },
+  "88": {
+    "1": {
+      "uthmani": "هَلۡ أَتَىٰكَ حَدِیثُ ٱلۡغَـٰشِیَةِ"
+    },
+    "2": {
+      "uthmani": "وُجُوهࣱ یَوۡمَىِٕذٍ خَـٰشِعَةٌ"
+    },
+    "3": {
+      "uthmani": "عَامِلَةࣱ نَّاصِبَةࣱ"
+    },
+    "4": {
+      "uthmani": "تَصۡلَىٰ نَارًا حَامِیَةࣰ"
+    },
+    "5": {
+      "uthmani": "تُسۡقَىٰ مِنۡ عَیۡنٍ ءَانِیَةࣲ"
+    },
+    "6": {
+      "uthmani": "لَّیۡسَ لَهُمۡ طَعَامٌ إِلَّا مِن ضَرِیعࣲ"
+    },
+    "7": {
+      "uthmani": "لَّا یُسۡمِنُ وَلَا یُغۡنِی مِن جُوعࣲ"
+    },
+    "8": {
+      "uthmani": "وُجُوهࣱ یَوۡمَىِٕذࣲ نَّاعِمَةࣱ"
+    },
+    "9": {
+      "uthmani": "لِّسَعۡیِهَا رَاضِیَةࣱ"
+    },
+    "10": {
+      "uthmani": "فِی جَنَّةٍ عَالِیَةࣲ"
+    },
+    "11": {
+      "uthmani": "لَّا تَسۡمَعُ فِیهَا لَـٰغِیَةࣰ"
+    },
+    "12": {
+      "uthmani": "فِیهَا عَیۡنࣱ جَارِیَةࣱ"
+    },
+    "13": {
+      "uthmani": "فِیهَا سُرُرࣱ مَّرۡفُوعَةࣱ"
+    },
+    "14": {
+      "uthmani": "وَأَكۡوَابࣱ مَّوۡضُوعَةࣱ"
+    },
+    "15": {
+      "uthmani": "وَنَمَارِقُ مَصۡفُوفَةࣱ"
+    },
+    "16": {
+      "uthmani": "وَزَرَابِیُّ مَبۡثُوثَةٌ"
+    },
+    "17": {
+      "uthmani": "أَفَلَا یَنظُرُونَ إِلَى ٱلۡإِبِلِ كَیۡفَ خُلِقَتۡ"
+    },
+    "18": {
+      "uthmani": "وَإِلَى ٱلسَّمَاۤءِ كَیۡفَ رُفِعَتۡ"
+    },
+    "19": {
+      "uthmani": "وَإِلَى ٱلۡجِبَالِ كَیۡفَ نُصِبَتۡ"
+    },
+    "20": {
+      "uthmani": "وَإِلَى ٱلۡأَرۡضِ كَیۡفَ سُطِحَتۡ"
+    },
+    "21": {
+      "uthmani": "فَذَكِّرۡ إِنَّمَاۤ أَنتَ مُذَكِّرࣱ"
+    },
+    "22": {
+      "uthmani": "لَّسۡتَ عَلَیۡهِم بِمُصَیۡطِرٍ"
+    },
+    "23": {
+      "uthmani": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ"
+    },
+    "24": {
+      "uthmani": "فَیُعَذِّبُهُ ٱللَّهُ ٱلۡعَذَابَ ٱلۡأَكۡبَرَ"
+    },
+    "25": {
+      "uthmani": "إِنَّ إِلَیۡنَاۤ إِیَابَهُمۡ"
+    },
+    "26": {
+      "uthmani": "ثُمَّ إِنَّ عَلَیۡنَا حِسَابَهُم"
+    }
+  },
+  "89": {
+    "1": {
+      "uthmani": "وَٱلۡفَجۡرِ"
+    },
+    "2": {
+      "uthmani": "وَلَیَالٍ عَشۡرࣲ"
+    },
+    "3": {
+      "uthmani": "وَٱلشَّفۡعِ وَٱلۡوَتۡرِ"
+    },
+    "4": {
+      "uthmani": "وَٱلَّیۡلِ إِذَا یَسۡرِ"
+    },
+    "5": {
+      "uthmani": "هَلۡ فِی ذَ ٰ⁠لِكَ قَسَمࣱ لِّذِی حِجۡرٍ"
+    },
+    "6": {
+      "uthmani": "أَلَمۡ تَرَ كَیۡفَ فَعَلَ رَبُّكَ بِعَادٍ"
+    },
+    "7": {
+      "uthmani": "إِرَمَ ذَاتِ ٱلۡعِمَادِ"
+    },
+    "8": {
+      "uthmani": "ٱلَّتِی لَمۡ یُخۡلَقۡ مِثۡلُهَا فِی ٱلۡبِلَـٰدِ"
+    },
+    "9": {
+      "uthmani": "وَثَمُودَ ٱلَّذِینَ جَابُوا۟ ٱلصَّخۡرَ بِٱلۡوَادِ"
+    },
+    "10": {
+      "uthmani": "وَفِرۡعَوۡنَ ذِی ٱلۡأَوۡتَادِ"
+    },
+    "11": {
+      "uthmani": "ٱلَّذِینَ طَغَوۡا۟ فِی ٱلۡبِلَـٰدِ"
+    },
+    "12": {
+      "uthmani": "فَأَكۡثَرُوا۟ فِیهَا ٱلۡفَسَادَ"
+    },
+    "13": {
+      "uthmani": "فَصَبَّ عَلَیۡهِمۡ رَبُّكَ سَوۡطَ عَذَابٍ"
+    },
+    "14": {
+      "uthmani": "إِنَّ رَبَّكَ لَبِٱلۡمِرۡصَادِ"
+    },
+    "15": {
+      "uthmani": "فَأَمَّا ٱلۡإِنسَـٰنُ إِذَا مَا ٱبۡتَلَىٰهُ رَبُّهُۥ فَأَكۡرَمَهُۥ وَنَعَّمَهُۥ فَیَقُولُ رَبِّیۤ أَكۡرَمَنِ"
+    },
+    "16": {
+      "uthmani": "وَأَمَّاۤ إِذَا مَا ٱبۡتَلَىٰهُ فَقَدَرَ عَلَیۡهِ رِزۡقَهُۥ فَیَقُولُ رَبِّیۤ أَهَـٰنَنِ"
+    },
+    "17": {
+      "uthmani": "كَلَّاۖ بَل لَّا تُكۡرِمُونَ ٱلۡیَتِیمَ"
+    },
+    "18": {
+      "uthmani": "وَلَا تَحَـٰۤضُّونَ عَلَىٰ طَعَامِ ٱلۡمِسۡكِینِ"
+    },
+    "19": {
+      "uthmani": "وَتَأۡكُلُونَ ٱلتُّرَاثَ أَكۡلࣰا لَّمࣰّا"
+    },
+    "20": {
+      "uthmani": "وَتُحِبُّونَ ٱلۡمَالَ حُبࣰّا جَمࣰّا"
+    },
+    "21": {
+      "uthmani": "كَلَّاۤۖ إِذَا دُكَّتِ ٱلۡأَرۡضُ دَكࣰّا دَكࣰّا"
+    },
+    "22": {
+      "uthmani": "وَجَاۤءَ رَبُّكَ وَٱلۡمَلَكُ صَفࣰّا صَفࣰّا"
+    },
+    "23": {
+      "uthmani": "وَجِا۟یۤءَ یَوۡمَىِٕذِۭ بِجَهَنَّمَۚ یَوۡمَىِٕذࣲ یَتَذَكَّرُ ٱلۡإِنسَـٰنُ وَأَنَّىٰ لَهُ ٱلذِّكۡرَىٰ"
+    },
+    "24": {
+      "uthmani": "یَقُولُ یَـٰلَیۡتَنِی قَدَّمۡتُ لِحَیَاتِی"
+    },
+    "25": {
+      "uthmani": "فَیَوۡمَىِٕذࣲ لَّا یُعَذِّبُ عَذَابَهُۥۤ أَحَدࣱ"
+    },
+    "26": {
+      "uthmani": "وَلَا یُوثِقُ وَثَاقَهُۥۤ أَحَدࣱ"
+    },
+    "27": {
+      "uthmani": "یَـٰۤأَیَّتُهَا ٱلنَّفۡسُ ٱلۡمُطۡمَىِٕنَّةُ"
+    },
+    "28": {
+      "uthmani": "ٱرۡجِعِیۤ إِلَىٰ رَبِّكِ رَاضِیَةࣰ مَّرۡضِیَّةࣰ"
+    },
+    "29": {
+      "uthmani": "فَٱدۡخُلِی فِی عِبَـٰدِی"
+    },
+    "30": {
+      "uthmani": "وَٱدۡخُلِی جَنَّتِی"
+    }
+  },
+  "90": {
+    "1": {
+      "uthmani": "لَاۤ أُقۡسِمُ بِهَـٰذَا ٱلۡبَلَدِ"
+    },
+    "2": {
+      "uthmani": "وَأَنتَ حِلُّۢ بِهَـٰذَا ٱلۡبَلَدِ"
+    },
+    "3": {
+      "uthmani": "وَوَالِدࣲ وَمَا وَلَدَ"
+    },
+    "4": {
+      "uthmani": "لَقَدۡ خَلَقۡنَا ٱلۡإِنسَـٰنَ فِی كَبَدٍ"
+    },
+    "5": {
+      "uthmani": "أَیَحۡسَبُ أَن لَّن یَقۡدِرَ عَلَیۡهِ أَحَدࣱ"
+    },
+    "6": {
+      "uthmani": "یَقُولُ أَهۡلَكۡتُ مَالࣰا لُّبَدًا"
+    },
+    "7": {
+      "uthmani": "أَیَحۡسَبُ أَن لَّمۡ یَرَهُۥۤ أَحَدٌ"
+    },
+    "8": {
+      "uthmani": "أَلَمۡ نَجۡعَل لَّهُۥ عَیۡنَیۡنِ"
+    },
+    "9": {
+      "uthmani": "وَلِسَانࣰا وَشَفَتَیۡنِ"
+    },
+    "10": {
+      "uthmani": "وَهَدَیۡنَـٰهُ ٱلنَّجۡدَیۡنِ"
+    },
+    "11": {
+      "uthmani": "فَلَا ٱقۡتَحَمَ ٱلۡعَقَبَةَ"
+    },
+    "12": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلۡعَقَبَةُ"
+    },
+    "13": {
+      "uthmani": "فَكُّ رَقَبَةٍ"
+    },
+    "14": {
+      "uthmani": "أَوۡ إِطۡعَـٰمࣱ فِی یَوۡمࣲ ذِی مَسۡغَبَةࣲ"
+    },
+    "15": {
+      "uthmani": "یَتِیمࣰا ذَا مَقۡرَبَةٍ"
+    },
+    "16": {
+      "uthmani": "أَوۡ مِسۡكِینࣰا ذَا مَتۡرَبَةࣲ"
+    },
+    "17": {
+      "uthmani": "ثُمَّ كَانَ مِنَ ٱلَّذِینَ ءَامَنُوا۟ وَتَوَاصَوۡا۟ بِٱلصَّبۡرِ وَتَوَاصَوۡا۟ بِٱلۡمَرۡحَمَةِ"
+    },
+    "18": {
+      "uthmani": "أُو۟لَـٰۤىِٕكَ أَصۡحَـٰبُ ٱلۡمَیۡمَنَةِ"
+    },
+    "19": {
+      "uthmani": "وَٱلَّذِینَ كَفَرُوا۟ بِـَٔایَـٰتِنَا هُمۡ أَصۡحَـٰبُ ٱلۡمَشۡـَٔمَةِ"
+    },
+    "20": {
+      "uthmani": "عَلَیۡهِمۡ نَارࣱ مُّؤۡصَدَةُۢ"
+    }
+  },
+  "91": {
+    "1": {
+      "uthmani": "وَٱلشَّمۡسِ وَضُحَىٰهَا"
+    },
+    "2": {
+      "uthmani": "وَٱلۡقَمَرِ إِذَا تَلَىٰهَا"
+    },
+    "3": {
+      "uthmani": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا"
+    },
+    "4": {
+      "uthmani": "وَٱلَّیۡلِ إِذَا یَغۡشَىٰهَا"
+    },
+    "5": {
+      "uthmani": "وَٱلسَّمَاۤءِ وَمَا بَنَىٰهَا"
+    },
+    "6": {
+      "uthmani": "وَٱلۡأَرۡضِ وَمَا طَحَىٰهَا"
+    },
+    "7": {
+      "uthmani": "وَنَفۡسࣲ وَمَا سَوَّىٰهَا"
+    },
+    "8": {
+      "uthmani": "فَأَلۡهَمَهَا فُجُورَهَا وَتَقۡوَىٰهَا"
+    },
+    "9": {
+      "uthmani": "قَدۡ أَفۡلَحَ مَن زَكَّىٰهَا"
+    },
+    "10": {
+      "uthmani": "وَقَدۡ خَابَ مَن دَسَّىٰهَا"
+    },
+    "11": {
+      "uthmani": "كَذَّبَتۡ ثَمُودُ بِطَغۡوَىٰهَاۤ"
+    },
+    "12": {
+      "uthmani": "إِذِ ٱنۢبَعَثَ أَشۡقَىٰهَا"
+    },
+    "13": {
+      "uthmani": "فَقَالَ لَهُمۡ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقۡیَـٰهَا"
+    },
+    "14": {
+      "uthmani": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمۡدَمَ عَلَیۡهِمۡ رَبُّهُم بِذَنۢبِهِمۡ فَسَوَّىٰهَا"
+    },
+    "15": {
+      "uthmani": "وَلَا یَخَافُ عُقۡبَـٰهَا"
+    }
+  },
+  "92": {
+    "1": {
+      "uthmani": "وَٱلَّیۡلِ إِذَا یَغۡشَىٰ"
+    },
+    "2": {
+      "uthmani": "وَٱلنَّهَارِ إِذَا تَجَلَّىٰ"
+    },
+    "3": {
+      "uthmani": "وَمَا خَلَقَ ٱلذَّكَرَ وَٱلۡأُنثَىٰۤ"
+    },
+    "4": {
+      "uthmani": "إِنَّ سَعۡیَكُمۡ لَشَتَّىٰ"
+    },
+    "5": {
+      "uthmani": "فَأَمَّا مَنۡ أَعۡطَىٰ وَٱتَّقَىٰ"
+    },
+    "6": {
+      "uthmani": "وَصَدَّقَ بِٱلۡحُسۡنَىٰ"
+    },
+    "7": {
+      "uthmani": "فَسَنُیَسِّرُهُۥ لِلۡیُسۡرَىٰ"
+    },
+    "8": {
+      "uthmani": "وَأَمَّا مَنۢ بَخِلَ وَٱسۡتَغۡنَىٰ"
+    },
+    "9": {
+      "uthmani": "وَكَذَّبَ بِٱلۡحُسۡنَىٰ"
+    },
+    "10": {
+      "uthmani": "فَسَنُیَسِّرُهُۥ لِلۡعُسۡرَىٰ"
+    },
+    "11": {
+      "uthmani": "وَمَا یُغۡنِی عَنۡهُ مَالُهُۥۤ إِذَا تَرَدَّىٰۤ"
+    },
+    "12": {
+      "uthmani": "إِنَّ عَلَیۡنَا لَلۡهُدَىٰ"
+    },
+    "13": {
+      "uthmani": "وَإِنَّ لَنَا لَلۡـَٔاخِرَةَ وَٱلۡأُولَىٰ"
+    },
+    "14": {
+      "uthmani": "فَأَنذَرۡتُكُمۡ نَارࣰا تَلَظَّىٰ"
+    },
+    "15": {
+      "uthmani": "لَا یَصۡلَىٰهَاۤ إِلَّا ٱلۡأَشۡقَى"
+    },
+    "16": {
+      "uthmani": "ٱلَّذِی كَذَّبَ وَتَوَلَّىٰ"
+    },
+    "17": {
+      "uthmani": "وَسَیُجَنَّبُهَا ٱلۡأَتۡقَى"
+    },
+    "18": {
+      "uthmani": "ٱلَّذِی یُؤۡتِی مَالَهُۥ یَتَزَكَّىٰ"
+    },
+    "19": {
+      "uthmani": "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعۡمَةࣲ تُجۡزَىٰۤ"
+    },
+    "20": {
+      "uthmani": "إِلَّا ٱبۡتِغَاۤءَ وَجۡهِ رَبِّهِ ٱلۡأَعۡلَىٰ"
+    },
+    "21": {
+      "uthmani": "وَلَسَوۡفَ یَرۡضَىٰ"
+    }
+  },
+  "93": {
+    "1": {
+      "uthmani": "وَٱلضُّحَىٰ"
+    },
+    "2": {
+      "uthmani": "وَٱلَّیۡلِ إِذَا سَجَىٰ"
+    },
+    "3": {
+      "uthmani": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ"
+    },
+    "4": {
+      "uthmani": "وَلَلۡـَٔاخِرَةُ خَیۡرࣱ لَّكَ مِنَ ٱلۡأُولَىٰ"
+    },
+    "5": {
+      "uthmani": "وَلَسَوۡفَ یُعۡطِیكَ رَبُّكَ فَتَرۡضَىٰۤ"
+    },
+    "6": {
+      "uthmani": "أَلَمۡ یَجِدۡكَ یَتِیمࣰا فَـَٔاوَىٰ"
+    },
+    "7": {
+      "uthmani": "وَوَجَدَكَ ضَاۤلࣰّا فَهَدَىٰ"
+    },
+    "8": {
+      "uthmani": "وَوَجَدَكَ عَاۤىِٕلࣰا فَأَغۡنَىٰ"
+    },
+    "9": {
+      "uthmani": "فَأَمَّا ٱلۡیَتِیمَ فَلَا تَقۡهَرۡ"
+    },
+    "10": {
+      "uthmani": "وَأَمَّا ٱلسَّاۤىِٕلَ فَلَا تَنۡهَرۡ"
+    },
+    "11": {
+      "uthmani": "وَأَمَّا بِنِعۡمَةِ رَبِّكَ فَحَدِّثۡ"
+    }
+  },
+  "94": {
+    "1": {
+      "uthmani": "أَلَمۡ نَشۡرَحۡ لَكَ صَدۡرَكَ"
+    },
+    "2": {
+      "uthmani": "وَوَضَعۡنَا عَنكَ وِزۡرَكَ"
+    },
+    "3": {
+      "uthmani": "ٱلَّذِیۤ أَنقَضَ ظَهۡرَكَ"
+    },
+    "4": {
+      "uthmani": "وَرَفَعۡنَا لَكَ ذِكۡرَكَ"
+    },
+    "5": {
+      "uthmani": "فَإِنَّ مَعَ ٱلۡعُسۡرِ یُسۡرًا"
+    },
+    "6": {
+      "uthmani": "إِنَّ مَعَ ٱلۡعُسۡرِ یُسۡرࣰا"
+    },
+    "7": {
+      "uthmani": "فَإِذَا فَرَغۡتَ فَٱنصَبۡ"
+    },
+    "8": {
+      "uthmani": "وَإِلَىٰ رَبِّكَ فَٱرۡغَب"
+    }
+  },
+  "95": {
+    "1": {
+      "uthmani": "وَٱلتِّینِ وَٱلزَّیۡتُونِ"
+    },
+    "2": {
+      "uthmani": "وَطُورِ سِینِینَ"
+    },
+    "3": {
+      "uthmani": "وَهَـٰذَا ٱلۡبَلَدِ ٱلۡأَمِینِ"
+    },
+    "4": {
+      "uthmani": "لَقَدۡ خَلَقۡنَا ٱلۡإِنسَـٰنَ فِیۤ أَحۡسَنِ تَقۡوِیمࣲ"
+    },
+    "5": {
+      "uthmani": "ثُمَّ رَدَدۡنَـٰهُ أَسۡفَلَ سَـٰفِلِینَ"
+    },
+    "6": {
+      "uthmani": "إِلَّا ٱلَّذِینَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمۡ أَجۡرٌ غَیۡرُ مَمۡنُونࣲ"
+    },
+    "7": {
+      "uthmani": "فَمَا یُكَذِّبُكَ بَعۡدُ بِٱلدِّینِ"
+    },
+    "8": {
+      "uthmani": "أَلَیۡسَ ٱللَّهُ بِأَحۡكَمِ ٱلۡحَـٰكِمِینَ"
+    }
+  },
+  "96": {
+    "1": {
+      "uthmani": "ٱقۡرَأۡ بِٱسۡمِ رَبِّكَ ٱلَّذِی خَلَقَ"
+    },
+    "2": {
+      "uthmani": "خَلَقَ ٱلۡإِنسَـٰنَ مِنۡ عَلَقٍ"
+    },
+    "3": {
+      "uthmani": "ٱقۡرَأۡ وَرَبُّكَ ٱلۡأَكۡرَمُ"
+    },
+    "4": {
+      "uthmani": "ٱلَّذِی عَلَّمَ بِٱلۡقَلَمِ"
+    },
+    "5": {
+      "uthmani": "عَلَّمَ ٱلۡإِنسَـٰنَ مَا لَمۡ یَعۡلَمۡ"
+    },
+    "6": {
+      "uthmani": "كَلَّاۤ إِنَّ ٱلۡإِنسَـٰنَ لَیَطۡغَىٰۤ"
+    },
+    "7": {
+      "uthmani": "أَن رَّءَاهُ ٱسۡتَغۡنَىٰۤ"
+    },
+    "8": {
+      "uthmani": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجۡعَىٰۤ"
+    },
+    "9": {
+      "uthmani": "أَرَءَیۡتَ ٱلَّذِی یَنۡهَىٰ"
+    },
+    "10": {
+      "uthmani": "عَبۡدًا إِذَا صَلَّىٰۤ"
+    },
+    "11": {
+      "uthmani": "أَرَءَیۡتَ إِن كَانَ عَلَى ٱلۡهُدَىٰۤ"
+    },
+    "12": {
+      "uthmani": "أَوۡ أَمَرَ بِٱلتَّقۡوَىٰۤ"
+    },
+    "13": {
+      "uthmani": "أَرَءَیۡتَ إِن كَذَّبَ وَتَوَلَّىٰۤ"
+    },
+    "14": {
+      "uthmani": "أَلَمۡ یَعۡلَم بِأَنَّ ٱللَّهَ یَرَىٰ"
+    },
+    "15": {
+      "uthmani": "كَلَّا لَىِٕن لَّمۡ یَنتَهِ لَنَسۡفَعَۢا بِٱلنَّاصِیَةِ"
+    },
+    "16": {
+      "uthmani": "نَاصِیَةࣲ كَـٰذِبَةٍ خَاطِئَةࣲ"
+    },
+    "17": {
+      "uthmani": "فَلۡیَدۡعُ نَادِیَهُۥ"
+    },
+    "18": {
+      "uthmani": "سَنَدۡعُ ٱلزَّبَانِیَةَ"
+    },
+    "19": {
+      "uthmani": "كَلَّا لَا تُطِعۡهُ وَٱسۡجُدۡ وَٱقۡتَرِب ۩"
+    }
+  },
+  "97": {
+    "1": {
+      "uthmani": "إِنَّاۤ أَنزَلۡنَـٰهُ فِی لَیۡلَةِ ٱلۡقَدۡرِ"
+    },
+    "2": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا لَیۡلَةُ ٱلۡقَدۡرِ"
+    },
+    "3": {
+      "uthmani": "لَیۡلَةُ ٱلۡقَدۡرِ خَیۡرࣱ مِّنۡ أَلۡفِ شَهۡرࣲ"
+    },
+    "4": {
+      "uthmani": "تَنَزَّلُ ٱلۡمَلَـٰۤىِٕكَةُ وَٱلرُّوحُ فِیهَا بِإِذۡنِ رَبِّهِم مِّن كُلِّ أَمۡرࣲ"
+    },
+    "5": {
+      "uthmani": "سَلَـٰمٌ هِیَ حَتَّىٰ مَطۡلَعِ ٱلۡفَجۡرِ"
+    }
+  },
+  "98": {
+    "1": {
+      "uthmani": "لَمۡ یَكُنِ ٱلَّذِینَ كَفَرُوا۟ مِنۡ أَهۡلِ ٱلۡكِتَـٰبِ وَٱلۡمُشۡرِكِینَ مُنفَكِّینَ حَتَّىٰ تَأۡتِیَهُمُ ٱلۡبَیِّنَةُ"
+    },
+    "2": {
+      "uthmani": "رَسُولࣱ مِّنَ ٱللَّهِ یَتۡلُوا۟ صُحُفࣰا مُّطَهَّرَةࣰ"
+    },
+    "3": {
+      "uthmani": "فِیهَا كُتُبࣱ قَیِّمَةࣱ"
+    },
+    "4": {
+      "uthmani": "وَمَا تَفَرَّقَ ٱلَّذِینَ أُوتُوا۟ ٱلۡكِتَـٰبَ إِلَّا مِنۢ بَعۡدِ مَا جَاۤءَتۡهُمُ ٱلۡبَیِّنَةُ"
+    },
+    "5": {
+      "uthmani": "وَمَاۤ أُمِرُوۤا۟ إِلَّا لِیَعۡبُدُوا۟ ٱللَّهَ مُخۡلِصِینَ لَهُ ٱلدِّینَ حُنَفَاۤءَ وَیُقِیمُوا۟ ٱلصَّلَوٰةَ وَیُؤۡتُوا۟ ٱلزَّكَوٰةَۚ وَذَ ٰ⁠لِكَ دِینُ ٱلۡقَیِّمَةِ"
+    },
+    "6": {
+      "uthmani": "إِنَّ ٱلَّذِینَ كَفَرُوا۟ مِنۡ أَهۡلِ ٱلۡكِتَـٰبِ وَٱلۡمُشۡرِكِینَ فِی نَارِ جَهَنَّمَ خَـٰلِدِینَ فِیهَاۤۚ أُو۟لَـٰۤىِٕكَ هُمۡ شَرُّ ٱلۡبَرِیَّةِ"
+    },
+    "7": {
+      "uthmani": "إِنَّ ٱلَّذِینَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰۤىِٕكَ هُمۡ خَیۡرُ ٱلۡبَرِیَّةِ"
+    },
+    "8": {
+      "uthmani": "جَزَاۤؤُهُمۡ عِندَ رَبِّهِمۡ جَنَّـٰتُ عَدۡنࣲ تَجۡرِی مِن تَحۡتِهَا ٱلۡأَنۡهَـٰرُ خَـٰلِدِینَ فِیهَاۤ أَبَدࣰاۖ رَّضِیَ ٱللَّهُ عَنۡهُمۡ وَرَضُوا۟ عَنۡهُۚ ذَ ٰ⁠لِكَ لِمَنۡ خَشِیَ رَبَّهُۥ"
+    }
+  },
+  "99": {
+    "1": {
+      "uthmani": "إِذَا زُلۡزِلَتِ ٱلۡأَرۡضُ زِلۡزَالَهَا"
+    },
+    "2": {
+      "uthmani": "وَأَخۡرَجَتِ ٱلۡأَرۡضُ أَثۡقَالَهَا"
+    },
+    "3": {
+      "uthmani": "وَقَالَ ٱلۡإِنسَـٰنُ مَا لَهَا"
+    },
+    "4": {
+      "uthmani": "یَوۡمَىِٕذࣲ تُحَدِّثُ أَخۡبَارَهَا"
+    },
+    "5": {
+      "uthmani": "بِأَنَّ رَبَّكَ أَوۡحَىٰ لَهَا"
+    },
+    "6": {
+      "uthmani": "یَوۡمَىِٕذࣲ یَصۡدُرُ ٱلنَّاسُ أَشۡتَاتࣰا لِّیُرَوۡا۟ أَعۡمَـٰلَهُمۡ"
+    },
+    "7": {
+      "uthmani": "فَمَن یَعۡمَلۡ مِثۡقَالَ ذَرَّةٍ خَیۡرࣰا یَرَهُۥ"
+    },
+    "8": {
+      "uthmani": "وَمَن یَعۡمَلۡ مِثۡقَالَ ذَرَّةࣲ شَرࣰّا یَرَهُۥ"
+    }
+  },
+  "100": {
+    "1": {
+      "uthmani": "وَٱلۡعَـٰدِیَـٰتِ ضَبۡحࣰا"
+    },
+    "2": {
+      "uthmani": "فَٱلۡمُورِیَـٰتِ قَدۡحࣰا"
+    },
+    "3": {
+      "uthmani": "فَٱلۡمُغِیرَ ٰ⁠تِ صُبۡحࣰا"
+    },
+    "4": {
+      "uthmani": "فَأَثَرۡنَ بِهِۦ نَقۡعࣰا"
+    },
+    "5": {
+      "uthmani": "فَوَسَطۡنَ بِهِۦ جَمۡعًا"
+    },
+    "6": {
+      "uthmani": "إِنَّ ٱلۡإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودࣱ"
+    },
+    "7": {
+      "uthmani": "وَإِنَّهُۥ عَلَىٰ ذَ ٰ⁠لِكَ لَشَهِیدࣱ"
+    },
+    "8": {
+      "uthmani": "وَإِنَّهُۥ لِحُبِّ ٱلۡخَیۡرِ لَشَدِیدٌ"
+    },
+    "9": {
+      "uthmani": "۞ أَفَلَا یَعۡلَمُ إِذَا بُعۡثِرَ مَا فِی ٱلۡقُبُورِ"
+    },
+    "10": {
+      "uthmani": "وَحُصِّلَ مَا فِی ٱلصُّدُورِ"
+    },
+    "11": {
+      "uthmani": "إِنَّ رَبَّهُم بِهِمۡ یَوۡمَىِٕذࣲ لَّخَبِیرُۢ"
+    }
+  },
+  "101": {
+    "1": {
+      "uthmani": "ٱلۡقَارِعَةُ"
+    },
+    "2": {
+      "uthmani": "مَا ٱلۡقَارِعَةُ"
+    },
+    "3": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلۡقَارِعَةُ"
+    },
+    "4": {
+      "uthmani": "یَوۡمَ یَكُونُ ٱلنَّاسُ كَٱلۡفَرَاشِ ٱلۡمَبۡثُوثِ"
+    },
+    "5": {
+      "uthmani": "وَتَكُونُ ٱلۡجِبَالُ كَٱلۡعِهۡنِ ٱلۡمَنفُوشِ"
+    },
+    "6": {
+      "uthmani": "فَأَمَّا مَن ثَقُلَتۡ مَوَ ٰ⁠زِینُهُۥ"
+    },
+    "7": {
+      "uthmani": "فَهُوَ فِی عِیشَةࣲ رَّاضِیَةࣲ"
+    },
+    "8": {
+      "uthmani": "وَأَمَّا مَنۡ خَفَّتۡ مَوَ ٰ⁠زِینُهُۥ"
+    },
+    "9": {
+      "uthmani": "فَأُمُّهُۥ هَاوِیَةࣱ"
+    },
+    "10": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا هِیَهۡ"
+    },
+    "11": {
+      "uthmani": "نَارٌ حَامِیَةُۢ"
+    }
+  },
+  "102": {
+    "1": {
+      "uthmani": "أَلۡهَىٰكُمُ ٱلتَّكَاثُرُ"
+    },
+    "2": {
+      "uthmani": "حَتَّىٰ زُرۡتُمُ ٱلۡمَقَابِرَ"
+    },
+    "3": {
+      "uthmani": "كَلَّا سَوۡفَ تَعۡلَمُونَ"
+    },
+    "4": {
+      "uthmani": "ثُمَّ كَلَّا سَوۡفَ تَعۡلَمُونَ"
+    },
+    "5": {
+      "uthmani": "كَلَّا لَوۡ تَعۡلَمُونَ عِلۡمَ ٱلۡیَقِینِ"
+    },
+    "6": {
+      "uthmani": "لَتَرَوُنَّ ٱلۡجَحِیمَ"
+    },
+    "7": {
+      "uthmani": "ثُمَّ لَتَرَوُنَّهَا عَیۡنَ ٱلۡیَقِینِ"
+    },
+    "8": {
+      "uthmani": "ثُمَّ لَتُسۡـَٔلُنَّ یَوۡمَىِٕذٍ عَنِ ٱلنَّعِیمِ"
+    }
+  },
+  "103": {
+    "1": {
+      "uthmani": "وَٱلۡعَصۡرِ"
+    },
+    "2": {
+      "uthmani": "إِنَّ ٱلۡإِنسَـٰنَ لَفِی خُسۡرٍ"
+    },
+    "3": {
+      "uthmani": "إِلَّا ٱلَّذِینَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوۡا۟ بِٱلۡحَقِّ وَتَوَاصَوۡا۟ بِٱلصَّبۡرِ"
+    }
+  },
+  "104": {
+    "1": {
+      "uthmani": "وَیۡلࣱ لِّكُلِّ هُمَزَةࣲ لُّمَزَةٍ"
+    },
+    "2": {
+      "uthmani": "ٱلَّذِی جَمَعَ مَالࣰا وَعَدَّدَهُۥ"
+    },
+    "3": {
+      "uthmani": "یَحۡسَبُ أَنَّ مَالَهُۥۤ أَخۡلَدَهُۥ"
+    },
+    "4": {
+      "uthmani": "كَلَّاۖ لَیُنۢبَذَنَّ فِی ٱلۡحُطَمَةِ"
+    },
+    "5": {
+      "uthmani": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلۡحُطَمَةُ"
+    },
+    "6": {
+      "uthmani": "نَارُ ٱللَّهِ ٱلۡمُوقَدَةُ"
+    },
+    "7": {
+      "uthmani": "ٱلَّتِی تَطَّلِعُ عَلَى ٱلۡأَفۡـِٔدَةِ"
+    },
+    "8": {
+      "uthmani": "إِنَّهَا عَلَیۡهِم مُّؤۡصَدَةࣱ"
+    },
+    "9": {
+      "uthmani": "فِی عَمَدࣲ مُّمَدَّدَةِۭ"
+    }
+  },
+  "105": {
+    "1": {
+      "uthmani": "أَلَمۡ تَرَ كَیۡفَ فَعَلَ رَبُّكَ بِأَصۡحَـٰبِ ٱلۡفِیلِ"
+    },
+    "2": {
+      "uthmani": "أَلَمۡ یَجۡعَلۡ كَیۡدَهُمۡ فِی تَضۡلِیلࣲ"
+    },
+    "3": {
+      "uthmani": "وَأَرۡسَلَ عَلَیۡهِمۡ طَیۡرًا أَبَابِیلَ"
+    },
+    "4": {
+      "uthmani": "تَرۡمِیهِم بِحِجَارَةࣲ مِّن سِجِّیلࣲ"
+    },
+    "5": {
+      "uthmani": "فَجَعَلَهُمۡ كَعَصۡفࣲ مَّأۡكُولِۭ"
+    }
+  },
+  "106": {
+    "1": {
+      "uthmani": "لِإِیلَـٰفِ قُرَیۡشٍ"
+    },
+    "2": {
+      "uthmani": "إِۦلَـٰفِهِمۡ رِحۡلَةَ ٱلشِّتَاۤءِ وَٱلصَّیۡفِ"
+    },
+    "3": {
+      "uthmani": "فَلۡیَعۡبُدُوا۟ رَبَّ هَـٰذَا ٱلۡبَیۡتِ"
+    },
+    "4": {
+      "uthmani": "ٱلَّذِیۤ أَطۡعَمَهُم مِّن جُوعࣲ وَءَامَنَهُم مِّنۡ خَوۡفِۭ"
+    }
+  },
+  "107": {
+    "1": {
+      "uthmani": "أَرَءَیۡتَ ٱلَّذِی یُكَذِّبُ بِٱلدِّینِ"
+    },
+    "2": {
+      "uthmani": "فَذَ ٰ⁠لِكَ ٱلَّذِی یَدُعُّ ٱلۡیَتِیمَ"
+    },
+    "3": {
+      "uthmani": "وَلَا یَحُضُّ عَلَىٰ طَعَامِ ٱلۡمِسۡكِینِ"
+    },
+    "4": {
+      "uthmani": "فَوَیۡلࣱ لِّلۡمُصَلِّینَ"
+    },
+    "5": {
+      "uthmani": "ٱلَّذِینَ هُمۡ عَن صَلَاتِهِمۡ سَاهُونَ"
+    },
+    "6": {
+      "uthmani": "ٱلَّذِینَ هُمۡ یُرَاۤءُونَ"
+    },
+    "7": {
+      "uthmani": "وَیَمۡنَعُونَ ٱلۡمَاعُونَ"
+    }
+  },
+  "108": {
+    "1": {
+      "uthmani": "إِنَّاۤ أَعۡطَیۡنَـٰكَ ٱلۡكَوۡثَرَ"
+    },
+    "2": {
+      "uthmani": "فَصَلِّ لِرَبِّكَ وَٱنۡحَرۡ"
+    },
+    "3": {
+      "uthmani": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ"
+    }
+  },
+  "109": {
+    "1": {
+      "uthmani": "قُلۡ یَـٰۤأَیُّهَا ٱلۡكَـٰفِرُونَ"
+    },
+    "2": {
+      "uthmani": "لَاۤ أَعۡبُدُ مَا تَعۡبُدُونَ"
+    },
+    "3": {
+      "uthmani": "وَلَاۤ أَنتُمۡ عَـٰبِدُونَ مَاۤ أَعۡبُدُ"
+    },
+    "4": {
+      "uthmani": "وَلَاۤ أَنَا۠ عَابِدࣱ مَّا عَبَدتُّمۡ"
+    },
+    "5": {
+      "uthmani": "وَلَاۤ أَنتُمۡ عَـٰبِدُونَ مَاۤ أَعۡبُدُ"
+    },
+    "6": {
+      "uthmani": "لَكُمۡ دِینُكُمۡ وَلِیَ دِینِ"
+    }
+  },
+  "110": {
+    "1": {
+      "uthmani": "إِذَا جَاۤءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ"
+    },
+    "2": {
+      "uthmani": "وَرَأَیۡتَ ٱلنَّاسَ یَدۡخُلُونَ فِی دِینِ ٱللَّهِ أَفۡوَاجࣰا"
+    },
+    "3": {
+      "uthmani": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا"
+    }
+  },
+  "111": {
+    "1": {
+      "uthmani": "تَبَّتۡ یَدَاۤ أَبِی لَهَبࣲ وَتَبَّ"
+    },
+    "2": {
+      "uthmani": "مَاۤ أَغۡنَىٰ عَنۡهُ مَالُهُۥ وَمَا كَسَبَ"
+    },
+    "3": {
+      "uthmani": "سَیَصۡلَىٰ نَارࣰا ذَاتَ لَهَبࣲ"
+    },
+    "4": {
+      "uthmani": "وَٱمۡرَأَتُهُۥ حَمَّالَةَ ٱلۡحَطَبِ"
+    },
+    "5": {
+      "uthmani": "فِی جِیدِهَا حَبۡلࣱ مِّن مَّسَدِۭ"
+    }
+  },
+  "112": {
+    "1": {
+      "uthmani": "قُلۡ هُوَ ٱللَّهُ أَحَدٌ"
+    },
+    "2": {
+      "uthmani": "ٱللَّهُ ٱلصَّمَدُ"
+    },
+    "3": {
+      "uthmani": "لَمۡ یَلِدۡ وَلَمۡ یُولَدۡ"
+    },
+    "4": {
+      "uthmani": "وَلَمۡ یَكُن لَّهُۥ كُفُوًا أَحَدُۢ"
+    }
+  },
+  "113": {
+    "1": {
+      "uthmani": "قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ"
+    },
+    "2": {
+      "uthmani": "مِن شَرِّ مَا خَلَقَ"
+    },
+    "3": {
+      "uthmani": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ"
+    },
+    "4": {
+      "uthmani": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِی ٱلۡعُقَدِ"
+    },
+    "5": {
+      "uthmani": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ"
+    }
+  },
+  "114": {
+    "1": {
+      "uthmani": "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ"
+    },
+    "2": {
+      "uthmani": "مَلِكِ ٱلنَّاسِ"
+    },
+    "3": {
+      "uthmani": "إِلَـٰهِ ٱلنَّاسِ"
+    },
+    "4": {
+      "uthmani": "مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ"
+    },
+    "5": {
+      "uthmani": "ٱلَّذِی یُوَسۡوِسُ فِی صُدُورِ ٱلنَّاسِ"
+    },
+    "6": {
+      "uthmani": "مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ"
+    }
+  },
+  "2255":{
+    "1":{
+       "uthmani":"اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+       "en":"Allah! There is no god but He, the Living, the Self-subsisting, Eternal.",
+       "ru":"Аллах - нет божества, кроме Него, Живого, Вседержителя."
+    },
+    "2":{
+       "uthmani":"لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
+       "en":"Neither drowsiness overtakes Him, nor sleep.",
+       "ru":"Им не овладевают ни дремота, ни сон."
+    },
+    "3":{
+       "uthmani":"لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
+       "en":"His are all things in the heavens and on earth.",
+       "ru":"Ему принадлежит то, что на небесах, и то, что на земле."
+    },
+    "4":{
+       "uthmani":"مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ",
+       "en":"Who is it that can intercede with Him except by His permission?",
+       "ru":"Кто станет заступаться перед Ним без Его дозволения?"
+    },
+    "5":{
+       "uthmani":"يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ",
+       "en":"He knows what is before them and what is after (or behind) them, and they compass not a thing of His knowledge except for what He wills.",
+       "ru":"Он знает их будущее и прошлое. Они постигают из Его знания только то, что Он пожелает."
+    },
+    "6":{
+       "uthmani":"وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا",
+       "en":"His Throne extends over the heavens and the earth, and He feels no fatigue in guarding and preserving them,",
+       "ru":"Его Престол объемлет небеса и землю, и не тяготит Его оберегание их,"
+    },
+    "7":{
+       "uthmani":"وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+       "en":"and He is the High, the Most Great.",
+       "ru":"ведь Он - Возвышенный, Великий."
+    }
+ },
+ "2185":{
+    "1":{
+       "uthmani":"شَهْرُ رَمَضَانَ الَّذِي أُنْزِلَ فِيهِ الْقُرْآنُ هُدًى لِلنَّاسِ وَبَيِّنَاتٍ مِنَ الْهُدَى وَالْفُرْقَانِ",
+       "en":"Ramadan is the month in which the Qur'an was sent down, as a guide to mankind, and clear proofs of guidance, and differentiator [between right and wrong].",
+       "ru":"В месяц рамадан был ниспослан Коран - верное руководство для людей, ясные доказательства из верного руководства и различение."
+    },
+    "2":{
+       "uthmani":"فَمَنْ شَهِدَ مِنْكُمُ الشَّهْرَ فَلْيَصُمْهُ",
+       "en":"So every one of you who witnesses the month, let him fast it,",
+       "ru":"Тот из вас, кого застанет этот месяц, должен поститься."
+    },
+    "3":{
+       "uthmani":"وَمَنْ كَانَ مَرِيضًا أَوْ عَلَى سَفَرٍ فَعِدَّةٌ مِنْ أَيَّامٍ أُخَرَ",
+       "en":"but if any one of you is ill, or on a journey, then an equal number of other days.",
+       "ru":"А если кто болен или находится в пути, то пусть постится столько же дней в другое время."
+    },
+    "4":{
+       "uthmani":"يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَى مَا هَدَاكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ",
+       "en":"Allah intends for you ease and does not intend for you hardship and [wants] for you to complete the period and to glorify Allah for that [to] which He has guided you; and perhaps you will be grateful.",
+       "ru":"Аллах желает вам облегчения и не желает вам затруднения. Он желает, чтобы вы довели до конца определенное число дней и возвеличили Аллаха за то, что Он наставил вас на прямой путь. Быть может, вы будете благодарны."
+    }
+ },
+ "999002":{
+    "1":{
+       "uthmani":"سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ",
+       "en":"Perfect You are, O Allah, and Yours is praise!",
+       "ru":"Тебя прославляю, о мой Аллах, и Тебе возношу хвалу!"
+    },
+    "2":{
+       "uthmani":"وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ",
+       "en":"Blessed is Your Name and high is Your Majesty,",
+       "ru":"Благословенно Имя Твое, и превыше всего Твое Величие,"
+    },
+    "3":{
+       "uthmani":"وَلَا إِلٰهَ غَيْرُكَ",
+       "en":"and none is worthy of worship but You.",
+       "ru":"и только Ты достоин поклонения."
+    }
+ },
+ "999001":{
+    "1":{
+       "uthmani":"التَّحِيِّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ",
+       "en":"All greetings, prayers and beautiful expressions are for Allah.",
+       "ru":"Приветствия Аллаху, и молитвы, и лучшие слова."
+    },
+    "2":{
+       "uthmani":"السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ",
+       "en":"Peace be upon you, O Prophet, and Allah's mercy and blessings!",
+       "ru":"Мир тебе, о Пророк, и милость Аллаха и Его благословение!"
+    },
+    "3":{
+       "uthmani":"السَّلَامُ عَلَيْنَا وَ عَلٰى عِبَادِ اللَّهِ الصَّالِحِيْنَ",
+       "en":"Peace be upon us and upon all righteous servants of Allah.",
+       "ru":"Мир нам и праведным рабам Аллаха."
+    },
+    "4":{
+       "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"I bear witness that there is no god except Allah,",
+       "ru":"Свидетельствую, что нету бога кроме Аллаха,"
+    },
+    "5":{
+       "uthmani":"وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَ رَسُولُهُ",
+       "en":"And I bear witness that Muhammad is His servant and messenger.",
+       "ru":"и свидетельствую что Мухаммад - Его раб и посланник."
+    }
+ },
+ "999003":{
+    "1":{
+       "uthmani":"اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+       "en":"O Allah, honor Muhammad and the family of Muhammad,",
+       "ru":"О Аллах, благослови Мухаммада и семейство Мухаммада,"
+    },
+    "2":{
+       "uthmani":"كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ",
+       "en":"as You honored Ibrahim and the family of Ibrahim,",
+       "ru":"как благословил Ты Ибрахима и семейство Ибрахима,"
+    },
+    "3":{
+       "uthmani":"إِنَّكَ حَمِيدٌ مَجِيدٌ",
+       "en":"Verily, You are the Praiseworthy, the Glorious.",
+       "ru":"Поистине, Ты – Восхваляемый, Славный!"
+    },
+    "4":{
+       "uthmani":"اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+       "en":"O Allah, bless Muhammad and the family of Muhammad,",
+       "ru":"О Аллах, ниспошли благодать Мухаммаду и семейству Мухаммада,"
+    },
+    "5":{
+       "uthmani":"كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ",
+       "en":"as You blessed Ibrahim and the family of Ibrahim,",
+       "ru":"как ниспослал Ты благодать Ибрахиму и семейству Ибрахима,"
+    },
+    "6":{
+       "uthmani":"إِنَّكَ حَمِيدٌ مَجِيدٌ",
+       "en":"Verily, You are the Praiseworthy, the Glorious.",
+       "ru":"Поистине, Ты – Восхваляемый, Славный!"
+    }
+ },
+ "999004":{
+    "1":{
+       "uthmani":"اللَّهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ وَنَسْتَهْدِيكَ",
+       "en":"Oh Allah, we seek from You help, forgiveness and guidance.",
+       "ru":"О мой Аллаh! Просим у Тебя помощи и прощения! Укажи нам истинный путь."
+    },
+    "2":{
+       "uthmani":"وَنُؤْمِنُ بِكَ وَنَتُوبُ إِلَيْكَ",
+       "en":"We believe in You, and turn to You in repentance.",
+       "ru":"Мы верим в Тебя и каемся пред Тобой!"
+    },
+    "3":{
+       "uthmani":"وَنَتَوَكَّلُ عَلَيْكَ",
+       "en":"We trust and rely on You,",
+       "ru":"Мы полагаемся на Тебя"
+    },
+    "4":{
+       "uthmani":"وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ",
+       "en":"We praise You for all the good things, and are grateful to You,",
+       "ru":"и возносим Тебе хвалу за все благое, и благодарим Тебя!"
+    },
+    "5":{
+       "uthmani":"وَلَا نَكْفُرُكَ",
+       "en":"and we will not deny Your blessings.",
+       "ru":"Мы не будем совершать неверия!"
+    },
+    "6":{
+       "uthmani":"وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ",
+       "en":"We turn away from and give up the one who disobeys You.",
+       "ru":"Отвергнем и отвернемся от того, кто распутствует против Тебя."
+    },
+    "7":{
+       "uthmani":"اللَّهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ",
+       "en":"O Allah! You alone do we worship, and You alone do we pray to and prostrate before,",
+       "ru":"О мой Аллаh! Тебе одному мы поклоняемся, и ради Тебя совершаем намаз и земные поклоны."
+    },
+    "8":{
+       "uthmani":"وَإِلَيْكَ نَسْعَى وَنَحْفِدُ",
+       "en":"And You alone do we hasten to and strive to serve.",
+       "ru":"К Тебе одному стремимся и Тебе спешим служить."
+    },
+    "9":{
+       "uthmani":"نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ",
+       "en":"We hope for Your Mercy and fear Your punishment,",
+       "ru":"Надеемся на Твою Милость, и страшимся Твоего наказания!"
+    },
+    "10":{
+       "uthmani":"إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ",
+       "en":"Verily, Your punishment is going to overtake the disbelievers.",
+       "ru":"Нет сомнения, наказание Твое постигнет неверующих."
+    }
+ },
+ "999006":{
+    "1":{
+       "uthmani":"حَسْبِيَ اللَّهُ لَا إِلٰهَ إِلَا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+       "en":"Allah is my sufficiency, there is no god but He, on Him I rely, and He is Lord of the Mighty Throne.",
+       "ru":"Мне достаточно Аллаха! Нет божества, кроме Него. Я уповаю только на Него, ибо Он - Господь великого Трона."
+    },
+    "2":{
+       "uthmani":"بِسْمِ اللَّهُ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+       "en":"In the name of Allah, with whose name nothing can cause harm in the earth or sky, and He is the the All-hearing, the All-knowing.",
+       "ru":"С именем Аллаха, с которым ничто не навредит ни на земле, ни на небе, и Он Всеслышащий и Всезнающий."
+    },
+    "3":{
+       "uthmani":"أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+       "en":"I take refuge in the perfect words of Allah from the evil of what He has created.",
+       "ru":"Ищу убежища в совершенных словах Аллаха от зла того, что сотворил Он."
+    },
+    "4":{
+       "uthmani":"وَلَا حَوْلَ وَ لَا قُوَّةَ إِلَا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
+       "en":"And there is no power or strength except by Allah, the High, the Most Great.",
+       "ru":"И нет ни могущества, ни силы кроме как у Аллаха, Возвышенного, Великого."
+    },
+    "5":{
+       "uthmani":"وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَ عَلَى آلِهِ وَ صَحْبِهِ وَ سَلَّمَ",
+       "en":"And Allah bless our leader Muhammad, and his folk and companions and give them peace.",
+       "ru":"И да благословит Аллах нашего предводителя Мухаммада, и его семью и сподвижников, и дарует им мира."
+    }
+ },
+ "999005":{
+    "1":{
+       "uthmani":"أَسْتَغْفِرُ اللَّهَ أَسْتَغْفِرُ اللَّهَ أَسْتَغْفِرُ اللَّهَ",
+       "en":"I seek forgiveness of Allah, I seek forgiveness of Allah, I seek forgiveness of Allah.",
+       "ru":"Прошу прощения у Аллаhа, прошу прощения у Аллаhа, прошу прощения у Аллаhа."
+    },
+    "2":{
+       "uthmani":"اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالإِكْرَامِ",
+       "en":"O Allah, You are Free from any imperfection, and from You comes peace, blessed You are, O Possessor of majesty and generosity.",
+       "ru":"О Аллаh, Ты - Тот, у Которого нет недостатков и изъянов, от Тебя исходит мир и безопасность. Благословен Ты, о Обладатель Величия и Щедрости."
+    },
+    "3":{
+       "uthmani":"اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+       "en":"O Allah, help me to remember You, expressing gratitude towards You, and to worship You in the best manner.",
+       "ru":"О Аллаh, помоги мне поминать Тебя, благодарить Тебя, и поклоняться Тебе наилучшим образом!"
+    },
+    "4":{
+       "uthmani":"أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ",
+       "en":"I seek refuge in Allah from Satan the accursed.",
+       "ru":"Ищу убежища у Аллаhа от проклятого сатаны."
+    },
+    "5":{
+       "uthmani":"اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+       "en":"Allah! There is no god but He, the Living, the Self-subsisting, Eternal.",
+       "ru":"Аллаh - нет божества, кроме Него, Живого, Вседержителя."
+    },
+    "6":{
+       "uthmani":"لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
+       "en":"Neither drowsiness overtakes Him nor sleep.",
+       "ru":"Им не овладевают ни дремота, ни сон."
+    },
+    "7":{
+       "uthmani":"لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
+       "en":"His are all things in the heavens and on earth.",
+       "ru":"Ему принадлежит то, что на небесах, и то, что на земле."
+    },
+    "8":{
+       "uthmani":"مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ",
+       "en":"Who is it that can intercede with Him except by His permission?",
+       "ru":"Кто станет заступаться перед Ним без Его дозволения?"
+    },
+    "9":{
+       "uthmani":"يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ",
+       "en":"He knows what is before them and what is after (or behind) them,",
+       "ru":"Он знает их будущее и прошлое."
+    },
+    "10":{
+       "uthmani":"وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ",
+       "en":"and they compass not a thing of His knowledge except for what He wills.",
+       "ru":"Они постигают из Его знания только то, что Он пожелает."
+    },
+    "11":{
+       "uthmani":"وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ",
+       "en":"His Throne extends over the heavens and the earth,",
+       "ru":"Его Престол объемлет небеса и землю,"
+    },
+    "12":{
+       "uthmani":"وَلَا يَئُودُهُ حِفْظُهُمَا",
+       "en":"and He feels no fatigue in guarding and preserving them,",
+       "ru":"и не тяготит Его оберегание их,"
+    },
+    "13":{
+       "uthmani":"وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+       "en":"for He is the High, the Most Great.",
+       "ru":"ведь Он - Возвышенный, Великий."
+    },
+    "14":{
+       "uthmani":"سُبْحَانَ اللَّهِ",
+       "en":"Allah is exalted above imperfection (repeat 33 times)",
+       "ru":"Аллаh Пречист! (от любых недостатков и несовершеств) [произносится 33 раза]"
+    },
+    "15":{
+       "uthmani":"الحَمْدُ لِلَّهِ",
+       "en":"All praise belongs to Allah (repeat 33 times)",
+       "ru":"Вся хвала принадлежит Аллаhу! [произносится 33 раза]"
+    },
+    "16":{
+       "uthmani":"اللَّهُ أكْبَرُ",
+       "en":"Allah is greater (repeat 33 times)",
+       "ru":"Аллах - Величайший! (Важнее и величественнее всего)  [произносится 33 раза]"
+    },
+    "17":{
+       "uthmani":"لاَ إلَهَ إلاَّ اللَّهُ",
+       "en":"There is no god but Allah,",
+       "ru":"Нет бога кроме Аллаhа,"
+    },
+    "18":{
+       "uthmani":"وَحْدَهُ لاَ شَرِيكَ لَهُ",
+       "en":"the only One, without a partner,",
+       "ru":"Он - один, нет у Него сотоварищей."
+    },
+    "19":{
+       "uthmani":"لَهُ المُلْكُ ولَهُ الحَمْدُ",
+       "en":"To Him alone belongs the dominion, and to Him alone belongs all praise,",
+       "ru":"Ему одному принадлежить власть, и Ему одному принадлежит вся хвала,"
+    },
+    "20":{
+       "uthmani":"وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+       "en":"and He is over all things powerful.",
+       "ru":"И Он над каждой вещью властен!"
+    }
+ },
+ "999007":{
+    "1":{
+       "uthmani":"اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ",
+       "en":"Dear God, I’m asking You to choose for me through Your [All-Encompassing] Knowledge,",
+       "ru":"О Аллах, я прошу Тебя помочь мне выбрать через Твое Знание,"
+    },
+    "2":{
+       "uthmani":"وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ",
+       "en":"and I’m asking You to enable me through Your [Absolute] Power,",
+       "ru":"и прошу тебя даровать мне способность через Твое Могущество,"
+    },
+    "3":{
+       "uthmani":"وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ",
+       "en":"and I’m asking You from Your Incommensurable Grace.",
+       "ru":"и прошу Тебя из Твоей Великой Щедрости,"
+    },
+    "4":{
+       "uthmani":"فَإِنَّكَ تَقْدِرُ وَلاَ أَقْدِرُ",
+       "en":"Since verily You have power, while I do not.",
+       "ru":"ибо поистине Ты обладаешь cилой, а я не обладаю,"
+    },
+    "5":{
+       "uthmani":"وَتَعْلَمُ وَلاَ أَعْلَمُ",
+       "en":"And You know, while I know not,",
+       "ru":"ибо поистине Ты знаешь, а я не знаю,"
+    },
+    "6":{
+       "uthmani":"وَأَنْتَ عَلاَّمُ الْغُيُوبِ",
+       "en":"and You are the Knower of all things unseen.",
+       "ru":"и Ты – Знающий все скрытое."
+    },
+    "7":{
+       "uthmani":"اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي",
+       "en":"Dear God, if You know that this affair is good for my religion, and my worldly life, and the final outcome of my affairs,",
+       "ru":"О Аллах, если Ты знаешь, что это дело будет благом для меня в моей религии, в моей жизни, и для исхода моих дел,"
+    },
+    "8":{
+       "uthmani":"فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ",
+       "en":"then decree it for me, and facilitate it for me with ease, and bless it for me.",
+       "ru":"то предопредели его для меня, и облегчи его для меня, а затем сделай его для меня благословенным."
+    },
+    "9":{
+       "uthmani":"وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي",
+       "en":"But if You know that this affair is bad for my religion, my worldly life, and the final outcome of my affairs,",
+       "ru":"А если Ты знаешь, что это дело обернётся злом для моей религии, моей жизни и для исхода моих дел,"
+    },
+    "10":{
+       "uthmani":"فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِي الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ",
+       "en":"then get it away from me, and get me away from it, and decree what’s better for me, wherever it may be, and make me content with it.",
+       "ru":"то отдали его от меня, и отдали меня от него, и предопредели мне благо, где бы оно ни было, а потом сделай меня довольным этим."
+    }
+ },
+ "999008":{
+    "1":{
+       "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
+       "en":"Allah is greater! Allah is greater! (Greater than anything)",
+       "ru":"Аллах - Величайший! Аллах - Величайший! (важнее и величественнее всего)"
+    },
+    "2":{
+       "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
+       "en":"Allah is greater! Allah is greater! (Greater than anything)",
+       "ru":"Аллах - Величайший! Аллах - Величайший! (важнее и величественнее всего)"
+    },
+    "3":{
+       "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"I bear witness that there is no god except Allah",
+       "ru":"Свидетельствую, что нету бога кроме Аллаха"
+    },
+    "4":{
+       "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"I bear witness that there is no god except Allah",
+       "ru":"Свидетельствую, что нету бога кроме Аллаха"
+    },
+    "5":{
+       "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
+       "en":"I bear witness that Muhammad is the messenger of Allah",
+       "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
+    },
+    "6":{
+       "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
+       "en":"I bear witness that Muhammad is the messenger of Allah",
+       "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
+    },
+    "7":{
+       "uthmani":"حَيَّ عَلَى الصَّلاَةِ",
+       "en":"Come to prayer",
+       "ru":"Спешите к молитве"
+    },
+    "8":{
+       "uthmani":"حَيَّ عَلَى الصَّلاَةِ",
+       "en":"Come to prayer",
+       "ru":"Спешите к молитве"
+    },
+    "9":{
+       "uthmani":"حَيَّ عَلَى الْفَلاَحِ",
+       "en":"Come to success",
+       "ru":"Спешите к успеху"
+    },
+    "10":{
+       "uthmani":"حَيَّ عَلَى الْفَلاَحِ",
+       "en":"Come to success",
+       "ru":"Спешите к успеху"
+    },
+    "11":{
+       "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
+       "en":"Allah is greater! Allah is greater! (Greater than anything)",
+       "ru":"Аллах - Величайший! Аллах - Величайший!"
+    },
+    "12":{
+       "uthmani":"لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"There is no god but Allah",
+       "ru":"Нет бога кроме Аллаха"
+    }
+ },
+ "999009":{
+    "1":{
+       "uthmani":"اللَّهُمَّ رَبَّ هذِه الدَّعْوَةِ التّامَّةِ",
+       "en":"O Allah! Lord of this perfect call",
+       "ru":"О, Аллах, Владыка этого совершенного призыва"
+    },
+    "2":{
+       "uthmani":"والصَّلاةِ القائِمَةِ",
+       "en":"and of the prayer being established,",
+       "ru":"и готовящегося намаза!"
+    },
+    "3":{
+       "uthmani":"آتِ سَيِّدَنَا مُحَمَّداً الوَسِيلَةَ والفَضِيلَةَ",
+       "en":"give to our master Muhammad the right of intercession and illustriousness,",
+       "ru":"Даруй нашему господину Мухаммаду наивысшую ступень в Раю и превосходное положение,"
+    },
+    "4":{
+       "uthmani":"وابْعَثْهُ مَقاماً مَحْمُوداً الذي وعَدْتَهُ",
+       "en":"and resurrect him to the glorious station that You promised him (of).",
+       "ru":"и воскреси его на хвалимом месте, которое Ты обещал ему."
+    },
+    "5":{
+       "uthmani":"وَأَنَا أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"And I too bear witness that there is no god except Allah,",
+       "ru":"И я тоже свидетельствую, что нету бога кроме Аллаха,"
+    },
+    "6":{
+       "uthmani":"وَحْدَهُ لاَ شَرِيكَ لَهُ",
+       "en":"the only One, without a partner,",
+       "ru":"Он - один, нет у Него сотоварищей."
+    },
+    "7":{
+       "uthmani":"وَأَنَّ مُحَمَّدًا عَبْدُهُ وَ رَسُولُهُ",
+       "en":"And that Muhammad is His servant and messenger.",
+       "ru":"и что Мухаммад - Его раб и посланник."
+    },
+    "8":{
+       "uthmani":"رَضِيتُ بِاللَّهِ رَبَّاً",
+       "en":"I am pleased with Allah as my Lord,",
+       "ru":"Я доволен Аллахом - как Господом,"
+    },
+    "9":{
+       "uthmani":"وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ رَسُولاً",
+       "en":"with Muhammad (May Allah bless him and give him peace) as my Messenger,",
+       "ru":"Мухаммадом - да благословит его Аллах и дарует ему мира - как посланником,"
+    },
+    "10":{
+       "uthmani":"وَبِالْإِسلَامِ دِينَاً",
+       "en":"and with Islam as my religion.",
+       "ru":"и Исламом - как религией."
+    }
+ },
+ "999010":{
+    "1":{
+       "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
+       "en":"Allah is greater! Allah is greater! (Greater than anything)",
+       "ru":"Аллах - Величайший! Аллах - Величайший! (важнее и величественнее всего)"
+    },
+    "2":{
+       "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
+       "en":"Allah is greater! Allah is greater!",
+       "ru":"Аллах - Величайший! Аллах - Величайший!"
+    },
+    "3":{
+       "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"I bear witness that there is no god except Allah",
+       "ru":"Свидетельствую, что нету бога кроме Аллаха"
+    },
+    "4":{
+       "uthmani":"أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"I bear witness that there is no god except Allah",
+       "ru":"Свидетельствую, что нету бога кроме Аллаха"
+    },
+    "5":{
+       "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
+       "en":"I bear witness that Muhammad is the messenger of Allah",
+       "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
+    },
+    "6":{
+       "uthmani":"أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
+       "en":"I bear witness that Muhammad is the messenger of Allah",
+       "ru":"Свидетельствую что Мухаммад - посланник Аллаха"
+    },
+    "7":{
+       "uthmani":"حَيَّ عَلَى الصَّلاَةِ حَيَّ عَلَى الصَّلاَةِ",
+       "en":"Come to prayer, come to prayer",
+       "ru":"Спешите к молитве, спешите к молитве"
+    },
+    "8":{
+       "uthmani":"حَيَّ عَلَى الْفَلاَح حَيَّ عَلَى الْفَلاَحِ",
+       "en":"Come to success, come to success",
+       "ru":"Спешите к успеху, спешите к успеху"
+    },
+    "9":{
+       "uthmani":"قَدْ قَامَتْ الصَّلَاةُ قَدْ قَامَتْ الصَّلَاةُ",
+       "en":"The prayer has started, the prayer has started",
+       "ru":"Намаз уже начался, намаз уже начался,"
+    },
+    "10":{
+       "uthmani":"اللَّهُ أكْبَرُ اللَّهُ أكْبَرُ",
+       "en":"Allah is greater! Allah is greater! (Greater than anything)",
+       "ru":"Аллах - Величайший! Аллах - Величайший!"
+    },
+    "11":{
+       "uthmani":"لَا إِلٰهَ إِلَّا اللَّهُ",
+       "en":"There is no god but Allah",
+       "ru":"Нет бога кроме Аллаха"
     }
  }
+}
